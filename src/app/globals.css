@@ -1,0 +1,108 @@
+:root {
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --sanjeevani-green: #114934;
+  --hero-overlay: rgba(0, 0, 0, 0.4);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.bg-sanjeevani {
+  background-color: var(--sanjeevani-green) !important;
+}
+
+.text-sanjeevani {
+  color: var(--sanjeevani-green) !important;
+}
+
+/* Global Button Styles for Consistency */
+.btn {
+  border-radius: 0 !important;
+  padding: 12px 30px !important;
+  text-transform: uppercase;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Primary Button Overrides */
+.btn-primary {
+  background-color: var(--sanjeevani-green) !important;
+  border-color: var(--sanjeevani-green) !important;
+  color: white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #0c3826 !important;
+  /* Darker shade */
+  border-color: #0c3826 !important;
+  color: white !important;
+}
+
+/* Outline Primary Button Overrides */
+.btn-outline-primary {
+  color: var(--sanjeevani-green) !important;
+  border-color: var(--sanjeevani-green) !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: var(--sanjeevani-green) !important;
+  color: white !important;
+  border-color: var(--sanjeevani-green) !important;
+}
+
+/* White Outline Button (for dark backgrounds) */
+.btn-outline-white {
+  color: white !important;
+  border-color: white !important;
+}
+
+.btn-outline-white:hover {
+  background-color: white !important;
+  color: var(--sanjeevani-green) !important;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+}
+
+/* Footer Styles */
+.footer-links li a {
+  transition: all 0.3s ease;
+}
+
+.footer-links li a:hover {
+  transform: translateX(5px);
+  color: var(--sanjeevani-green) !important;
+}
+
+.hover-sanjeevani:hover {
+  color: var(--sanjeevani-green) !important;
+}
+
+.social-icon-btn {
+  transition: all 0.3s ease;
+}
+
+.social-icon-btn:hover {
+  background-color: var(--sanjeevani-green) !important;
+  transform: translateY(-3px);
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
