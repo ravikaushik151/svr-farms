@@ -1,8 +1,5 @@
 {
-  "name": "worker-name",
-  "main": "src/index.js",
-  "compatibility_date": "2026-02-19",
-  "assets": {
-    "directory": "./dist"
-  }
+    "name": "svr-farms",
+    "pages_build_output_dir": "./out",
+    "compatibility_date": "2026-02-19"
 }

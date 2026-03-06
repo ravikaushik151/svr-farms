@@ -5,6 +5,7 @@ import NewProjectSection from '@/components/NewProjectSection';
 import StatsSection from '@/components/StatsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import ProjectsSection from '@/components/ProjectsSection';
+import FaqSection from '@/components/FaqSection';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaHammer, FaLeaf, FaMapMarkerAlt } from 'react-icons/fa';
 
@@ -52,6 +53,7 @@ export default function Home() {
                     </Row>
                 </Container>
             </div>
+            <FaqSection />
         </>
     );
 }

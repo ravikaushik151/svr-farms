@@ -1,12 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import BootstrapClient from '@/components/BootstrapClient';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
     title: 'SVR Farms',
@@ -20,7 +17,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            <body>
                 <BootstrapClient />
                 <div className="d-flex flex-column min-vh-100">
                     <Header />
