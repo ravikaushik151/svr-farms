@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Hero() {
     return (
         <div className="position-relative vh-100 d-flex align-items-center text-white text-center" style={{
-            backgroundImage: 'url("https://placehold.co/1920x1080?text=Hero+Banner+1920x1080")',
+            backgroundImage: 'url("/Home_page.webp")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
         }}>

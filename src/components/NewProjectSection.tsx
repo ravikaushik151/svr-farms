@@ -12,7 +12,7 @@ export default function NewProjectSection() {
                     <div
                         className="w-100 h-100"
                         style={{
-                            backgroundImage: 'url("https://placehold.co/800x1200?text=Feature+Image+800x1200")',
+                            backgroundImage: 'url("/Tamara%20valley2.webp")',
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             minHeight: '400px'
