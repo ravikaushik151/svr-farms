@@ -27,11 +27,15 @@ export default function NewProjectSection() {
                         <h6 className="section-subheading mb-2 text-white-50" style={{ color: 'rgba(255,255,255,0.7) !important' }}>New Projects</h6>
                         <h2 className="section-heading mb-4 text-white" style={{ color: '#fff !important' }}>Tamara Valley</h2>
                         <p className="lead fw-light mb-4 lh-lg text-white-50">
-                            Tamara Valley is a 300-acre high-demand land parcel in Thalli, crafted for those who value space, nature, and a better way to live.
+                            Spread across an expansive 300 acres in the serene landscapes of Thalli, Tamara Valley is where nature unfolds in its purest form
                         </p>
-                        <p className="mb-5 lh-lg text-white-50">
-                            With luxury amenities set in a peaceful green landscape, it’s the ideal spot for sustainable living and mindful farming. Whether you’re building a quiet retreat or investing in a future rooted in nature, Tamara Valley offers the space to grow on your terms.
+                        <p className="lead fw-light mb-4 lh-lg text-white-50">
+                            Set amidst lush greenery and a peaceful landscape, it offers a blend of organic farming and curated lifestyle amenities, including a resort, wellness spaces, and recreational facilities.
                         </p>
+                        <p className="mb-5 lead fw-light mb-4 lh-lg text-white-50">
+                            Whether it’s a quiet weekend retreat or a long-term investment, Tamara Valley offers a space that grows with you - in value and in experience.
+                        </p>
+
                         <Link href="/projects/tamara-valley" passHref legacyBehavior>
                             <Button variant="outline-light" size="lg" className="btn-outline-white px-5 py-3">EXPLORE TAMARA VALLEY</Button>
                         </Link>

@@ -21,7 +21,7 @@ export default function Home() {
 
             <div className="bg-light py-5 mt-5">
                 <Container>
-                    <SectionTitle title="Why Choose SVR Farms?" subtitle="The SVR Advantage" />
+                    <SectionTitle title="Why Choose Little England?" subtitle="The SVR Advantage" />
                     <Row className="text-center g-4">
                         <Col md={4}>
                             <div className="p-4 bg-white rounded shadow-sm h-100 hover-lift">
@@ -29,7 +29,7 @@ export default function Home() {
                                     <FaHammer size={40} />
                                 </div>
                                 <h4 className="fw-bold mb-3">Managed Farmland</h4>
-                                <p className="text-muted">We handle the maintenance so you can enjoy the ownership without the hassle.</p>
+                                <p className="text-muted">End-to-end management so you enjoy ownership without the day-to-day effort.</p>
                             </div>
                         </Col>
                         <Col md={4}>
@@ -37,8 +37,8 @@ export default function Home() {
                                 <div className="mb-3 text-sanjeevani">
                                     <FaLeaf size={40} />
                                 </div>
-                                <h4 className="fw-bold mb-3">Eco-Friendly</h4>
-                                <p className="text-muted">Sustainable practices that respect nature and promote biodiversity.</p>
+                                <h4 className="fw-bold mb-3">Eco-Conscious Living</h4>
+                                <p className="text-muted">Sustainable practices that support nature and encourage organic growth..</p>
                             </div>
                         </Col>
                         <Col md={4}>

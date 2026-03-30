@@ -6,8 +6,8 @@ import Footer from '@/components/Footer';
 import BootstrapClient from '@/components/BootstrapClient';
 
 export const metadata: Metadata = {
-    title: 'SVR Farms',
-    description: 'SVR Farms Website',
+    title: 'Little England',
+    description: 'Little England Website',
 };
 
 export default function RootLayout({

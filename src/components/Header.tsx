@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <Navbar expand="lg" className="bg-sanjeevani py-3 shadow-sm sticky-top" data-bs-theme="dark">
             <Container>
-                <Navbar.Brand as={Link} href="/" className="fw-bold text-white fs-4">SVR Farms</Navbar.Brand>
+                <Navbar.Brand as={Link} href="/" className="fw-bold text-white fs-4">Little England</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto align-items-center">

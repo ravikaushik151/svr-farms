@@ -7,28 +7,24 @@ import SectionTitle from './SectionTitle';
 
 const faqs = [
     {
-        question: 'What exactly does "managed farmland" mean?',
-        answer: 'Managed farmland means we take care of the entire farming process. From soil testing, planting, irrigation, security, and regular maintenance, our team of experts handles everything so you can enjoy the benefits of owning farmland without the day-to-day agricultural responsibilities.'
+        question: 'What exactly does “managed farmland” mean?',
+        answer: 'Managed farmland means your land is professionally maintained even when you’re not around. From soil preparation and plantation to irrigation and upkeep, everything is handled - so you enjoy ownership without the operational burden.'
     },
     {
-        question: 'How is SVR Farms different from other farmland projects?',
-        answer: 'SVR Farms focuses on sustainable, eco-friendly farming practices with a long-term vision. We provide complete transparency, expert agricultural management, and prime locations that offer both agricultural yield and land appreciation.'
+        question: 'What makes Little England different from other farmland projects?',
+        answer: 'Little England combines natural landscapes, a cooler climate, and a thoughtfully planned managed ecosystem. With curated amenities, clear land titles, and a focus on long-term value, it offers more than just land - it offers a complete lifestyle experience.'
     },
     {
-        question: 'Who is managed farmland not suitable for?',
-        answer: 'If you are looking for short-term speculative returns, or if you wish to construct commercial buildings on the land, managed farmland might not be suitable. It is designed for those who appreciate nature, passive agricultural income, and long-term asset appreciation.'
+        question: 'Do I get complete legal ownership of the land?',
+        answer: 'Yes, every plot comes with clear legal titles, ensuring full ownership and a transparent buying process you can trust.'
     },
     {
-        question: 'Do I legally own the land?',
-        answer: 'Yes, absolutely. The land is registered directly in your name, giving you 100% legal ownership of your purchased plot, just like any other real estate property.'
+        question: 'What kind of support is provided after purchase?',
+        answer: 'From fencing and irrigation to plantation and farm management, ongoing support is provided to help you maintain and develop your land effortlessly.'
     },
     {
-        question: 'Who can buy farmland through SVR Farms?',
-        answer: 'Anyone who meets the state\'s legal requirements for purchasing agricultural land can buy our managed farmland. We assist with all the necessary legal procedures and documentation.'
-    },
-    {
-        question: 'Can I sell the land in the future? Will SVR Farms help me?',
-        answer: 'Yes, you are free to sell your land at any time, as it is legally registered in your name. SVR Farms also provides assistance in finding potential buyers if you choose to exit.'
+        question: 'How far is Little England from Bangalore?',
+        answer: 'Located in Thalli, Little England is approximately 35 km from Electronic City, offering easy access while still being surrounded by nature.'
     }
 ];
 

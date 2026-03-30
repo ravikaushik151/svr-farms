@@ -10,7 +10,8 @@ export default function Projects() {
             <Container>
                 <SectionTitle title="Our Projects" subtitle="Discover Our Work" />
                 <p className="lead text-center text-muted mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Explore thoughtfully developed farmland communities set in the serene landscapes of Thalli.<br />
+                    Spaces designed for nature, accessibility, and long-term value.
                 </p>
                 <ProjectsSection />
             </Container>

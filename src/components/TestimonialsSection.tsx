@@ -6,23 +6,23 @@ import { useState } from 'react';
 const testimonials = [
     {
         name: "Shiva",
-        text: "I was in search of a suitable farmland property for my business expansion. SVR Farms provided me with the perfect property, and their assistance made the entire process seamless. I am content with their efficient services."
+        text: "I was in search of a suitable farmland property for my business expansion. Little England provided me with the perfect property, and their assistance made the entire process seamless. I am content with their efficient services."
     },
     {
         name: "Pavan",
-        text: "I purchased agricultural land connected with SVR Farms and was thoroughly impressed with their service. Their team assisted me at every step, making the transaction process extremely smooth. I commend SVR Farms for their professionalism and dedication."
+        text: "I purchased agricultural land connected with Little England and was thoroughly impressed with their service. Their team assisted me at every step, making the transaction process extremely smooth. I commend Little England for their professionalism and dedication."
     },
     {
         name: "Krishina",
-        text: "SVR Farms helped me realize my dream of owning a countryside home. Their diverse range of farmland properties caught my attention, and their staff was always available to address my queries. I was impressed by their transparency and honesty."
+        text: "Little England helped me realize my dream of owning a countryside home. Their diverse range of farmland properties caught my attention, and their staff was always available to address my queries. I was impressed by their transparency and honesty."
     },
     {
         name: "Ashok",
-        text: "I'm highly satisfied with SVR Farms' services. I purchased a farm property through them, and their team guided me throughout the process. Their extensive knowledge about farmland properties is commendable, and I would recommend their services."
+        text: "I'm highly satisfied with Little England' services. I purchased a farm property through them, and their team guided me throughout the process. Their extensive knowledge about farmland properties is commendable, and I would recommend their services."
     },
     {
         name: "Rajesh",
-        text: "The team at SVR Farms showcases professionalism and dedication in their work. I purchased a farmhouse from them, and their personalized approach stood out to me. Their team assists in making the transaction process hassle-free. I highly recommend considering SVR Farms for your purchase."
+        text: "The team at Little England showcases professionalism and dedication in their work. I purchased a farmhouse from them, and their personalized approach stood out to me. Their team assists in making the transaction process hassle-free. I highly recommend considering Little England for your purchase."
     }
 ];
 

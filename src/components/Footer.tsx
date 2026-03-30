@@ -14,7 +14,7 @@ export default function Footer() {
                     {/* Column 1: Brand & About */}
                     <Col lg={4} md={12}>
                         <div className="mb-4">
-                            <h3 className="fw-bold text-white mb-3 letter-spacing-1">SVR FARMS</h3>
+                            <h3 className="fw-bold text-white mb-3 letter-spacing-1">Little England</h3>
                             <div className="bg-sanjeevani mb-4" style={{ width: '60px', height: '3px' }}></div>
                             <p className="text-white-50 lh-lg">
                                 Premium Farm Land Developers dedicated to creating sustainable and beautiful living spaces. We blend nature with modern amenities to find your perfect managed farmland.
@@ -120,7 +120,7 @@ export default function Footer() {
                     <Row className="align-items-center">
                         <Col md={12} className="text-center text-md-center">
                             <small className="text-white-50">
-                                &copy; {new Date().getFullYear()} SVR Farms. All Rights Reserved.
+                                &copy; {new Date().getFullYear()} Little England. All Rights Reserved.
                                 <span className="mx-2">|</span>
                                 Digital Partner: <a href="https://www.imsolutions.co/" target="_blank" rel="noopener noreferrer" className="text-sanjeevani text-decoration-none fw-bold hover-white">IM Solutions</a>
                             </small>

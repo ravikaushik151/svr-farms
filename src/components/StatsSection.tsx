@@ -4,11 +4,11 @@ import { FaDraftingCompass, FaTree, FaSeedling, FaUserFriends, FaMapMarkedAlt } 
 import { useEffect, useState, useRef } from 'react';
 
 const stats = [
-    { icon: FaDraftingCompass, count: 15, label: "Projects", suffix: "+" },
-    { icon: FaTree, count: 3500, label: "Trees", suffix: "+" },
-    { icon: FaSeedling, count: 5000, label: "Plants", suffix: "+" },
-    { icon: FaUserFriends, count: 300, label: "Customers", suffix: "+" },
-    { icon: FaMapMarkedAlt, count: 2000, label: "Lands Sold", suffix: "+" },
+    { icon: FaDraftingCompass, count: 15, label: "Landmark Developments", suffix: "+" },
+    { icon: FaTree, count: 3500, label: "Trees Rooted", suffix: "+" },
+    { icon: FaSeedling, count: 5000, label: "Thriving Plantations", suffix: "+" },
+    { icon: FaUserFriends, count: 1000, label: "Associated Families", suffix: "+" },
+    { icon: FaMapMarkedAlt, count: 3000, label: "Acres Delivered", suffix: "+" },
 ];
 
 function Counter({ end, duration = 2000, suffix = "" }: { end: number, duration?: number, suffix?: string }) {
