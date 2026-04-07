@@ -2,20 +2,60 @@
 
 import SectionTitle from '@/components/SectionTitle';
 import AboutSection from '@/components/AboutSection';
+import PageBanner from '@/components/PageBanner';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaCheckCircle } from 'react-icons/fa';
 import Link from 'next/link';
 
 export default function About() {
     return (
-        <div className="pt-5">
-            <Container className="mb-5 pb-5">
-                <SectionTitle title="About Us" subtitle="Who We Are" />
-                <p className="lead text-center text-muted mb-5">
-                    Little England is built on a simple idea - to bring people closer to nature without disconnecting them from the life they’ve created
-                    <br />Set in the serene landscapes of Thalli, this gated managed farmland community is designed for those who seek calm, clarity, and a more meaningful way of living. With its cool climate, lush greenery, and open spaces, it offers an environment where life feels slower, healthier, and more intentional.
-                    <br />Here, ownership goes beyond land - it becomes an experience of reconnecting with nature, building something of your own, and investing in a future that holds both peace and potential.
-                </p>
+        <>
+            <PageBanner title="We Are Little England" backgroundImage="/banner/About us_Banner.webp" />
+            <Container className="py-5 mt-4">
+                <Row className="gy-5 align-items-start">
+                    <Col lg={5}>
+                        <h2 className="mb-4" style={{ color: '#4a5568', fontWeight: '600', letterSpacing: '1px' }}>
+                            DEVELOPING <br />
+                            <span style={{ color: '#c5a059' }}>GREENER</span> LIVES
+                        </h2>
+                        
+                        <div className="position-relative rounded-4 overflow-hidden shadow-lg mt-4" style={{ height: '350px' }}>
+                            <div style={{
+                                backgroundImage: 'url("/Home_page.webp")',
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                width: '100%',
+                                height: '100%'
+                            }}></div>
+                            <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style={{ backgroundColor: 'rgba(0,0,0,0.2)' }}>
+                                <div className="bg-white rounded-circle d-flex align-items-center justify-content-center shadow" style={{ width: '70px', height: '70px', cursor: 'pointer', border: '2px solid rgba(255,255,255,0.5)', backgroundClip: 'padding-box' }}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#333" className="bi bi-play-fill ms-1" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </Col>
+                    
+                    <Col lg={7} className="ps-lg-5">
+                        <div className="mt-2">
+                           <p className="text-dark opacity-75 mb-4" style={{ fontSize: '0.95rem', lineHeight: '1.8' }}>
+                               Little England embodies our dedication to creating a unique and profound bond among our clients and the natural environment by bridging the gap between urban life and rural peace.
+                           </p>
+                           <p className="text-dark opacity-75 mb-5" style={{ fontSize: '0.95rem', lineHeight: '1.8' }}>
+                               Little England is founded with a vision that nature holds invaluable significance and demands our immediate protection. We envisioned a meaningful solution that allows urban professionals to rediscover their bond with nature without stepping away from their city aspirations.
+                           </p>
+                           
+                           <h3 className="mb-4" style={{ color: '#4a5568', fontWeight: '300', letterSpacing: '1px' }}>
+                               NATURE,<span style={{ color: '#c5a059' }}>NURTURE</span>,ADVENTURE.
+                           </h3>
+                           
+                           <p className="text-dark opacity-75 mb-0" style={{ fontSize: '0.95rem', lineHeight: '1.8' }}>
+                               Guided by our foundational belief in Nature. Nurture. Adventure., each farm we develop reflects our unwavering dedication to sustainable living. We shape remarkable rural landscapes that cultivate inspiration, wellness, and the freedom to embrace life authentically. Our vision connects dynamic urban life with serene countryside retreats, creating a lifestyle where modern amenities coexist beautifully with natural tranquillity.
+                           </p>
+                        </div>
+                    </Col>
+                </Row>
             </Container>
 
             {/* Section 2 */}
@@ -69,6 +109,6 @@ export default function About() {
                     </Row>
                 </Container>
             </div>
-        </div>
+        </>
     );
 }

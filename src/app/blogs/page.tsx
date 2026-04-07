@@ -1,11 +1,14 @@
 'use client';
 
 import SectionTitle from '@/components/SectionTitle';
+import PageBanner from '@/components/PageBanner';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 export default function Blogs() {
     return (
-        <Container className="py-5">
+        <>
+            <PageBanner title="Our Blog" backgroundImage="/banner/Blog_Banner.webp" />
+            <Container className="py-2">
             <SectionTitle title="Our Blog" subtitle="Latest News & Updates" />
             <div className="text-center text-muted mt-5">
                 <p className="lead mb-5">
@@ -41,6 +44,7 @@ export default function Blogs() {
                     </Col>
                 </Row>
             </div>
-        </Container>
+            </Container>
+        </>
     );
 }

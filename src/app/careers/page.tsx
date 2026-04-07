@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import SectionTitle from '@/components/SectionTitle';
+import PageBanner from '@/components/PageBanner';
 import { Container, Row, Col, Card, Button, Modal, Form } from 'react-bootstrap';
 
 const jobOpenings = [
@@ -44,7 +45,9 @@ export default function Careers() {
     };
 
     return (
-        <Container className="py-5">
+        <>
+            <PageBanner title="Careers" backgroundImage="/banner/Careers_Banner.webp" />
+            <Container className="py-2">
             <SectionTitle title="Careers" subtitle="Join Our Team" />
             <div className="text-center mt-5">
                 <p className="lead text-muted mb-5">
@@ -153,5 +156,6 @@ export default function Careers() {
                 </Modal.Body>
             </Modal>
         </Container>
+        </>
     );
 }

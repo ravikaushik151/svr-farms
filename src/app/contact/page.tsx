@@ -1,12 +1,15 @@
 'use client';
 
 import SectionTitle from '@/components/SectionTitle';
+import PageBanner from '@/components/PageBanner';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 export default function Contact() {
     return (
-        <Container className="py-5">
+        <>
+            <PageBanner title="Contact Us" backgroundImage="/banner/Contact us_Banner.webp" />
+            <Container className="py-2">
             <SectionTitle title="Contact Us" subtitle="Get Intouch" />
             <Row className="mt-5 g-5">
                 <Col md={6}>
@@ -67,5 +70,6 @@ export default function Contact() {
                 </Col>
             </Row>
         </Container>
+        </>
     );
 }
