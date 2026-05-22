@@ -1,6 +1,5 @@
 import '../../components/tamara/TamaraStyles.css';
 import FaqSection from '@/components/tamara/FaqSection';
-import BootstrapClient from "@/components/BootstrapClient";
 import StatsSection from '@/components/tamara/StatsSection';
 import Image from "next/image";
 import AmenitiesMarquee from "@/components/AmenitiesMarquee";
@@ -36,7 +35,7 @@ export default function TamaraPage() {
     ];
     return (
         <>
-            <BootstrapClient />
+
             <main className="main-wrapper">
                 <Hero />
                 <StatsSection />
@@ -55,7 +54,7 @@ export default function TamaraPage() {
                                         src="/Tamara valley2.webp"
                                         width={650}
                                         height={750}
-                                        className="img-fluid  mb-3  rounded-4"
+                                        className="img-fluid  mb-4  rounded-4"
                                         priority
                                         fetchPriority="high" style={{ maxHeight: '550px', objectFit: "cover", objectPosition: "center" }}
                                     />
@@ -64,12 +63,12 @@ export default function TamaraPage() {
                             <div className="col-md-6 d-flex align-items-center" >
                                 <div className=" ">
                                     <h2 className="section-heading text-center mb-0">About Tamara Valley</h2>
-                                    <div className="mx-auto mb-5 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                                    <div className="mx-auto mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
 
-                                    <h3 className='fs-6 fw-semibold'>Experience The
+                                    <h3 className='fs-6 fw-semibold text-md-start text-center'>Experience The
                                         Luxury of Green Ownership
                                     </h3>
-                                    <p className="mt-3  theme-color-dark">
+                                    <p className="mt-2  theme-color-dark">
                                         <span>Set within the green landscapes of Thalli, Tamil Nadu, Tamara Valley is a 300-acre gated organic managed farmland project designed for those who seek a quieter, richer, and more meaningful way to own real estate.
                                         </span></p>
                                     <p className=" theme-color-dark"><span>Blending fertile land, cool climate, curated amenities, and professional farm management, the project offers more than a weekend retreat. It creates a rare opportunity to own a nature-backed asset shaped for lifestyle, legacy, and long-term value.
@@ -98,9 +97,9 @@ export default function TamaraPage() {
                             <div className="col-md-6 d-flex align-items-center" >
                                 <div className=" ">
                                     <h2 className="section-heading text-center mb-0">A Breath of Nature </h2>
-                                    <div className="mx-auto mb-5 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                                    <div className="mx-auto  mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
 
-                                    <h3 className='fs-6 fw-semibold'>Experience The
+                                    <h3 className='fs-6  text-md-start text-center fw-semibold'>Experience The
                                         Luxury of Green Ownership
                                     </h3>
                                     <p className="mt-3  theme-color-dark">
@@ -157,7 +156,7 @@ export default function TamaraPage() {
                                                     <img alt="upsc" width={412} height={271} decoding="async" className=" img-fluid mb-1 d-block mx-auto" src="/images/Accessibility.webp" />
                                                 </div>
                                                 <div className="services-content faq-section px-3 pb-4 mb-3 ">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                    <h4 className="fw-bold title fs-6 mb-0 text-center py-3 fw-bold">
                                                         Infrastructure
                                                     </h4>
                                                     <p className='mb-3'>The project has 30 ft wide roads and a 6–8 ft RCC wall for safety and easy access.</p>
@@ -171,7 +170,7 @@ export default function TamaraPage() {
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Comfort.webp" />
                                                 </div>
                                                 <div className="services-content faq-section px-3 pb-4 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                    <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Water Supply
                                                     </h4>
                                                     <p className='mb-3'>The project has a borewell water supply and a water storage tank for reliable water access.</p>
@@ -185,7 +184,7 @@ export default function TamaraPage() {
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Community.webp" />
                                                 </div>
                                                 <div className="services-content faq-section px-3 pb-4 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                    <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Electricity
                                                     </h4>
                                                     <p>The project has solar street lights for eco-friendly and reliable lighting.</p>
@@ -198,7 +197,7 @@ export default function TamaraPage() {
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Freedom.webp" />
                                                 </div>
                                                 <div className="services-content faq-section px-3 pb-4 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                    <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Security
                                                     </h4>
                                                     <p>The project has CCTV surveillance and 24/7 security personnel for complete safety.</p>
@@ -211,7 +210,7 @@ export default function TamaraPage() {
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Legacy.webp" />
                                                 </div>
                                                 <div className="services-content faq-section px-3 pb-4 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                    <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Landscaping
                                                     </h4>
                                                     <p>The project has tree-lined avenues and landscaped gardens for a refreshing green environment.</p>
@@ -224,7 +223,7 @@ export default function TamaraPage() {
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Open space.webp" />
                                                 </div>
                                                 <div className="services-content faq-section px-3 pb-4 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                    <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Recreation
                                                     </h4>
                                                     <p>The project offers a swimming pool and a children’s play area for fun, relaxation, and family time.</p>
@@ -237,7 +236,7 @@ export default function TamaraPage() {
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Safety.webp" />
                                                 </div>
                                                 <div className="services-content faq-section px-3 pb-4 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                    <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Amenities
                                                     </h4>
                                                     <p>The project has a community center and fitness center for recreation, wellness and social gatherings.</p>
@@ -250,7 +249,7 @@ export default function TamaraPage() {
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Security.webp" />
                                                 </div>
                                                 <div className="services-content faq-section px-3 pb-4 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                    <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Environment
                                                     </h4>
                                                     <p>The project features an eco-friendly design, ample green spaces, and serene temples for a peaceful living.</p>
@@ -263,7 +262,7 @@ export default function TamaraPage() {
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Serenity.webp" />
                                                 </div>
                                                 <div className="services-content faq-section px-3 pb-4 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                    <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Walkways
                                                     </h4>
                                                     <p>The project has a jogging track and pedestrian-friendly paths for a healthy and active lifestyle.</p>
@@ -276,7 +275,7 @@ export default function TamaraPage() {
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Smart living.webp" />
                                                 </div>
                                                 <div className="services-content faq-section px-3 pb-4 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                    <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Smart Features
                                                     </h4>
                                                     <p>The project offers high-speed internet connectivity and smart home options for modern living.</p>
@@ -289,14 +288,14 @@ export default function TamaraPage() {
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Tranquility.webp" />
                                                 </div>
                                                 <div className="services-content faq-section px-3 pb-4 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                    <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Dining
                                                     </h4>
                                                     <p>The project has a clubhouse with a restaurant and an outdoor barbecue area for leisure and dining.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                      
+
 
 
 
@@ -317,7 +316,7 @@ export default function TamaraPage() {
                                     className=""
                                 >
                                     <h2 className="section-heading text-center mb-0"> Amenities</h2>
-                                    <div className="mx-auto mb-3 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                                    <div className="mx-auto mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
 
 
                                 </div>
@@ -333,7 +332,7 @@ export default function TamaraPage() {
 
                         <div className="text-center mb-5">
                             <h2 className="section-heading text-center mb-0">Select Your Plot</h2>
-                            <div className="mx-auto mb-3 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                            <div className="mx-auto mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
 
                         </div>
 
@@ -408,7 +407,7 @@ export default function TamaraPage() {
 
 
 
-               
+
 
 
 

@@ -14513,6 +14513,7 @@ p {
   height: 45px;
   transform: translateY(-50%);
   margin-top: 0px;
+
 }
 
 .bg-dark {
@@ -19053,7 +19054,7 @@ footer button:hover {
   }
 
   .swiper-wrapper {
-    height: 45vh;
+    height: auto;
   }
 
   .swiper-button {

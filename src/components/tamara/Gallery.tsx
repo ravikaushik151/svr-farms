@@ -56,7 +56,7 @@ export default function Gallery() {
       <div className="container">
         <div className="title text-center mb-4">
           <h2 className="section-heading text-center mb-0">Gallery</h2>
-          <div className="mx-auto mb-3 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+          <div className="mx-auto mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
         </div>
 
         <div className="row">
@@ -78,8 +78,8 @@ export default function Gallery() {
               {renderedSlides}
 
               {/* Nav buttons (mobile only) */}
-              <div className="swiper-button-prev swiper-button-prev-main theme-bg-light d-md-none" />
-              <div className="swiper-button-next swiper-button-next-main theme-bg-light d-md-none" />
+              <div className="swiper-button-prev swiper-button-prev-main theme-bg-light  " />
+              <div className="swiper-button-next swiper-button-next-main theme-bg-light" />
             </Swiper>
           </div>
 
@@ -183,11 +183,15 @@ export default function Gallery() {
         }
         .swiper-button-next-main {
           right: 10px !important;
-          top:55% !important;
+          top:50% !important;
+          color:#fff !important;
+          background: #5b8c51 !important;
         }
         .swiper-button-prev-main {
           left: 10px !important;
-          top:55% !important;
+          top:50% !important;
+          color:#fff !important;
+          background: #5b8c51 !important;
         }
       `}</style>
     </section>
