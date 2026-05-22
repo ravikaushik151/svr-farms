@@ -35,13 +35,13 @@ export default function Gallery() {
   const renderedSlides = useMemo(
     () =>
       slides.map((slide, index) => (
-        <SwiperSlide key={index}>
+        <SwiperSlide className='px-3' key={index}>
           <Image
             src={slide.src}
             alt={slide.alt}
             width={1920}
             height={1080}
-            className="img-fluid rounded-3 px-3 "
+            className="img-fluid rounded-4  "
             loading="lazy"
             style={{ cursor: 'zoom-in', width: '100%', height: 'auto' }}
             onClick={() => handleSlideClick(slide.src, index)}
@@ -73,7 +73,7 @@ export default function Gallery() {
               }}
               thumbs={{ swiper: thumbsSwiper }}
               slidesPerView={1}
-              className="rounded-xl overflow-hidden"
+              className="rounded-4 overflow-hidden"
             >
               {renderedSlides}
 
@@ -164,7 +164,7 @@ export default function Gallery() {
       <style jsx global>{`
         .mySwiper-thumbs {
           height: 100%;
-          max-height: 580px;
+          max-height: 600px;
         }
         .swiper-thumb-image {
           opacity: 0.6;
