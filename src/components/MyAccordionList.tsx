@@ -22,7 +22,7 @@ export default function LocationGrid({ items }: LocationGridProps) {
               <div 
                 className="card-header text-white fw-bold text-center  mb-0"
                 style={{
-                  backgroundColor: '#111',
+                  backgroundColor: '#5b8c51',
                   fontSize: '0.85rem',
                   textTransform: 'uppercase',
                   paddingTop: "10px"

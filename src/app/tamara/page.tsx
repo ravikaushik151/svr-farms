@@ -447,7 +447,7 @@ export default function TamaraPage() {
 
 
                                 <div className="col-md-8">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7781.187708608875!2d77.51706043914793!3d12.804854316360881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae4169b07f2a7b%3A0xe6d9ff13f19a5517!2sAmidst%20Nature!5e0!3m2!1sen!2sin!4v1759994801277!5m2!1sen!2sin" width="100%" height="380" loading="lazy" className="mb-3"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.296061031251!2d77.64576670000001!3d12.628572499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae67befb4e249f%3A0x278f5e2bb6d1007!2sTamara%20Valley!5e0!3m2!1sen!2sin!4v1779448325819!5m2!1sen!2sin" width="100%" height="380" loading="lazy" className="mb-3"></iframe>
                                 </div>
                                 <div className="col-md-4">
                                     <MyAccordionList items={faqItems} />
