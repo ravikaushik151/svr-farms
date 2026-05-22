@@ -17,7 +17,7 @@ export default function Header() {
                         <Nav.Link as={Link} href="/careers">Careers</Nav.Link>
                         <Nav.Link as={Link} href="/testimonials">Testimonials</Nav.Link>
                         <Nav.Link as={Link} href="/contact">Contact Us</Nav.Link>
-                        <Nav.Link href="tel:+919986410709" className="d-flex align-items-center fw-bold fs-5 ms-3 text-white">
+                        <Nav.Link href="tel:+919986410709" className="d-flex align-items-center fw-bold fs-0 ms-3 text-white">
                             +91 99864 10709
                         </Nav.Link>
                     </Nav>
