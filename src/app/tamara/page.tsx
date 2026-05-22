@@ -139,7 +139,7 @@ export default function TamaraPage() {
                                     <div className="row">
                                         <div className="col-md-12">
                                             <div><div className="title text-center">
-                                                <h2 className="section-heading text-center mb-0">Project Unique Selling Points (USPs)</h2>
+                                                <h2 className="section-heading text-center mb-3">Project Unique Selling Points (USPs)</h2>
                                                 <div className="mx-auto mb-3 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
 
                                             </div>
@@ -149,152 +149,154 @@ export default function TamaraPage() {
                                 </div>
                             </div>
                             <div className="col-md-12 px-md-5 d-flex justify-content-center align-items-center">
-                                <div className="p-3">
-                                    <div className="row">
-                                        <div className="col-md-3 mb-4 ">
-                                            <div className="services-item shine-animate-item bg-white mb-3">
+                                <div className="">
+                                    <div className="row d-flex justify-content-center">
+                                        <div className="col-md-3 mb-4  p-0">
+                                            <div className="services-item shine-animate-item mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/Accessibility.webp" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className=" img-fluid mb-1 d-block mx-auto" src="/images/Accessibility.webp" />
                                                 </div>
-                                                <div className="services-content px-3 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">Accessibility
+                                                <div className="services-content faq-section px-3 pb-4 mb-3 ">
+                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                        Infrastructure
                                                     </h4>
+                                                    <p className='mb-3'>The project has 30 ft wide roads and a 6–8 ft RCC wall for safety and easy access.</p>
 
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-3 mb-4">
+                                        <div className="col-md-3 mb-4  ">
                                             <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/Comfort.webp" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Comfort.webp" />
                                                 </div>
-                                                <div className="services-content px-3 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">Comfort
+                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                        Water Supply
                                                     </h4>
+                                                    <p className='mb-3'>The project has a borewell water supply and a water storage tank for reliable water access.</p>
 
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-3  mb-4">
+                                        <div className="col-md-3  mb-4  ">
                                             <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/Community.webp" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Community.webp" />
                                                 </div>
-                                                <div className="services-content px-3 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">Community
+                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                        Electricity
                                                     </h4>
-
+                                                    <p>The project has solar street lights for eco-friendly and reliable lighting.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-3 mb-4 ">
+                                        <div className="col-md-3 mb-4  ">
                                             <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/Freedom.webp" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Freedom.webp" />
                                                 </div>
-                                                <div className="services-content px-3 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">Freedom
+                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                        Security
                                                     </h4>
-
+                                                    <p>The project has CCTV surveillance and 24/7 security personnel for complete safety.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-3 mb-4 ">
+                                        <div className="col-md-3 mb-4  ">
                                             <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/Legacy.webp" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Legacy.webp" />
                                                 </div>
-                                                <div className="services-content px-3 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">Legacy
+                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                        Landscaping
                                                     </h4>
-
+                                                    <p>The project has tree-lined avenues and landscaped gardens for a refreshing green environment.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-3 mb-4">
+                                        <div className="col-md-3 mb-4  ">
                                             <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/Open space.webp" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Open space.webp" />
                                                 </div>
-                                                <div className="services-content px-3 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">Open space
+                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                        Recreation
                                                     </h4>
-
+                                                    <p>The project offers a swimming pool and a children’s play area for fun, relaxation, and family time.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-3 mb-4 ">
+                                        <div className="col-md-3 mb-4  ">
                                             <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/Safety.webp" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Safety.webp" />
                                                 </div>
-                                                <div className="services-content px-3 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">Safety
+                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                        Amenities
                                                     </h4>
-
+                                                    <p>The project has a community center and fitness center for recreation, wellness and social gatherings.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-3 mb-4 ">
+                                        <div className="col-md-3 mb-4  ">
                                             <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/Security.webp" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Security.webp" />
                                                 </div>
-                                                <div className="services-content px-3 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">Security
+                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                        Environment
                                                     </h4>
-
+                                                    <p>The project features an eco-friendly design, ample green spaces, and serene temples for a peaceful living.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-3 mb-4 ">
+                                        <div className="col-md-3 mb-4  ">
                                             <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/Serenity.webp" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Serenity.webp" />
                                                 </div>
-                                                <div className="services-content px-3 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">Serenity
+                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                        Walkways
                                                     </h4>
-
+                                                    <p>The project has a jogging track and pedestrian-friendly paths for a healthy and active lifestyle.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-3 mb-4 ">
+                                        <div className="col-md-3 mb-4  ">
                                             <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/Smart living.webp" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Smart living.webp" />
                                                 </div>
-                                                <div className="services-content px-3 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">Smart living
+                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                        Smart Features
                                                     </h4>
-
+                                                    <p>The project offers high-speed internet connectivity and smart home options for modern living.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-3  mb-4">
+                                        <div className="col-md-3  mb-4  ">
                                             <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={392} height={271} decoding="async" className="img-fluid mb-1" src="/images/Tranquility.webp" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto" src="/images/Tranquility.webp" />
                                                 </div>
-                                                <div className="services-content px-3 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">Tranquility
+                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                    <h4 className="title fs-6 mb-0 text-center py-3">
+                                                        Dining
                                                     </h4>
-
+                                                    <p>The project has a clubhouse with a restaurant and an outdoor barbecue area for leisure and dining.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-3  mb-4">
-                                            <div className="services-item shine-animate-item bg-white mb-3">
-                                                <div className="services-thumb">
-                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1" src="/images/Wellness.webp" />
-                                                </div>
-                                                <div className="services-content px-3 mb-3">
-                                                    <h4 className="title fs-6 mb-0 text-center py-3">Wellness
-                                                    </h4>
-
-                                                </div>
-                                            </div>
-                                        </div>
+                                      
 
 
 
