@@ -35,7 +35,7 @@ export default function LocationGrid({ items }: LocationGridProps) {
               <div 
                 className="card-body"
                 style={{
-                  backgroundColor: '#f1f1f1',
+                  backgroundColor: '#fcfcf9 ',
                   fontSize: '0.9rem'
                 }}
               >
