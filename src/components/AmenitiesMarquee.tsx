@@ -3,28 +3,29 @@
 import Image from 'next/image';
 
 const amenities = [
-    { icon: '/icons/Landscape Greenery.png', title: 'Acupressure Walkway' },
-    { icon: '/icons/Half Basketball Court.png', title: 'Half Basketball Court' },
-    { icon: '/icons/CCTV surveillance.png', title: 'CCTV Surveillance' },
-    { icon: '/icons/Landscaped Gardens.png', title: 'Landscaped Gardens' },
-    { icon: '/icons/Multi-Purpose Court.webp', title: 'Multi Purpose Lawn' },
-    { icon: '/icons/pool.webp', title: 'Swimming Pool' },
-    { icon: '/icons/Amphitheater.png', title: 'Amphitheater' },
-    { icon: '/icons/Seating Area.png', title: 'Sitting Area With Pavillion' },
-    { icon: '/icons/Play Area for Kids.png', title: 'Play Area for Kids' },
-    { icon: '/icons/elder_s corner.png', title: "Elder's Corner" },
-    { icon: '/icons/Water Feature.png', title: 'Gazebos' },
-    { icon: '/icons/Event Lawn.png', title: 'Event Lawn' },
-    { icon: '/icons/Jogging track.png', title: 'Jogging Tracks' },
-    { icon: '/icons/Butterfly Garden.png', title: 'Butterfly Garden' },
-    { icon: '/icons/Community Park & Space.png', title: 'Community Park & Space' },
-    { icon: '/icons/Clubhouse.png', title: 'Clubhouse' },
-    { icon: '/icons/247 security.png', title: '24/7 Security' },
-    { icon: '/icons/Devine place.png', title: 'Devine Place' },
-    { icon: '/icons/Pickle ball court.png', title: 'Pickle Ball Court' },
-    { icon: '/icons/cricketpractice-pitch.webp', title: 'Cricket Pitch' },
-    { icon: '/icons/Half through ball court.png', title: 'Half Through Ball Court' },
-    { icon: '/icons/Gym.png', title: 'Outdoor Gym' },
+  // ── New amenities ──
+  { icon: '/icons/pool.webp', title: 'Natural Infinity Pool' },
+  { icon: '/icons/spa.png', title: 'Wellness Spa' },
+  { icon: '/icons/Amphitheater.png', title: 'Open Air Theatre' },
+  { icon: '/icons/Organic Supermarket.png', title: 'Organic Supermarket' },
+  { icon: '/icons/Yoga Pavilion.png', title: 'Yoga Pavilion' },
+  { icon: '/icons/Yoga.png', title: 'Meditation Centre' },
+  { icon: '/icons/Cafeteria.webp', title: 'Farm Dining' },
+  { icon: '/icons/Clubhouse.png', title: 'Clubhouse Lounge' },
+  { icon: '/icons/Jogging track.png', title: 'Equestrian Trail' },
+  { icon: '/icons/Jogging track.png', title: 'Bicycle Trails' },
+  { icon: '/icons/Landscape Greenery.png', title: 'Adventure Zone' },
+  { icon: '/icons/Jogging track.png', title: 'Jogging Track' },
+  { icon: '/icons/Play Area for Kids.png', title: 'Kids Club' },
+  { icon: '/icons/Landscaped Gardens.png', title: 'Play Garden' },
+  { icon: '/icons/Devine place.png', title: 'Medical Support' },
+  { icon: '/icons/Event Lawn.png', title: 'Community Centre' },
+  { icon: '/icons/Cafeteria.webp', title: 'Luxury Resort' },
+  { icon: '/icons/Barbecue Deck.png', title: 'Barbecue Deck' },
+  { icon: '/icons/Common Library.png', title: 'Reading Lounge' },
+  { icon: '/icons/indoorgames.png', title: 'Indoor Games' },
+
+ 
 ];
 
 export default function AmenitiesSection() {

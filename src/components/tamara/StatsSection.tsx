@@ -2,38 +2,45 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import {
     FaDraftingCompass,
-    FaTree,
     FaSeedling,
+    FaTree,
     FaUserFriends,
+    FaMapMarkerAlt,
+    FaConciergeBell,
+    FaRulerCombined,
+    FaLeaf,
+    FaFileContract,
+  
+   
     FaMapMarkedAlt
 } from 'react-icons/fa';
 import { useEffect, useState, useRef } from 'react';
 
 const stats = [
     {
-        icon: FaDraftingCompass,
+        icon: FaRulerCombined,
         count: 0.25,
         label: "Farmland Plots",
         suffix: " Acre Onwards",
         staticValue: true
     },
     {
-        icon: FaTree,
+        icon: FaMapMarkerAlt,
         count: 'Tamara Valley',
         label: "Thalli, Tamil Nadu",
         suffix: "",
         staticValue: true
     },
-    { icon: FaTree, count: 25, label: "Lifestyle Amenities", suffix: "+" },
-    { icon: FaSeedling, count: 300, label: "Project Land Area", suffix: "+Acres" },
+    { icon: FaConciergeBell, count: 25, label: "Lifestyle Amenities", suffix: "+" },
+    { icon: FaSeedling, count: 300, label: "Project Land Area", suffix: "+ Acres" },
     {
-        icon: FaUserFriends,
+        icon: FaLeaf,
         count: 'Organic Managed',
         label: "Farmland",
         suffix: "",
         staticValue: true
     },
-    { icon: FaUserFriends, count: 100, label: "Legal Titles ", suffix: "+" },
+    { icon: FaFileContract, count: 100, label: "Legal Titles ", suffix: "+" },
 ];
 
 function Counter({
@@ -55,8 +62,8 @@ function Counter({
     if (staticValue) {
         return (
             <span ref={countRef}>
-                {end}
-                <span style={{ fontSize: '12px' }}> {suffix} </span>
+                <span className='fw-4 fw-bold'> {end}</span>
+                <span className='small' style={{ fontSize: '13px' }}> {suffix} </span>
             </span>
         );
     }
@@ -105,8 +112,8 @@ function Counter({
 
     return (
         <span ref={countRef}>
-            {count}
-            <span style={{ fontSize: '12px' }}> {suffix}</span>
+            <span className='fs-4 fw-bold'>  {count}</span>
+            <span className='small' style={{ fontSize: '13px' }}> {suffix}</span>
         </span>
     );
 }
@@ -114,13 +121,13 @@ function Counter({
 export default function StatsSection() {
     return (
         <section className="py-5 faq-section position-relative overflow-hidden">
-            <Container>
-                <Row className="g-4 justify-content-center">
+            <Container fluid className='px-md-5'>
+                <Row className="g-4 justify-content-center ">
                     <h2 className="section-heading text-center mb-0">Overview</h2>
                     <div className="mx-auto mb-5 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
                 </Row>
 
-                <Row className="g-4 justify-content-center">
+                <Row className="g-4 justify-content-center mb-3">
                     {stats.map((stat, index) => (
                         <Col
                             key={index}
@@ -136,7 +143,7 @@ export default function StatsSection() {
                                     <stat.icon size={50} />
                                 </div>
 
-                                <h2 className="fw-bold mb-2 text-sanjeevani  fs-6">
+                                <h2 className="fw-bold mb-2 text-sanjeevani  fs-4">
                                     <Counter
                                         end={stat.count}
                                         suffix={stat.suffix}
