@@ -8,8 +8,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
-const slides = Array.from({ length: 7 }, (_, i) => ({
-  src: `/images/gallery/images${i + 1}.webp`,
+const slides = Array.from({ length: 8 }, (_, i) => ({
+  src: `/images/gallery/${i + 1}.jpg`,
   alt: `Gallery Image ${i + 1}`,
 }));
 
@@ -41,7 +41,7 @@ export default function Gallery() {
             alt={slide.alt}
             width={1920}
             height={1080}
-            className="img-fluid rounded-3"
+            className="img-fluid rounded-3 px-3 "
             loading="lazy"
             style={{ cursor: 'zoom-in', width: '100%', height: 'auto' }}
             onClick={() => handleSlideClick(slide.src, index)}
@@ -52,11 +52,11 @@ export default function Gallery() {
   );
 
   return (
-    <section className="gallery-section same-gap gallery bg-white py-5" id="gallery">
+    <section className="gallery-section same-gap gallery faq-section py-5" id="gallery">
       <div className="container">
         <div className="title text-center mb-4">
-        <h2 className="section-heading text-center mb-0">Gallery</h2>
-                                                <div className="mx-auto mb-3 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+          <h2 className="section-heading text-center mb-0">Gallery</h2>
+          <div className="mx-auto mb-3 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
         </div>
 
         <div className="row">
@@ -95,16 +95,16 @@ export default function Gallery() {
               mousewheel
               watchSlidesProgress
               onSlideChangeTransitionEnd={handleThumbScroll}
-              className="mySwiper-thumbs"
+              className="mySwiper-thumbs "
             >
               {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
                   <Image
                     src={slide.src}
                     alt={slide.alt}
-                    width={350}
-                    height={186}
-                    className="img-fluid rounded-2 swiper-thumb-image"
+                    width={380}
+                    height={276}
+                    className="img-fluid  rounded-2 swiper-thumb-image"
                     loading="lazy"
                   />
                 </SwiperSlide>
@@ -164,7 +164,7 @@ export default function Gallery() {
       <style jsx global>{`
         .mySwiper-thumbs {
           height: 100%;
-          max-height: 520px;
+          max-height: 580px;
         }
         .swiper-thumb-image {
           opacity: 0.6;

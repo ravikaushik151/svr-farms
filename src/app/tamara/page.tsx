@@ -408,29 +408,11 @@ export default function TamaraPage() {
 
 
 
-                {/* Section 2: 360 Lifestyle Cards */}
-                <section className="section_biodiversity-benefits py-5 faq-section section-small" id="amenities">
-                    <div className="padding-global">
-                        <div className="container-large">
-                            <div className="biodiversity-benefits_components">
-                                <div
-                                    id="w-node-_147bc8d0-b385-cc95-4439-b2fc20fb618b-ac1b3eca"
-                                    className=""
-                                >
-                                    <h2 className="section-heading text-center mb-0"> Club House</h2>
-                                    <div className="mx-auto mb-3 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <Clubhouse />
-                </section>
+               
 
 
 
-                {/* <Gallery /> */}
+                <Gallery />
                 {/*  <Construction />*/}
 
 
