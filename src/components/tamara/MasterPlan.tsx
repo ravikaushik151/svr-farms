@@ -85,7 +85,7 @@ export default function MasterPlanSection() {
                                             src="/images/Tamara-Valley-master-plan.webp"
                                             loading="lazy"
                                             alt="Eara Master Plan"
-                                            className="w-100 img-fluid mt-md-4"
+                                            className="w-100 img-fluid mt-md-4 rounded-5"
                                         />
                                     </div>
                                 </div>
@@ -119,7 +119,7 @@ export default function MasterPlanSection() {
                             width={900}
                             height={700}
                             alt="Master Plan Popup"
-                            className="img-fluid rounded"
+                            className="img-fluid rounded-5"
                             style={{cursor:"pointer !important"}}
                         />
                         <button
