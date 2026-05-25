@@ -335,70 +335,79 @@ export default function TamaraPage() {
                             <div className="mx-auto mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
 
                         </div>
+                        <div className="row">
+                            <div className="col-md-8 d-block mx-auto">
+                             
+                                    <div className="table-responsive  ">
+                                        <table className="table w-100 plot-table align-middle text-center table-bordered border-light ">
 
-                        <div className="table-responsive w-75 d-block mx-auto">
-                            <table className="table plot-table align-middle text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th className="fw-semibold text-uppercase py-4">
+                                                        Type
+                                                    </th>
 
-                                <thead>
-                                    <tr>
-                                        <th className="fw-semibold text-uppercase py-4">
-                                            Type
-                                        </th>
+                                                    <th className="fw-semibold text-uppercase py-4">
+                                                        Area
+                                                    </th>
 
-                                        <th className="fw-semibold text-uppercase py-4">
-                                            Area
-                                        </th>
+                                                    <th className="fw-semibold text-uppercase py-4">
+                                                        Price
+                                                    </th>
+                                                </tr>
+                                            </thead>
 
-                                        <th className="fw-semibold text-uppercase py-4">
-                                            Price
-                                        </th>
-                                    </tr>
-                                </thead>
+                                            <tbody>
 
-                                <tbody>
+                                                <tr>
+                                                    <td>Quarter Acre
 
-                                    <tr>
-                                        <td>Quarter Acre
+                                                    </td>
+                                                    <td>10,890 Sqft </td>
+                                                    <td>
+                                                        <button className="btn btn-dark rounded-3 px-4 py-2">
+                                                            On Request*
+                                                        </button>
+                                                    </td>
+                                                </tr>
 
-                                        </td>
-                                        <td>10,890 Sqft </td>
-                                        <td>
-                                            <button className="btn btn-dark rounded-3 px-4 py-2">
-                                                On Request*
-                                            </button>
-                                        </td>
-                                    </tr>
+                                                <tr>
+                                                    <td>Half Acre
 
-                                    <tr>
-                                        <td>Half Acre
+                                                    </td>
+                                                    <td>21,780 Sqft</td>
+                                                    <td>
+                                                        <button className="btn btn-dark rounded-3 px-4 py-2">
+                                                            On Request*
+                                                        </button>
+                                                    </td>
+                                                </tr>
 
-                                        </td>
-                                        <td>21,780 Sqft</td>
-                                        <td>
-                                            <button className="btn btn-dark rounded-3 px-4 py-2">
-                                                On Request*
-                                            </button>
-                                        </td>
-                                    </tr>
+                                                <tr>
+                                                    <td>One Acre </td>
+                                                    <td>43,560 Sqft
 
-                                    <tr>
-                                        <td>One Acre </td>
-                                        <td>43,560 Sqft
-
-                                        </td>
-                                        <td>
-                                            <button className="btn btn-dark rounded-3 px-4 py-2">
-                                                On Request*
-                                            </button>
-                                        </td>
-                                    </tr>
+                                                    </td>
+                                                    <td>
+                                                        <button className="btn btn-dark rounded-3 px-4 py-2">
+                                                            On Request*
+                                                        </button>
+                                                    </td>
+                                                </tr>
 
 
 
-                                </tbody>
+                                            </tbody>
 
-                            </table>
+                                        </table>
+                                    </div>
+
+                             
+
+
+                            </div>
                         </div>
+
 
                     </div>
                 </section>
