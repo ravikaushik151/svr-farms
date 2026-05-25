@@ -331,7 +331,7 @@ export default function TamaraPage() {
                     <div className="container">
 
                         <div className="text-center mb-5">
-                            <h2 className="section-heading text-center mb-3">Select Your Plot</h2>
+                            <h2 className="section-heading text-center mb-3">Select Your Farms</h2>
                             <div className="mx-auto mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
 
                         </div>
