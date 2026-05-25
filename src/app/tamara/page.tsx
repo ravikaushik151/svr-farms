@@ -130,7 +130,28 @@ export default function TamaraPage() {
                 </section>
 
 
-                <section className="padding-global mysection visible bg-white" >
+           
+
+                <section className="section_biodiversity-benefits py-5 bg-white " id="amenities"  >
+                    <div className="padding-global" >
+                        <div className="container-large" >
+                            <div className="biodiversity-benefits_components">
+                                <div
+                                    id="w-node-_147bc8d0-b385-cc95-4439-b2fc20fb618b-ac1b3eca"
+                                    className=""
+                                >
+                                    <h2 className="section-heading text-center mb-3"> Amenities</h2>
+                                    <div className="mx-auto mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <AmenitiesMarquee />
+
+                </section>
+                     <section className="padding-global mysection visible " style={{backgroundColor:"#dedede0f"}} >
                     <div className="container-fluid">
                         <div className="row p-0">
                             <div className="col-md-12 d-flex justify-content-center align-items-center">
@@ -138,7 +159,7 @@ export default function TamaraPage() {
                                     <div className="row">
                                         <div className="col-md-12">
                                             <div><div className="title text-center">
-                                                <h2 className="section-heading text-center mb-3">Project Unique Selling Points (USPs)</h2>
+                                                <h2 className="section-heading text-center mb-3">Crafted For Calm</h2>
                                                 <div className="mx-auto mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
 
                                             </div>
@@ -150,13 +171,14 @@ export default function TamaraPage() {
                             <div className="col-md-12 px-md-5 d-flex justify-content-center align-items-center">
                                 <div className="">
                                     <div className="row d-flex justify-content-center">
-                                        <div className="col-md-3 mb-4  p-0">
-                                            <div className="services-item shine-animate-item mb-3">
+                                       
+                                         <div className="col-md-3 mb-4  ">
+                                            <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={412} height={271} decoding="async" className=" img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Accessibility.webp" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Accessibility.webp" />
                                                 </div>
-                                                <div className="services-content faq-section px-3 pb-4 mb-3 ">
-                                                    <h4 className="fw-bold title fs-6 mb-0 text-center py-3 fw-bold">
+                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                   <h4 className="fw-bold title fs-6 mb-0 text-center py-3 fw-bold">
                                                         Infrastructure
                                                     </h4>
                                                     <p className='mb-3'>The project has 30 ft wide roads and a 6–8 ft RCC wall for safety and easy access.</p>
@@ -305,26 +327,6 @@ export default function TamaraPage() {
                             </div>
                         </div>
                     </div>
-                </section>
-
-                <section className="section_biodiversity-benefits py-5 faq-section " id="amenities"  >
-                    <div className="padding-global" >
-                        <div className="container-large" >
-                            <div className="biodiversity-benefits_components">
-                                <div
-                                    id="w-node-_147bc8d0-b385-cc95-4439-b2fc20fb618b-ac1b3eca"
-                                    className=""
-                                >
-                                    <h2 className="section-heading text-center mb-3"> Amenities</h2>
-                                    <div className="mx-auto mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <AmenitiesMarquee />
-
                 </section>
                 <MasterPlan />
                 <section className="plot-section py-5 bg-white">

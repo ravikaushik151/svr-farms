@@ -64,7 +64,7 @@ export default function MasterPlanSection() {
     );
 
     return (
-        <section className="section_home-masterplan bg-white lifestyle-section py-5" id="master-plan">
+        <section className="section_home-masterplan faq-section lifestyle-section py-5" id="master-plan">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md-12 d-block mx-auto">
