@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ContactFormPopup from '@/components/ContactFormPopup';
 export default function Hero() {
     return (
         <header className="tv-hero parallax-bg" style={{ backgroundImage: `url('/Home_page.webp')` }}>
@@ -15,11 +15,17 @@ export default function Hero() {
                         <p className="mb-2 fw-normal text-center">300 ACRES | GATED ORGANIC MANAGED
                             FARMLAND QUARTER. </p>
                         <div className="mt-4">
-                            <a href="#highlights" className="btn btn-outline-light btn-lg me-3 mb-3">Explore Project</a>
-                            <a href="#contact" className="btn btn-success btn-lg mb-3">Book Site Visit</a>
+
+                            <a href="#about" className="btn btn-outline-light btn-lg me-3 mb-3">Explore Project</a>
+                            <ContactFormPopup
+                                buttonText="Book Site Visit"
+                                buttonClassName="btn btn-success btn-lg mb-3 "
+                                redirectUrl="/thank-you"
+                            />
+                           
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </header>

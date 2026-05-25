@@ -130,7 +130,7 @@ export default function TamaraPage() {
                 </section>
 
 
-           
+
 
                 <section className="section_biodiversity-benefits py-5 bg-white " id="amenities"  >
                     <div className="padding-global" >
@@ -151,7 +151,7 @@ export default function TamaraPage() {
                     <AmenitiesMarquee />
 
                 </section>
-                     <section className="padding-global mysection visible " style={{backgroundColor:"#dedede0f"}} >
+                <section className="padding-global mysection visible " style={{ backgroundColor: "#dedede0f" }} >
                     <div className="container-fluid">
                         <div className="row p-0">
                             <div className="col-md-12 d-flex justify-content-center align-items-center">
@@ -171,14 +171,14 @@ export default function TamaraPage() {
                             <div className="col-md-12 px-md-5 d-flex justify-content-center align-items-center">
                                 <div className="">
                                     <div className="row d-flex justify-content-center">
-                                       
-                                         <div className="col-md-3 mb-4  ">
+
+                                        <div className="col-md-3 mb-4  ">
                                             <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Accessibility.webp" />
                                                 </div>
                                                 <div className="services-content faq-section px-3 pb-4 mb-3">
-                                                   <h4 className="fw-bold title fs-6 mb-0 text-center py-3 fw-bold">
+                                                    <h4 className="fw-bold title fs-6 mb-0 text-center py-3 fw-bold">
                                                         Infrastructure
                                                     </h4>
                                                     <p className='mb-3'>The project has 30 ft wide roads and a 6–8 ft RCC wall for safety and easy access.</p>
@@ -339,72 +339,79 @@ export default function TamaraPage() {
                         </div>
                         <div className="row">
                             <div className="col-md-8 d-block mx-auto">
-                             
-                                    <div className="table-responsive  ">
-                                        <table className="table w-100 plot-table align-middle text-center table-bordered border-light ">
 
-                                            <thead>
-                                                <tr>
-                                                    <th className="fw-semibold text-uppercase py-4">
-                                                        Type
-                                                    </th>
+                                <div className="table-responsive  ">
+                                    <table className="table w-100 plot-table align-middle text-center table-bordered border-light ">
 
-                                                    <th className="fw-semibold text-uppercase py-4">
-                                                        Area
-                                                    </th>
+                                        <thead>
+                                            <tr>
+                                                <th className="fw-semibold text-uppercase py-4">
+                                                    Type
+                                                </th>
 
-                                                    <th className="fw-semibold text-uppercase py-4">
-                                                        Price
-                                                    </th>
-                                                </tr>
-                                            </thead>
+                                                <th className="fw-semibold text-uppercase py-4">
+                                                    Area
+                                                </th>
 
-                                            <tbody>
+                                                <th className="fw-semibold text-uppercase py-4">
+                                                    Price
+                                                </th>
+                                            </tr>
+                                        </thead>
 
-                                                <tr>
-                                                    <td>Quarter Acre
+                                        <tbody>
 
-                                                    </td>
-                                                    <td>10,890 Sqft </td>
-                                                    <td>
-                                                        <button className="btn btn-dark rounded-3 px-4 py-2">
-                                                            On Request*
-                                                        </button>
-                                                    </td>
-                                                </tr>
+                                            <tr>
+                                                <td>Quarter Acre
 
-                                                <tr>
-                                                    <td>Half Acre
+                                                </td>
+                                                <td>10,890 Sqft </td>
+                                                <td>
+                                                     <ContactFormPopup
+                                                        buttonText="On Request*"
+                                                        buttonClassName="btn btn-dark rounded-3 px-4 py-2 "
+                                                        redirectUrl="/thank-you"
+                                                    />
+                                                </td>
+                                            </tr>
 
-                                                    </td>
-                                                    <td>21,780 Sqft</td>
-                                                    <td>
-                                                        <button className="btn btn-dark rounded-3 px-4 py-2">
-                                                            On Request*
-                                                        </button>
-                                                    </td>
-                                                </tr>
+                                            <tr>
+                                                <td>Half Acre
 
-                                                <tr>
-                                                    <td>One Acre </td>
-                                                    <td>43,560 Sqft
+                                                </td>
+                                                <td>21,780 Sqft</td>
+                                                <td>
+                                                    <ContactFormPopup
+                                                        buttonText="On Request*"
+                                                        buttonClassName="btn btn-dark rounded-3 px-4 py-2 "
+                                                        redirectUrl="/thank-you"
+                                                    />
 
-                                                    </td>
-                                                    <td>
-                                                        <button className="btn btn-dark rounded-3 px-4 py-2">
-                                                            On Request*
-                                                        </button>
-                                                    </td>
-                                                </tr>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>One Acre </td>
+                                                <td>43,560 Sqft
+
+                                                </td>
+                                                <td>
+                                                     <ContactFormPopup
+                                                        buttonText="On Request*"
+                                                        buttonClassName="btn btn-dark rounded-3 px-4 py-2 "
+                                                        redirectUrl="/thank-you"
+                                                    />
+                                                </td>
+                                            </tr>
 
 
 
-                                            </tbody>
+                                        </tbody>
 
-                                        </table>
-                                    </div>
+                                    </table>
+                                </div>
 
-                             
+
 
 
                             </div>
