@@ -9,7 +9,7 @@ const amenities = [
   { icon: '/icons/Amphitheater.png', title: 'Open Air Theatre' },
   { icon: '/icons/market.png', title: 'Organic Supermarket' },
   { icon: '/icons/yoga-pose.png', title: 'Yoga Pavilion' },
-  { icon: '/icons/yoga.png', title: 'Meditation Centre' },
+  { icon: '/icons/yoga-new.png', title: 'Meditation Centre' },
   { icon: '/icons/Cafeteria.webp', title: 'Farm Dining' },
   { icon: '/icons/Clubhouse.png', title: 'Clubhouse Lounge' },
   { icon: '/icons/horse-rider.png', title: 'Equestrian Trail' },
