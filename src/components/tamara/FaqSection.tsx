@@ -32,7 +32,7 @@ export default function FaqSection() {
     return (
         <div className="faq-section bg-light py-5">
             <Container className="max-w-4xl">
-                <div className="text-center mb-5">
+                <div className="text-center mb-4">
                     <SectionTitle title="Frequently Asked Questions" />
                 </div>
 

@@ -62,10 +62,10 @@ export default function TamaraPage() {
                             </div>
                             <div className="col-md-6 d-flex align-items-center" >
                                 <div className=" ">
-                                    <h2 className="section-heading text-center mb-0">About Tamara Valley</h2>
-                                    <div className="mx-auto mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                                    <h2 className="section-heading text-center mb-3">About Tamara Valley</h2>
+                                    <div className="mx-auto  mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
 
-                                    <h3 className='fs-6 fw-semibold text-md-start text-center'>Experience The
+                                    <h3 className='fs-6 mt-4 fw-semibold text-md-start text-center'>Experience The
                                         Luxury of Green Ownership
                                     </h3>
                                     <p className="mt-2  theme-color-dark">
@@ -96,10 +96,10 @@ export default function TamaraPage() {
 
                             <div className="col-md-6 d-flex align-items-center" >
                                 <div className=" ">
-                                    <h2 className="section-heading text-center mb-0">A Breath of Nature </h2>
-                                    <div className="mx-auto  mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                                    <h2 className="section-heading text-center mb-3">A Breath of Nature </h2>
+                                    <div className="mx-auto   mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
 
-                                    <h3 className='fs-6  text-md-start text-center fw-semibold'>Experience The
+                                    <h3 className='fs-6 mt-4  text-md-start text-center fw-semibold'>Experience The
                                         Luxury of Green Ownership
                                     </h3>
                                     <p className="mt-3  theme-color-dark">
@@ -139,7 +139,7 @@ export default function TamaraPage() {
                                         <div className="col-md-12">
                                             <div><div className="title text-center">
                                                 <h2 className="section-heading text-center mb-3">Project Unique Selling Points (USPs)</h2>
-                                                <div className="mx-auto mb-3 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                                                <div className="mx-auto mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
 
                                             </div>
                                             </div>
@@ -315,7 +315,7 @@ export default function TamaraPage() {
                                     id="w-node-_147bc8d0-b385-cc95-4439-b2fc20fb618b-ac1b3eca"
                                     className=""
                                 >
-                                    <h2 className="section-heading text-center mb-0"> Amenities</h2>
+                                    <h2 className="section-heading text-center mb-3"> Amenities</h2>
                                     <div className="mx-auto mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
 
 
@@ -331,7 +331,7 @@ export default function TamaraPage() {
                     <div className="container">
 
                         <div className="text-center mb-5">
-                            <h2 className="section-heading text-center mb-0">Select Your Plot</h2>
+                            <h2 className="section-heading text-center mb-3">Select Your Plot</h2>
                             <div className="mx-auto mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
 
                         </div>
@@ -419,7 +419,7 @@ export default function TamaraPage() {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12">
-                                <h2 className="section-heading text-center mb-0"> Location</h2>
+                                <h2 className="section-heading text-center mb-3"> Location</h2>
                                 <div className="mx-auto mb-5 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
                             </div>
                             <div className="row">
