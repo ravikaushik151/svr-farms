@@ -2,7 +2,19 @@ import React from 'react';
 import ContactFormPopup from '@/components/ContactFormPopup';
 export default function Hero() {
     return (
-        <header className="tv-hero parallax-bg" style={{ backgroundImage: `url('/Home_page.webp')` }}>
+        <header className="tv-hero parallax-bg" style={{ backgroundImage: `url('/banner/banner-tam.webp')` }}>
+            <div
+                style={{
+                    position: 'absolute',
+                    inset: 0,
+                    backgroundImage: `
+        linear-gradient(rgba(255,255,255,0.0) ),
+        linear-gradient(90deg, rgba(255,255,255,0.0) )
+      `,
+                    backgroundSize: '60px 60px',
+                    pointerEvents: 'none',
+                }}
+            />
             <div className="container">
                 <div className="row align-items-center justify-content-center" >
                     <div className="col-lg-6 text-center">
@@ -22,7 +34,7 @@ export default function Hero() {
                                 buttonClassName="btn btn-success btn-lg mb-3 "
                                 redirectUrl="/thank-you"
                             />
-                           
+
                         </div>
                     </div>
 
