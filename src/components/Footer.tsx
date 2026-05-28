@@ -62,7 +62,7 @@ export default function Footer() {
         };
 
         try {
-            const res = await fetch('https://earagroup.com/emailer/', {
+            const res = await fetch('your-emailer-endpoint', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload),

@@ -74,14 +74,14 @@ export default function ContactFormPopup({
             email: formData.email,
             phone: formData.phone,
             message: formData.message || 'interested',
-            subject: 'Enquire From Eara Group - Website',
-            form_source: 'Enquire From Eara Group - Website',
+            subject: 'Enquire From SVR Farms - Website',
+            form_source: 'Enquire From SVR Farms - Website',
             additionalRecipients: ['lokesh@imsolutions.mobi', 'ravi.k@imsolutions.mobi'],
         };
 
         try {
             const res = await fetch(
-                'https://earagroup.com/emailer/',
+                'your-emailer-endpoint', // Replace with your actual emailer endpoint
                 {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
