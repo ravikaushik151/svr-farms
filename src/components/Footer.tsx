@@ -257,7 +257,7 @@ export default function Footer() {
                             <small className="text-white-50">
                                 &copy; {new Date().getFullYear()} Little England. All Rights Reserved.
                                 <span className="mx-2">|</span>
-                                Digital Partner: <a href="https://www.imsolutions.co/" target="_blank" rel="noopener noreferrer" className="text-sanjeevani text-decoration-none fw-bold hover-white">IM Solutions</a>
+                                Digital Partner: <a href="https://www.imsolutions.co/" target="_blank" rel="noopener noreferrer" className="text-white fw-normal text-decoration-none  hover-white">IM Solutions</a>
                             </small>
                         </Col>
                     </Row>

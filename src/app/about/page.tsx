@@ -14,7 +14,7 @@ export default function About() {
             <Container className="py-5 mt-4">
                 <Row className="gy-5 align-items-start">
                     <Col lg={5}>
-                        <h2 className="mb-4" style={{ color: '#4a5568', fontWeight: '600', letterSpacing: '1px' }}>
+                        <h2 className="mb-4 text-md-start text-center" style={{ color: '#4a5568', fontWeight: '600', letterSpacing: '1px' }}>
                             DEVELOPING <br />
                             <span style={{ color: '#c5a059' }}>GREENER</span> LIVES
                         </h2>
@@ -63,9 +63,9 @@ export default function About() {
                 <Container>
                     <Row className="align-items-center">
                         <Col lg={6} className="mb-5 mb-lg-0 pe-lg-5">
-                            <h6 className="section-subheading text-uppercase fw-semibold mb-3" style={{ color: '#28a745', letterSpacing: '2px' }}>Discover Little England</h6>
-                            <h2 className="section-heading fw-bold mb-4 display-6">A Thoughtfully Built Ecosystem</h2>
-                            <div className="mb-4 bg-success" style={{ width: '80px', height: '3px' }}></div>
+                            <h6 className="section-subheading text-uppercase fw-semibold mb-3 text-md-start text-center" style={{ color: '#28a745', letterSpacing: '2px' }}>Discover Little England</h6>
+                            <h2 className="section-heading fw-bold mb-4 display-6 text-md-start text-center">A Thoughtfully Built Ecosystem</h2>
+                            <div className="mb-4 bg-success mx-auto mx-md-0" style={{ width: '80px', height: '3px' }}></div>
 
                             <p className="lead text-secondary mb-4 lh-lg fs-5">
                                 With over 15 years of experience in farmland development and a strong foundation built on trust, Little England brings together sustainable practices, careful land selection, and a commitment to quality.
@@ -90,7 +90,7 @@ export default function About() {
                             </ul>
 
                             <Link href="/contact" passHref legacyBehavior>
-                                <Button variant="outline-success" size="lg" className="px-5 border-2 rounded-pill fw-semibold">READ MORE</Button>
+                                <Button variant="outline-success" size="lg" className="px-5 border-2 rounded-pill d-none fw-semibold">READ MORE</Button>
                             </Link>
                         </Col>
                         <Col lg={6}>
