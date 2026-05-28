@@ -151,7 +151,7 @@ export default function TamaraPage() {
                     <AmenitiesMarquee />
 
                 </section>
-                <section className="padding-global mysection visible " style={{ backgroundColor: "#dedede0f" }} >
+                <section className="padding-global mysection visible faq-section"  >
                     <div className="container-fluid">
                         <div className="row p-0">
                             <div className="col-md-12 d-flex justify-content-center align-items-center">
@@ -177,7 +177,7 @@ export default function TamaraPage() {
                                                 <div className="services-thumb">
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Infrastructure.jpg" />
                                                 </div>
-                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                <div className="services-content  px-3 pb-4 mb-3">
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3 fw-bold">
                                                         Infrastructure
                                                     </h4>
@@ -191,7 +191,7 @@ export default function TamaraPage() {
                                                 <div className="services-thumb">
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Water Supply.jpg" />
                                                 </div>
-                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                <div className="services-content px-3 pb-4 mb-3">
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Water Supply
                                                     </h4>
@@ -205,7 +205,7 @@ export default function TamaraPage() {
                                                 <div className="services-thumb">
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Electricity.jpg" />
                                                 </div>
-                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                <div className="services-content px-3 pb-4 mb-3">
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Electricity
                                                     </h4>
@@ -218,7 +218,7 @@ export default function TamaraPage() {
                                                 <div className="services-thumb">
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Security.jpg" />
                                                 </div>
-                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                <div className="services-content px-3 pb-4 mb-3">
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Security
                                                     </h4>
@@ -231,7 +231,7 @@ export default function TamaraPage() {
                                                 <div className="services-thumb">
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Open space.webp" />
                                                 </div>
-                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                <div className="services-content px-3 pb-4 mb-3">
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Landscaping
                                                     </h4>
@@ -244,7 +244,7 @@ export default function TamaraPage() {
                                                 <div className="services-thumb">
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Amphitheatre.jpg" />
                                                 </div>
-                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                <div className="services-content px-3 pb-4 mb-3">
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Recreation
                                                     </h4>
@@ -257,7 +257,7 @@ export default function TamaraPage() {
                                                 <div className="services-thumb">
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Gymnasium.jpg" />
                                                 </div>
-                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                <div className="services-content px-3 pb-4 mb-3">
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Amenities
                                                     </h4>
@@ -270,7 +270,7 @@ export default function TamaraPage() {
                                                 <div className="services-thumb">
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Tranquility.webp" />
                                                 </div>
-                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                <div className="services-content px-3 pb-4 mb-3">
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Environment
                                                     </h4>
@@ -283,7 +283,7 @@ export default function TamaraPage() {
                                                 <div className="services-thumb">
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/walking.jpg" />
                                                 </div>
-                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                <div className="services-content px-3 pb-4 mb-3">
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Walkways
                                                     </h4>
@@ -296,7 +296,7 @@ export default function TamaraPage() {
                                                 <div className="services-thumb">
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Smart living.webp" />
                                                 </div>
-                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                <div className="services-content px-3 pb-4 mb-3">
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Smart Features
                                                     </h4>
@@ -309,7 +309,7 @@ export default function TamaraPage() {
                                                 <div className="services-thumb">
                                                     <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Dining.jpg" />
                                                 </div>
-                                                <div className="services-content faq-section px-3 pb-4 mb-3">
+                                                <div className="services-content px-3 pb-4 mb-3">
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Dining
                                                     </h4>

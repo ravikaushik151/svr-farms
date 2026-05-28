@@ -89,7 +89,7 @@ export default function Gallery() {
               modules={[Navigation, Thumbs, Mousewheel]}
               onSwiper={setThumbsSwiper}
               direction="vertical"
-              spaceBetween={50}
+              spaceBetween={20}
               slidesPerView={2}
               loop
               mousewheel
@@ -102,7 +102,7 @@ export default function Gallery() {
                   <Image
                     src={slide.src}
                     alt={slide.alt}
-                    width={380}
+                    width={350}
                     height={276}
                     className="img-fluid  rounded-2 swiper-thumb-image"
                     loading="lazy"
@@ -146,7 +146,7 @@ export default function Gallery() {
               onClick={() => setPopupImage(null)}
               style={{
                 position: 'absolute',
-                top: '-40px',
+                top: '-37px',
                 right: '0',
                 background: 'transparent',
                 color: '#fff',
@@ -164,7 +164,7 @@ export default function Gallery() {
       <style jsx global>{`
         .mySwiper-thumbs {
           height: 100%;
-          max-height: 600px;
+          max-height: 550px;
         }
         .swiper-thumb-image {
           opacity: 0.6;
