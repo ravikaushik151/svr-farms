@@ -22,10 +22,10 @@ export default function LocationGrid({ items }: LocationGridProps) {
               <div 
                 className="card-header text-white fw-bold text-center  mb-0"
                 style={{
-                  backgroundColor: '#5b8c51',
+                  backgroundColor: '#114934',
                   fontSize: '0.85rem',
                   textTransform: 'uppercase',
-                  paddingTop: "10px"
+                  padding: "25px 15px 15px",
                 }}
               >
                 {item.title}
@@ -35,7 +35,7 @@ export default function LocationGrid({ items }: LocationGridProps) {
               <div 
                 className="card-body"
                 style={{
-                  backgroundColor: '#fcfcf9 ',
+                  backgroundColor: '#f1f1f1  ',
                   fontSize: '0.9rem'
                 }}
               >

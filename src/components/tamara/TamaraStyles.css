@@ -20064,7 +20064,7 @@ footer {
 }
 
 .faq-accordion .accordion-button:not(.collapsed) {
-    background-color: #5b8c51; /* Matching the green in the image */
+    background-color: var(--sanjeevani-green) !important; /* Matching the green in the image */
     color: white;
     box-shadow: none;
 }
@@ -20093,5 +20093,10 @@ footer {
 }
 
 .faq-section {
-    background-color: #fcfcf9 !important; /* light subtle beige/cream background to match image */
+    background-color: #f1f1f1 !important; /* light subtle beige/cream background to match image */
 }
+
+.faq-accordion .accordion-button:not(.collapsed)::after {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(100%) saturate(20%) hue-rotate(321deg) brightness(106%) contrast(105%);
+}
+.table {table-layout: fixed;}

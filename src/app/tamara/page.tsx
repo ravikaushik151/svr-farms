@@ -79,7 +79,7 @@ export default function TamaraPage() {
                                     <div className="text-center  my-4">
                                         <ContactFormPopup
                                             buttonText="Download Brochure"
-                                            buttonClassName="btn btn-dark px-3 py-2 text-decoration-none rounded-2 "
+                                            buttonClassName="btn btn-outline-primary px-3 py-2 text-decoration-none  "
                                             redirectUrl="/download-page"
                                         />
                                     </div>
@@ -341,7 +341,7 @@ export default function TamaraPage() {
                             <div className="col-md-8 d-block mx-auto">
 
                                 <div className="table-responsive  ">
-                                    <table className="table w-100 plot-table align-middle text-center table-bordered border-light ">
+                                    <table className="table w-100 plot-table align-middle text-center table-bordered  ">
 
                                         <thead>
                                             <tr>
@@ -369,7 +369,7 @@ export default function TamaraPage() {
                                                 <td>
                                                      <ContactFormPopup
                                                         buttonText="On Request*"
-                                                        buttonClassName="btn btn-dark rounded-3 px-4 py-2 "
+                                                        buttonClassName="btn btn-outline-primary px-4 py-2 "
                                                         redirectUrl="/thank-you"
                                                     />
                                                 </td>
@@ -383,7 +383,7 @@ export default function TamaraPage() {
                                                 <td>
                                                     <ContactFormPopup
                                                         buttonText="On Request*"
-                                                        buttonClassName="btn btn-dark rounded-3 px-4 py-2 "
+                                                        buttonClassName="btn btn-outline-primary px-4 py-2 "
                                                         redirectUrl="/thank-you"
                                                     />
 
@@ -398,7 +398,7 @@ export default function TamaraPage() {
                                                 <td>
                                                      <ContactFormPopup
                                                         buttonText="On Request*"
-                                                        buttonClassName="btn btn-dark rounded-3 px-4 py-2 "
+                                                        buttonClassName="btn btn-outline-primary px-4 py-2 "
                                                         redirectUrl="/thank-you"
                                                     />
                                                 </td>
