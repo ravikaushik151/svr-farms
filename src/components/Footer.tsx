@@ -340,9 +340,9 @@ export default function Footer() {
                 <button
                     onClick={() => setShowEnquireForm(true)}
                     className="enquire-now-btn"
-                    title="Enquire Now"
+                    title="Enquiry Now " 
                 >
-                    Enquire Now
+                    Enquiry Now
                 </button>
             </div>
 

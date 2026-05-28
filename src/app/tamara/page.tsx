@@ -181,7 +181,7 @@ export default function TamaraPage() {
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3 fw-bold">
                                                         Infrastructure
                                                     </h4>
-                                                    <p className='mb-3'>The project has 30 ft wide roads and a 6–8 ft RCC wall for safety and easy access.</p>
+                                                    <p className='mb-3 text-md-start text-center'>The project has 30 ft wide roads and a 6–8 ft RCC wall for safety and easy access.</p>
 
                                                 </div>
                                             </div>
@@ -195,7 +195,7 @@ export default function TamaraPage() {
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Water Supply
                                                     </h4>
-                                                    <p className='mb-3'>The project has a borewell water supply and a water storage tank for reliable water access.</p>
+                                                    <p className='mb-3 text-md-start text-center'>The project has a borewell water supply and a water storage tank for reliable water access.</p>
 
                                                 </div>
                                             </div>
@@ -209,7 +209,7 @@ export default function TamaraPage() {
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Electricity
                                                     </h4>
-                                                    <p>The project has solar street lights for eco-friendly and reliable lighting.</p>
+                                                     <p className='mb-3 text-md-start text-center'>The project has solar street lights for eco-friendly and reliable lighting.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -222,7 +222,7 @@ export default function TamaraPage() {
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Security
                                                     </h4>
-                                                    <p>The project has CCTV surveillance and 24/7 security personnel for complete safety.</p>
+                                                    <p className='mb-3 text-md-start text-center'>The project has CCTV surveillance and 24/7 security personnel for complete safety.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -235,7 +235,7 @@ export default function TamaraPage() {
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Landscaping
                                                     </h4>
-                                                    <p>The project has tree-lined avenues and landscaped gardens for a refreshing green environment.</p>
+                                                    <p className='mb-3 text-md-start text-center'>The project has tree-lined avenues and landscaped gardens for a refreshing green environment.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -248,7 +248,7 @@ export default function TamaraPage() {
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Recreation
                                                     </h4>
-                                                    <p>The project offers a swimming pool and a children’s play area for fun, relaxation, and family time.</p>
+                                                    <p className='mb-3 text-md-start text-center'>The project offers a swimming pool and a children’s play area for fun, relaxation, and family time.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -261,7 +261,7 @@ export default function TamaraPage() {
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Amenities
                                                     </h4>
-                                                    <p>The project has a community center and fitness center for recreation, wellness and social gatherings.</p>
+                                                    <p className='mb-3 text-md-start text-center'>The project has a community center and fitness center for recreation, wellness and social gatherings.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -274,7 +274,7 @@ export default function TamaraPage() {
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Environment
                                                     </h4>
-                                                    <p>The project features an eco-friendly design, ample green spaces, and serene temples for a peaceful living.</p>
+                                                    <p className='mb-3 text-md-start text-center'>The project features an eco-friendly design, ample green spaces, and serene temples for a peaceful living.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -287,7 +287,7 @@ export default function TamaraPage() {
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Walkways
                                                     </h4>
-                                                    <p>The project has a jogging track and pedestrian-friendly paths for a healthy and active lifestyle.</p>
+                                                    <p className='mb-3 text-md-start text-center'>The project has a jogging track and pedestrian-friendly paths for a healthy and active lifestyle.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -300,7 +300,7 @@ export default function TamaraPage() {
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Smart Features
                                                     </h4>
-                                                    <p>The project offers high-speed internet connectivity and smart home options for modern living.</p>
+                                                    <p className='mb-3 text-md-start text-center'>The project offers high-speed internet connectivity and smart home options for modern living.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -313,7 +313,7 @@ export default function TamaraPage() {
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Dining
                                                     </h4>
-                                                    <p>The project has a clubhouse with a restaurant and an outdoor barbecue area for leisure and dining.</p>
+                                                    <p className='mb-3 text-md-start text-center'>The project has a clubhouse with a restaurant and an outdoor barbecue area for leisure and dining.</p>
                                                 </div>
                                             </div>
                                         </div>

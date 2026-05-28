@@ -14,7 +14,7 @@
 }
 
 .faq-accordion .accordion-button:not(.collapsed) {
-    background-color: #5b8c51; /* Matching the green in the image */
+    background-color: #1f472f; /* Matching the green in the image */
     color: white;
     box-shadow: none;
 }

@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  font-size: 16px;
 }
 
 .bg-sanjeevani {
@@ -106,6 +107,5 @@ body {
 .letter-spacing-1 {
   letter-spacing: 1px;
 }
-.faq-accordion .accordion-button:not(.collapsed)::after {
-  filter: brightness(0) saturate(100%) invert(95%) sepia(100%) saturate(20%) hue-rotate(321deg) brightness(106%) contrast(105%);
-}
+
+
