@@ -206,7 +206,7 @@ export default function ContactFormPopup({
                                         ></textarea>
                                     </div>
                                     <div className='text-center'>
-                                        <button type="submit" className="btn btn-dark" disabled={submitting}>
+                                        <button type="submit" className="btn btn-outline-primary px-3 py-2" disabled={submitting}>
                                             {submitting ? 'Please Wait...' : 'Submit'}
                                         </button>
                                     </div>
