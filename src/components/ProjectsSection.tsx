@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import ProjectCard from '@/components/ProjectCard';
@@ -11,8 +12,7 @@ const projects = [
         title: "Tamara Valley",
         image: "/projects/Tamara Valley (Upcoming).webp",
         shortDesc: "A 300-acre managed farmland community offering nature-led living.",
-        description: `Tamara Valley is a premium managed farmland community near Bangalore, spread across 300+ acres of beautifully maintained green landscapes. It is designed for those who seek the calm of a weekend retreat while enjoying the ease of professionally managed farmland.
-Here, you own the land while every essential detail is seamlessly taken care of—irrigation, landscaping, and organic cultivation. It’s a space where nature thrives without demanding your time. Whether it’s a weekend escape, a long-term investment, or simply a place to slow down, Tamara Valley offers effortless access to nature. More than just land, it is a thoughtfully created countryside experience, close to Bangalore and completely cared for.`
+        link: "/tamara", description: `Tamara Valley is a premium managed farmland community near Bangalore, spread across 300+ acres of beautifully maintained green landscapes. It is designed for those who seek the calm of a weekend retreat while enjoying the ease of professionally managed farmland. Here, you own the land while every essential detail is seamlessly taken care of—irrigation, landscaping, and organic cultivation. It’s a space where nature thrives without demanding your time. Whether it’s a weekend escape, a long-term investment, or simply a place to slow down, Tamara Valley offers effortless access to nature. More than just land, it is a thoughtfully created countryside experience, close to Bangalore and completely cared for.`
     },
     {
         title: "Vaikuntam",
@@ -213,12 +213,18 @@ Whether you are exploring farmland as an investment, a weekend retreat, or a nat
 ];
 
 export default function ProjectsSection() {
+    const router = useRouter();
     const [showModal, setShowModal] = useState(false);
     const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
 
     const handleShow = (project: any) => {
-        setSelectedProject(project);
-        setShowModal(true);
+        // If project has a link, navigate to it instead of showing modal
+        if (project.link) {
+            router.push(project.link);
+        } else {
+            setSelectedProject(project);
+            setShowModal(true);
+        }
     };
 
     const handleClose = () => setShowModal(false);
@@ -236,7 +242,7 @@ export default function ProjectsSection() {
                                 title={project.title}
                                 image={project.image}
                                 description={project.shortDesc}
-                                link="#"
+                                link={project.link || "#"}
                             />
                         </div>
                     </Col>
