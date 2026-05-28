@@ -185,13 +185,13 @@ export default function Gallery() {
           right: 10px !important;
           top:50% !important;
           color:#fff !important;
-          background: #5b8c51 !important;
+          background: #114934  !important;
         }
         .swiper-button-prev-main {
           left: 10px !important;
           top:50% !important;
           color:#fff !important;
-          background: #5b8c51 !important;
+          background: #114934  !important;
         }
       `}</style>
     </section>
