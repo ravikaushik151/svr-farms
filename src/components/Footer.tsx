@@ -1,11 +1,12 @@
 'use client';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaArrowRight, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaPhoneAlt,   FaEnvelope, FaMapMarkerAlt, FaArrowRight, FaWhatsapp } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import Link from 'next/link';
 import { useState, MouseEvent } from 'react';
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
-
+import Image from 'next/image';
 export default function Footer() {
     const [showEnquireForm, setShowEnquireForm] = useState(false);
     const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
@@ -140,7 +141,7 @@ export default function Footer() {
     return (
         <>
             <style>{floatingButtonStyles}</style>
-        <footer className="text-white mt-auto position-relative" style={{ backgroundColor: '#051d15' }}>
+        <footer className="text-white mt-auto position-relative" style={{ backgroundColor: '#114934' }}>
             {/* Top Border Line */}
             <div className="w-100 bg-sanjeevani" style={{ height: '4px' }}></div>
 
@@ -148,10 +149,11 @@ export default function Footer() {
                 <Row className="gy-5">
                     {/* Column 1: Brand & About */}
                     <Col lg={4} md={12}>
-                        <div className="mb-4">
-                            <h3 className="fw-bold text-white mb-3 letter-spacing-1 text-md-start text-center">Little England</h3>
+                        <div className="mb-4 text-md-start text-center">
+                            {/* <h3 className="fw-bold text-white mb-3 letter-spacing-1 text-md-start text-center">Little England</h3> */}
+                             <Image src="/svr-farms-web-logo-2-1.png" alt="SVR Farms Logo" width={150} height={50} className="mb-2" />
                             <div className="bg-sanjeevani mb-4 mx-md-start mx-auto" style={{ width: '60px', height: '3px' }}></div>
-                            <p className="text-white-50 lh-lg">
+                            <p className="text-white-50 lh-lg text-md-start text-center">
                                 Premium Farm Land Developers dedicated to creating sustainable and beautiful living spaces. We blend nature with modern amenities to find your perfect managed farmland.
                             </p>
                             <div className="d-flex gap-3 mt-4 justify-content-md-start justify-content-center">
@@ -159,7 +161,8 @@ export default function Footer() {
                                     <FaFacebookF size={16} />
                                 </a>
                                 <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
-                                    <FaTwitter size={16} />
+                                    <FaXTwitter  size={16} />
+                                    
                                 </a>
                                 <a href="https://www.instagram.com/svrfarmsbangalore/" target="_blank" rel="noopener noreferrer" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
                                     <FaInstagram size={16} />
