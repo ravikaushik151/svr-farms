@@ -149,7 +149,7 @@ export default function Footer() {
                         {/* Column 1: Brand & About */}
                         <Col lg={4} md={12}>
                             <div className="mb-4">
-                                <h3 className="fw-bold text-white mb-3 letter-spacing-1 text-md-start text-center">Little England</h3>
+                                {/* <h3 className="fw-bold text-white mb-3 letter-spacing-1 text-md-start text-center">Little England</h3> */}
                                 <div className="d-flex justify-content-md-start justify-content-center mb-3">
                                     <Image src="/svr-farms-web-logo-2-1.png" alt="SVR Farms Logo" width={150} height={40} className="mb-0 img-fluid" />
                                 </div>
