@@ -2,6 +2,7 @@
   --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;
   --sanjeevani-green: #114934;
+  --sanjeevani-green-dark: #197723;
   --hero-overlay: rgba(0, 0, 0, 0.4);
 }
 
@@ -16,6 +17,10 @@ body {
 
 .text-sanjeevani {
   color: var(--sanjeevani-green) !important;
+}
+
+.text-sanjeevani-dark {
+  color: var(--sanjeevani-green-dark) !important;
 }
 
 /* Global Button Styles for Consistency */
@@ -107,5 +112,3 @@ body {
 .letter-spacing-1 {
   letter-spacing: 1px;
 }
-
-
