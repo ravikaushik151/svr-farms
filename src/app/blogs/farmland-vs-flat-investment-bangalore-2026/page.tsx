@@ -9,7 +9,7 @@ import Image from 'next/image';
 export default function Blogs() {
     return (
         <>
-            <PageBanner title="Our Blog" backgroundImage="/banner/Blog_Banner.webp" />
+            <PageBanner title="Blog" backgroundImage="/banner/Blog_Banner.webp" />
             <div className="bg-light ">
                 <Container>
                     
@@ -17,7 +17,7 @@ export default function Blogs() {
                         <Col md={12}>
                             <div className="h-100 shadow border-0 hover-lift card">
                                 <div className="p-4  card-body">
-                                    <img alt="Farmland vs Flat: Which Is a Better Investment Near Bangalore in 2026?" loading="lazy" width={1296} height={375} decoding="async" data-nimg={1} className="mb-3 img-fluid mx-auto d-block" style={{ color: 'transparent' }} src="/Farmland-vs-Flat-investment-Bangalore-1024x538.webp" />
+                                    <img alt="Farmland vs Flat: Which Is a Better Investment Near Bangalore in 2026?" loading="lazy" width={1296} height={375} decoding="async" data-nimg={1} className="mb-3 img-fluid mx-auto d-block w-100" style={{ color: 'transparent' }} src="/blog/Farmland-vs-Flat-investment-Bangalore-1024x538.webp" />
                                     <div className=" ">
                                         <h1 className='section-heading text-dark text-md-start text-center card-title fw-bold fs-3'>Farmland vs Flat: Which Is a Better Investment Near Bangalore in 2026?</h1>
                                     </div>
