@@ -62,9 +62,9 @@ export default function Careers() {
 
 
 
-                    <p className='d-none'><strong>Our Values:</strong></p>
+                    <p className=''><strong>Our Values:</strong></p>
 
-                    <ol className='d-none'>
+                    <ol className=''>
                         <li><strong>Passion for Agriculture:</strong> We&rsquo;re driven by our love for agriculture and its potential to shape a sustainable future. We&rsquo;re committed to promoting responsible farming practices that benefit both our communities and the environment.</li>
                         <li><strong>Team Collaboration:</strong> Collaboration is at the heart of what we do. We value diverse perspectives and believe that working together enables us to overcome challenges and achieve remarkable results.</li>
                         <li><strong>Innovation:</strong> We&rsquo;re not afraid to think outside the box. We embrace innovation and encourage our team members to bring fresh ideas to the table. Our solutions-driven approach keeps us at the forefront of the industry.</li>
@@ -72,9 +72,9 @@ export default function Careers() {
                         <li><strong>Community Impact:</strong> Our work extends beyond the fields. We&rsquo;re committed to giving back to the communities we operate in and creating a positive impact on society as a whole.</li>
                     </ol>
 
-                    <p className='d-none'><strong>Why Join SVR Farms:</strong></p>
+                    <p className=''><strong>Why Join SVR Farms:</strong></p>
 
-                    <ol className='d-none'>
+                    <ol className=''>
                         <li><strong>Career Growth:</strong> We&rsquo;re invested in your professional journey. Join SVR Farms, and you&rsquo;ll have access to a wealth of resources, mentorship, and opportunities to advance your career.</li>
                         <li><strong>Innovative Environment:</strong> Be part of a team that&rsquo;s pushing the boundaries of what&rsquo;s possible in agriculture. Your ideas and contributions will be valued and can make a real difference.</li>
                         <li><strong>Meaningful Work:</strong> At SVR Farms, your work will have a tangible impact on food production, sustainability, and rural communities. Join us in making a positive difference.</li>
@@ -82,7 +82,7 @@ export default function Careers() {
                         <li><strong>Personal Development:</strong> We encourage continuous learning and skill development. Whether it&rsquo;s honing your technical expertise or developing leadership skills, SVR Farms is here to help you grow.</li>
                     </ol>
 
-                    <p className='text-center mb-4 d-none'><strong className='fs-4 text-center'>Current Opportunities</strong></p>
+                    <p className='text-center mb-4 '><strong className='fs-4 text-center'>Current Opportunities</strong></p>
 
 
 
