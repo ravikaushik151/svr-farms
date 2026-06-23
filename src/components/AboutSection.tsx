@@ -24,8 +24,8 @@ export default function AboutSection() {
                     </Col>
                 </Row>
                 <div className="text-center">
-                    <Link href="/about" passHref legacyBehavior>
-                        <Button variant="outline-primary" size="lg" className="px-5 border-2">READ MORE</Button>
+                    <Link href="/about" className='btn btn-outline-success'>
+                        READ MORE
                     </Link>
                 </div>
             </Container>

@@ -36,8 +36,8 @@ export default function NewProjectSection() {
                             Whether it’s a quiet weekend retreat or a long-term investment, Tamara Valley offers a space that grows with you - in value and in experience.
                         </p>
 
-                        <Link href="/tamara" passHref legacyBehavior>
-                            <Button variant="outline-light" size="lg" className="btn-outline-white px-5 py-3">EXPLORE TAMARA VALLEY</Button>
+                        <Link href="/tamara" className='btn btn-outline-white px-5 py-3'>
+                            EXPLORE TAMARA VALLEY
                         </Link>
                     </div>
                 </Col>

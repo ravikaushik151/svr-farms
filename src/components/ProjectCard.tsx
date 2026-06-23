@@ -44,8 +44,8 @@ export default function ProjectCard({ title, description, image, link }: Project
                         )}
 
                 </Card.Text>
-                <Link href={link} passHref legacyBehavior>
-                    <Button variant="outline-primary" className="w-100 mt-2">View Project</Button>
+                <Link href={link} className='btn btn-outline-primary w-100  mt-2'>
+                    View Project
                 </Link>
             </Card.Body>
         </Card>
