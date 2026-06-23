@@ -1,177 +1,350 @@
-'use client';
-import { useState, ChangeEvent, FormEvent } from 'react';
-import { PhoneInput } from 'react-international-phone';
-import 'react-international-phone/style.css'; // Required for flags and layout
+"use client";
 
-interface FormData {
+import React, { useState, useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
+import intlTelInput from "intl-tel-input";
+// Try changing 'build' to 'dist'
+import "intl-tel-input/dist/css/intlTelInput.css";
+import Link from "next/link";
+
+interface EnquiryModalProps {
+  type?: "enquiry" | "download";
+  button?: boolean;
+  popup?: boolean;
+  firstTimer?: number;
+  intervalTimer?: number;
+  buttonText?: React.ReactNode;
+  textColor?: string;
+  formClass?: string;
+  formInputClass?: string;
+  buttonClassName?: string;        // Used for the Form Submit Button
+  triggerButtonClassName?: string; // NEW: Used for the Modal Trigger Button
+  pdfFile?: string;
+  sheet_id?: string;
+}
+
+type FormType = {
   name: string;
   email: string;
-  mobile: string;
   message: string;
-}
+};
 
-interface ContactFormProps {
-  inputClass?: string;
-  buttonClass?: string;
-  hideMessageField?: boolean;
-  defaultMessage?: string;
-}
-
-export default function ContactForm({
-  inputClass = 'footer-input rounded-0 mb-2',
-  buttonClass = 'btn theme-bg-light text-dark mb-3',
-  hideMessageField = false,
-  defaultMessage = '',
-}: ContactFormProps) {
-  const [form, setForm] = useState<FormData>({
-    name: '',
-    email: '',
-    mobile: '',
-    message: defaultMessage,
+function ContactForm({
+  type,
+  pdfFile,
+  submitButtonClassName,
+  textColor,
+  formInputClass,
+}: {
+  type: "enquiry" | "download";
+  pdfFile?: string;
+  submitButtonClassName: string;
+  textColor?: string;
+  formInputClass?: string;
+}) {
+  const [formData, setFormData] = useState<FormType>({
+    name: "",
+    email: "",
+    message: "",
   });
 
+  const [agreed, setAgreed] = useState(true);
   const [loading, setLoading] = useState(false);
-  const [note, setNote] = useState('');
   const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+  const phoneInputRef = useRef<HTMLInputElement>(null);
+  const itiRef = useRef<any>(null);
+
+  useEffect(() => {
+    if (phoneInputRef.current) {
+      itiRef.current = intlTelInput(phoneInputRef.current, {
+        initialCountry: "in",
+        separateDialCode: true,
+      });
+    }
+
+    return () => {
+      itiRef.current?.destroy();
+    };
+  }, []);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const name = e.target.name as keyof FormType;
+    const value = e.target.value;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
-  /** * Specific handler for react-international-phone 
-   * since it returns a string value directly.
-   */
-  const handlePhoneChange = (phone: string) => {
-    setForm((prev) => ({ ...prev, mobile: phone }));
-  };
-
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError("");
 
-    // Validation
-    if (!form.name || !form.email || !form.mobile) {
-      setNote('All fields are required!');
-      return;
-    }
+    const iti = itiRef.current;
+    const rawValue = phoneInputRef.current?.value || "";
+    const digitsOnly = rawValue.replace(/\D/g, "");
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(form.email)) {
-      setNote('Enter a valid email address!');
-      return;
-    }
+   const countryData = iti?.getSelectedCountry();
+    const dialCode = countryData?.dialCode || "";
 
-    /**
-     * Note: Strict 10-digit validation is removed here to allow 
-     * international formats, but we check if it's reasonably long.
-     */
-    if (form.mobile.length < 10) {
-      setNote('Please enter a valid phone number!');
-      return;
-    }
+    const fullPhone = dialCode
+      ? `+${dialCode}${digitsOnly}`
+      : digitsOnly;
+
+    if (!formData.name.trim()) return setError("Enter name");
+    if (!formData.email.trim()) return setError("Enter email");
+    if (!digitsOnly) return setError("Enter phone");
+    if (!formData.message.trim()) return setError("Enter message");
+    if (!agreed) return setError("Accept privacy policy");
 
     setLoading(true);
-    setNote('Please wait...');
-    setSuccess(false);
-
-    const payload = {
-      name: form.name,
-      email: form.email,
-      phone: form.mobile,
-      message: form.message || 'interested',
-      subject: 'Enquire From SVR Farms - Website',
-      form_source: 'SVR Farms- Website',
-    };
 
     try {
       const res = await fetch(
-        '/you-mail-api/',
+        "https://us-central1-email-js-1a09b.cloudfunctions.net/emailjs/submit-form",
         {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+
+          body: JSON.stringify({
+            ...formData,
+            phone: fullPhone,
+            subject: "SVR Farms - Website",
+            form_source: window.location.href,
+            client: "true",
+            additionalRecipients: ["lokesh@imsolutions.mobi"],
+          }),
         }
       );
 
       const text = await res.text();
 
-      if (text.trim() === 'OK') {
-        setSuccess(true);
-        setNote('Email sent successfully!');
-        setForm({ name: '', email: '', mobile: '', message: defaultMessage });
-      } else {
-        setNote(text || 'Error sending email.');
+      if (!text.includes("successfully")) {
+        throw new Error("Failed");
       }
-    } catch (err) {
-      console.error(err);
-      setNote('Network error. Please try again later.');
+
+      setSuccess(true);
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+
+      iti?.setNumber("");
+
+      setTimeout(() => {
+        window.location.href = "/thankyou";
+      }, 1500);
+    } catch {
+      setError("Something went wrong.");
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="contact-form">
-      <input
-        type="text"
-        name="name"
-        placeholder="Name"
-        value={form.name}
-        onChange={handleChange}
-        className={inputClass}
-        required
-      />
-      <input
-        type="email"
-        name="email"
-        placeholder="Email"
-        value={form.email}
-        onChange={handleChange}
-        className={inputClass}
-        required
-      />
+    <form onSubmit={handleSubmit}>
+      {error && (
+        <div className="alert alert-danger py-2 small">
+          {error}
+        </div>
+      )}
 
-      {/* International Phone Input Integration */}
-      <div className="phone-input-wrapper ">
-        <PhoneInput
-          defaultCountry="in"
-          value={form.mobile}
-          onChange={handlePhoneChange}
-          inputClassName={inputClass}
-          className="w-100"
-          inputStyle={{
-            width: '100%',
-            height: '45px',   
-          }}
-          style={{
-            // CSS Variables to force consistency with your existing styles
-            '--react-international-phone-border-radius': '0px',
-            '--react-international-phone-height': '45px', // Matches standard Bootstrap/Input height
-            '--react-international-phone-border-color': '#dee2e6',
-          } as React.CSSProperties}
+      {success && (
+        <div className="alert alert-success py-2 small">
+          Sent Successfully
+        </div>
+      )}
+
+      <div className="mb-3 ">
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          placeholder="Name"
+          className={formInputClass || "form-control"}
         />
       </div>
 
-      {!hideMessageField && (
+      <div className="mb-3">
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="Email"
+          className={formInputClass || "form-control"}
+        />
+      </div>
+
+      <div className="mb-3">
+        <input
+          ref={phoneInputRef}
+          type="tel"
+          placeholder="Phone"
+          className={formInputClass || "form-control"}
+        />
+      </div>
+
+      <div className="mb-3">
         <textarea
           name="message"
-          placeholder="Message"
-          value={form.message}
+          value={formData.message}
           onChange={handleChange}
-          className={inputClass}
+          rows={4}
+          placeholder="Message"
+          className={formInputClass || "form-control"}
         />
-      )}
+      </div>
 
+      <div className="form-check mb-3 text-start">
+        <input
+          type="checkbox"
+          checked={agreed}
+          onChange={(e) => setAgreed(e.target.checked)}
+          className="form-check-input bg-dark border-dark"
+          id="privacy"
+        />
+
+        <label
+          htmlFor="privacy"
+          className={`form-check-label ${textColor || "text-dark"}`}
+        >
+          I agree to{" "}
+                  <Link className="footer-link text-dark" href="/privacy-policy" target="_blank">
+            privacy policy
+          </Link>
+        </label>
+      </div>
       <div className="text-center">
-        <button type="submit" className={buttonClass} disabled={loading}>
-          {loading ? 'Sending...' : 'Submit'}
+        <button
+          type="submit"
+          className={submitButtonClassName}
+          disabled={loading}
+          style={{marginTop:"15px"}}
+        >
+          {loading ? "Please Wait..." : "Submit"}
         </button>
       </div>
 
-      {note && (
-        <p className={`my-2 ${success ? 'text-success' : 'text-danger'}`} style={{ fontWeight: 600 }}>
-          {note}
-        </p>
-      )}
+
+      <style jsx global>{`
+        .iti {
+          width: 100%;
+        }
+
+        .iti__country-list {
+          z-index: 9999999;
+        }
+      `}</style>
     </form>
+  );
+}
+
+export default function EnquiryModal({
+  type = "enquiry",
+  button = true,
+  popup = false,
+  firstTimer = 40,
+  intervalTimer = 999,
+  buttonText = "Enquire Now",
+  textColor = "",
+  buttonClassName = "btn btn-primary", 
+  triggerButtonClassName = "btn btn-success", // Set your default class here
+  formInputClass = "",
+  pdfFile = "/brochure.pdf",
+}: EnquiryModalProps) {
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    if (!popup) return;
+
+    const t1 = setTimeout(() => {
+      setShowModal(true);
+    }, firstTimer * 1000);
+
+    const t2 = setInterval(() => {
+      setShowModal(true);
+    }, intervalTimer * 1000);
+
+    return () => {
+      clearTimeout(t1);
+      clearInterval(t2);
+    };
+  }, [popup, firstTimer, intervalTimer]);
+
+  if (!button && !popup) {
+    return (
+      <ContactForm
+        type={type}
+        pdfFile={pdfFile}
+        submitButtonClassName={buttonClassName}
+        textColor={textColor}
+        formInputClass={formInputClass}
+      />
+    );
+  }
+
+  return (
+    <>
+      {/* UPDATE APPLIED HERE */}
+      {button && (
+        <button
+          type="button"
+          className={triggerButtonClassName} 
+          onClick={() => setShowModal(true)}
+        >
+          {buttonText}
+        </button>
+      )}
+
+      {showModal &&
+        typeof document !== "undefined" &&
+        createPortal(
+          <div
+            className="modal fade show d-block"
+            style={{
+              background: "rgba(0,0,0,.6)",
+              zIndex: 999999,
+            }}
+          >
+            <div className="modal-dialog modal-dialog-centered">
+              <div className="modal-content">
+                <div className="modal-header border-0  fw-bold">
+                  <h5 className="modal-title">
+                    {type === "download"
+                      ? "Download Brochure"
+                      : "Enquire Now"}
+                  </h5>
+
+                  <button
+                    type="button"
+                    className="btn-close"
+                    onClick={() => setShowModal(false)}
+                  />
+                </div>
+
+                <div className="modal-body">
+                  <ContactForm
+                    type={type}
+                    pdfFile={pdfFile}
+                    submitButtonClassName={buttonClassName} // The submit button keeps the original class
+                    textColor={textColor}
+                    formInputClass={formInputClass}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>,
+          document.body
+        )}
+    </>
   );
 }

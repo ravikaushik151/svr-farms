@@ -41,8 +41,10 @@ export default function Hero() {
                                 <br />Watch It Grow With You.
                             </h1>
                             <div className="mt-5">
-                                <Link href="/contact" passHref legacyBehavior>
-                                    <Button variant="outline-light" size="lg" className="btn-outline-white px-5 py-3">Find Your Dream Farm Plot</Button>
+                                
+
+                                <Link href="/contact" className="btn btn-outline-white px-5 py-3">
+                                    Find Your Dream Farm Plot
                                 </Link>
                             </div>
                         </Col>

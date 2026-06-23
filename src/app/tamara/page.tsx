@@ -5,12 +5,12 @@ import Image from "next/image";
 import AmenitiesMarquee from "@/components/AmenitiesMarquee";
 import Clubhouse from "@/components/ClubhouseMarquee";
 import Hero from '@/components/tamara/Hero';
-
+import ContactForm from '@/components/ContactForm';
 import MasterPlan from '@/components/tamara/MasterPlan';
 import Gallery from '@/components/tamara/Gallery';
 
 
-import ContactFormPopup from '@/components/ContactFormPopup';
+
 import MyAccordion from "@/components/MyAccordion";
 import MyAccordionList from "@/components/MyAccordionList";
 
@@ -56,7 +56,7 @@ export default function TamaraPage() {
                                         height={550}
                                         className="img-fluid  mb-4  rounded-4"
                                         priority
-                                        fetchPriority="high" style={{  objectFit: "cover", objectPosition: "bottom" }}
+                                        fetchPriority="high" style={{ objectFit: "cover", objectPosition: "bottom" }}
                                     />
                                 </div>
                             </div>
@@ -77,10 +77,14 @@ export default function TamaraPage() {
                                     </p>
 
                                     <div className="text-center  my-4">
-                                        <ContactFormPopup
+                                        <ContactForm
+                                            button={true}
+                                            popup={true}
+                                           
+                                            formInputClass='py-2 mb-0 form-control '
                                             buttonText="Download Brochure"
-                                            buttonClassName="btn btn-outline-primary px-3 py-2 text-decoration-none  "
-                                            redirectUrl="/download-page"
+                                            triggerButtonClassName='btn btn-success'
+
                                         />
                                     </div>
                                 </div>
@@ -209,7 +213,7 @@ export default function TamaraPage() {
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
                                                         Electricity
                                                     </h4>
-                                                     <p className='mb-3 text-md-start text-center'>The project has solar street lights for eco-friendly and reliable lighting.</p>
+                                                    <p className='mb-3 text-md-start text-center'>The project has solar street lights for eco-friendly and reliable lighting.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -367,10 +371,15 @@ export default function TamaraPage() {
                                                 </td>
                                                 <td>10,890 Sqft </td>
                                                 <td>
-                                                     <ContactFormPopup
+
+                                                    <ContactForm
+                                                        button={true}
+                                                        popup={true}
+                                                        buttonClassName='btn btn-outline-primary px-4 py-2 '
+                                                        formInputClass='py-2 mb-0 form-control '
                                                         buttonText="On Request*"
-                                                        buttonClassName="btn btn-outline-primary px-4 py-2 "
-                                                        redirectUrl="/thank-you"
+
+
                                                     />
                                                 </td>
                                             </tr>
@@ -381,10 +390,14 @@ export default function TamaraPage() {
                                                 </td>
                                                 <td>21,780 Sqft</td>
                                                 <td>
-                                                    <ContactFormPopup
+                                                    <ContactForm
+                                                        button={true}
+                                                        popup={true}
+                                                        buttonClassName='btn btn-outline-primary px-4 py-2 '
+                                                        formInputClass='py-2 mb-0 form-control '
                                                         buttonText="On Request*"
-                                                        buttonClassName="btn btn-outline-primary px-4 py-2 "
-                                                        redirectUrl="/thank-you"
+
+
                                                     />
 
                                                 </td>
@@ -396,10 +409,14 @@ export default function TamaraPage() {
 
                                                 </td>
                                                 <td>
-                                                     <ContactFormPopup
+                                                    <ContactForm
+                                                        button={true}
+                                                        popup={true}
+                                                        buttonClassName='btn btn-outline-primary px-4 py-2 '
+                                                        formInputClass='py-2 mb-0 form-control '
                                                         buttonText="On Request*"
-                                                        buttonClassName="btn btn-outline-primary px-4 py-2 "
-                                                        redirectUrl="/thank-you"
+
+
                                                     />
                                                 </td>
                                             </tr>

@@ -1,5 +1,6 @@
 import React from 'react';
-import ContactFormPopup from '@/components/ContactFormPopup';
+
+import ContactForm from '@/components/ContactForm';
 export default function Hero() {
     return (
         <header className="tv-hero parallax-bg" style={{ backgroundImage: `url('/banner/banner-tam.webp')` }}>
@@ -28,11 +29,16 @@ export default function Hero() {
                             FARMLAND QUARTER. </p>
                         <div className="mt-4">
 
-                            <a href="#about" className="btn btn-outline-light btn-lg me-3 mb-3">Explore Project</a>
-                            <ContactFormPopup
+                            <a href="#about" className="btn btn-outline-light btn-lg me-3 mb-3 d-none">Explore Project</a>
+                           
+                            <ContactForm
+                                button={true}
+                                popup={true}
+                                buttonClassName='btn btn-success btn-lg mb-3  '
+                                formInputClass='py-2 mb-0 form-control '
                                 buttonText="Book Site Visit"
-                                buttonClassName="btn btn-success btn-lg mb-3 "
-                                redirectUrl="/thank-you"
+
+
                             />
 
                         </div>

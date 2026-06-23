@@ -6,82 +6,17 @@ import { useState, MouseEvent } from 'react';
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
 import Image from 'next/image';
+import ContactForm from '@/components/ContactForm';
 export default function Footer() {
-    const [showEnquireForm, setShowEnquireForm] = useState(false);
-    const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
-    const [note, setNote] = useState<string | null>(null);
-    const [submitting, setSubmitting] = useState(false);
+    
 
-    const stopPropagation = (e: MouseEvent<HTMLDivElement>) => e.stopPropagation();
+   
+   
 
-    const handleClose = () => {
-        setShowEnquireForm(false);
-        setNote(null);
-    };
+  
+   
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handlePhoneChange = (phone: string) => {
-        setFormData((prev) => ({ ...prev, phone: phone }));
-    };
-
-    const validateForm = () => {
-        let isValid = true;
-        if (!formData.name.match(/^[a-zA-Z ]+$/)) {
-            setNote('Name must only contain letters and spaces.');
-            isValid = false;
-        } else if (!formData.email.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
-            setNote('Please enter a valid email address.');
-            isValid = false;
-        } else if (formData.phone.length < 10) {
-            setNote('Please enter a valid phone number.');
-            isValid = false;
-        } else {
-            setNote(null);
-        }
-        return isValid;
-    };
-
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        if (!validateForm()) return;
-
-        setSubmitting(true);
-        setNote('Please wait...');
-
-        const payload = {
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone,
-            message: formData.message || 'interested',
-            subject: 'Enquire From SVR Farms - Website',
-            form_source: 'Enquire From SVR Farms - Website',
-            additionalRecipients: ['lokesh@imsolutions.mobi', 'ravi.k@imsolutions.mobi'],
-        };
-
-        try {
-            const res = await fetch('your-emailer-endpoint', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(payload),
-            });
-            const msg = await res.text();
-
-            if (msg.trim() === 'OK') {
-                setNote('Email Sent Successfully!');
-                setFormData({ name: '', email: '', phone: '', message: '' });
-                setTimeout(() => handleClose(), 2000);
-            } else {
-                setNote(msg);
-            }
-        } catch (error) {
-            setNote('Error sending email!');
-        } finally {
-            setSubmitting(false);
-        }
-    };
+   
     const floatingButtonStyles = `
         @keyframes pulse-float {
             0% {
@@ -230,7 +165,7 @@ export default function Footer() {
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/privacy" className="text-white-50 text-decoration-none d-flex align-items-center  justify-content-md-start justify-content-center hover-sanjeevani transition-all">
+                                    <Link href="/privacy-policy" className="text-white-50 text-decoration-none d-flex align-items-center  justify-content-md-start justify-content-center hover-sanjeevani transition-all">
                                         <FaArrowRight size={10} className="md-md-2 me-2 text-sanjeevani-dark" /> Privacy Policy
                                     </Link>
                                 </li>
@@ -349,141 +284,24 @@ export default function Footer() {
                     transform: 'translateY(-50%)',
                     zIndex: 1000
                 }}>
-                    <button
+                    {/* <button
                         onClick={() => setShowEnquireForm(true)}
                         className="enquire-now-btn"
                         title="Enquiry Now "
                     >
                         Enquiry Now
-                    </button>
+                    </button> */}
+
+                    <ContactForm
+                        button={true}
+                        popup={true}
+                        triggerButtonClassName='enquire-now-btn'
+                        formInputClass='py-2 mb-0 form-control'
+                    />
                 </div>
 
                 {/* Enquire Form Modal Overlay */}
-                {showEnquireForm && (
-                    <div
-                        style={{
-                            position: 'fixed',
-                            top: 0,
-                            left: 0,
-                            right: 0,
-                            bottom: 0,
-                            backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            zIndex: 9999
-                        }}
-                        onClick={handleClose}
-                    >
-                        <div
-                            style={{
-                                backgroundColor: 'white',
-                                borderRadius: '8px',
-                                padding: '30px',
-                                maxWidth: '500px',
-                                width: '90%',
-                                maxHeight: '85vh',
-                                overflowY: 'auto',
-                                boxShadow: '0 10px 40px rgba(0, 0, 0, 0.3)'
-                            }}
-                            onClick={stopPropagation}
-                        >
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-                                <h5 style={{ margin: 0, color: '#114934', fontWeight: 'bold' }}>Get in Touch</h5>
-                                <button
-                                    onClick={handleClose}
-                                    style={{
-                                        background: 'none',
-                                        border: 'none',
-                                        fontSize: '24px',
-                                        cursor: 'pointer',
-                                        color: '#999'
-                                    }}
-                                >
-                                    ×
-                                </button>
-                            </div>
-
-                            {note && (
-                                <p style={{
-                                    color: (note.includes('Error') || note.includes('valid') || note.includes('digits') || note.includes('contain')) ? 'red' : 'green',
-                                    fontWeight: 600,
-                                    marginBottom: '8px'
-                                }}>
-                                    {note}
-                                </p>
-                            )}
-
-                            <form onSubmit={handleSubmit}>
-                                <div style={{ marginBottom: '8px' }}>
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        placeholder="Name"
-                                        className="form-control"
-                                        value={formData.name}
-                                        onChange={handleChange}
-                                        required
-                                        disabled={submitting}
-                                    />
-                                </div>
-                                <div style={{ marginBottom: '8px' }}>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        placeholder="Email"
-                                        className="form-control"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        required
-                                        disabled={submitting}
-                                    />
-                                </div>
-                                <div style={{ marginBottom: '8px' }}>
-                                    <PhoneInput
-                                        defaultCountry="in"
-                                        value={formData.phone}
-                                        onChange={handlePhoneChange}
-                                        disabled={submitting}
-                                        inputClassName="form-control w-100"
-                                        style={{
-                                            '--react-international-phone-height': '38px',
-                                            '--react-international-phone-border-radius': '0.375rem',
-                                        } as React.CSSProperties}
-                                    />
-                                </div>
-                                <div style={{ marginBottom: '8px' }}>
-                                    <textarea
-                                        name="message"
-                                        placeholder="Message"
-                                        className="form-control"
-                                        value={formData.message}
-                                        onChange={handleChange}
-                                        disabled={submitting}
-                                        rows={3}
-                                    />
-                                </div>
-                                <div className='text-center'>
-                                    <button
-                                        type="submit"
-                                        className="btn"
-                                        style={{
-
-                                            backgroundColor: '#114934',
-                                            color: 'white',
-                                            fontWeight: 'bold',
-                                            border: 'none',
-                                            padding: '10px 0'
-                                        }}
-                                        disabled={submitting}
-                                    >
-                                        {submitting ? 'Sending...' : 'Submit'}
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                )}
+               
 
                 {/* Custom styles for Enquire Now button */}
                 <style>{`

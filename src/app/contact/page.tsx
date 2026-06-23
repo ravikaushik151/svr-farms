@@ -4,7 +4,7 @@ import SectionTitle from '@/components/SectionTitle';
 import PageBanner from '@/components/PageBanner';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
-
+import ContactForm from '@/components/ContactForm';
 export default function Contact() {
     return (
         <>
@@ -12,25 +12,10 @@ export default function Contact() {
             <Container className="py-2">
             <SectionTitle title="Contact Us" subtitle="Get Intouch" />
             <Row className="mt-5 g-5">
-                <Col md={6}>
+                <Col md={6} >
                     <h4 className="fw-bold mb-4">Send us a message</h4>
-                    <Form>
-                        <Form.Group className="mb-3">
-                            <Form.Control type="text" placeholder="Your Name" />
-                        </Form.Group>
-                        <Form.Group className="mb-3">
-                            <Form.Control type="email" placeholder="Your Email" />
-                        </Form.Group>
-                        <Form.Group className="mb-3">
-                            <Form.Control type="text" placeholder="Subject" />
-                        </Form.Group>
-                        <Form.Group className="mb-3">
-                            <Form.Control as="textarea" rows={5} placeholder="Message" />
-                        </Form.Group>
-                        <Button variant="success" type="submit" className="w-100 py-2">
-                            Send Message
-                        </Button>
-                    </Form>
+                   
+                    <ContactForm popup={false} button={false} buttonClassName='btn btn-success w-100 py-2' formInputClass='py-2 mb-0 form-control' formClass='border' />
                 </Col>
                 <Col md={6}>
                     <h4 className="fw-bold mb-4">Contact Information</h4>
