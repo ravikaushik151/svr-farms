@@ -253,25 +253,46 @@ export default function EnquiryModal({
   button = true,
   popup = false,
   firstTimer = 40,
-  intervalTimer = 999,
+  intervalTimer = 99999999999,
   buttonText = "Enquire Now",
   textColor = "",
   buttonClassName = "btn btn-primary", 
-  triggerButtonClassName = "btn btn-success", // Set your default class here
+  triggerButtonClassName = "btn btn-success", 
   formInputClass = "",
   pdfFile = "/brochure.pdf",
 }: EnquiryModalProps) {
   const [showModal, setShowModal] = useState(false);
+  
+  // NEW: Refs to track live status inside the timers without resetting them
+  const isModalOpen = useRef(false);
+  const hasBeenClosedByUser = useRef(false);
+
+  // Sync state with ref
+  useEffect(() => {
+    isModalOpen.current = showModal;
+  }, [showModal]);
+
+  // Handle closing modal
+  const handleCloseModal = () => {
+    setShowModal(false);
+    hasBeenClosedByUser.current = true; // Mark as closed so it doesn't pop up again
+  };
 
   useEffect(() => {
     if (!popup) return;
 
     const t1 = setTimeout(() => {
-      setShowModal(true);
+      // Sirf tabhi open karo agar pehle se open nahi hai aur user ne close nahi kiya hai
+      if (!isModalOpen.current && !hasBeenClosedByUser.current) {
+        setShowModal(true);
+      }
     }, firstTimer * 1000);
 
     const t2 = setInterval(() => {
-      setShowModal(true);
+      // Interval par bhi same condition check hogi
+      if (!isModalOpen.current && !hasBeenClosedByUser.current) {
+        setShowModal(true);
+      }
     }, intervalTimer * 1000);
 
     return () => {
@@ -294,7 +315,6 @@ export default function EnquiryModal({
 
   return (
     <>
-      {/* UPDATE APPLIED HERE */}
       {button && (
         <button
           type="button"
@@ -317,7 +337,7 @@ export default function EnquiryModal({
           >
             <div className="modal-dialog modal-dialog-centered">
               <div className="modal-content">
-                <div className="modal-header border-0  fw-bold">
+                <div className="modal-header border-0 fw-bold">
                   <h5 className="modal-title">
                     {type === "download"
                       ? "Download Brochure"
@@ -327,7 +347,7 @@ export default function EnquiryModal({
                   <button
                     type="button"
                     className="btn-close"
-                    onClick={() => setShowModal(false)}
+                    onClick={handleCloseModal} // UPDATE APPLIED HERE
                   />
                 </div>
 
@@ -335,7 +355,7 @@ export default function EnquiryModal({
                   <ContactForm
                     type={type}
                     pdfFile={pdfFile}
-                    submitButtonClassName={buttonClassName} // The submit button keeps the original class
+                    submitButtonClassName={buttonClassName} 
                     textColor={textColor}
                     formInputClass={formInputClass}
                   />

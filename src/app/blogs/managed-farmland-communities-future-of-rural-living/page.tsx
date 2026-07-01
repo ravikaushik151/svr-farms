@@ -1,9 +1,11 @@
 'use client';
 
+import SectionTitle from '@/components/SectionTitle';
 import PageBanner from '@/components/PageBanner';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+// import Image from 'next/image';
 
-export default function BlogPost() {
+export default function BlogPage() {
     return (
         <>
             <PageBanner title="Blog" backgroundImage="/banner/Blog_Banner.webp" />
@@ -13,99 +15,73 @@ export default function BlogPost() {
                         <Col md={12}>
                             <div className="h-100 shadow border-0 hover-lift card">
                                 <div className="p-4 card-body">
-                                    <img alt="Managed Farmland Communities" loading="lazy" width={1024} height={538} decoding="async" data-nimg={1} className="mb-3 img-fluid mx-auto d-block w-100" style={{ color: 'transparent' }} src="/blog/managed-farmland-communities-1024x538.webp" />
-                                    <div className="">
-                                        <h1 className='section-heading text-dark text-md-start text-center card-title fw-bold fs-3'>Why Managed Farmland Communities are in the news?</h1>
+                                    <img
+                                        alt="Farmland near Hosur"
+                                        loading="lazy"
+                                        width={1296}
+                                        height={375}
+                                        decoding="async"
+                                        data-nimg={1}
+                                        className="mb-3 img-fluid mx-auto d-block w-100"
+                                        style={{ color: 'transparent' }}
+                                        src="/blog/1-acre-land-for-sale-in-bangalore.webp"
+                                    />
+                                    <div>
+                                        <h1 className='section-heading text-dark text-md-start text-center card-title'>
+                                            Why Managed Farmland Communities are in the news?
+                                        </h1>
                                     </div>
-                                    <div className="card-text text-start mt-3">
-                                        <p>In India, farmland has always been a symbol of safe investment. Traditionally, people bought land and either farmed it themselves or leased it to others to earn income. But with changing times, farmland is no longer just a means of growing grains, fruits and vegetables. It has now become an investment and lifestyle asset especially in the form of Managed Farmland Communities.</p>
+                                    <div className="card-text text-start mt-3 blog-details">
+                                        <div>
+                                            <p>In India, farmland has always been a symbol of safe investment. Traditionally, people bought land and either farmed it themselves or leased it to others to earn income. But with changing times, farmland is no longer just a means of growing grains, fruits and vegetables. It has now become an investment and lifestyle asset especially in the form of Managed Farmland Communities, where ownership, professional management, and a better way of living come together.</p>
+                                            <p>The hustle and bustle of cities, pollution and increasing mental stress have drawn people back to nature. Today’s urban investors want two things:</p>
+                                            <p>This is why gated managed farmland communities near Bangalore are becoming increasingly popular around fast-growing metropolises like Bangalore. Here people not only become owners of a piece of land but also get to experience a pollution-free escape and organic lifestyle on weekends.</p>
+                                            <h2>What are Managed Farmland Communities?</h2>
+                                            <p>The easiest way to understand Managed Farmland Communities is ownership, management and lifestyle.</p>
+                                            <h3>Key Benifits</h3>
+                                            <p>This means that you don’t have to worry about farming or maintenance, yet you still have ownership and passive income.</p>
+                                            <h2>Why Managed Farmland Communities are growing rapidly in India?</h2>
+                                            <h3>1. Urban stress and longing for nature</h3>
+                                            <p>According to WHO report, 70% of urban Indians are facing mental stress. This situation is even more severe in IT hubs like Bangalore. Managed farmland communities give these people a weekend escape, a chance to live in fresh air and greenery. This improves their lifestyle and provides quality time with family.</p>
+                                            <h2>2. Agriculture and Real Estate is equal to Dual Returns</h2>
+                                            <p>Traditional real estate investments (flats and plots) are now in saturation and appreciation rates have slowed down. In comparison, farmland communities offer dual benefits:</p>
+                                            <p>Annual income from farming: mango, coconut, papaya, vegetables or medicinal plants.</p>
+                                            <p>Long term increase in land value: Farmland values ​​in Hosur and Thalli have given 8–12% CAGR in the last decade.</p>
+                                            <h3>3. Trend of Sustainable Living</h3>
+                                            <p>According to a McKinsey report, 60% of millennial investors prefer sustainable projects. Managed farmland communities based on agroforestry and organic farming are the perfect answer to this trend.</p>
+                                            <h3>4. Growing trend of NRI and HNIs</h3>
+                                            <p>NRI investors are often looking for assets that are stable and inflation-proof. Gated managed farmland communities near Bangalore give them both ownership and passive income. On the other hand, HNIs see farmland as a luxury lifestyle + alternative investment option.</p>
+                                            <h3>5. Government and policy support</h3>
+                                            <p>The Indian government offers several subsidies and tax benefits to promote agroforestry and organic farming. This has made farmland investment even more attractive.</p>
+                                            <h2>Benefits of Managed Farmland Communities</h2>
+                                            <h3>1. Economic benefits</h3>
+                                            <h3>2. Lifestyle benefits</h3>
+                                            <h3>3. Social and health benefits</h3>
+                                            <h2>Why are Bangalore and Hosur becoming hotspots?</h2>
+                                            <p><strong>Strategic Location: </strong>Hosur and Thalli, 1–2 hours away from Bangalore, are ideal weekend destinations for IT professionals and businessmen.</p>
+                                            <p><strong>Fertile Soil and Climate: </strong>Red soil, moderate rainfall and fertile land make these areas perfect for farming and agroforestry.</p>
+                                            <p><strong>Connectivity: </strong>The Bangalore-Hosur expressway and the upcoming satellite town ring road (STRR) are increasing the demand and appreciation of these areas.</p>
+                                            <p>Why to Invest in Managed Farmland Communities <a href="https://svrfarms.com/why-you-should-invest-in-community-farming-in-bengaluru">Read More</a></p>
+                                            <h2>FAQs</h2>
+                                            <p><strong>Q1: What are Managed Farmland Communities?<br />
+                                            </strong>It is a blend of farmland ownership and professional management.</p>
+                                            <p><strong>Q2: Are gated managed farmland communities near Bangalore right for investment?<br />
+                                            </strong>Yes, as it offers both appreciation rate 8–12% CAGR and sustainable income.</p>
+                                            <p><strong>Q3: Why is managed farmland community a good investment?<br />
+                                            </strong>Because they offer urban people both a weekend lifestyle and a safe investment.</p>
+                                            <p><strong>Q4: What are the benefits of investing in managed farmland communities near Bangalore?</strong><br />
+                                                Ownership, appreciation, passive income and sustainable lifestyle.</p>
+                                            <p><strong>Q5: Can NRIs invest?</strong><br />
+                                                Yes, through partnership and trust models. Many developers have special offerings for NRIs.</p>
+                                            <h2>Conclusion</h2>
+                                            <p>Managed Farmland Communities in India are not just an investment but a lifestyle revolution.</p>
+                                            <p>Book Your Farm Visit Today and see for yourself how this community can change your life.<br />
+                                                <a href="https://svrfarms.com/contact-us">Contact us</a> for Managed Farmland Communities near Bangalore and be a part of a sustainable future.<strong data-start={343} data-end={393}><br />
+                                                    Follow SVR Farms for real stories and updates:</strong>&nbsp;[<a href="https://www.instagram.com/svrfarmsbangalore/" target="_blank" rel="noopener">Click Here</a>]</p>
+                                        </div>
 
-                                        <h2 className="section-heading mb-3 fs-5 fw-bold">What are Managed Farmland Communities?</h2>
 
-                                        <p>The easiest way to understand Managed Farmland Communities is ownership, management and lifestyle.</p>
 
-                                        <ul>
-                                            <li><strong>Ownership:</strong> The land purchased is legally registered in your name.</li>
-                                            <li><strong>Management:</strong> A professional farmland management team handles farming, security, irrigation, and maintenance.</li>
-                                            <li><strong>Community Living:</strong> It's planned like a gated township, but instead of concrete apartments, you're surrounded by farms, orchards, and organic gardens.</li>
-                                        </ul>
-
-                                        <h3 className="section-heading mb-3 fs-6 fw-bold">Key Benefits</h3>
-                                        <ul>
-                                            <li>24×7 gated security and boundary fencing</li>
-                                            <li>Rainwater harvesting, solar energy, and drip irrigation systems</li>
-                                            <li>Weekend homes, farmstay cottages, and clubhouse facilities</li>
-                                            <li>Agro-tourism activities and nature-based learning zones</li>
-                                            <li>Sustainable farming practices (organic, agroforestry, permaculture)</li>
-                                        </ul>
-
-                                        <h2 className="section-heading mb-3 fs-5 fw-bold">Why Managed Farmland Communities are growing rapidly in India?</h2>
-
-                                        <h3 className="section-heading mb-3 fs-6 fw-bold">1. Urban stress and longing for nature</h3>
-                                        <p>According to WHO, 70% of urban Indians are facing mental stress. This is even more severe in IT hubs like Bangalore. Managed farmland communities give these people a weekend escape and a chance to live in fresh air and greenery.</p>
-
-                                        <h3 className="section-heading mb-3 fs-6 fw-bold">2. Agriculture and Real Estate is equal to Dual Returns</h3>
-                                        <p>Traditional real estate investments (flats and plots) are now in saturation. Farmland communities offer dual benefits: annual income from farming and long-term land appreciation of 8–12% CAGR.</p>
-
-                                        <h3 className="section-heading mb-3 fs-6 fw-bold">3. Trend of Sustainable Living</h3>
-                                        <p>According to McKinsey, 60% of millennial investors prefer sustainable projects. Managed farmland communities based on agroforestry and organic farming are the perfect answer.</p>
-
-                                        <h3 className="section-heading mb-3 fs-6 fw-bold">4. Growing trend of NRI and HNIs</h3>
-                                        <p>NRI investors are looking for stable, inflation-proof assets. HNIs see farmland as a luxury lifestyle + alternative investment option.</p>
-
-                                        <h3 className="section-heading mb-3 fs-6 fw-bold">5. Government and policy support</h3>
-                                        <p>The Indian government offers subsidies and tax benefits to promote agroforestry and organic farming, making farmland investment more attractive.</p>
-
-                                        <h2 className="section-heading mb-3 fs-5 fw-bold">Benefits of Managed Farmland Communities</h2>
-
-                                        <h3 className="section-heading mb-3 fs-6 fw-bold">1. Economic benefits</h3>
-                                        <ul>
-                                            <li><strong>Capital appreciation:</strong> 8–12% CAGR in the last 10 years.</li>
-                                            <li><strong>Agriculture Income:</strong> Mango, coconut, vegetable crops can generate significant annual income.</li>
-                                            <li><strong>Diversification:</strong> A stable alternative asset class compared to urban real estate.</li>
-                                        </ul>
-
-                                        <h3 className="section-heading mb-3 fs-6 fw-bold">2. Lifestyle benefits</h3>
-                                        <ul>
-                                            <li>Pollution-free environment and peace on weekends.</li>
-                                            <li>Direct access to farm-to-table organic food.</li>
-                                            <li>Children get to experience farming and nature-based learning.</li>
-                                        </ul>
-
-                                        <h3 className="section-heading mb-3 fs-6 fw-bold">3. Social and health benefits</h3>
-                                        <ul>
-                                            <li>Community living with like-minded families.</li>
-                                            <li>Stress-free lifestyle and mental peace.</li>
-                                            <li>Agro-tourism and farmstay experiences.</li>
-                                        </ul>
-
-                                        <h2 className="section-heading mb-3 fs-5 fw-bold">Why are Bangalore and Hosur becoming hotspots?</h2>
-
-                                        <ul>
-                                            <li><strong>Strategic Location:</strong> Hosur and Thalli, 1–2 hours away from Bangalore, are ideal weekend destinations.</li>
-                                            <li><strong>Fertile Soil and Climate:</strong> Red soil and moderate rainfall make these areas perfect for farming.</li>
-                                            <li><strong>Connectivity:</strong> Bangalore-Hosur expressway and upcoming satellite town ring road increase demand and appreciation.</li>
-                                        </ul>
-
-                                        <h2 className="section-heading mb-3 fs-5 fw-bold">FAQs</h2>
-
-                                        <p><strong>Q1: What are Managed Farmland Communities?</strong></p>
-                                        <p>It's a blend of farmland ownership and professional management.</p>
-
-                                        <p><strong>Q2: Are gated managed farmland communities near Bangalore right for investment?</strong></p>
-                                        <p>Yes, as they offer both 8–12% CAGR appreciation and sustainable income.</p>
-
-                                        <p><strong>Q3: What are the benefits of investing in managed farmland communities near Bangalore?</strong></p>
-                                        <p>Ownership, appreciation, passive income and sustainable lifestyle.</p>
-
-                                        <p><strong>Q4: Can NRIs invest?</strong></p>
-                                        <p>Yes, through partnership and trust models. Many developers have special offerings for NRIs.</p>
-
-                                        <h2 className="section-heading mb-3 fs-5 fw-bold">Conclusion</h2>
-
-                                        <p>Managed Farmland Communities in India are not just an investment but a lifestyle revolution. For urbanites it's an escape from pollution. For investors it's an appreciating asset. For families it's a way to connect with health, nature and future generations.</p>
-
-                                        <p>Book your farm visit today and be part of a sustainable future.</p>
                                     </div>
                                 </div>
                             </div>
