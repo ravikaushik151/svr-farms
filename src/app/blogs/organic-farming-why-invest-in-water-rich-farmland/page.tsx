@@ -81,15 +81,15 @@ export default function BlogPage() {
   <p>Ready to invest in water-rich farmland that grows more than crops?<br />
     <a href="https://svrfarms.com/contact-us">Contact <strong>SVR Farms</strong> </a>today and explore high-potential <strong>real estate</strong> plots tailored for sustainable growth.<br />
     Visit us near Hosur and witness the future of farming firsthand.</p>
-  <h2 className data-start={5816} data-end={5879}>FAQs: Addressing Common Questions About Water-Rich Farmlands</h2>
-  <h3 className data-start={5881} data-end={5959}>1. What makes water-rich farmlands more valuable than other types of land?</h3>
-  <p className data-start={5960} data-end={6162}>Water-rich farmlands offer consistent crop production and higher resilience to climate change. The availability of water makes them an attractive investment for both traditional and <strong data-start={6142} data-end={6161}>organic farming</strong>.</p>
-  <h3 className data-start={6164} data-end={6241}>2. How do sustainable agriculture practices benefit water-rich farmlands?</h3>
-  <p className data-start={6242} data-end={6426}>Sustainable practices, like water-efficient irrigation and crop rotation, ensure that the land remains fertile and productive for years, which makes it a valuable long-term investment.</p>
-  <h3 className data-start={6428} data-end={6488}>3. Can water-rich farmlands be used for organic farming?</h3>
-  <p className data-start={6489} data-end={6683}>Yes, water-rich farmlands are ideal for <strong data-start={6529} data-end={6548}>organic farming</strong> due to their ability to maintain healthy soil and reliable irrigation systems, supporting crop production without synthetic chemicals.</p>
-  <h3 className data-start={6685} data-end={6761}>4. What are the financial benefits of investing in water-rich farmlands?</h3>
-  <p className data-start={6762} data-end={6994}>Investors can expect higher returns due to stable crop yields, rising land values, and increasing demand for organic and sustainably produced goods. Farmlands with adequate water resources offer consistent and profitable production.</p>
+  <h2 data-start={5816} data-end={5879}>FAQs: Addressing Common Questions About Water-Rich Farmlands</h2>
+  <h3 data-start={5881} data-end={5959}>1. What makes water-rich farmlands more valuable than other types of land?</h3>
+  <p data-start={5960} data-end={6162}>Water-rich farmlands offer consistent crop production and higher resilience to climate change. The availability of water makes them an attractive investment for both traditional and <strong data-start={6142} data-end={6161}>organic farming</strong>.</p>
+  <h3 data-start={6164} data-end={6241}>2. How do sustainable agriculture practices benefit water-rich farmlands?</h3>
+  <p data-start={6242} data-end={6426}>Sustainable practices, like water-efficient irrigation and crop rotation, ensure that the land remains fertile and productive for years, which makes it a valuable long-term investment.</p>
+  <h3 data-start={6428} data-end={6488}>3. Can water-rich farmlands be used for organic farming?</h3>
+  <p data-start={6489} data-end={6683}>Yes, water-rich farmlands are ideal for <strong data-start={6529} data-end={6548}>organic farming</strong> due to their ability to maintain healthy soil and reliable irrigation systems, supporting crop production without synthetic chemicals.</p>
+  <h3 data-start={6685} data-end={6761}>4. What are the financial benefits of investing in water-rich farmlands?</h3>
+  <p data-start={6762} data-end={6994}>Investors can expect higher returns due to stable crop yields, rising land values, and increasing demand for organic and sustainably produced goods. Farmlands with adequate water resources offer consistent and profitable production.</p>
 </div>
 
 

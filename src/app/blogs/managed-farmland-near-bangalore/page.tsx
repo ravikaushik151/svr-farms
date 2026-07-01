@@ -67,7 +67,7 @@ export default function BlogPage() {
                                             <p><strong>Q: Why choose SVR Farms for investing in managed farmland near Bangalore?</strong></p>
                                             <p>A: SVR Farms brings expertise in land management, implements eco-friendly practices, ensures professional management, and offers an urban retreat for a tranquil lifestyle.</p>
                                             <p>&nbsp;</p>
-                                            <p><iframe title="YouTube video player" src="https://www.youtube.com/embed/xSSZkvL2ULM?si=amEmbgg6np0x_OaQ" width={1200} height={675} frameBorder={0} allowFullScreen="allowfullscreen">&lt;span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"&gt;﻿&lt;/span&gt;</iframe></p>
+                                            <p><iframe title="YouTube video player" src="https://www.youtube.com/embed/xSSZkvL2ULM?si=amEmbgg6np0x_OaQ" width={1200} height={675} frameBorder={0} ></iframe></p>
                                         </div>
 
 

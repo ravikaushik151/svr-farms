@@ -56,7 +56,7 @@ export default function TamaraPage() {
                                         height={550}
                                         className="img-fluid  mb-4  rounded-4"
                                         priority
-                                        fetchPriority="high" style={{ objectFit: "cover", objectPosition: "bottom" }}
+                                         style={{ objectFit: "cover", objectPosition: "bottom" }}
                                     />
                                 </div>
                             </div>
@@ -125,7 +125,7 @@ export default function TamaraPage() {
                                         height={750}
                                         className="img-fluid  mb-3  rounded-4"
                                         priority
-                                        fetchPriority="high" style={{ height: '470px', objectFit: "cover", objectPosition: "center" }}
+                                         style={{ height: '470px', objectFit: "cover", objectPosition: "center" }}
                                     />
                                 </div>
                             </div>

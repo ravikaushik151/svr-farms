@@ -271,7 +271,7 @@ export default function ProjectsSection() {
                                 {selectedProject && (
                                     <>
                                         <h3 className="fw-bold mb-3 text-sanjeevani">{selectedProject.title}</h3>
-                                        <div className="mb-4 text-secondary lh-lg" style={{ whiteSpace: 'pre-line' }} dangerouslySetInnerHTML={{ __html: selectedProject.description.replace(/<strong>/g, '<strong class="fw-bold fs-5 text-dark mt-3 mb-1 d-block">') }} />
+                                        <div className="mb-4 text-secondary lh-lg" style={{ whiteSpace: 'pre-line' }} dangerouslySetInnerHTML={{ __html: selectedProject.description.replace(/<strong>/g, '<strong className="fw-bold fs-5 text-dark mt-3 mb-1 d-block">') }} />
                                         <div className="d-flex flex-column gap-2">
                                             <p className="mb-0 fw-bold"><FaPhoneAlt className="me-2 text-sanjeevani" /> <a href="tel:+919986410709" className="text-decoration-none text-dark">+91 99864 10709</a></p>
                                             <p className="mb-0 fw-bold"><FaEnvelope className="me-2 text-sanjeevani" /> <a href="mailto:info@svrfarms.com" className="text-decoration-none text-dark">info@svrfarms.com</a></p>

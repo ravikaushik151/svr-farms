@@ -35,7 +35,7 @@ export default function BlogPage() {
                                         <div>
                                             <h2><strong>Introduction</strong></h2>
                                             <p>In the midst of urban chaos, the desire to reconnect with nature and the origins of our food has given rise to a unique phenomenon— Managed Farmland near Bangalore. SVR Farms, nestled near Bangalore, emerges as a beacon, offering a distinctive experience that harmonizes nature and sustenance.</p>
-                                            <h2><img fetchpriority="high" decoding="async" className="alignnone wp-image-2592 size-full" src="https://svrfarms.com/wp-content/uploads/2023/12/New-Project-1.webp" alt="The Appeal of SVR Farms near Bangalore  Managed Farmland near Bangalore" width={1200} height={675} srcSet="https://svrfarms.com/wp-content/uploads/2023/12/New-Project-1.webp 1200w, https://svrfarms.com/wp-content/uploads/2023/12/New-Project-1-300x169.webp 300w, https://svrfarms.com/wp-content/uploads/2023/12/New-Project-1-1024x576.webp 1024w, https://svrfarms.com/wp-content/uploads/2023/12/New-Project-1-768x432.webp 768w" sizes="(max-width: 1200px) 100vw, 1200px" /></h2>
+                                            <h2><img  decoding="async" className="alignnone wp-image-2592 size-full" src="https://svrfarms.com/wp-content/uploads/2023/12/New-Project-1.webp" alt="The Appeal of SVR Farms near Bangalore  Managed Farmland near Bangalore" width={1200} height={675} srcSet="https://svrfarms.com/wp-content/uploads/2023/12/New-Project-1.webp 1200w, https://svrfarms.com/wp-content/uploads/2023/12/New-Project-1-300x169.webp 300w, https://svrfarms.com/wp-content/uploads/2023/12/New-Project-1-1024x576.webp 1024w, https://svrfarms.com/wp-content/uploads/2023/12/New-Project-1-768x432.webp 768w" sizes="(max-width: 1200px) 100vw, 1200px" /></h2>
                                             <p>&nbsp;</p>
                                             <p>SVR Farms stands out among <a href="https://www.instagram.com/svrfarmsbangalore/" target="_blank" rel="noopener">managed farmland near Bangalore</a>, boasting unique features and offerings that captivate those seeking a respite from city life. Its convenient location makes it an accessible haven for Bangalore residents, providing an oasis of tranquility just a short distance away.</p>
                                             <h2><strong>The Holistic Connection Between Nature and Well-being Managed Farmland near Bangalore</strong></h2>
@@ -81,7 +81,7 @@ export default function BlogPage() {
                                             <h4><strong>What crops are commonly grown at SVR Farms Managed Farmland near Bangalore?</strong></h4>
                                             <h4><strong>How does SVR Farms contribute to environmental conservation?</strong></h4>
                                             <h4><strong>What economic benefits does SVR Farms bring to local communities?</strong></h4>
-                                            <p><iframe title="YouTube video player" src="https://www.youtube.com/embed/xSSZkvL2ULM?si=4ENi_ek4fQgIoDYh" width={1200} height={675} frameBorder={0} allowFullScreen="allowfullscreen" /></p>
+                                            <p><iframe title="YouTube video player" src="https://www.youtube.com/embed/xSSZkvL2ULM?si=4ENi_ek4fQgIoDYh" width={1200} height={675} frameBorder={0}  /></p>
                                         </div>
 
 

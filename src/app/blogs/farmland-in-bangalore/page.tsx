@@ -57,7 +57,7 @@ export default function BlogPage() {
                                             <p>A: SVR Farms offers more than land – it’s a commitment to sustainable living, organic products, and eco-friendly practices.</p>
                                             <p><strong>Q: Does SVR Farm assist investors in understanding the legal aspects of farmland ownership in Bangalore?</strong></p>
                                             <p>A: Yes, SVR Farm guides legal aspects, ensuring investors have a clear understanding of regulations and compliance related to farmland ownership.</p>
-                                            <p><iframe title="YouTube video player" src="https://www.youtube.com/embed/MkQnlz-1R2Y?si=yitkbaELV1A_Flys" width={1200} height={675} frameBorder={0} allowFullScreen="allowfullscreen">&lt;span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"&gt;﻿&lt;/span&gt;</iframe></p>
+                                            <p><iframe title="YouTube video player" src="https://www.youtube.com/embed/MkQnlz-1R2Y?si=yitkbaELV1A_Flys" width={1200} height={675} frameBorder={0} ></iframe></p>
                                         </div>
 
 

@@ -73,7 +73,7 @@ export default function BlogPage() {
                                             <p data-start={5269} data-end={5298}>No need for farming knowledge</p>
                                             <p data-start={5301} data-end={5339}>Legal compliance and paperwork handled</p>
                                             <p data-start={5342} data-end={5393}>Regular updates and transparent performance reports</p>
-                                            <p data-start={5395} data-end={5564}><strong data-start={5395} data-end={5425}>Tamara Valley by SVR Farms</strong>, for instance, offers ¼ acre to 1-acre plots with a managed farming model in Thalli, just 60 minutes from Bangalore. <a className href="#" rel="noopener" data-start={5543} data-end={5563}>Learn more here</a>.</p>
+                                            <p data-start={5395} data-end={5564}><strong data-start={5395} data-end={5425}>Tamara Valley by SVR Farms</strong>, for instance, offers ¼ acre to 1-acre plots with a managed farming model in Thalli, just 60 minutes from Bangalore. <a  href="#" rel="noopener" data-start={5543} data-end={5563}>Learn more here</a>.</p>
                                             <h2 data-start={5571} data-end={5614}>Who Should Consider Farmland Investment?</h2>
                                             <p data-start={5618} data-end={5680}><strong data-start={5618} data-end={5641}>Urban professionals</strong> looking for a weekend retreat + income</p>
                                             <p data-start={5683} data-end={5739}><strong data-start={5683} data-end={5691}>NRIs</strong> seeking a long-term asset with growth potential</p>

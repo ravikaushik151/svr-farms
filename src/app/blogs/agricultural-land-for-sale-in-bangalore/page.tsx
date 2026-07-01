@@ -84,7 +84,7 @@ export default function BlogPage() {
                                             <p><strong>Q: How does SVR Farms focus on soil health and biodiversity?</strong></p>
                                             <p>A: SVR Farms enriches soil through composting, and crop rotation, and promotes biodiversity by cultivating diverse crops.</p>
                                             <p>&nbsp;</p>
-                                            <p><iframe title="YouTube video player" src="https://www.youtube.com/embed/xSSZkvL2ULM?si=21IHaTqIdwwIhzYy" width={1200} height={675} frameBorder={0} allowFullScreen="allowfullscreen">&lt;span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"&gt;﻿&lt;/span&gt;</iframe></p>
+                                            <p><iframe title="YouTube video player" src="https://www.youtube.com/embed/xSSZkvL2ULM?si=21IHaTqIdwwIhzYy" width={1200} height={675} frameBorder={0} ></iframe></p>
                                         </div>
 
                                     </div>
