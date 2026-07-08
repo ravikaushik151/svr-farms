@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import intlTelInput from "intl-tel-input";
-// Try changing 'build' to 'dist'
 import "intl-tel-input/dist/css/intlTelInput.css";
 import Link from "next/link";
 
@@ -17,8 +16,8 @@ interface EnquiryModalProps {
   textColor?: string;
   formClass?: string;
   formInputClass?: string;
-  buttonClassName?: string;        // Used for the Form Submit Button
-  triggerButtonClassName?: string; // NEW: Used for the Modal Trigger Button
+  buttonClassName?: string;
+  triggerButtonClassName?: string;
   pdfFile?: string;
   sheet_id?: string;
 }
@@ -89,7 +88,7 @@ function ContactForm({
     const rawValue = phoneInputRef.current?.value || "";
     const digitsOnly = rawValue.replace(/\D/g, "");
 
-   const countryData = iti?.getSelectedCountry();
+    const countryData = iti?.getSelectedCountry();
     const dialCode = countryData?.dialCode || "";
 
     const fullPhone = dialCode
@@ -110,7 +109,6 @@ function ContactForm({
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-
           body: JSON.stringify({
             ...formData,
             phone: fullPhone,
@@ -129,14 +127,13 @@ function ContactForm({
       }
 
       setSuccess(true);
-
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
-
+      setFormData({ name: "", email: "", message: "" });
       iti?.setNumber("");
+
+      // Close popup completely on success if needed
+      if (typeof window !== "undefined") {
+        sessionStorage.setItem("modalClosedByUser", "true");
+      }
 
       setTimeout(() => {
         window.location.href = "/thankyou";
@@ -150,19 +147,10 @@ function ContactForm({
 
   return (
     <form onSubmit={handleSubmit}>
-      {error && (
-        <div className="alert alert-danger py-2 small">
-          {error}
-        </div>
-      )}
+      {error && <div className="alert alert-danger py-2 small">{error}</div>}
+      {success && <div className="alert alert-success py-2 small">Sent Successfully</div>}
 
-      {success && (
-        <div className="alert alert-success py-2 small">
-          Sent Successfully
-        </div>
-      )}
-
-      <div className="mb-3 ">
+      <div className="mb-3">
         <input
           type="text"
           name="name"
@@ -212,37 +200,28 @@ function ContactForm({
           className="form-check-input bg-dark border-dark"
           id="privacy"
         />
-
-        <label
-          htmlFor="privacy"
-          className={`form-check-label ${textColor || "text-dark"}`}
-        >
+        <label htmlFor="privacy" className={`form-check-label ${textColor || "text-dark"}`}>
           I agree to{" "}
-                  <Link className="footer-link text-dark" href="/privacy-policy" target="_blank">
+          <Link className="footer-link text-dark" href="/privacy-policy" target="_blank">
             privacy policy
           </Link>
         </label>
       </div>
+
       <div className="text-center">
         <button
           type="submit"
           className={submitButtonClassName}
           disabled={loading}
-          style={{marginTop:"15px"}}
+          style={{ marginTop: "15px" }}
         >
           {loading ? "Please Wait..." : "Submit"}
         </button>
       </div>
 
-
       <style jsx global>{`
-        .iti {
-          width: 100%;
-        }
-
-        .iti__country-list {
-          z-index: 9999999;
-        }
+        .iti { width: 100%; }
+        .iti__country-list { z-index: 9999999; }
       `}</style>
     </form>
   );
@@ -256,44 +235,40 @@ export default function EnquiryModal({
   intervalTimer = 99999999999,
   buttonText = "Enquire Now",
   textColor = "",
-  buttonClassName = "btn btn-primary", 
-  triggerButtonClassName = "btn btn-success", 
+  buttonClassName = "btn btn-primary",
+  triggerButtonClassName = "btn btn-success",
   formInputClass = "",
   pdfFile = "/brochure.pdf",
 }: EnquiryModalProps) {
   const [showModal, setShowModal] = useState(false);
-  
-  // NEW: Refs to track live status inside the timers without resetting them
   const isModalOpen = useRef(false);
-  const hasBeenClosedByUser = useRef(false);
 
-  // Sync state with ref
   useEffect(() => {
     isModalOpen.current = showModal;
   }, [showModal]);
 
-  // Handle closing modal
   const handleCloseModal = () => {
     setShowModal(false);
-    hasBeenClosedByUser.current = true; // Mark as closed so it doesn't pop up again
+    // NEW: Save the closed state in sessionStorage
+    if (typeof window !== "undefined") {
+      sessionStorage.setItem("modalClosedByUser", "true");
+    }
   };
 
   useEffect(() => {
     if (!popup) return;
 
-    const t1 = setTimeout(() => {
-      // Sirf tabhi open karo agar pehle se open nahi hai aur user ne close nahi kiya hai
-      if (!isModalOpen.current && !hasBeenClosedByUser.current) {
-        setShowModal(true);
-      }
-    }, firstTimer * 1000);
+    const checkAndShowModal = () => {
+      // Check if user has already closed it in this session
+      const isClosed = typeof window !== "undefined" ? sessionStorage.getItem("modalClosedByUser") : null;
 
-    const t2 = setInterval(() => {
-      // Interval par bhi same condition check hogi
-      if (!isModalOpen.current && !hasBeenClosedByUser.current) {
+      if (!isModalOpen.current && isClosed !== "true") {
         setShowModal(true);
       }
-    }, intervalTimer * 1000);
+    };
+
+    const t1 = setTimeout(checkAndShowModal, firstTimer * 1000);
+    const t2 = setInterval(checkAndShowModal, intervalTimer * 1000);
 
     return () => {
       clearTimeout(t1);
@@ -318,7 +293,7 @@ export default function EnquiryModal({
       {button && (
         <button
           type="button"
-          className={triggerButtonClassName} 
+          className={triggerButtonClassName}
           onClick={() => setShowModal(true)}
         >
           {buttonText}
@@ -339,23 +314,19 @@ export default function EnquiryModal({
               <div className="modal-content">
                 <div className="modal-header border-0 fw-bold">
                   <h5 className="modal-title">
-                    {type === "download"
-                      ? "Download Brochure"
-                      : "Enquire Now"}
+                    {type === "download" ? "Download Brochure" : "Enquire Now"}
                   </h5>
-
                   <button
                     type="button"
                     className="btn-close"
-                    onClick={handleCloseModal} // UPDATE APPLIED HERE
+                    onClick={handleCloseModal}
                   />
                 </div>
-
                 <div className="modal-body">
                   <ContactForm
                     type={type}
                     pdfFile={pdfFile}
-                    submitButtonClassName={buttonClassName} 
+                    submitButtonClassName={buttonClassName}
                     textColor={textColor}
                     formInputClass={formInputClass}
                   />

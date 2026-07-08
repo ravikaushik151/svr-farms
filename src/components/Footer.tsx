@@ -9,14 +9,6 @@ import Image from 'next/image';
 import ContactForm from '@/components/ContactForm';
 export default function Footer() {
 
-
-
-
-
-
-
-
-
     const floatingButtonStyles = `
         @keyframes pulse-float {
             0% {

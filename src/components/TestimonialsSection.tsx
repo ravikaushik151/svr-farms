@@ -34,33 +34,84 @@ export default function TestimonialsSection() {
     };
 
     return (
-        <section className="py-5 bg-light">
-            <Container className="py-lg-4">
+        <section className="py-5" style={{ background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)' }}>
+            <Container className="py-lg-5">
                 <div className="text-center mb-5">
-                    <h6 className="section-subheading mb-2">What Our Clients Say</h6>
-                    <h2 className="section-heading">Client Testimonials</h2>
-                    <div className="d-inline-block bg-sanjeevani mt-2 mx-auto" style={{ width: '60px', height: '4px' }}></div>
+                    <h6 className="section-subheading text-uppercase fw-bold text-muted mb-2" style={{ letterSpacing: '2px' }}>
+                        What Our Clients Say
+                    </h6>
+                    <h2 className="section-heading fw-bold display-6 mb-3 text-dark">
+                        Client Testimonials
+                    </h2>
+                    <div className="d-inline-block bg-sanjeevani rounded-pill" style={{ width: '80px', height: '4px' }}></div>
                 </div>
 
                 <Row className="justify-content-center">
-                    <Col lg={8}>
-                        <Carousel activeIndex={index} onSelect={handleSelect} variant="dark" indicators={true} controls={false} className="pb-5">
-                            {testimonials.map((testimonial, idx) => (
-                                <Carousel.Item key={idx} className="text-center p-4">
-                                    <div className="mb-4 text-sanjeevani opacity-50">
-                                        <FaQuoteLeft size={40} />
-                                    </div>
-                                    <p className="lead fst-italic mb-4 lh-lg text-secondary">"{testimonial.text}"</p>
-                                    <h5 className="fw-bold text-sanjeevani">{testimonial.name}</h5>
-                                </Carousel.Item>
-                            ))}
-                        </Carousel>
+                    <Col lg={9} xl={8}>
+                        <Card className="border-0 shadow-lg rounded-4 overflow-hidden position-relative bg-white">
+                            {/* Premium Background Watermark Quote */}
+                            <FaQuoteLeft
+                                className="position-absolute text-sanjeevani"
+                                style={{ top: '-10px', left: '10px', fontSize: '150px', zIndex: 0, opacity: 0.05 }}
+                            />
 
-                        {/* Custom Indicators / Navigation dots provided by bootstrap are usually enough, 
-                    but adding some padding to bottom to ensure they don't overlap text */}
+                            <Card.Body className="p-4 p-md-5 position-relative" style={{ zIndex: 1 }}>
+                                <Carousel
+                                    activeIndex={index}
+                                    onSelect={handleSelect}
+                                    variant="dark"
+                                    indicators={true}
+                                    controls={false}
+                                    className="testimonial-carousel pb-4"
+                                >
+                                    {testimonials.map((testimonial, idx) => (
+                                        <Carousel.Item key={idx} className="text-center px-md-4">
+                                            {/* User Avatar */}
+                                            <div className="mb-4 d-flex justify-content-center">
+                                                <div
+                                                    className="d-flex align-items-center justify-content-center rounded-circle bg-sanjeevani text-white fs-3 fw-bold shadow-sm"
+                                                    style={{ width: '70px', height: '70px' }}
+                                                >
+                                                    {testimonial.name.charAt(0)}
+                                                </div>
+                                            </div>
+
+                                            <p className="fs-5 fst-italic mb-4 lh-lg text-secondary">
+                                                "{testimonial.text}"
+                                            </p>
+
+                                            <h5 className="fw-bold mb-0 text-dark">{testimonial.name}</h5>
+                                            <p className="text-muted small mt-1 mb-4">Verified Client</p>
+                                        </Carousel.Item>
+                                    ))}
+                                </Carousel>
+                            </Card.Body>
+                        </Card>
                     </Col>
                 </Row>
             </Container>
+
+            {/* Custom Styles for Premium Carousel Indicators */}
+            <style jsx global>{`
+                .testimonial-carousel .carousel-indicators {
+                    margin-bottom: 0;
+                    bottom: 0px;
+                }
+                .testimonial-carousel .carousel-indicators [data-bs-target] {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: #adb5bd;
+                    transition: all 0.3s ease;
+                    border: none;
+                    margin: 0 4px;
+                }
+                .testimonial-carousel .carousel-indicators .active {
+                    width: 24px;
+                    border-radius: 10px;
+                    background-color: var(--bs-sanjeevani, #198754); /* Fallback to success green if bg-sanjeevani isn't a CSS variable */
+                }
+            `}</style>
         </section>
     );
 }

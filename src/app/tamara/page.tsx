@@ -39,10 +39,6 @@ export default function TamaraPage() {
             <main className="main-wrapper">
                 <Hero />
                 <StatsSection />
-
-
-
-
                 <section className="section bg-white page-project-amidst" id="about" >
                     <div className="container">
                         <div className="row  px-md-5">
@@ -56,7 +52,7 @@ export default function TamaraPage() {
                                         height={550}
                                         className="img-fluid  mb-4  rounded-4"
                                         priority
-                                         style={{ objectFit: "cover", objectPosition: "bottom" }}
+                                        style={{ objectFit: "cover", objectPosition: "bottom" }}
                                     />
                                 </div>
                             </div>
@@ -80,7 +76,7 @@ export default function TamaraPage() {
                                         <ContactForm
                                             button={true}
                                             popup={true}
-                                           
+
                                             formInputClass='py-2 mb-0 form-control '
                                             buttonText="Download Brochure"
                                             triggerButtonClassName='btn btn-success'
@@ -125,7 +121,7 @@ export default function TamaraPage() {
                                         height={750}
                                         className="img-fluid  mb-3  rounded-4"
                                         priority
-                                         style={{ height: '470px', objectFit: "cover", objectPosition: "center" }}
+                                        style={{ height: '470px', objectFit: "cover", objectPosition: "center" }}
                                     />
                                 </div>
                             </div>
@@ -440,15 +436,8 @@ export default function TamaraPage() {
 
                 {/* Section 2: 360 Lifestyle Cards */}
 
-
-
-
-
-
-
                 <Gallery />
                 {/*  <Construction />*/}
-
 
                 <section className="section_home-connectivity bg-white page-about-mv" id="location">
                     <div className="container">
@@ -458,10 +447,6 @@ export default function TamaraPage() {
                                 <div className="mx-auto mb-5 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
                             </div>
                             <div className="row">
-
-
-
-
                                 <div className="col-md-8 ">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.296061031251!2d77.64576670000001!3d12.628572499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae67befb4e249f%3A0x278f5e2bb6d1007!2sTamara%20Valley!5e0!3m2!1sen!2sin!4v1779448325819!5m2!1sen!2sin" width="100%" height="380" loading="lazy" className="mb-3 rounded-3"></iframe>
                                 </div>

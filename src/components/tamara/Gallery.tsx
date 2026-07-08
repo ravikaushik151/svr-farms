@@ -106,6 +106,10 @@ export default function Gallery() {
                     height={276}
                     className="img-fluid  rounded-2 swiper-thumb-image"
                     loading="lazy"
+                    style={{
+                      width: "100%",
+                      height: "auto"
+                    }}
                   />
                 </SwiperSlide>
               ))}
