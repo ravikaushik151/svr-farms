@@ -22,17 +22,17 @@ export default function NewProjectSection() {
                 <Col lg={6} className="bg-sanjeevani text-white d-flex align-items-center p-5">
                     <div className="p-lg-4">
                         <div className="mb-4">
-                            <FaLeaf size={40} className="text-white-50" style={{ transform: 'rotate(-45deg)' }} />
+                            <FaLeaf size={40} className="text-white-100" style={{ transform: 'rotate(-45deg)' }} />
                         </div>
-                        <h6 className="section-subheading mb-2 text-white-50" style={{ color: 'rgba(255,255,255,0.7) !important' }}>New Projects</h6>
+                        <h6 className="section-subheading mb-2 text-white-100" style={{ color: 'rgba(255,255,255,0.7) !important' }}>New Projects</h6>
                         <h2 className="section-heading mb-4 text-white" style={{ color: '#fff !important' }}>Tamara Valley</h2>
-                        <p className="lead fw-light mb-4 lh-lg text-white-50">
+                        <p className="lead fw-light mb-4 lh-lg text-white-100">
                             Spread across an expansive 300 acres in the serene landscapes of Thalli, Tamara Valley is where nature unfolds in its purest form
                         </p>
-                        <p className="lead fw-light mb-4 lh-lg text-white-50">
+                        <p className="lead fw-light mb-4 lh-lg text-white-100">
                             Set amidst lush greenery and a peaceful landscape, it offers a blend of organic farming and curated lifestyle amenities, including a resort, wellness spaces, and recreational facilities.
                         </p>
-                        <p className="mb-5 lead fw-light mb-4 lh-lg text-white-50">
+                        <p className="mb-5 lead fw-light mb-4 lh-lg text-white-100">
                             Whether it’s a quiet weekend retreat or a long-term investment, Tamara Valley offers a space that grows with you - in value and in experience.
                         </p>
 
