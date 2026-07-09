@@ -175,7 +175,7 @@ export default function TamaraPage() {
                                         <div className="col-md-3 mb-4  ">
                                             <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Infrastructure.jpg" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/infrastructure_farm.png" />
                                                 </div>
                                                 <div className="services-content  px-3 pb-4 mb-3">
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3 fw-bold">
@@ -189,7 +189,7 @@ export default function TamaraPage() {
                                         <div className="col-md-3 mb-4  ">
                                             <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Water Supply.jpg" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/water_supply_farm.png" />
                                                 </div>
                                                 <div className="services-content px-3 pb-4 mb-3">
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
@@ -216,7 +216,7 @@ export default function TamaraPage() {
                                         <div className="col-md-3 mb-4  ">
                                             <div className="services-item shine-animate-item bg-white mb-3">
                                                 <div className="services-thumb">
-                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/Security.jpg" />
+                                                    <img alt="upsc" width={412} height={271} decoding="async" className="img-fluid mb-1 d-block mx-auto rounded-5" src="/images/security_farm.png" />
                                                 </div>
                                                 <div className="services-content px-3 pb-4 mb-3">
                                                     <h4 className="fw-bold title fs-6 mb-0 text-center py-3">
