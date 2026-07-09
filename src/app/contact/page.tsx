@@ -8,7 +8,7 @@ import ContactForm from '@/components/ContactForm';
 export default function Contact() {
     return (
         <>
-            <PageBanner title="Contact Us" backgroundImage="/banner/Contact us_Banner.webp" />
+            <PageBanner title="Contact Us" backgroundImage="/banner/Contact us_Banner.webp" isbackgoundpostion='100% 30%' />
             <Container className="pb-5">
                 <Row className="g-5">
                     <Col md={6} >
