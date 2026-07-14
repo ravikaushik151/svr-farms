@@ -1,28 +1,24 @@
 'use client';
+
 import { Container, Carousel, Card, Row, Col } from 'react-bootstrap';
-import { FaQuoteLeft } from 'react-icons/fa';
+import { FaQuoteLeft, FaLeaf } from 'react-icons/fa';
 import { useState } from 'react';
 
 const testimonials = [
     {
-        name: "Shiva",
-        text: "I was in search of a suitable farmland property for my business expansion. Little England provided me with the perfect property, and their assistance made the entire process seamless. I am content with their efficient services."
+        name: "Landowner",
+        role: "Little England Farms",
+        text: "Every plot I looked at before this had some story — encroachment, missing documents, a cousin who also had a claim. This one didn't. That's the whole reason I bought."
     },
     {
-        name: "Pavan",
-        text: "I purchased agricultural land connected with Little England and was thoroughly impressed with their service. Their team assisted me at every step, making the transaction process extremely smooth. I commend Little England for their professionalism and dedication."
+        name: "Landowner",
+        role: "Vaikuntam",
+        text: "I wanted land, not a project to manage. Their team handles the irrigation and the crop calendar; I just get a call when it's time to see how things are growing."
     },
     {
-        name: "Krishina",
-        text: "Little England helped me realize my dream of owning a countryside home. Their diverse range of farmland properties caught my attention, and their staff was always available to address my queries. I was impressed by their transparency and honesty."
-    },
-    {
-        name: "Ashok",
-        text: "I'm highly satisfied with Little England' services. I purchased a farm property through them, and their team guided me throughout the process. Their extensive knowledge about farmland properties is commendable, and I would recommend their services."
-    },
-    {
-        name: "Rajesh",
-        text: "The team at Little England showcases professionalism and dedication in their work. I purchased a farmhouse from them, and their personalized approach stood out to me. Their team assists in making the transaction process hassle-free. I highly recommend considering Little England for your purchase."
+        name: "Landowner",
+        role: "Tamara Valley",
+        text: "Took me a while to trust the pitch — everyone promises a 'transparent process.' What actually convinced me was showing up unannounced and finding people on-site working."
     }
 ];
 
@@ -34,25 +30,69 @@ export default function TestimonialsSection() {
     };
 
     return (
-        <section className="py-5" style={{ background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)' }}>
+        <section 
+            className="py-5 position-relative" 
+            style={{ 
+                backgroundColor: '#fcfbf7', // Premium warm cream background
+                overflow: 'hidden'
+            }}
+        >
+            {/* Top Leaf Accent Decorator */}
+            <div 
+                className="position-absolute d-none d-lg-block" 
+                style={{ top: '30px', right: '30px', opacity: 0.1, pointerEvents: 'none' }}
+            >
+                <FaLeaf size={90} style={{ color: '#114934' }} />
+            </div>
+
             <Container className="py-lg-5">
+                {/* Header */}
                 <div className="text-center mb-5">
-                    <h6 className="section-subheading text-uppercase fw-bold text-muted mb-2" style={{ letterSpacing: '2px' }}>
-                        What Our Clients Say
-                    </h6>
-                    <h2 className="section-heading fw-bold display-6 mb-3 text-dark">
-                        Client Testimonials
+                    <div className="d-flex justify-content-center align-items-center gap-2 mb-2">
+                        <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
+                        <h6 
+                            className="text-uppercase letter-spacing-2 mb-0 small fw-bold"
+                            style={{ color: '#c5a059', fontSize: '0.8rem' }}
+                        >
+                            Testimonials
+                        </h6>
+                        <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
+                    </div>
+                    
+                    <h2 
+                        className="display-4 fw-bold mb-3 text-sanjeevani"
+                        style={{
+                            fontFamily: '"Playfair Display", "Georgia", serif',
+                            lineHeight: '1.2'
+                        }}
+                    >
+                        What Landowners Say
                     </h2>
-                    <div className="d-inline-block bg-sanjeevani rounded-pill" style={{ width: '80px', height: '4px' }}></div>
+                    
+                    <div className="d-flex justify-content-center">
+                        <FaLeaf size={16} style={{ color: '#c5a059', opacity: 0.8 }} />
+                    </div>
                 </div>
 
                 <Row className="justify-content-center">
                     <Col lg={9} xl={8}>
-                        <Card className="border-0 shadow-lg rounded-4 overflow-hidden position-relative bg-white">
+                        <Card 
+                            className="border-0 shadow-sm rounded-4 overflow-hidden position-relative bg-white"
+                            style={{
+                                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.04)'
+                            }}
+                        >
                             {/* Premium Background Watermark Quote */}
                             <FaQuoteLeft
-                                className="position-absolute text-sanjeevani"
-                                style={{ top: '-10px', left: '10px', fontSize: '150px', zIndex: 0, opacity: 0.05 }}
+                                className="position-absolute"
+                                style={{ 
+                                    top: '10px', 
+                                    left: '20px', 
+                                    fontSize: '150px', 
+                                    zIndex: 0, 
+                                    opacity: 0.03,
+                                    color: '#114934'
+                                }}
                             />
 
                             <Card.Body className="p-4 p-md-5 position-relative" style={{ zIndex: 1 }}>
@@ -66,22 +106,42 @@ export default function TestimonialsSection() {
                                 >
                                     {testimonials.map((testimonial, idx) => (
                                         <Carousel.Item key={idx} className="text-center px-md-4">
-                                            {/* User Avatar */}
+                                            {/* Leaf Icon Avatar Ring */}
                                             <div className="mb-4 d-flex justify-content-center">
                                                 <div
-                                                    className="d-flex align-items-center justify-content-center rounded-circle bg-sanjeevani text-white fs-3 fw-bold shadow-sm"
-                                                    style={{ width: '70px', height: '70px' }}
+                                                    className="d-flex align-items-center justify-content-center rounded-circle text-white shadow-sm"
+                                                    style={{ 
+                                                        width: '72px', 
+                                                        height: '72px',
+                                                        backgroundColor: '#114934',
+                                                        border: '2.5px solid #c5a059',
+                                                        boxShadow: '0 4px 10px rgba(17, 73, 52, 0.2)'
+                                                    }}
                                                 >
-                                                    {testimonial.name.charAt(0)}
+                                                    <FaLeaf size={24} style={{ color: '#c5a059' }} />
                                                 </div>
                                             </div>
 
-                                            <p className="fs-5 fst-italic mb-4 lh-lg text-secondary">
+                                            <p 
+                                                className="fs-5 fst-italic mb-4 lh-lg text-secondary"
+                                                style={{
+                                                    fontFamily: '"Playfair Display", "Georgia", serif',
+                                                    color: '#2d3748'
+                                                }}
+                                            >
                                                 "{testimonial.text}"
                                             </p>
 
-                                            <h5 className="fw-bold mb-0 text-dark">{testimonial.name}</h5>
-                                            <p className="text-muted small mt-1 mb-4">Verified Client</p>
+                                            <h5 
+                                                className="fw-bold mb-0"
+                                                style={{ color: '#114934', letterSpacing: '0.5px' }}
+                                            >
+                                                {testimonial.name}
+                                            </h5>
+                                            
+                                            <p className="text-muted small mt-1 mb-4 fw-semibold text-uppercase" style={{ letterSpacing: '1px', fontSize: '0.75rem' }}>
+                                                {testimonial.role}
+                                            </p>
                                         </Carousel.Item>
                                     ))}
                                 </Carousel>
@@ -109,7 +169,7 @@ export default function TestimonialsSection() {
                 .testimonial-carousel .carousel-indicators .active {
                     width: 24px;
                     border-radius: 10px;
-                    background-color: var(--bs-sanjeevani, #198754); /* Fallback to success green if bg-sanjeevani isn't a CSS variable */
+                    background-color: #114934;
                 }
             `}</style>
         </section>

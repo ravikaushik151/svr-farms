@@ -89,7 +89,7 @@ export default function About() {
                                 </li>
                             </ul>
 
-                          
+
                             <Link
                                 href="/contact"
                                 className="btn btn-outline-success btn-lg px-5 border-2 rounded-pill d-none fw-semibold"
@@ -101,8 +101,8 @@ export default function About() {
                             <div className="position-relative  rounded-4 shadow-sm" style={{ height: '694px', backgroundColor: '#e9ecef', border: '1px dashed #ced4da' }}>
                                 {/* Image Placeholder */}
                                 <div className="d-flex flex-column w-100 h-100 align-items-center justify-content-center text-muted">
-                                    <Image src="/Tamara valley1.webp" className='img-fluid about-img rounded-4' width={660} height={694}  />
-                                
+                                    <Image src="/Tamara valley1.webp" className='img-fluid about-img rounded-4' width={660} height={694} />
+
                                 </div>
                             </div>
                         </Col>

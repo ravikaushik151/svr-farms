@@ -13,7 +13,7 @@ export default function PageBanner({
     isbackgoundpostion = 'center'
 }: PageBannerProps) {
     return (
-        <div className="position-relative d-flex align-items-center justify-content-center mb-5" style={{
+        <div className="position-relative d-flex align-items-center justify-content-center" style={{
             height: '400px',
             backgroundImage: `url("${backgroundImage}")`,
             backgroundSize: 'cover',

@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <Navbar expand="lg" className="bg-sanjeevani py-3 shadow-sm sticky-top" data-bs-theme="dark">
             <Container>
-                <Navbar.Brand as={Link} href="/" className="fw-bold text-white fs-4"> <Image src="/svr-farms-web-logo-2-1.png" alt="SVR Farms Logo" width={150} height={40} priority className="mb-0 img-fluid" /></Navbar.Brand>
+                <Navbar.Brand as={Link} href="/" className="fw-bold text-white fs-4"> <Image src="/svr-farms-web-logo-2-1.png" alt="SVR Farms Logo" width={150} height={40} priority className="mb-0 img-fluid" style={{ width: '150px', height: 'auto' }} /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto align-items-center">

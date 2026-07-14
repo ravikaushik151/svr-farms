@@ -1,6 +1,9 @@
 import Hero from '@/components/Hero';
+import AboutOverview from '@/components/AboutOverview';
 import SectionTitle from '@/components/SectionTitle';
 import AboutSection from '@/components/AboutSection';
+import WhyThallySection from '@/components/WhyThallySection';
+import WhatManagedMeansSection from '@/components/WhatManagedMeansSection';
 import NewProjectSection from '@/components/NewProjectSection';
 import StatsSection from '@/components/StatsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
@@ -13,13 +16,16 @@ export default function Home() {
     return (
         <>
             <Hero />
+            <AboutOverview />
             <StatsSection />
             <AboutSection />
+            <WhyThallySection />
+            <WhatManagedMeansSection />
             <NewProjectSection />
             <TestimonialsSection />
-            <ProjectsSection />
+            <ProjectsSection limit={6} showExploreButton={true} />
 
-            <div className="bg-light py-5 mt-5">
+            <div className="bg-light py-5 mt-5 d-none">
                 <Container>
                     <SectionTitle title="Why Choose Little England?" subtitle="The SVR Advantage" />
                     <Row className="text-center g-4">

@@ -57,18 +57,19 @@ export default function Hero() {
                 >
                     <Row className="justify-content-center">
                         <Col lg={10}>
-                            <h6 className="text-uppercase letter-spacing-2 mb-3 small fw-semibold text-white-100">
-                                Discover Little England
-                            </h6>
-                            <h1 className="display-3 fw-bold mb-4">
-                                Own a Piece of Nature.
-                                <br />
-                                Watch It Grow With You.
+                            <h1 className="display-3 fw-bold mb-3 lh-sm">
+                                Managed Organic Farmland Near Bengaluru
                             </h1>
-                            <div className="mt-5">
-                                <Link href="/contact" className="btn btn-outline-light px-5 py-3">
-                                    Find Your Dream Farm Plot
+                            <p className="lead fs-4 mb-5 text-white-90" style={{ letterSpacing: '0.5px' }}>
+                                In the belt the British called Little England
+                            </p>
+                            <div className="d-flex flex-wrap justify-content-center gap-3">
+                                <Link href="/contact" className="btn btn-primary px-5 py-3">
+                                    Book a Site Visit
                                 </Link>
+                                <a href="#projects" className="btn btn-outline-light px-5 py-3">
+                                    See the Farmlands
+                                </a>
                             </div>
                         </Col>
                     </Row>
