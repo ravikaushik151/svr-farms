@@ -130,6 +130,11 @@ export default function Footer() {
                                     </Link>
                                 </li>
                                 <li className="mb-3">
+                                    <Link href="/location-advantages" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all  justify-content-md-start justify-content-center">
+                                        <FaArrowRight size={10} className="md-md-2 me-2 text-sanjeevani-dark" /> Location Advantages
+                                    </Link>
+                                </li>
+                                <li className="mb-3">
                                     <Link href="/blogs" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all  justify-content-md-start justify-content-center">
                                         <FaArrowRight size={10} className="md-md-2 me-2 text-sanjeevani-dark    " /> Blogs
                                     </Link>
@@ -144,6 +149,11 @@ export default function Footer() {
                                 <li className="mb-3">
                                     <Link href="/contact" className="text-white text-decoration-none d-flex align-items-center  justify-content-md-start justify-content-center hover-sanjeevani transition-all">
                                         <FaArrowRight size={10} className="md-md-2 me-2 text-sanjeevani-dark" /> Contact Us
+                                    </Link>
+                                </li>
+                                <li className="mb-3">
+                                    <Link href="/faq" className="text-white text-decoration-none d-flex align-items-center  justify-content-md-start justify-content-center hover-sanjeevani transition-all">
+                                        <FaArrowRight size={10} className="md-md-2 me-2 text-sanjeevani-dark" /> FAQ
                                     </Link>
                                 </li>
                                 <li className="mb-3">

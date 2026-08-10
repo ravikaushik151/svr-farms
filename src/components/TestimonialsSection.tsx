@@ -6,19 +6,29 @@ import { useState } from 'react';
 
 const testimonials = [
     {
-        name: "Landowner",
+        name: "Arjun Reddy",
         role: "Little England Farms",
-        text: "Every plot I looked at before this had some story — encroachment, missing documents, a cousin who also had a claim. This one didn't. That's the whole reason I bought."
+        text: "I was initially unsure about investing in farmland, especially with all the concerns around documentation and management. Little England made the entire process extremely transparent and structured. From site visits to final registration, everything was handled professionally. What stood out for me was their clarity and commitment at every step."
     },
     {
-        name: "Landowner",
-        role: "Vaikuntam",
-        text: "I wanted land, not a project to manage. Their team handles the irrigation and the crop calendar; I just get a call when it's time to see how things are growing."
+        name: "Kavya Nair",
+        role: "Little England Farms",
+        text: "Owning farmland always felt complicated until I came across Little England. Their team simplified everything - from explaining the investment potential to managing the land after purchase. It feels reassuring to know that my property is being taken care of even when I’m not there. It’s been a smooth and fulfilling experience."
     },
     {
-        name: "Landowner",
-        role: "Tamara Valley",
-        text: "Took me a while to trust the pitch — everyone promises a 'transparent process.' What actually convinced me was showing up unannounced and finding people on-site working."
+        name: "Sriram Iyer",
+        role: "Little England Farms",
+        text: "I was looking for a long-term investment that also had lifestyle value, and Little England offered exactly that. The way they’ve structured their projects, especially with management and legal clarity, gives a lot of confidence. It doesn’t feel like just a purchase - it feels like a well-thought-out decision."
+    },
+    {
+        name: "Meghana Rao",
+        role: "Little England Farms",
+        text: "What impressed me the most was how well everything was planned and executed. The team was always available to answer questions and guide me through the process. The environment, the layout, and the overall experience reflect a lot of thought and effort. It’s great to find this level of professionalism in farmland projects."
+    },
+    {
+        name: "Karthik Subramanian",
+        role: "Little England Farms",
+        text: "I’ve explored multiple farmland options before, but Little England stood out because of their approach and transparency. The entire journey - from selection to ownership - was seamless. Their understanding of the market and attention to detail made me feel confident about my investment."
     }
 ];
 
@@ -30,16 +40,16 @@ export default function TestimonialsSection() {
     };
 
     return (
-        <section 
-            className="py-5 position-relative" 
-            style={{ 
+        <section
+            className="py-5 position-relative"
+            style={{
                 backgroundColor: '#fcfbf7', // Premium warm cream background
                 overflow: 'hidden'
             }}
         >
             {/* Top Leaf Accent Decorator */}
-            <div 
-                className="position-absolute d-none d-lg-block" 
+            <div
+                className="position-absolute d-none d-lg-block"
                 style={{ top: '30px', right: '30px', opacity: 0.1, pointerEvents: 'none' }}
             >
                 <FaLeaf size={90} style={{ color: '#114934' }} />
@@ -50,7 +60,7 @@ export default function TestimonialsSection() {
                 <div className="text-center mb-5">
                     <div className="d-flex justify-content-center align-items-center gap-2 mb-2">
                         <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
-                        <h6 
+                        <h6
                             className="text-uppercase letter-spacing-2 mb-0 small fw-bold"
                             style={{ color: '#c5a059', fontSize: '0.8rem' }}
                         >
@@ -58,8 +68,8 @@ export default function TestimonialsSection() {
                         </h6>
                         <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
                     </div>
-                    
-                    <h2 
+
+                    <h2
                         className="display-4 fw-bold mb-3 text-sanjeevani"
                         style={{
                             fontFamily: '"Playfair Display", "Georgia", serif',
@@ -68,7 +78,7 @@ export default function TestimonialsSection() {
                     >
                         What Landowners Say
                     </h2>
-                    
+
                     <div className="d-flex justify-content-center">
                         <FaLeaf size={16} style={{ color: '#c5a059', opacity: 0.8 }} />
                     </div>
@@ -76,7 +86,7 @@ export default function TestimonialsSection() {
 
                 <Row className="justify-content-center">
                     <Col lg={9} xl={8}>
-                        <Card 
+                        <Card
                             className="border-0 shadow-sm rounded-4 overflow-hidden position-relative bg-white"
                             style={{
                                 boxShadow: '0 10px 30px rgba(0, 0, 0, 0.04)'
@@ -85,11 +95,11 @@ export default function TestimonialsSection() {
                             {/* Premium Background Watermark Quote */}
                             <FaQuoteLeft
                                 className="position-absolute"
-                                style={{ 
-                                    top: '10px', 
-                                    left: '20px', 
-                                    fontSize: '150px', 
-                                    zIndex: 0, 
+                                style={{
+                                    top: '10px',
+                                    left: '20px',
+                                    fontSize: '150px',
+                                    zIndex: 0,
                                     opacity: 0.03,
                                     color: '#114934'
                                 }}
@@ -110,8 +120,8 @@ export default function TestimonialsSection() {
                                             <div className="mb-4 d-flex justify-content-center">
                                                 <div
                                                     className="d-flex align-items-center justify-content-center rounded-circle text-white shadow-sm"
-                                                    style={{ 
-                                                        width: '72px', 
+                                                    style={{
+                                                        width: '72px',
                                                         height: '72px',
                                                         backgroundColor: '#114934',
                                                         border: '2.5px solid #c5a059',
@@ -122,7 +132,7 @@ export default function TestimonialsSection() {
                                                 </div>
                                             </div>
 
-                                            <p 
+                                            <p
                                                 className="fs-5 fst-italic mb-4 lh-lg text-secondary"
                                                 style={{
                                                     fontFamily: '"Playfair Display", "Georgia", serif',
@@ -132,13 +142,13 @@ export default function TestimonialsSection() {
                                                 "{testimonial.text}"
                                             </p>
 
-                                            <h5 
+                                            <h5
                                                 className="fw-bold mb-0"
                                                 style={{ color: '#114934', letterSpacing: '0.5px' }}
                                             >
                                                 {testimonial.name}
                                             </h5>
-                                            
+
                                             <p className="text-muted small mt-1 mb-4 fw-semibold text-uppercase" style={{ letterSpacing: '1px', fontSize: '0.75rem' }}>
                                                 {testimonial.role}
                                             </p>

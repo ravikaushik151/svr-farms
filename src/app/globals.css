@@ -124,3 +124,14 @@ body {
 .blog-details h2{font-size: 1.7rem !important;margin: 15px 0 !important;}
 .blog-details h3{font-size: 1.2rem !important;font-weight: 600;}
 .blog-details .emoji {max-width: 14px;}
+
+/* Custom Breadcrumb Styles for PageBanner */
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.breadcrumb-item a {
+  transition: color 0.2s ease-in-out;
+}
+.breadcrumb-item a:hover {
+  color: #c5a059 !important;
+}
