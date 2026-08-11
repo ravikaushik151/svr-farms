@@ -78,9 +78,8 @@ export default function Footer() {
                             <div className="mb-4">
                                 {/* <h3 className="fw-bold text-white mb-3 letter-spacing-1 text-md-start text-center">Little England</h3> */}
                                 <div className="d-flex justify-content-md-start justify-content-center mb-1">
-                                    <Image src="/svr-farms-web-logo-2-1.png" alt="SVR Farms Logo" width={150} height={40} className="mb-0 img-fluid" style={{ width: '150px', height: 'auto' }} />
+                                    <Image src="/LE_Web Logo.png" alt="SVR Farms Logo" width={300} height={80} className="mb-0 img-fluid" style={{ width: '300px', height: 'auto', filter: 'brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(286deg) brightness(103%) contrast(103%)' }} />
                                 </div>
-                                <div className="bg-sanjeevani mb-4 mx-md-start mx-auto" style={{ width: '60px', height: '3px' }}></div>
                                 <p className="text-white lh-lg text-md-start text-center px-1">
                                     Premium Farm Land Developers dedicated to creating sustainable and beautiful living spaces. We blend nature with modern amenities to find your perfect managed farmland.
                                 </p>

@@ -3,155 +3,204 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Container, Row, Col, Modal, Button, Card } from 'react-bootstrap';
-import { 
-    FaPhoneAlt, 
-    FaEnvelope, 
-    FaMapMarkerAlt, 
-    FaLeaf, 
-    FaSeedling, 
-    FaSpa, 
-    FaTint, 
-    FaMountain, 
+import {
+    FaPhoneAlt,
+    FaEnvelope,
+    FaMapMarkerAlt,
+    FaLeaf,
+    FaSeedling,
+    FaSpa,
+    FaTint,
+    FaMountain,
     FaArrowRight,
     FaHome,
-    FaTree
+    FaTree,
+    FaRulerCombined,
+    FaAward
 } from 'react-icons/fa';
 import Link from 'next/link';
 
 const projects = [
     {
         title: "Tamara Valley",
-        badge: "TAMARA VALLEY",
+        badge: "Thalli, Tamil Nadu",
         image: "/projects/Tamara Valley (Upcoming).webp",
-        shortDesc: "A 300+ acre managed farmland community offering nature-led living.",
+        shortDesc: "A 300+ acre managed farmland community offering premium resort-inspired organic living.",
         icon: FaLeaf,
-        link: "/tamara", 
-        description: `Tamara Valley is a premium managed farmland community near Bangalore, spread across 300+ acres of beautifully maintained green landscapes. It is designed for those who seek the calm of a weekend retreat while enjoying the ease of professionally managed farmland. Here, you own the land while every essential detail is seamlessly taken care of—irrigation, landscaping, and organic cultivation. It’s a space where nature thrives without demanding your time. Whether it’s a weekend escape, a long-term investment, or simply a place to slow down, Tamara Valley offers effortless access to nature. More than just land, it is a thoughtfully created countryside experience, close to Bangalore and completely cared for.`
+        link: "/tamara",
+        location: "Thalli, Tamil Nadu. A tranquil green belt positioned as a nature-led retreat within reach of Bangalore.",
+        scale: "A 300+ acre managed farmland community, with plot options starting from 0.25 acre and extending to 0.5 acre and 1 acre formats.",
+        usp: "A large-format organic farm-living destination that blends managed green ownership with 25+ lifestyle, wellness and leisure amenities in a resort-inspired setting."
     },
     {
         title: "Vaikuntam",
-        badge: "VAIKUNTAM",
+        badge: "Binnamangalam, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
-        shortDesc: "A serene farmland retreat designed for peaceful living.",
+        shortDesc: "A refined farm-living retreat pairing private land ownership with curated leisure amenities.",
         icon: FaSeedling,
-        description: `<strong>Overview</strong>
-Escape to Vaikuntam Farmland, a refined countryside retreat set across 55 acres of beautifully curated farmland near Bangalore. It is a place where understatement luxury meets the quiet elegance of nature. Spend time at our intimate restaurant, unwind beneath swaying trees, and experience the calm of thoughtfully maintained green spaces. Discover a setting where comfortable cottages offer privacy and ease, surrounded by a landscape designed for peaceful living. Vaikuntam Farmland brings together leisure and the outdoors in a way that feels effortless, offering a serene escape just a short drive from Bangalore.
-<strong>Picture rising to a field of green.</strong>
-A vast expanse of vibrant green unfolds as you arrive, gently revealing itself beyond a soft incline. The experience invites you to slow down, to walk barefoot across the smooth stretch of grass, and to take in the quiet beauty around you. A light breeze carries the natural scent of the earth, while the warmth of the sun settles softly across the landscape, creating a space that feels calm, grounded, and deeply restorative.
-<strong>Embracing the Beats of Agriculture Life</strong>
-Step into the gentle rhythm of agricultural life that surrounds you. Each morning begins with soft light falling across the fields, highlighting the quiet dedication behind every harvest. The subtle hum of activity, the growth of fresh crops, and the movement of the breeze come together to create a living, breathing landscape. It is not just a setting, but an experience—one that celebrates the connection between land, care, and the simple beauty of nature.`
+        location: "Binnamangalam, Tamil Nadu. A serene countryside setting within convenient reach of Bangalore.",
+        scale: "Approx. 17 acres of managed farmland, with individual plots starting from 10,890 sq. ft.",
+        usp: "A refined farm-living retreat that pairs private land ownership with curated leisure amenities and an immersive agricultural setting."
     },
     {
-        title: "TAPOVAN",
-        badge: "TAPOVAN",
+        title: "Girivanam Farms",
+        badge: "Near Bangalore",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/Tapovan-by-SVR-Farms.webp",
-        shortDesc: "A tranquil environment where simplicity, serenity, and spiritual living naturally align.",
-        icon: FaSpa,
-        description: `<strong>Overview</strong>
-Set across 63 acres of fertile land, Tapovan Farms is a thoughtfully designed managed farmland community where simplicity, serenity, and mindful living come together. Surrounded by mango orchards, timber plantations, a natural lake, and curated vegetable gardens, it blends the comforts of a luxury home with the charm of farm life. Located in Thally, just a short drive from Bangalore, Tapovan Farms offers a peaceful escape from the city’s pace. With meditation zones, Zen gardens, yoga spaces, and lakeside walkways, every element is crafted to restore balance, offering a space where you can unwind, reconnect, and experience life at a slower, more meaningful rhythm.
-<strong>Million diamond view of sea green</strong>
-Wake up to an uninterrupted expanse of lush green that stretches as far as the eye can see. As the morning light gently settles over the landscape, the surroundings come alive with a quiet sense of calm and clarity. Overlooking thriving orchards and open fields, the view becomes a daily reminder of the simplicity and beauty of nature. At Tapovan Farms, this experience isn’t occasional - it’s a part of everyday living, where each sunrise brings a renewed sense of peace, space, and connection.
-<strong>Gasp in the aromatic rhythms of farm life at Tapovan farms</strong>
-Step into an environment where nature and mindful living exist in harmony. Walk through timber plantations, breathe in the freshness of the air, and experience the quiet richness of a landscape that evolves with every season. From exploring vegetable gardens to simply pausing under the shade of trees, every moment invites you to slow down and reconnect. Here, life moves with intention - grounded, balanced, and deeply connected to the land, creating a lifestyle that feels both enriching and effortlessly serene.`
+        shortDesc: "A hands-free farmland experience combining organic plantations and professional management.",
+        icon: FaTree,
+        location: "Near Bangalore. A countryside setting designed for convenient weekend access and nature-led living.",
+        scale: "A professionally managed farmland community planned across 130 farm plots, supported by a 35,000 sq. ft. clubhouse and curated infrastructure.",
+        usp: "A hands-free farmland ownership experience combining sustainable organic plantations, professional farm management and resort-style community living."
     },
     {
         title: "Vasudha Kalpataru",
-        badge: "VASUDHA KALPATARU",
+        badge: "Agalakotta, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
-        shortDesc: "A thoughtfully nurtured farmland space where fertile land and natural beauty come together.",
+        shortDesc: "A plantation-led farm retreat anchored by 4,000 teak, 500 coconut and 500 mango trees.",
         icon: FaLeaf,
-        description: `<strong>Overview</strong>
-Escape to Vasudha Kalpataru, a picturesque managed farmland community set across 44 acres of lush, curated landscapes near Bangalore. It is a place where natural beauty meets quiet sophistication. Surrounded by swaying trees and open green spaces, every element is designed to offer a sense of calm and ease. Enjoy curated experiences, from relaxing by the pool to dining at a thoughtfully designed restaurant, all within a setting that feels both refined and grounded. With cozy cottages and a landscape shaped for comfort, Vasudha Kalpataru brings together nature and leisure in a way that feels effortless and complete.
-<strong>Imagine waking up to a sea of green</strong>
-Wake up to an uninterrupted stretch of greenery that greets you with calm and clarity. As the first light of the day gently spreads across the landscape, the surroundings come alive with a quiet, natural rhythm. Overlooking fields and orchards, the view becomes more than a moment - it becomes part of your everyday experience. At Vasudha Kalpataru, nature isn’t something you visit; it’s something you wake up to, offering a sense of stillness and connection that stays with you throughout the day.
-<strong>Embrace the Rhythms of Farm Life</strong>
-Step into a lifestyle shaped by simplicity, balance, and a deeper connection to the land. Each morning begins with soft light over the fields, while the gentle movement of nature sets the tone for the day. Surrounded by greenery and open spaces, you are invited to slow down and experience life with intention. It’s a setting that blends comfort with authenticity, offering a peaceful escape from the pace of the city while keeping you connected to what truly matters.`
+        location: "Settipalli, Agalakotta, Tamil Nadu. A peaceful managed farmland destination within reach of Bangalore.",
+        scale: "Spread across 44 acres with 140 farm plots, ranging from 10,890 sq. ft. to 50,000 sq. ft.",
+        usp: "A plantation-led farm retreat anchored by 4,000 teak, 500 coconut and 500 mango trees, complemented by leisure and recreational amenities."
     },
     {
         title: "H₂O Farms",
-        badge: "H₂O FARMS",
+        badge: "Near Bangalore",
         image: "/projects/H2O Farms.webp",
-        shortDesc: "Designed around efficient water management, ensuring sustainable farming.",
+        shortDesc: "A water-conscious farmland concept built around rainwater harvesting and ecological stewardship.",
         icon: FaTint,
-        description: `H₂O Farms by Little England is a thoughtfully planned 66+ acre managed farmland community built around water conservation, ecological balance, and long-term value. Designed with purpose, the project integrates rainwater harvesting, groundwater recharge, and efficient irrigation systems to create a resilient and future-ready landscape.
-H₂O redefines farmland ownership by aligning environmental responsibility with intelligent asset growth. It offers a rare opportunity to invest in a space where sustainability and long-term appreciation work hand in hand, creating enduring value that is both responsible and rewarding.`
+        location: "Near Bangalore. A nature-led farmland destination planned for sustainable countryside ownership.",
+        scale: "A 66+ acre managed farmland community comprising 195+ farm plots.",
+        usp: "A water-conscious farmland concept built around rainwater harvesting, groundwater recharge and efficient irrigation, blending ecological stewardship with long-term asset value."
     },
     {
         title: "Shivalik Hill",
-        badge: "SHIVALIK HILL",
+        badge: "Denkanikottai, Hosur",
         image: "/projects/Shivalik Hill Managed Farmland.webp",
-        shortDesc: "Six acres of invested landscapes, offering scenic hill views and a refreshing connection with nature.",
+        shortDesc: "A nature-led farm retreat designed around camping, sunset experiences, and waterside leisure.",
         icon: FaMountain,
-        description: `<strong>Overview</strong>
-Step away from the constant rush and demands of city life and discover a more balanced way of living. Shivalik Hill is designed to offer a refined and immersive farm experience, where nature and comfort come together effortlessly. Set in a serene landscape, it allows you to disconnect from the noise of urban living and reconnect with a slower, more meaningful rhythm. With thoughtfully planned amenities and a focus on ease, it brings together the calm of nature with the comfort of modern living.
-<strong>Experience Tranquility at Shivalik Hill Farmland</strong>
-Discover a setting where every detail is designed for relaxation and comfort. From a cozy restaurant and warm hospitality to curated outdoor experiences, the environment invites you to unwind at your own pace. Enjoy open spaces for camping, bonfires, and quiet moments surrounded by nature. With expansive landscapes and peaceful surroundings, Shivalik Hill offers a space where you can reconnect, recharge, and create lasting memories in a setting that feels both natural and refined.
-<strong>Embrace Tranquil Environment</strong>
-Experience a lifestyle shaped by calm, openness, and connection to nature. Spend your mornings taking in scenic views, your evenings unwinding in thoughtfully designed outdoor spaces, and your time enjoying moments that feel unhurried. With dedicated areas for leisure, gathering, relaxation, every element is created to enhance your experience. Surrounded by greenery and open skies, it becomes a place where comfort, simplicity, and nature come together seamlessly.`
+        location: "Belalam, Denkanikottai, Hosur. A tranquil countryside setting surrounded by nature and open landscapes.",
+        scale: "A 33-acre managed farmland community comprising 50 farm plots, ranging from 10,890 sq. ft. to 50,000 sq. ft.",
+        usp: "A nature-led farm retreat designed around camping, sunset experiences and waterside leisure, complemented by thoughtfully curated lifestyle amenities."
     },
     {
         title: "Madhuvan Farms",
-        badge: "MADHUVAN FARMS",
+        badge: "Denkanikottai, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
-        shortDesc: "Just a short drive from Bangalore lies an expansive organic managed farmland.",
+        shortDesc: "A nature-rich farm retreat featuring a 40-acre pre-developed food forest and a 2-acre natural lake.",
         icon: FaLeaf,
-        description: `Just a short drive from Bangalore lies an expansive organic managed farmland designed around natural abundance.`
+        location: "Santhanapalli, Denkanikottai, Tamil Nadu. A lush countryside setting within convenient reach of Bangalore.",
+        scale: "A 65-acre managed farmland community comprising 160 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
+        usp: "A nature-rich farm retreat distinguished by a 40-acre pre-developed food forest, flourishing orchards and a 2-acre natural lake, creating an immersive landscape for green living."
     },
     {
-        title: "Gokulam Farmland",
-        badge: "GOKULAM FARMLAND",
-        image: "https://svrfarms.com/wp-content/uploads/2023/08/fm7.webp",
-        shortDesc: "A thoughtfully planned managed farmland community by Little England.",
-        icon: FaHome,
-        description: `Gokulam Farmland is a thoughtfully planned managed farmland community by Little England.`
+        title: "Tapovan",
+        badge: "Thally, Tamil Nadu",
+        image: "https://svrfarms.com/wp-content/uploads/2023/08/Tapovan-by-SVR-Farms.webp",
+        shortDesc: "A wellness-led farm retreat with mango orchards, Zen gardens, and lakeside experiences.",
+        icon: FaSpa,
+        location: "Jowlagiri, Thally, Tamil Nadu. A serene countryside destination approximately 59 km from Bengaluru.",
+        scale: "A 65-acre managed farmland community comprising 160 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
+        usp: "A wellness-led farm retreat shaped by mango orchards, timber plantations and a 2-acre natural lake, enriched with meditation zones, Zen gardens and lakeside experiences."
     },
     {
         title: "Kamyaka Woods",
-        badge: "KAMYAKA WOODS",
+        badge: "Gumlapuram, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/Tapovan-by-SVR-Farms.webp",
-        shortDesc: "Explore a refined opportunity to own agricultural land near Hosur.",
+        shortDesc: "A sustainability-led farm retreat distinguished by a lush Miyawaki forest and modern essentials.",
         icon: FaTree,
-        description: `Kamyaka Woods spans across 15 acres in the scenic Gumalapuram Valley.`
+        location: "Gumlapuram, Tamil Nadu. A serene valley setting near Bangalore, surrounded by natural water bodies.",
+        scale: "A 15-acre managed farmland community comprising 50 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
+        usp: "A sustainability-led farm retreat distinguished by a lush Miyawaki forest, complemented by modern essentials such as high-speed connectivity and uninterrupted power."
     },
     {
         title: "Green Vista",
-        badge: "GREEN VISTA",
+        badge: "Agalakotta, TN",
         image: "/projects/Green Vista.webp",
-        shortDesc: "Lush green surroundings crafted for peaceful escapes and sustainable farm living.",
+        shortDesc: "A scenic farm-living retreat combining fertile land, abundant water, and panoramic green views.",
         icon: FaLeaf,
-        description: `Lush green surroundings crafted for peaceful escapes and sustainable farm living.`
+        location: "Settipalli, Agalakotta, Tamil Nadu. A tranquil countryside setting framed by rolling landscapes and lush greenery.",
+        scale: "A 25-acre managed farmland community comprising 50 farm plots, ranging from 10,890 sq. ft. to 50,000 sq. ft.",
+        usp: "A scenic farm-living retreat combining fertile land, abundant water resources and panoramic green views, complemented by curated leisure and community amenities."
+    },
+    {
+        title: "Gokulam Farmland",
+        badge: "Thalli, Tamil Nadu",
+        image: "https://svrfarms.com/wp-content/uploads/2023/08/fm7.webp",
+        shortDesc: "A fully managed farm-living community with professionally maintained plantations and expert caretaking.",
+        icon: FaHome,
+        location: "Thalli, Tamil Nadu. A scenic countryside setting approximately 50 minutes from Electronic City, Bangalore.",
+        scale: "A 20-acre managed farmland community comprising 50 farm plots, ranging from 10,890 sq. ft. to 50,000 sq. ft.",
+        usp: "A fully managed farm-living proposition combining professionally maintained plantations, water-efficient irrigation and expert caretaking for effortless countryside ownership."
     },
     {
         title: "Sanjeevani Farms",
-        badge: "SANJEEVANI FARMS",
+        badge: "Athalavadi, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/Sanjeevani-Farms-by-SVR-Farms.webp",
-        shortDesc: "A revitalizing farmland space that captures the essence of rural living.",
+        shortDesc: "A thoughtfully planned farm community with direct farm-road access and dependable infrastructure.",
         icon: FaSpa,
-        description: `A revitalizing farmland space that captures the essence of rural living.`
+        location: "Athalavadi, Tamil Nadu. A peaceful countryside setting with direct farm-road access and essential infrastructure.",
+        scale: "A 10-acre community farmland project comprising 45 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
+        usp: "A thoughtfully planned farm community focused on seamless land ownership, clear access and dependable on-ground infrastructure, supported by professional management."
     },
     {
         title: "Lake View Farm",
-        badge: "LAKE VIEW FARM",
+        badge: "Denkanikottai, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
-        shortDesc: "Spread across 63 acres of fertile land, Lake View Farms is a thoughtfully designed managed farmland.",
+        shortDesc: "A lake-centric farm retreat combining mango orchards, timber plantations, and waterside tranquility.",
         icon: FaTint,
-        description: `Spread across 63 acres of fertile land, Lake View Farms is a thoughtfully designed managed farmland.`
+        location: "Denkanikottai, Tamil Nadu. A serene countryside setting shaped by greenery, open landscapes and waterside tranquillity.",
+        scale: "A 65-acre community farmland project comprising 160 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
+        usp: "A lake-centric farm retreat defined by mango orchards, timber plantations and a 2-acre natural lake, creating a distinctive blend of nature, wellness and countryside living."
     },
     {
-        title: "IBBANI",
-        badge: "IBBANI FARMS",
+        title: "Ibbani",
+        badge: "Agalakotta, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/fm7.webp",
-        shortDesc: "A peaceful living experience defined by simplicity, space, and a deeper connection with nature.",
+        shortDesc: "A nature-led farm retreat shaped by mango orchards, gardens, and a 2-acre natural lake.",
         icon: FaSeedling,
-        description: `A peaceful living experience defined by simplicity, space, and a deeper connection with nature.`
+        location: "Agalakotta, Tamil Nadu. A serene countryside setting surrounded by fertile landscapes and natural greenery.",
+        scale: "A 65-acre community farmland project comprising 160 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
+        usp: "A nature-led farm retreat shaped by mango orchards, timber plantations, vegetable gardens and a 2-acre natural lake, creating a refined balance of farm living, wellness and tranquillity."
     },
     {
-        title: "Marwar Aangan Farms",
-        badge: "MARWAR AANGAN",
+        title: "Silver Woods",
+        badge: "Denkanikottai, TN",
         image: "/projects/Marwar Aangan Farms.webp",
-        shortDesc: "Rooted in tradition and simplicity, a space that blends cultural warmth with natural living.",
+        shortDesc: "A sustainability-focused farm community combining long-term agroforestry and responsible cultivation.",
+        icon: FaTree,
+        location: "Santhanapalli, Denkanikottai, Tamil Nadu. A tranquil countryside setting designed around accessible, nature-led farm living.",
+        scale: "A 10-acre managed farmland community comprising 45 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
+        usp: "A sustainability-focused farm community combining long-term agroforestry, responsible cultivation and professional farm management for an effortless ownership experience."
+    },
+    {
+        title: "Amrutvan",
+        badge: "Denkanikottai, TN",
+        image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
+        shortDesc: "A wellness-inspired farm retreat shaped by orchards, gardens, and a 2-acre natural lake.",
+        icon: FaSpa,
+        location: "Denkanikottai, Tamil Nadu - a tranquil countryside setting surrounded by fertile landscapes and natural greenery.",
+        scale: "A 30-acre community farmland project comprising 80 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
+        usp: "A wellness-inspired farm retreat shaped by orchards, timber plantations, vegetable gardens and a 2-acre natural lake, enriched with meditation, yoga and lakeside experiences."
+    },
+    {
+        title: "Amaya Farm Villa Plot",
+        badge: "Athalavadi, TN",
+        image: "/projects/Amaya Farm Villa Plot.webp",
+        shortDesc: "A gated villa-farmland community enriched with mango, chikoo, and jackfruit plantations.",
         icon: FaHome,
-        description: `Rooted in tradition and simplicity, a space that blends cultural warmth with natural living.`
+        location: "Athalavadi, Tamil Nadu - a tranquil countryside setting positioned within convenient driving reach of Bangalore.",
+        scale: "A 10-acre gated farm community comprising 45 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
+        usp: "A villa-farmland concept enriched with mango, chikoo, jackfruit and other fruit-tree plantations, bringing together private green ownership and countryside living."
+    },
+    {
+        title: "Govardhana Estate",
+        badge: "Denkanikottai, TN",
+        image: "https://svrfarms.com/wp-content/uploads/2023/08/fm7.webp",
+        shortDesc: "A low-density farmland estate featuring generously sized plots and a private countryside experience.",
+        icon: FaLeaf,
+        location: "Denkanikottai, Tamil Nadu. A peaceful countryside setting suited to expansive, nature-led farmland ownership.",
+        scale: "A 20-acre community farmland project comprising just 35 farm plots, ranging from 21,780 sq. ft. to 50,000 sq. ft.",
+        usp: "A low-density farmland estate distinguished by generously sized plots, professionally supported ownership and a more private countryside experience."
     }
 ];
 
@@ -180,37 +229,37 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
     const displayedProjects = limit ? projects.slice(0, limit) : projects;
 
     return (
-        <section 
-            className="py-5 position-relative" 
+        <section
+            className="py-5 position-relative"
             id="projects"
-            style={{ 
+            style={{
                 backgroundColor: '#fcfbf7', // Premium warm cream background
                 overflow: 'hidden'
             }}
         >
             {/* Top Leaf Accent Decorator */}
-            <div 
-                className="position-absolute d-none d-lg-block" 
+            <div
+                className="position-absolute d-none d-lg-block"
                 style={{ top: '20px', left: '20px', opacity: 0.08, pointerEvents: 'none' }}
             >
                 <FaLeaf size={100} style={{ color: '#114934' }} />
             </div>
 
             {/* Top Right Leaf Accent Decorator */}
-            <div 
-                className="position-absolute d-none d-lg-block" 
+            <div
+                className="position-absolute d-none d-lg-block"
                 style={{ top: '10px', right: '30px', opacity: 0.12, transform: 'rotate(45deg)', pointerEvents: 'none' }}
             >
                 <FaLeaf size={140} style={{ color: '#114934' }} />
             </div>
 
             <Container className="py-lg-5">
-                
+
                 {/* Section Title Header */}
                 <div className="text-center mb-5">
                     <div className="d-flex justify-content-center align-items-center gap-2 mb-2">
                         <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
-                        <h6 
+                        <h6
                             className="text-uppercase letter-spacing-2 mb-0 small fw-bold"
                             style={{ color: '#c5a059', fontSize: '0.8rem' }}
                         >
@@ -218,8 +267,8 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                         </h6>
                         <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
                     </div>
-                    
-                    <h2 
+
+                    <h2
                         className="display-4 fw-bold mb-3 text-sanjeevani"
                         style={{
                             fontFamily: '"Playfair Display", "Georgia", serif',
@@ -228,13 +277,13 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                     >
                         Our Projects
                     </h2>
-                    
+
                     <div className="d-flex justify-content-center mb-4">
                         <FaLeaf size={16} style={{ color: '#c5a059', opacity: 0.8 }} />
                     </div>
-                    
+
                     <p className="text-muted max-w-2xl mx-auto" style={{ fontSize: '1.02rem' }}>
-                        Carefully planned farmlands and nature-rich communities designed for peaceful living and long-term value.
+                        Explore thoughtfully developed farmland communities set in the serene landscapes of Thalli. Spaces designed for nature, accessibility, and long-term value.
                     </p>
                 </div>
 
@@ -244,7 +293,7 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                         const IconComponent = project.icon || FaLeaf;
                         return (
                             <Col key={index} xs={12} md={6} lg={4}>
-                                <Card 
+                                <Card
                                     className="border-0 shadow-sm rounded-4 overflow-hidden bg-white h-100 position-relative d-flex flex-column"
                                     style={{
                                         boxShadow: '0 4px 15px rgba(0, 0, 0, 0.04)',
@@ -253,15 +302,15 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                                 >
                                     {/* Image Wrapper */}
                                     <div className="position-relative" style={{ height: '230px', overflow: 'hidden' }}>
-                                        <img 
-                                            src={project.image} 
-                                            alt={project.title} 
+                                        <img
+                                            src={project.image}
+                                            alt={project.title}
                                             className="w-100 h-100 object-fit-cover transition-all"
                                             style={{ transition: 'transform 0.5s ease' }}
                                         />
-                                        
+
                                         {/* Badge Overlay */}
-                                        <div 
+                                        <div
                                             className="position-absolute d-flex align-items-center gap-2"
                                             style={{
                                                 top: '15px',
@@ -280,7 +329,7 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                                         </div>
 
                                         {/* Overlapping Gold Circular Icon Badge */}
-                                        <div 
+                                        <div
                                             className="rounded-circle d-flex align-items-center justify-content-center bg-white shadow-sm"
                                             style={{
                                                 width: '50px',
@@ -288,7 +337,7 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                                                 border: '2px solid #c5a059',
                                                 color: '#114934',
                                                 position: 'absolute',
-                                                bottom: '-25px',
+                                                bottom: '0px',
                                                 left: '50%',
                                                 transform: 'translateX(-50%)',
                                                 zIndex: 3
@@ -300,7 +349,7 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
 
                                     {/* Card Content body */}
                                     <Card.Body className="pt-5 px-4 pb-4 d-flex flex-column text-center flex-grow-1">
-                                        <h4 
+                                        <h4
                                             className="fw-bold mb-3 text-dark"
                                             style={{
                                                 fontFamily: '"Playfair Display", "Georgia", serif',
@@ -309,13 +358,13 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                                         >
                                             {project.title}
                                         </h4>
-                                        
+
                                         <p className="text-muted small lh-relaxed mb-4 flex-grow-1" style={{ fontSize: '0.85rem' }}>
                                             {project.shortDesc}
                                         </p>
 
                                         {/* View Project Outlined Button */}
-                                        <button 
+                                        <button
                                             onClick={() => handleShow(project)}
                                             className="btn text-uppercase py-2 px-4 rounded-1 w-100 d-flex align-items-center justify-content-center gap-2"
                                             style={{
@@ -348,7 +397,7 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                 {/* Explore All Projects Bottom Button (Homepage only) */}
                 {showExploreButton && (
                     <div className="text-center">
-                        <Link 
+                        <Link
                             href="/projects"
                             className="btn text-white px-5 py-3 rounded-1 d-inline-flex align-items-center gap-3"
                             style={{
@@ -379,52 +428,100 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
 
             {/* Modal Detail Dialog */}
             <Modal show={showModal} onHide={handleClose} size="lg" centered>
-                <Modal.Header closeButton className="border-0">
+                <Modal.Header closeButton className="border-0" style={{ zIndex: 10, position: 'absolute', right: '10px', top: '10px' }}>
                 </Modal.Header>
                 <Modal.Body className="p-0">
                     <div className="container-fluid">
                         <div className="row">
-                            <div className="col-lg-12 p-0">
+                            <div className="col-lg-12 p-0 position-relative">
                                 {selectedProject && (
                                     <div className="position-relative">
                                         <img
                                             src={selectedProject.image}
                                             alt={selectedProject.title}
                                             className="w-100 object-fit-cover"
-                                            style={{ maxHeight: '400px' }}
+                                            style={{ maxHeight: '350px' }}
                                         />
+                                        <div className="position-absolute bottom-0 start-0 p-4 text-white w-100" style={{ background: 'linear-gradient(transparent, rgba(11, 43, 31, 0.95))' }}>
+                                            <span className="text-uppercase fw-bold text-spacing-2" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                                                Managed Farmland Community
+                                            </span>
+                                            <h2 className="fw-bold mb-0 text-white" style={{ fontFamily: '"Playfair Display", "Georgia", serif', fontSize: '2rem' }}>
+                                                {selectedProject.title}
+                                            </h2>
+                                        </div>
                                     </div>
                                 )}
                             </div>
                             <div className="col-lg-12 p-4 p-lg-5">
                                 {selectedProject && (
-                                    <>
-                                        <h3 className="fw-bold mb-3 text-sanjeevani">{selectedProject.title}</h3>
-                                        <div 
-                                            className="mb-4 text-secondary lh-lg" 
-                                            style={{ whiteSpace: 'pre-line' }} 
-                                            dangerouslySetInnerHTML={{ 
-                                                __html: selectedProject.description.replace(/<strong>/g, '<strong class="fw-bold fs-5 text-dark mt-3 mb-1 d-block">') 
-                                            }} 
-                                        />
-                                        <div className="d-flex flex-column gap-2 mt-4 pt-3 border-top">
-                                            <p className="mb-0 fw-bold">
-                                                <FaPhoneAlt className="me-2 text-sanjeevani" /> 
-                                                <a href="tel:+919986410709" className="text-decoration-none text-dark">+91 99864 10709</a>
-                                            </p>
-                                            <p className="mb-0 fw-bold">
-                                                <FaEnvelope className="me-2 text-sanjeevani" /> 
-                                                <a href="mailto:info@svrfarms.com" className="text-decoration-none text-dark">info@svrfarms.com</a>
-                                            </p>
+                                    <div className="d-flex flex-column gap-4">
+                                        {/* Specifications Grid */}
+                                        <div className="row g-4">
+                                            <div className="col-md-6">
+                                                <div className="d-flex align-items-start gap-3">
+                                                    <div className="rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '42px', height: '42px', minWidth: '42px', backgroundColor: '#fcfbf7', border: '1px solid rgba(197, 160, 89, 0.3)' }}>
+                                                        <FaMapMarkerAlt size={18} style={{ color: '#c5a059' }} />
+                                                    </div>
+                                                    <div>
+                                                        <h5 className="fw-bold text-dark mb-1" style={{ fontSize: '1rem', fontFamily: '"Playfair Display", "Georgia", serif' }}>Location</h5>
+                                                        <p className="text-secondary small mb-0 lh-base">{selectedProject.location}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className="col-md-6">
+                                                <div className="d-flex align-items-start gap-3">
+                                                    <div className="rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '42px', height: '42px', minWidth: '42px', backgroundColor: '#fcfbf7', border: '1px solid rgba(197, 160, 89, 0.3)' }}>
+                                                        <FaRulerCombined size={16} style={{ color: '#c5a059' }} />
+                                                    </div>
+                                                    <div>
+                                                        <h5 className="fw-bold text-dark mb-1" style={{ fontSize: '1rem', fontFamily: '"Playfair Display", "Georgia", serif' }}>Development Scale</h5>
+                                                        <p className="text-secondary small mb-0 lh-base">{selectedProject.scale}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </>
+
+                                        <div className="border-top pt-4">
+                                            <div className="d-flex align-items-start gap-3">
+                                                <div className="rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{ width: '42px', height: '42px', minWidth: '42px', backgroundColor: '#fcfbf7', border: '1px solid rgba(197, 160, 89, 0.3)' }}>
+                                                    <FaAward size={18} style={{ color: '#c5a059' }} />
+                                                </div>
+                                                <div>
+                                                    <h5 className="fw-bold text-dark mb-1" style={{ fontSize: '1rem', fontFamily: '"Playfair Display", "Georgia", serif' }}>Signature USP</h5>
+                                                    <p className="text-secondary small mb-0 lh-base">{selectedProject.usp}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Contact & Footer actions */}
+                                        <div className="d-flex flex-wrap gap-4 mt-4 pt-4 border-top justify-content-between align-items-center">
+                                            <div className="d-flex gap-3 flex-column flex-sm-row">
+                                                <p className="mb-0 fw-semibold text-secondary" style={{ fontSize: '0.9rem' }}>
+                                                    <FaPhoneAlt className="me-2 text-sanjeevani" style={{ color: '#c5a059' }} />
+                                                    <a href="tel:+919986410709" className="text-decoration-none text-dark hover-gold">+91 99864 10709</a>
+                                                </p>
+                                                <p className="mb-0 fw-semibold text-secondary" style={{ fontSize: '0.9rem' }}>
+                                                    <FaEnvelope className="me-2 text-sanjeevani" style={{ color: '#c5a059' }} />
+                                                    <a href="mailto:info@svrfarms.com" className="text-decoration-none text-dark hover-gold">info@svrfarms.com</a>
+                                                </p>
+                                            </div>
+                                            <Button
+                                                onClick={handleClose}
+                                                className="border-0 px-4 py-2 text-uppercase fw-semibold"
+                                                style={{ backgroundColor: '#114934', fontSize: '0.8rem', letterSpacing: '0.5px' }}
+                                            >
+                                                Close Details
+                                            </Button>
+                                        </div>
+                                    </div>
                                 )}
                             </div>
                         </div>
                     </div>
                 </Modal.Body>
-                <Modal.Footer className="border-0 justify-content-center pb-4">
-                    <Button variant="secondary" className="px-4" onClick={handleClose}>Close</Button>
+                <Modal.Footer className="border-0 p-0">
                 </Modal.Footer>
             </Modal>
         </section>
