@@ -70,7 +70,7 @@ export default function WhyThallySection() {
                             }}
                         >
                             <Image
-                                src="/Home_opt2.webp"
+                                src="/Why-Thally.webp"
                                 alt="Misty Thally Valley landscape view"
                                 fill
                                 style={{ objectFit: 'cover', objectPosition: 'center' }}

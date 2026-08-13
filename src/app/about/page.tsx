@@ -2,79 +2,63 @@
 
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { 
-    FaLeaf, 
-    FaSeedling, 
-    FaTree, 
-    FaHeart, 
-    FaShieldAlt, 
-    FaAward, 
-    FaSun, 
-    FaLandmark, 
-    FaTractor, 
-    FaGlobe, 
-    FaMountain, 
-    FaHome, 
-    FaHourglassHalf, 
-    FaArrowRight, 
-    FaQuoteLeft 
+import {
+    FaLeaf,
+    FaSeedling,
+    FaTree,
+    FaHeart,
+    FaShieldAlt,
+    FaAward,
+    FaSun,
+    FaLandmark,
+    FaTractor,
+    FaGlobe,
+    FaMountain,
+    FaHome,
+    FaHourglassHalf,
+    FaArrowRight,
+    FaQuoteLeft
 } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';
+import PageBanner from '@/components/PageBanner';
 
 export default function About() {
     return (
         <>
-            {/* 1. Hero / Page Banner Section */}
-            <div className="position-relative d-flex align-items-center" style={{
-                minHeight: '550px',
-                backgroundImage: 'url("/banner/About us_Banner.webp")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                padding: '100px 0'
-            }}>
-                {/* Dark Overlay */}
-                <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-60"></div>
-                
-                <Container className="position-relative z-1">
-                    {/* Breadcrumbs Navigation */}
-                    <nav aria-label="breadcrumb" className="mb-4">
-                        <ol className="breadcrumb mb-0" style={{ fontSize: '0.85rem', letterSpacing: '0.5px' }}>
-                            <li className="breadcrumb-item">
-                                <Link href="/" className="text-white-50 text-decoration-none hover-sanjeevani">
-                                    Home
-                                </Link>
-                            </li>
-                            <li className="breadcrumb-item active text-white fw-medium" aria-current="page">
-                                About Us
-                            </li>
-                        </ol>
-                    </nav>
-                    
-                    <Row>
-                        <Col lg={8} md={10} className="text-start">
+            {/* 1. Hero / Page Banner Section with Breadcrumbs */}
+            <PageBanner
+                title="About Us"
+                backgroundImage="/banner/About us_Banner.webp"
+            />
+
+            {/* Intro Section */}
+            <div className="py-5" style={{ backgroundColor: '#ffffff' }}>
+                <Container className="py-lg-5">
+                    <Row className="justify-content-center">
+                        <Col lg={10} className="text-center">
                             <span className="text-uppercase fw-bold text-spacing-2 mb-3 d-block" style={{ color: '#c5a059', fontSize: '0.9rem', letterSpacing: '2px' }}>
                                 ABOUT LITTLE ENGLAND
                             </span>
-                            <h1 className="display-4 fw-bold text-white mb-4" style={{ fontFamily: '"Playfair Display", "Georgia", serif', lineHeight: '1.2' }}>
+                            <h2 className="display-4 fw-bold text-sanjeevani mb-4" style={{ fontFamily: '"Playfair Display", "Georgia", serif', lineHeight: '1.2' }}>
                                 Land, Reimagined <br />for a Life Well Lived.
-                            </h1>
-                            <p className="lead text-white-50 mb-3 lh-lg animate-fade-in" style={{ fontSize: '1.1rem', maxWidth: '650px' }}>
+                            </h2>
+                            <p className="lead text-secondary mb-3 lh-lg animate-fade-in" style={{ fontSize: '1.1rem' }}>
                                 Little England creates thoughtfully planned managed farmland communities where nature, purposeful design and effortless ownership come together.
                             </p>
-                            <p className="text-white-50 mb-4 lh-lg" style={{ fontSize: '1rem', maxWidth: '650px' }}>
+                            <p className="text-secondary mb-4 lh-lg" style={{ fontSize: '1.05rem' }}>
                                 Set amid cool climates, mist-covered landscapes and expansive greenery, our communities offer a quieter, more meaningful way to own land - one rooted in wellbeing, responsible stewardship and enduring value.
                             </p>
-                            <Link href="/projects" className="btn btn-outline-white text-uppercase px-4 py-3 rounded-0 fw-semibold d-inline-flex align-items-center gap-2" style={{
-                                borderColor: '#c5a059',
+                            <Link href="/projects" className="btn px-4 py-3 rounded-0 fw-semibold d-inline-flex align-items-center gap-2" style={{
+                                border: '1px solid #c5a059',
                                 color: '#c5a059',
+                                backgroundColor: 'transparent',
                                 fontSize: '0.85rem',
                                 letterSpacing: '1.5px',
                                 transition: 'all 0.3s ease'
                             }}
-                            onMouseOver={(e) => { e.currentTarget.style.backgroundColor = '#c5a059'; e.currentTarget.style.color = '#fff'; }}
-                            onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#c5a059'; }}
+                                onMouseOver={(e) => { e.currentTarget.style.backgroundColor = '#c5a059'; e.currentTarget.style.color = '#fff'; }}
+                                onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#c5a059'; }}
                             >
                                 Explore Our Communities <FaArrowRight size={12} />
                             </Link>
@@ -107,14 +91,14 @@ export default function About() {
                         <Col lg={6}>
                             <div className="position-relative">
                                 <div className="rounded-4 overflow-hidden shadow" style={{ height: '420px', position: 'relative' }}>
-                                    <Image 
-                                        src="/about.webp" 
-                                        alt="Little England Path" 
-                                        fill 
-                                        style={{ objectFit: 'cover' }} 
+                                    <Image
+                                        src="/about-us/1.webp"
+                                        alt="Little England Path"
+                                        fill
+                                        style={{ objectFit: 'cover' }}
                                     />
                                 </div>
-                                
+
                                 <div className="bg-sanjeevani text-white p-4 rounded-4 shadow position-relative z-1" style={{ marginTop: '-40px', marginLeft: '15px', marginRight: '15px' }}>
                                     <Row className="g-3 text-center">
                                         <Col xs={6} md={3}>
@@ -219,7 +203,7 @@ export default function About() {
                             <span style={{ width: '50px', height: '2px', backgroundColor: '#c5a059' }}></span>
                         </div>
                     </div>
-                    
+
                     <Row className="g-4">
                         {[
                             {
@@ -259,16 +243,16 @@ export default function About() {
                                     transition: 'all 0.3s ease',
                                     cursor: 'default'
                                 }}
-                                onMouseOver={(e) => {
-                                    e.currentTarget.style.transform = 'translateY(-6px)';
-                                    e.currentTarget.style.borderColor = '#c5a059';
-                                    e.currentTarget.style.boxShadow = '0 10px 25px rgba(197,160,89,0.1)';
-                                }}
-                                onMouseOut={(e) => {
-                                    e.currentTarget.style.transform = 'none';
-                                    e.currentTarget.style.borderColor = 'rgba(197, 160, 89, 0.15)';
-                                    e.currentTarget.style.boxShadow = 'none';
-                                }}
+                                    onMouseOver={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-6px)';
+                                        e.currentTarget.style.borderColor = '#c5a059';
+                                        e.currentTarget.style.boxShadow = '0 10px 25px rgba(197,160,89,0.1)';
+                                    }}
+                                    onMouseOut={(e) => {
+                                        e.currentTarget.style.transform = 'none';
+                                        e.currentTarget.style.borderColor = 'rgba(197, 160, 89, 0.15)';
+                                        e.currentTarget.style.boxShadow = 'none';
+                                    }}
                                 >
                                     <Card.Body className="p-0 d-flex flex-column align-items-center">
                                         <div className="rounded-circle d-flex align-items-center justify-content-center mb-4 text-sanjeevani" style={{
@@ -297,14 +281,14 @@ export default function About() {
                         <Col lg={5}>
                             <div className="position-relative">
                                 <div className="rounded-4 overflow-hidden shadow-lg" style={{ height: '400px', position: 'relative' }}>
-                                    <Image 
-                                        src="/about-3.webp" 
-                                        alt="Gazebo in Little England" 
-                                        fill 
-                                        style={{ objectFit: 'cover' }} 
+                                    <Image
+                                        src="/about-us/2.webp"
+                                        alt="Gazebo in Little England"
+                                        fill
+                                        style={{ objectFit: 'cover' }}
                                     />
                                 </div>
-                                
+
                                 <div className="position-absolute start-0 bottom-0 mb-4 ms-n3 bg-sanjeevani text-white p-3 rounded-4 shadow d-flex align-items-center gap-3 border border-warning border-opacity-25" style={{ maxWidth: '280px', marginLeft: '-20px' }}>
                                     <div className="rounded-circle d-flex align-items-center justify-content-center text-white" style={{
                                         width: '40px',
@@ -321,7 +305,7 @@ export default function About() {
                                 </div>
                             </div>
                         </Col>
-                        
+
                         <Col lg={7} className="ps-lg-5">
                             <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
                                 THE LITTLE ENGLAND DIFFERENCE
@@ -357,7 +341,7 @@ export default function About() {
                             <span style={{ width: '50px', height: '2px', backgroundColor: '#c5a059' }}></span>
                         </div>
                     </div>
-                    
+
                     <Row className="g-4 text-center justify-content-center">
                         {[
                             {
@@ -410,7 +394,7 @@ export default function About() {
                 minHeight: '480px'
             }}>
                 <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(11, 43, 31, 0.88)' }}></div>
-                
+
                 <Container className="position-relative z-1 py-lg-4 text-center">
                     <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
                         SUSTAINABILITY
@@ -418,7 +402,7 @@ export default function About() {
                     <h2 className="display-5 fw-bold text-white mb-4" style={{ fontFamily: '"Playfair Display", "Georgia", serif' }}>
                         Stewardship That Begins with the Land
                     </h2>
-                    
+
                     <Row className="justify-content-center">
                         <Col lg={8}>
                             <p className="text-white-50 lh-lg mb-3" style={{ fontSize: '0.98rem' }}>
@@ -456,11 +440,11 @@ export default function About() {
                         </Col>
                         <Col lg={6}>
                             <div className="rounded-4 overflow-hidden shadow-lg" style={{ height: '380px', position: 'relative' }}>
-                                <Image 
-                                    src="/Tamara valley1.webp" 
-                                    alt="Little England lakeside" 
-                                    fill 
-                                    style={{ objectFit: 'cover' }} 
+                                <Image
+                                    src="/about-us/3.webp"
+                                    alt="Little England lakeside"
+                                    fill
+                                    style={{ objectFit: 'cover' }}
                                 />
                             </div>
                         </Col>

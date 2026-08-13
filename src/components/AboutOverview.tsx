@@ -95,7 +95,7 @@ export default function AboutOverview() {
                                 }}
                             >
                                 <Image
-                                    src="/Home_page.webp"
+                                    src="/What-Little-England.webp"
                                     alt="White cottage in organic managed farmland belt"
                                     fill
                                     style={{ objectFit: 'cover', objectPosition: 'center' }}

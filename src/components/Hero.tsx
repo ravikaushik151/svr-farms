@@ -16,7 +16,7 @@ export default function Hero() {
                             className="w-100 h-100"
                             style={{
                                 minHeight: '100svh',
-                                backgroundImage: 'url("/Home_page.webp")',
+                                backgroundImage: 'url("/banner-1.webp")',
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                             }}
@@ -30,7 +30,7 @@ export default function Hero() {
                             className="w-100 h-100"
                             style={{
                                 minHeight: '100svh',
-                                backgroundImage: 'url("/Home_opt2.webp")',
+                                backgroundImage: 'url("/banner-2.webp")',
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                             }}

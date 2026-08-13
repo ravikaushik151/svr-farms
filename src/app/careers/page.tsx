@@ -3,7 +3,18 @@
 import { useState } from 'react';
 import SectionTitle from '@/components/SectionTitle';
 import PageBanner from '@/components/PageBanner';
-import { Container, Row, Col, Card, Button, Modal, Form } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Modal, Form, Badge } from 'react-bootstrap';
+import { 
+    FiBriefcase, 
+    FiMapPin, 
+    FiClock, 
+    FiCheckCircle, 
+    FiAward, 
+    FiBookOpen, 
+    FiUsers, 
+    FiZap, 
+    FiHeart 
+} from 'react-icons/fi';
 
 const jobOpenings = [
     {
@@ -19,16 +30,67 @@ const jobOpenings = [
         description: "Analyze data to develop sustainable farming strategies that minimize environmental impact and enhance productivity.",
     },
     {
-        title: "Marketing and Outreach Coordinator",
+        title: "Marketing & Outreach Coordinator",
         type: "Full-time",
         location: "Bangalore",
-        description: "Drive our mission by creating compelling marketing campaigns and engaging with our community..",
+        description: "Drive our mission by creating compelling marketing campaigns and engaging with our community.",
     },
     {
         title: "Supply Chain Manager",
         type: "Full-time",
         location: "Bangalore",
         description: "Oversee the logistics and distribution of our agricultural products while ensuring quality and timely delivery.",
+    }
+];
+
+const values = [
+    {
+        icon: <FiHeart className="text-sanjeevani fs-3" />,
+        title: "Passion for Agriculture",
+        desc: "We're driven by our love for agriculture and its potential to shape a sustainable future. We're committed to promoting responsible farming practices that benefit both our communities and the environment."
+    },
+    {
+        icon: <FiUsers className="text-sanjeevani fs-3" />,
+        title: "Team Collaboration",
+        desc: "Collaboration is at the heart of what we do. We value diverse perspectives and believe that working together enables us to overcome challenges and achieve remarkable results."
+    },
+    {
+        icon: <FiZap className="text-sanjeevani fs-3" />,
+        title: "Innovation",
+        desc: "We're not afraid to think outside the box. We embrace innovation and encourage our team members to bring fresh ideas to the table. Our solutions-driven approach keeps us at the forefront of the industry."
+    },
+    {
+        icon: <FiBookOpen className="text-sanjeevani fs-3" />,
+        title: "Continuous Learning",
+        desc: "Agriculture is a field that's constantly evolving. We're dedicated to learning and growing, both as individuals and as a team. We provide opportunities for training, skill development, and knowledge sharing."
+    },
+    {
+        icon: <FiAward className="text-sanjeevani fs-3" />,
+        title: "Community Impact",
+        desc: "Our work extends beyond the fields. We're committed to giving back to the communities we operate in and creating a positive impact on society as a whole."
+    }
+];
+
+const benefits = [
+    {
+        title: "Career Growth",
+        desc: "We're invested in your professional journey. Join SVR Farms, and you'll have access to a wealth of resources, mentorship, and opportunities to advance your career."
+    },
+    {
+        title: "Innovative Environment",
+        desc: "Be part of a team that's pushing the boundaries of what's possible in agriculture. Your ideas and contributions will be valued and can make a real difference."
+    },
+    {
+        title: "Meaningful Work",
+        desc: "At SVR Farms, your work will have a tangible impact on food production, sustainability, and rural communities. Join us in making a positive difference."
+    },
+    {
+        title: "Collaborative Culture",
+        desc: "Experience the power of working together with a group of passionate individuals who are dedicated to a shared mission. Collaboration and mutual support are integral to our culture."
+    },
+    {
+        title: "Personal Development",
+        desc: "We encourage continuous learning and skill development. Whether it's honing your technical expertise or developing leadership skills, SVR Farms is here to help you grow."
     }
 ];
 
@@ -45,7 +107,6 @@ export default function Careers() {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        // Add form submission logic here
         alert('Application submitted successfully!');
         handleClose();
     };
@@ -53,143 +114,301 @@ export default function Careers() {
     return (
         <>
             <PageBanner title="Careers" backgroundImage="/banner/Careers_Banner.webp" />
-            <Container className="py-2 mb-4">
+            
+            {/* Intro Section */}
+            <Container className="py-5">
                 <SectionTitle title="Careers" subtitle="Join the SVR Farms Team – Build Your Career With Us" />
-                <div className="text-md-start mt-5">
-                    <p className="text-md-start text-center text-muted mb-5">
-                        At SVR Farms, we believe that a thriving team is the cornerstone of our success. We’re dedicated to nurturing a collaborative and dynamic work environment that encourages innovation, growth, and professional development. Join us as we cultivate opportunities, foster creativity, and contribute to the agriculture industry’s transformation.
-                    </p>
+                <Row className="justify-content-center text-center mt-4">
+                    <Col lg={10}>
+                        <p className="lead text-muted lh-lg fs-5">
+                            At SVR Farms, we believe that a thriving team is the cornerstone of our success. We’re dedicated to nurturing a collaborative and dynamic work environment that encourages innovation, growth, and professional development. Join us as we cultivate opportunities, foster creativity, and contribute to the agriculture industry’s transformation.
+                        </p>
+                    </Col>
+                </Row>
+            </Container>
 
+            {/* Our Values Section */}
+            <div className="py-5" style={{ backgroundColor: '#fcfbf7' }}>
+                <Container>
+                    <div className="text-center mb-5">
+                        <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                            HOW WE WORK
+                        </span>
+                        <h2 className="display-6 fw-bold text-sanjeevani">Our Core Values</h2>
+                        <div className="bg-sanjeevani mx-auto mt-2" style={{ width: '60px', height: '3px' }}></div>
+                    </div>
 
-
-                    <p className=''><strong>Our Values:</strong></p>
-
-                    <ol className=''>
-                        <li><strong>Passion for Agriculture:</strong> We&rsquo;re driven by our love for agriculture and its potential to shape a sustainable future. We&rsquo;re committed to promoting responsible farming practices that benefit both our communities and the environment.</li>
-                        <li><strong>Team Collaboration:</strong> Collaboration is at the heart of what we do. We value diverse perspectives and believe that working together enables us to overcome challenges and achieve remarkable results.</li>
-                        <li><strong>Innovation:</strong> We&rsquo;re not afraid to think outside the box. We embrace innovation and encourage our team members to bring fresh ideas to the table. Our solutions-driven approach keeps us at the forefront of the industry.</li>
-                        <li><strong>Continuous Learning:</strong> Agriculture is a field that&rsquo;s constantly evolving. We&rsquo;re dedicated to learning and growing, both as individuals and as a team. We provide opportunities for training, skill development, and knowledge sharing.</li>
-                        <li><strong>Community Impact:</strong> Our work extends beyond the fields. We&rsquo;re committed to giving back to the communities we operate in and creating a positive impact on society as a whole.</li>
-                    </ol>
-
-                    <p className=''><strong>Why Join SVR Farms:</strong></p>
-
-                    <ol className=''>
-                        <li><strong>Career Growth:</strong> We&rsquo;re invested in your professional journey. Join SVR Farms, and you&rsquo;ll have access to a wealth of resources, mentorship, and opportunities to advance your career.</li>
-                        <li><strong>Innovative Environment:</strong> Be part of a team that&rsquo;s pushing the boundaries of what&rsquo;s possible in agriculture. Your ideas and contributions will be valued and can make a real difference.</li>
-                        <li><strong>Meaningful Work:</strong> At SVR Farms, your work will have a tangible impact on food production, sustainability, and rural communities. Join us in making a positive difference.</li>
-                        <li><strong>Collaborative Culture:</strong> Experience the power of working together with a group of passionate individuals who are dedicated to a shared mission. Collaboration and mutual support are integral to our culture.</li>
-                        <li><strong>Personal Development:</strong> We encourage continuous learning and skill development. Whether it&rsquo;s honing your technical expertise or developing leadership skills, SVR Farms is here to help you grow.</li>
-                    </ol>
-
-                    <p className='text-center mb-4 '><strong className='fs-4 text-center'>Current Opportunities</strong></p>
-
-
-
-
-                    <Row className="g-4 text-start mb-4">
-                        {jobOpenings.map((job, index) => (
-                            <Col md={3} key={index}>
-                                <Card className="shadow-sm border-1 h-100">
-                                    <Card.Body className="p-4 d-flex flex-column">
-                                        <Card.Title className="fw-bold text-dark text-center">{job.title}</Card.Title>
-                                        {/* <Card.Subtitle className="mb-3 text-muted">{job.type} • {job.location}</Card.Subtitle> */}
-                                        <Card.Text className="text-muted flex-grow-1 text-center">
-                                            {job.description}
-                                        </Card.Text>
-                                        <Button variant="outline-success" onClick={() => handleShow(job.title)}>Apply Now</Button>
+                    <Row className="g-4 justify-content-center">
+                        {values.map((val, idx) => (
+                            <Col key={idx} xs={12} md={6} lg={4}>
+                                <Card className="border-0 shadow-sm h-100 p-4 rounded-3 hover-lift bg-white">
+                                    <Card.Body className="p-0">
+                                        <div className="d-flex align-items-center mb-3">
+                                            <div className="p-3 bg-light rounded-circle d-flex align-items-center justify-content-center me-3" style={{ width: '60px', height: '60px' }}>
+                                                {val.icon}
+                                            </div>
+                                            <h4 className="fw-bold text-dark mb-0 fs-5">{val.title}</h4>
+                                        </div>
+                                        <p className="text-muted mb-0 font-jost lh-lg" style={{ fontSize: '0.95rem' }}>
+                                            {val.desc}
+                                        </p>
                                     </Card.Body>
                                 </Card>
                             </Col>
                         ))}
                     </Row>
-                </div>
+                </Container>
+            </div>
 
-                {/* Application Modal */}
-                <Modal show={showModal} onHide={handleClose} centered size="lg">
-                    <Modal.Header closeButton className="border-0 pb-0">
-                        <Modal.Title className="fw-bold fs-4 text-success">Apply For Job</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body className="p-4">
-                        <Form onSubmit={handleSubmit}>
-                            <Row className="g-3">
-                                <Col md={12}>
-                                    <Form.Group>
-                                        <Form.Label className="fw-semibold">Job Position</Form.Label>
-                                        <Form.Select
-                                            value={selectedJob}
-                                            onChange={(e) => setSelectedJob(e.target.value)}
-                                            required
-                                        >
-                                            <option value="" disabled>Select a position...</option>
-                                            {jobOpenings.map((job, i) => (
-                                                <option key={i} value={job.title}>{job.title}</option>
-                                            ))}
-                                        </Form.Select>
-                                    </Form.Group>
-                                </Col>
-                                <Col md={6}>
-                                    <Form.Group>
-                                        <Form.Label className="fw-semibold">Full Name</Form.Label>
-                                        <Form.Control type="text" placeholder="Enter your full name" required />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={6}>
-                                    <Form.Group>
-                                        <Form.Label className="fw-semibold">Email Address</Form.Label>
-                                        <Form.Control type="email" placeholder="Enter your email" required />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={6}>
-                                    <Form.Group>
-                                        <Form.Label className="fw-semibold">Phone Number</Form.Label>
-                                        <Form.Control type="tel" placeholder="Enter phone number" required />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={6}>
-                                    <Form.Group>
-                                        <Form.Label className="fw-semibold">City Name</Form.Label>
-                                        <Form.Control type="text" placeholder="Enter your city" required />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={6}>
-                                    <Form.Group>
-                                        <Form.Label className="fw-semibold">Years of Experience</Form.Label>
-                                        <Form.Select required>
-                                            <option value="">Select experience...</option>
-                                            <option value="fresher">Fresher</option>
-                                            <option value="1-3">1 - 3 Years</option>
-                                            <option value="3-5">3 - 5 Years</option>
-                                            <option value="5-10">5 - 10 Years</option>
-                                            <option value="10+">10+ Years</option>
-                                        </Form.Select>
-                                    </Form.Group>
-                                </Col>
-                                <Col md={6}>
-                                    <Form.Group>
-                                        <Form.Label className="fw-semibold">Upload Resume (PDF/DOCX)</Form.Label>
-                                        <Form.Control type="file" accept=".pdf,.doc,.docx" required />
-                                    </Form.Group>
-                                </Col>
-                                <Col md={12}>
-                                    <Form.Group>
-                                        <Form.Label className="fw-semibold">Message / Cover Letter</Form.Label>
-                                        <Form.Control as="textarea" rows={4} placeholder="Tell us why you are a good fit for this role..." required />
-                                    </Form.Group>
-                                </Col>
-                            </Row>
-                            <div className="mt-4 text-end">
-                                <Button variant="secondary" onClick={handleClose} className="me-2 px-4">
-                                    Cancel
-                                </Button>
-                                <Button variant="success" type="submit" className="px-5">
-                                    Submit Application
-                                </Button>
-                            </div>
-                        </Form>
-                    </Modal.Body>
-                </Modal>
+            {/* Why Join Us Section */}
+            <Container className="py-5 my-5">
+                <Row className="align-items-center gy-5">
+                    <Col lg={5}>
+                        <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                            WORK WITH PURPOSE
+                        </span>
+                        <h2 className="display-5 fw-bold text-sanjeevani mb-4">
+                            Why You&rsquo;ll Love Working Here
+                        </h2>
+                        <p className="text-muted lh-lg mb-4">
+                            We value our team and seek to provide a productive, satisfying, and growth-oriented workspace. Here is what we offer to every member of the SVR Farms family.
+                        </p>
+                        <div className="border-start border-3 border-success ps-3 py-2 bg-light rounded-end">
+                            <span className="fw-semibold text-sanjeevani d-block">Join a sustainable revolution</span>
+                            <span className="text-muted small">Our actions today impact generations tomorrow.</span>
+                        </div>
+                    </Col>
+                    
+                    <Col lg={7} className="ps-lg-5">
+                        <div className="d-flex flex-column gap-4">
+                            {benefits.map((benefit, idx) => (
+                                <div key={idx} className="d-flex align-items-start">
+                                    <FiCheckCircle className="text-sanjeevani mt-1 me-3 flex-shrink-0" size={24} />
+                                    <div>
+                                        <h5 className="fw-bold text-dark mb-1">{benefit.title}</h5>
+                                        <p className="text-muted mb-0 font-jost" style={{ fontSize: '0.95rem' }}>{benefit.desc}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </Col>
+                </Row>
             </Container>
+
+            {/* Job Opportunities Section */}
+            <div className="py-5" style={{ backgroundColor: '#f4f6f5' }}>
+                <Container className="py-4">
+                    <div className="text-center mb-5">
+                        <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                            WE ARE HIRING
+                        </span>
+                        <h2 className="display-6 fw-bold text-sanjeevani">Current Opportunities</h2>
+                        <div className="bg-sanjeevani mx-auto mt-2" style={{ width: '60px', height: '3px' }}></div>
+                    </div>
+
+                    <Row className="g-4">
+                        {jobOpenings.map((job, index) => (
+                            <Col xs={12} md={6} lg={6} key={index}>
+                                <Card className="border-0 shadow-sm h-100 rounded-3 hover-lift bg-white">
+                                    <Card.Body className="p-4 d-flex flex-column">
+                                        <div className="d-flex justify-content-between align-items-start mb-3 gap-2 flex-wrap">
+                                            <h4 className="fw-bold text-dark mb-0 fs-5">{job.title}</h4>
+                                            <div className="d-flex gap-2">
+                                                <Badge bg="" className="bg-sanjeevani text-white px-3 py-2 rounded-pill font-jost text-uppercase fw-semibold" style={{ fontSize: '0.7rem' }}>
+                                                    <FiClock className="me-1" /> {job.type}
+                                                </Badge>
+                                                <Badge bg="" className="bg-secondary-subtle text-dark px-3 py-2 rounded-pill font-jost text-uppercase fw-semibold" style={{ fontSize: '0.7rem' }}>
+                                                    <FiMapPin className="me-1" /> {job.location}
+                                                </Badge>
+                                            </div>
+                                        </div>
+                                        
+                                        <Card.Text className="text-muted mb-4 font-jost lh-lg flex-grow-1" style={{ fontSize: '0.95rem' }}>
+                                            {job.description}
+                                        </Card.Text>
+                                        
+                                        <div className="mt-auto d-flex justify-content-between align-items-center pt-3 border-top border-light">
+                                            <span className="text-muted small font-jost d-flex align-items-center">
+                                                <FiBriefcase className="me-2" /> Agriculture & Operations
+                                            </span>
+                                            <Button 
+                                                variant="outline-primary" 
+                                                onClick={() => handleShow(job.title)}
+                                                className="px-4 py-2 border-2 fw-semibold rounded-pill font-jost"
+                                                style={{ fontSize: '0.85rem' }}
+                                            >
+                                                Apply Now
+                                            </Button>
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
+            </div>
+
+            {/* Application Modal */}
+            <Modal show={showModal} onHide={handleClose} centered size="lg" className="career-modal">
+                <Modal.Header closeButton className="border-0 pb-0 px-4 pt-4">
+                    <Modal.Title className="fw-bold fs-4 text-sanjeevani">
+                        Job Application
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body className="p-4">
+                    <Form onSubmit={handleSubmit}>
+                        <Row className="g-3">
+                            <Col md={12}>
+                                <Form.Group>
+                                    <Form.Label className="fw-semibold text-secondary">Position Applied For</Form.Label>
+                                    <Form.Select
+                                        value={selectedJob}
+                                        onChange={(e) => setSelectedJob(e.target.value)}
+                                        required
+                                        className="py-2.5 rounded-3 border-light-subtle shadow-none font-jost"
+                                    >
+                                        <option value="" disabled>Select a position...</option>
+                                        {jobOpenings.map((job, i) => (
+                                            <option key={i} value={job.title}>{job.title}</option>
+                                        ))}
+                                    </Form.Select>
+                                </Form.Group>
+                            </Col>
+                            
+                            <Col md={6}>
+                                <Form.Group>
+                                    <Form.Label className="fw-semibold text-secondary">Full Name</Form.Label>
+                                    <Form.Control 
+                                        type="text" 
+                                        placeholder="Enter your full name" 
+                                        required 
+                                        className="py-2.5 rounded-3 border-light-subtle shadow-none font-jost"
+                                    />
+                                </Form.Group>
+                            </Col>
+                            
+                            <Col md={6}>
+                                <Form.Group>
+                                    <Form.Label className="fw-semibold text-secondary">Email Address</Form.Label>
+                                    <Form.Control 
+                                        type="email" 
+                                        placeholder="Enter your email" 
+                                        required 
+                                        className="py-2.5 rounded-3 border-light-subtle shadow-none font-jost"
+                                    />
+                                </Form.Group>
+                            </Col>
+                            
+                            <Col md={6}>
+                                <Form.Group>
+                                    <Form.Label className="fw-semibold text-secondary">Phone Number</Form.Label>
+                                    <Form.Control 
+                                        type="tel" 
+                                        placeholder="Enter phone number" 
+                                        required 
+                                        className="py-2.5 rounded-3 border-light-subtle shadow-none font-jost"
+                                    />
+                                </Form.Group>
+                            </Col>
+                            
+                            <Col md={6}>
+                                <Form.Group>
+                                    <Form.Label className="fw-semibold text-secondary">City Name</Form.Label>
+                                    <Form.Control 
+                                        type="text" 
+                                        placeholder="Enter your city" 
+                                        required 
+                                        className="py-2.5 rounded-3 border-light-subtle shadow-none font-jost"
+                                    />
+                                </Form.Group>
+                            </Col>
+                            
+                            <Col md={6}>
+                                <Form.Group>
+                                    <Form.Label className="fw-semibold text-secondary">Years of Experience</Form.Label>
+                                    <Form.Select 
+                                        required
+                                        className="py-2.5 rounded-3 border-light-subtle shadow-none font-jost"
+                                    >
+                                        <option value="">Select experience...</option>
+                                        <option value="fresher">Fresher</option>
+                                        <option value="1-3">1 - 3 Years</option>
+                                        <option value="3-5">3 - 5 Years</option>
+                                        <option value="5-10">5 - 10 Years</option>
+                                        <option value="10+">10+ Years</option>
+                                    </Form.Select>
+                                </Form.Group>
+                            </Col>
+                            
+                            <Col md={6}>
+                                <Form.Group>
+                                    <Form.Label className="fw-semibold text-secondary">Upload Resume (PDF/DOCX)</Form.Label>
+                                    <Form.Control 
+                                        type="file" 
+                                        accept=".pdf,.doc,.docx" 
+                                        required 
+                                        className="py-2 rounded-3 border-light-subtle shadow-none font-jost"
+                                    />
+                                </Form.Group>
+                            </Col>
+                            
+                            <Col md={12}>
+                                <Form.Group>
+                                    <Form.Label className="fw-semibold text-secondary">Message / Cover Letter</Form.Label>
+                                    <Form.Control 
+                                        as="textarea" 
+                                        rows={4} 
+                                        placeholder="Tell us why you are a good fit for this role..." 
+                                        required 
+                                        className="rounded-3 border-light-subtle shadow-none font-jost"
+                                    />
+                                </Form.Group>
+                            </Col>
+                        </Row>
+                        
+                        <div className="mt-4 text-end pt-3 border-top border-light-subtle">
+                            <Button 
+                                variant="light" 
+                                onClick={handleClose} 
+                                className="me-2 px-4 py-2 rounded-pill font-jost text-muted"
+                                style={{ fontSize: '0.9rem' }}
+                            >
+                                Cancel
+                            </Button>
+                            <Button 
+                                variant="primary" 
+                                type="submit" 
+                                className="px-5 py-2 rounded-pill font-jost"
+                                style={{ fontSize: '0.9rem' }}
+                            >
+                                Submit Application
+                            </Button>
+                        </div>
+                    </Form>
+                </Modal.Body>
+            </Modal>
+
+            <style jsx global>{`
+                .font-jost { font-family: var(--font-jost), sans-serif; }
+                
+                .hover-lift {
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+
+                .hover-lift:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 12px 25px rgba(17, 73, 52, 0.08) !important;
+                }
+
+                .text-spacing-2 {
+                    letter-spacing: 2px;
+                }
+
+                .py-2.5 {
+                    padding-top: 0.6rem !important;
+                    padding-bottom: 0.6rem !important;
+                }
+            `}</style>
         </>
     );
 }

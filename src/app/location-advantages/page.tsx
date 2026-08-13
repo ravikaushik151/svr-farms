@@ -33,10 +33,10 @@ export default function LocationAdvantages() {
         <div style={{ backgroundColor: '#fcfbf7', overflow: 'hidden' }}>
 
             {/* Page Banner with breadcrumbs */}
-            <PageBanner 
-                title="Location Advantages" 
-                backgroundImage="/Home_page.webp" 
-                breadcrumbCurrent="Location Advantages" 
+            <PageBanner
+                title="Location Advantages"
+                backgroundImage="/banner/location-advantage_banner.webp"
+                breadcrumbCurrent="Location Advantages"
             />
 
             {/* Introduction Section */}
@@ -55,7 +55,7 @@ export default function LocationAdvantages() {
                         <p className="text-muted lh-lg mb-5" style={{ fontSize: '1.05rem' }}>
                             Just an hour from Bangalore’s Silk Board lies a pocket of land that British planters once mistook for a slice of home. Rolling green hills, misty mornings and a climate that rarely sees the mercury rise gave Thally a character unlike the warmer plains surrounding it.
                         </p>
-                        
+
                         {/* 4 Icon Highlights Grid */}
                         <Row className="g-4 justify-content-center text-start border-top pt-5">
                             {[
@@ -158,7 +158,7 @@ export default function LocationAdvantages() {
                             <div className="position-relative h-100 d-flex flex-column">
                                 <div className="rounded-4 overflow-hidden shadow flex-grow-1 min-h-350" style={{ position: 'relative', minHeight: '350px' }}>
                                     <Image
-                                        src="/about2.webp"
+                                        src="/location/2.webp"
                                         alt="Kenilworth fort history look"
                                         fill
                                         style={{ objectFit: 'cover' }}
@@ -394,7 +394,7 @@ export default function LocationAdvantages() {
                                 <Col sm={8}>
                                     <div className="rounded-3 overflow-hidden shadow-sm position-relative" style={{ height: '380px' }}>
                                         <Image
-                                            src="/Tamara valley1.webp"
+                                            src="/location/3.webp"
                                             alt="Devarabetta hills viewpoint"
                                             fill
                                             style={{ objectFit: 'cover' }}
@@ -408,7 +408,7 @@ export default function LocationAdvantages() {
                                     <div className="d-flex flex-column gap-3">
                                         <div className="rounded-3 overflow-hidden shadow-sm position-relative" style={{ height: '182px' }}>
                                             <Image
-                                                src="/about-3.webp"
+                                                src="/location/4.webp"
                                                 alt="Thally dam lake"
                                                 fill
                                                 style={{ objectFit: 'cover' }}

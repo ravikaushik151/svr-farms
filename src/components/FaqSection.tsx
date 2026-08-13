@@ -150,7 +150,7 @@ export default function FaqSection() {
                             }}
                         >
                             <Image
-                                src="/projects/Tamara Valley (Upcoming).webp"
+                                src="/Frequently-Asked-Questions.webp"
                                 alt="Scenic view of organic managed farmland"
                                 fill
                                 style={{ objectFit: 'cover', objectPosition: 'center' }}

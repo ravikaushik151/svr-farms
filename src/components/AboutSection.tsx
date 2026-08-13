@@ -7,16 +7,16 @@ import Image from 'next/image';
 
 export default function AboutSection() {
     return (
-        <section 
-            className="py-5 position-relative" 
-            style={{ 
+        <section
+            className="py-5 position-relative"
+            style={{
                 backgroundColor: '#fcfbf7', // Premium warm cream background
                 overflow: 'hidden'
             }}
         >
             {/* Subtle floating leaves on the left edge */}
-            <div 
-                className="position-absolute d-none d-lg-block" 
+            <div
+                className="position-absolute d-none d-lg-block"
                 style={{ left: '-30px', top: '25%', opacity: 0.1, pointerEvents: 'none', transform: 'rotate(-15deg)' }}
             >
                 <FaLeaf size={140} style={{ color: '#114934' }} />
@@ -24,15 +24,15 @@ export default function AboutSection() {
 
             <Container className="py-lg-4 position-relative">
                 <Row className="gy-5 align-items-center">
-                    
+
                     {/* Left Column: Heading, Multi-paragraphs & CTA Button */}
                     <Col lg={6} className="pe-lg-4 text-center text-lg-start">
-                        
+
                         {/* Discover Little England Badge */}
                         <div className="d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3">
                             <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
                             <FaLeaf size={14} style={{ color: '#c5a059' }} />
-                            <h6 
+                            <h6
                                 className="text-uppercase letter-spacing-2 mb-0 small fw-bold"
                                 style={{ color: '#c5a059', fontSize: '0.8rem' }}
                             >
@@ -42,9 +42,9 @@ export default function AboutSection() {
                         </div>
 
                         {/* Title Heading */}
-                        <h2 
+                        <h2
                             className="display-4 fw-bold mb-3"
-                            style={{ 
+                            style={{
                                 fontFamily: '"Playfair Display", "Georgia", serif',
                                 lineHeight: '1.2'
                             }}
@@ -62,7 +62,7 @@ export default function AboutSection() {
                         <p className="text-muted mb-3 lh-lg" style={{ fontSize: '0.92rem' }}>
                             Tucked away in the scenic landscapes of Thalli, fondly known as Little England for its cool climate and misty charm, this is where nature slows you down – and life begins to feel more meaningful.
                         </p>
-                        
+
                         <p className="text-muted mb-3 lh-lg" style={{ fontSize: '0.92rem' }}>
                             Designed as a gated managed farmland community, Little England blends the richness of fertile land, abundant water sources, and breathtaking greenery with the ease of modern accessibility. Just a short drive from Bangalore, it offers the perfect balance between escape and connection.
                         </p>
@@ -73,8 +73,8 @@ export default function AboutSection() {
 
                         {/* Read More Button */}
                         <div className="text-center text-lg-start mb-4">
-                            <Link 
-                                href="/about" 
+                            <Link
+                                href="/about"
                                 className="btn px-4 py-3 text-white rounded-1 d-inline-flex align-items-center gap-2 fw-semibold"
                                 style={{
                                     backgroundColor: '#1b2e1e', // Dark green background
@@ -96,13 +96,13 @@ export default function AboutSection() {
                             </Link>
                         </div>
                     </Col>
-                    
+
                     {/* Right Column: Circular Crop Landscape Image & Floating Overlay Row */}
                     <Col lg={6} className="position-relative">
                         <div className="d-flex flex-column align-items-center align-items-lg-end">
-                            
+
                             {/* Circular Curved Landscape Image Frame */}
-                            <div 
+                            <div
                                 className="position-relative"
                                 style={{
                                     width: '100%',
@@ -117,8 +117,8 @@ export default function AboutSection() {
                                     marginBottom: '40px'
                                 }}
                             >
-                                <Image 
-                                    src="/Home_page.webp" 
+                                <Image
+                                    src="/A-Life-Beyond.webp"
                                     alt="Little England managed organic farmland scenery"
                                     fill
                                     style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -126,7 +126,7 @@ export default function AboutSection() {
                             </div>
 
                             {/* Floating Highlights Box overlapping the bottom */}
-                            <div 
+                            <div
                                 className="p-4 rounded-4 shadow-sm border position-relative z-2"
                                 style={{
                                     backgroundColor: '#faf8f2', // Soft warm light beige
@@ -147,7 +147,7 @@ export default function AboutSection() {
                                             <p className="text-muted mb-0" style={{ fontSize: '0.65rem', lineHeight: '1.3' }}>Cool climate, misty valleys & natural beauty.</p>
                                         </div>
                                     </Col>
-                                    
+
                                     <Col xs={6} md={3}>
                                         <div className="d-flex flex-column align-items-center">
                                             <div className="p-2 rounded-circle mb-2 text-sanjeevani d-flex align-items-center justify-content-center" style={{ width: '42px', height: '42px', backgroundColor: 'rgba(17,73,52,0.08)', border: '1px solid rgba(17,73,52,0.1)' }}>
@@ -157,7 +157,7 @@ export default function AboutSection() {
                                             <p className="text-muted mb-0" style={{ fontSize: '0.65rem', lineHeight: '1.3' }}>Fertile land with abundant water sources.</p>
                                         </div>
                                     </Col>
-                                    
+
                                     <Col xs={6} md={3}>
                                         <div className="d-flex flex-column align-items-center">
                                             <div className="p-2 rounded-circle mb-2 text-sanjeevani d-flex align-items-center justify-content-center" style={{ width: '42px', height: '42px', backgroundColor: 'rgba(17,73,52,0.08)', border: '1px solid rgba(17,73,52,0.1)' }}>
@@ -167,7 +167,7 @@ export default function AboutSection() {
                                             <p className="text-muted mb-0" style={{ fontSize: '0.65rem', lineHeight: '1.3' }}>Short drive from Bangalore - close yet peaceful.</p>
                                         </div>
                                     </Col>
-                                    
+
                                     <Col xs={6} md={3}>
                                         <div className="d-flex flex-column align-items-center">
                                             <div className="p-2 rounded-circle mb-2 text-sanjeevani d-flex align-items-center justify-content-center" style={{ width: '42px', height: '42px', backgroundColor: 'rgba(17,73,52,0.08)', border: '1px solid rgba(17,73,52,0.1)' }}>
@@ -185,7 +185,7 @@ export default function AboutSection() {
                 </Row>
 
                 {/* Bottom Quote Banner Bar */}
-                <div 
+                <div
                     className="p-4 rounded-4 mt-5 d-flex align-items-center justify-content-center"
                     style={{
                         backgroundColor: '#faf8f2', // Soft warm light beige
@@ -199,7 +199,7 @@ export default function AboutSection() {
                                 <FaQuoteLeft size={36} style={{ color: '#c5a059', opacity: 0.7 }} />
                                 <span style={{ width: '1.5px', height: '30px', backgroundColor: 'rgba(197, 160, 89, 0.4)', margin: '0 15px' }} className="d-none d-md-block"></span>
                             </div>
-                            <p 
+                            <p
                                 className="mb-0 text-dark italic font-serif flex-grow-1"
                                 style={{
                                     fontFamily: '"Playfair Display", "Georgia", serif',
