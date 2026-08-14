@@ -97,14 +97,6 @@ export default function StatsSection() {
                 minHeight: '600px'
             }}
         >
-            {/* Top Leaf Accent Decorator */}
-            <div
-                className="position-absolute d-none d-lg-block"
-                style={{ top: '30px', left: '30px', opacity: 0.1, pointerEvents: 'none' }}
-            >
-                <FaLeaf size={90} style={{ color: '#114934' }} />
-            </div>
-
             <Container fluid className="py-lg-5 position-relative">
 
                 {/* Header */}

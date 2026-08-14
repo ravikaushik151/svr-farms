@@ -87,22 +87,6 @@ export default function FaqSection() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
 
-            {/* Top Right Leaf Accent Decorator */}
-            <div
-                className="position-absolute d-none d-lg-block"
-                style={{ top: '20px', right: '40px', opacity: 0.12, pointerEvents: 'none' }}
-            >
-                <FaLeaf size={110} style={{ color: '#114934' }} />
-            </div>
-
-            {/* Bottom Left Leaf Accent Decorator */}
-            <div
-                className="position-absolute d-none d-lg-block"
-                style={{ bottom: '20px', left: '20px', opacity: 0.08, transform: 'rotate(-45deg)', pointerEvents: 'none' }}
-            >
-                <FaLeaf size={90} style={{ color: '#114934' }} />
-            </div>
-
             <Container className="py-lg-5 position-relative">
 
                 {/* 1. Header Section */}

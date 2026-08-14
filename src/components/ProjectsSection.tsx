@@ -8,13 +8,7 @@ import {
     FaEnvelope,
     FaMapMarkerAlt,
     FaLeaf,
-    FaSeedling,
-    FaSpa,
-    FaTint,
-    FaMountain,
     FaArrowRight,
-    FaHome,
-    FaTree,
     FaRulerCombined,
     FaAward
 } from 'react-icons/fa';
@@ -26,7 +20,6 @@ const projects = [
         badge: "Thalli, Tamil Nadu",
         image: "/projects/Tamara Valley (Upcoming).webp",
         shortDesc: "A 300+ acre managed farmland community offering premium resort-inspired organic living.",
-        icon: FaLeaf,
         link: "/tamara",
         location: "Thalli, Tamil Nadu. A tranquil green belt positioned as a nature-led retreat within reach of Bangalore.",
         scale: "A 300+ acre managed farmland community, with plot options starting from 0.25 acre and extending to 0.5 acre and 1 acre formats.",
@@ -37,7 +30,6 @@ const projects = [
         badge: "Binnamangalam, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
         shortDesc: "A refined farm-living retreat pairing private land ownership with curated leisure amenities.",
-        icon: FaSeedling,
         location: "Binnamangalam, Tamil Nadu. A serene countryside setting within convenient reach of Bangalore.",
         scale: "Approx. 17 acres of managed farmland, with individual plots starting from 10,890 sq. ft.",
         usp: "A refined farm-living retreat that pairs private land ownership with curated leisure amenities and an immersive agricultural setting."
@@ -47,7 +39,6 @@ const projects = [
         badge: "Near Bangalore",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/Tapovan-by-SVR-Farms.webp",
         shortDesc: "A hands-free farmland experience combining organic plantations and professional management.",
-        icon: FaTree,
         location: "Near Bangalore. A countryside setting designed for convenient weekend access and nature-led living.",
         scale: "A professionally managed farmland community planned across 130 farm plots, supported by a 35,000 sq. ft. clubhouse and curated infrastructure.",
         usp: "A hands-free farmland ownership experience combining sustainable organic plantations, professional farm management and resort-style community living."
@@ -57,7 +48,6 @@ const projects = [
         badge: "Agalakotta, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
         shortDesc: "A plantation-led farm retreat anchored by 4,000 teak, 500 coconut and 500 mango trees.",
-        icon: FaLeaf,
         location: "Settipalli, Agalakotta, Tamil Nadu. A peaceful managed farmland destination within reach of Bangalore.",
         scale: "Spread across 44 acres with 140 farm plots, ranging from 10,890 sq. ft. to 50,000 sq. ft.",
         usp: "A plantation-led farm retreat anchored by 4,000 teak, 500 coconut and 500 mango trees, complemented by leisure and recreational amenities."
@@ -67,7 +57,6 @@ const projects = [
         badge: "Near Bangalore",
         image: "/projects/H2O Farms.webp",
         shortDesc: "A water-conscious farmland concept built around rainwater harvesting and ecological stewardship.",
-        icon: FaTint,
         location: "Near Bangalore. A nature-led farmland destination planned for sustainable countryside ownership.",
         scale: "A 66+ acre managed farmland community comprising 195+ farm plots.",
         usp: "A water-conscious farmland concept built around rainwater harvesting, groundwater recharge and efficient irrigation, blending ecological stewardship with long-term asset value."
@@ -77,7 +66,6 @@ const projects = [
         badge: "Denkanikottai, Hosur",
         image: "/projects/Shivalik Hill Managed Farmland.webp",
         shortDesc: "A nature-led farm retreat designed around camping, sunset experiences, and waterside leisure.",
-        icon: FaMountain,
         location: "Belalam, Denkanikottai, Hosur. A tranquil countryside setting surrounded by nature and open landscapes.",
         scale: "A 33-acre managed farmland community comprising 50 farm plots, ranging from 10,890 sq. ft. to 50,000 sq. ft.",
         usp: "A nature-led farm retreat designed around camping, sunset experiences and waterside leisure, complemented by thoughtfully curated lifestyle amenities."
@@ -87,7 +75,6 @@ const projects = [
         badge: "Denkanikottai, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
         shortDesc: "A nature-rich farm retreat featuring a 40-acre pre-developed food forest and a 2-acre natural lake.",
-        icon: FaLeaf,
         location: "Santhanapalli, Denkanikottai, Tamil Nadu. A lush countryside setting within convenient reach of Bangalore.",
         scale: "A 65-acre managed farmland community comprising 160 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
         usp: "A nature-rich farm retreat distinguished by a 40-acre pre-developed food forest, flourishing orchards and a 2-acre natural lake, creating an immersive landscape for green living."
@@ -97,7 +84,6 @@ const projects = [
         badge: "Thally, Tamil Nadu",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/Tapovan-by-SVR-Farms.webp",
         shortDesc: "A wellness-led farm retreat with mango orchards, Zen gardens, and lakeside experiences.",
-        icon: FaSpa,
         location: "Jowlagiri, Thally, Tamil Nadu. A serene countryside destination approximately 59 km from Bengaluru.",
         scale: "A 65-acre managed farmland community comprising 160 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
         usp: "A wellness-led farm retreat shaped by mango orchards, timber plantations and a 2-acre natural lake, enriched with meditation zones, Zen gardens and lakeside experiences."
@@ -107,7 +93,6 @@ const projects = [
         badge: "Gumlapuram, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/Tapovan-by-SVR-Farms.webp",
         shortDesc: "A sustainability-led farm retreat distinguished by a lush Miyawaki forest and modern essentials.",
-        icon: FaTree,
         location: "Gumlapuram, Tamil Nadu. A serene valley setting near Bangalore, surrounded by natural water bodies.",
         scale: "A 15-acre managed farmland community comprising 50 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
         usp: "A sustainability-led farm retreat distinguished by a lush Miyawaki forest, complemented by modern essentials such as high-speed connectivity and uninterrupted power."
@@ -117,7 +102,6 @@ const projects = [
         badge: "Agalakotta, TN",
         image: "/projects/Green Vista.webp",
         shortDesc: "A scenic farm-living retreat combining fertile land, abundant water, and panoramic green views.",
-        icon: FaLeaf,
         location: "Settipalli, Agalakotta, Tamil Nadu. A tranquil countryside setting framed by rolling landscapes and lush greenery.",
         scale: "A 25-acre managed farmland community comprising 50 farm plots, ranging from 10,890 sq. ft. to 50,000 sq. ft.",
         usp: "A scenic farm-living retreat combining fertile land, abundant water resources and panoramic green views, complemented by curated leisure and community amenities."
@@ -127,7 +111,6 @@ const projects = [
         badge: "Thalli, Tamil Nadu",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/fm7.webp",
         shortDesc: "A fully managed farm-living community with professionally maintained plantations and expert caretaking.",
-        icon: FaHome,
         location: "Thalli, Tamil Nadu. A scenic countryside setting approximately 50 minutes from Electronic City, Bangalore.",
         scale: "A 20-acre managed farmland community comprising 50 farm plots, ranging from 10,890 sq. ft. to 50,000 sq. ft.",
         usp: "A fully managed farm-living proposition combining professionally maintained plantations, water-efficient irrigation and expert caretaking for effortless countryside ownership."
@@ -137,7 +120,6 @@ const projects = [
         badge: "Athalavadi, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/Sanjeevani-Farms-by-SVR-Farms.webp",
         shortDesc: "A thoughtfully planned farm community with direct farm-road access and dependable infrastructure.",
-        icon: FaSpa,
         location: "Athalavadi, Tamil Nadu. A peaceful countryside setting with direct farm-road access and essential infrastructure.",
         scale: "A 10-acre community farmland project comprising 45 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
         usp: "A thoughtfully planned farm community focused on seamless land ownership, clear access and dependable on-ground infrastructure, supported by professional management."
@@ -147,7 +129,6 @@ const projects = [
         badge: "Denkanikottai, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
         shortDesc: "A lake-centric farm retreat combining mango orchards, timber plantations, and waterside tranquility.",
-        icon: FaTint,
         location: "Denkanikottai, Tamil Nadu. A serene countryside setting shaped by greenery, open landscapes and waterside tranquillity.",
         scale: "A 65-acre community farmland project comprising 160 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
         usp: "A lake-centric farm retreat defined by mango orchards, timber plantations and a 2-acre natural lake, creating a distinctive blend of nature, wellness and countryside living."
@@ -157,7 +138,6 @@ const projects = [
         badge: "Agalakotta, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/fm7.webp",
         shortDesc: "A nature-led farm retreat shaped by mango orchards, gardens, and a 2-acre natural lake.",
-        icon: FaSeedling,
         location: "Agalakotta, Tamil Nadu. A serene countryside setting surrounded by fertile landscapes and natural greenery.",
         scale: "A 65-acre community farmland project comprising 160 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
         usp: "A nature-led farm retreat shaped by mango orchards, timber plantations, vegetable gardens and a 2-acre natural lake, creating a refined balance of farm living, wellness and tranquillity."
@@ -167,7 +147,6 @@ const projects = [
         badge: "Denkanikottai, TN",
         image: "/projects/Marwar Aangan Farms.webp",
         shortDesc: "A sustainability-focused farm community combining long-term agroforestry and responsible cultivation.",
-        icon: FaTree,
         location: "Santhanapalli, Denkanikottai, Tamil Nadu. A tranquil countryside setting designed around accessible, nature-led farm living.",
         scale: "A 10-acre managed farmland community comprising 45 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
         usp: "A sustainability-focused farm community combining long-term agroforestry, responsible cultivation and professional farm management for an effortless ownership experience."
@@ -177,7 +156,6 @@ const projects = [
         badge: "Denkanikottai, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
         shortDesc: "A wellness-inspired farm retreat shaped by orchards, gardens, and a 2-acre natural lake.",
-        icon: FaSpa,
         location: "Denkanikottai, Tamil Nadu - a tranquil countryside setting surrounded by fertile landscapes and natural greenery.",
         scale: "A 30-acre community farmland project comprising 80 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
         usp: "A wellness-inspired farm retreat shaped by orchards, timber plantations, vegetable gardens and a 2-acre natural lake, enriched with meditation, yoga and lakeside experiences."
@@ -187,7 +165,6 @@ const projects = [
         badge: "Athalavadi, TN",
         image: "/projects/Amaya Farm Villa Plot.webp",
         shortDesc: "A gated villa-farmland community enriched with mango, chikoo, and jackfruit plantations.",
-        icon: FaHome,
         location: "Athalavadi, Tamil Nadu - a tranquil countryside setting positioned within convenient driving reach of Bangalore.",
         scale: "A 10-acre gated farm community comprising 45 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
         usp: "A villa-farmland concept enriched with mango, chikoo, jackfruit and other fruit-tree plantations, bringing together private green ownership and countryside living."
@@ -197,7 +174,6 @@ const projects = [
         badge: "Denkanikottai, TN",
         image: "https://svrfarms.com/wp-content/uploads/2023/08/fm7.webp",
         shortDesc: "A low-density farmland estate featuring generously sized plots and a private countryside experience.",
-        icon: FaLeaf,
         location: "Denkanikottai, Tamil Nadu. A peaceful countryside setting suited to expansive, nature-led farmland ownership.",
         scale: "A 20-acre community farmland project comprising just 35 farm plots, ranging from 21,780 sq. ft. to 50,000 sq. ft.",
         usp: "A low-density farmland estate distinguished by generously sized plots, professionally supported ownership and a more private countryside experience."
@@ -237,22 +213,6 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                 overflow: 'hidden'
             }}
         >
-            {/* Top Leaf Accent Decorator */}
-            <div
-                className="position-absolute d-none d-lg-block"
-                style={{ top: '20px', left: '20px', opacity: 0.08, pointerEvents: 'none' }}
-            >
-                <FaLeaf size={100} style={{ color: '#114934' }} />
-            </div>
-
-            {/* Top Right Leaf Accent Decorator */}
-            <div
-                className="position-absolute d-none d-lg-block"
-                style={{ top: '10px', right: '30px', opacity: 0.12, transform: 'rotate(45deg)', pointerEvents: 'none' }}
-            >
-                <FaLeaf size={140} style={{ color: '#114934' }} />
-            </div>
-
             <Container className="py-lg-5">
 
                 {/* Section Title Header */}
@@ -290,7 +250,6 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                 {/* Grid Cards of Projects */}
                 <Row className="g-4 mb-5">
                     {displayedProjects.map((project, index) => {
-                        const IconComponent = project.icon || FaLeaf;
                         return (
                             <Col key={index} xs={12} md={6} lg={4}>
                                 <Card
@@ -327,28 +286,10 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                                             <FaMapMarkerAlt size={11} />
                                             <span>{project.badge}</span>
                                         </div>
-
-                                        {/* Overlapping Gold Circular Icon Badge */}
-                                        <div
-                                            className="rounded-circle d-flex align-items-center justify-content-center bg-white shadow-sm"
-                                            style={{
-                                                width: '50px',
-                                                height: '50px',
-                                                border: '2px solid #c5a059',
-                                                color: '#114934',
-                                                position: 'absolute',
-                                                bottom: '0px',
-                                                left: '50%',
-                                                transform: 'translateX(-50%)',
-                                                zIndex: 3
-                                            }}
-                                        >
-                                            <IconComponent size={22} />
-                                        </div>
                                     </div>
 
                                     {/* Card Content body */}
-                                    <Card.Body className="pt-5 px-4 pb-4 d-flex flex-column text-center flex-grow-1">
+                                    <Card.Body className="pt-4 px-4 pb-4 d-flex flex-column text-center flex-grow-1">
                                         <h4
                                             className="fw-bold mb-3 text-dark"
                                             style={{

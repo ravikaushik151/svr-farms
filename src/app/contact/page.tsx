@@ -354,7 +354,7 @@ export default function ContactPage() {
                         <Row className="gy-4 text-start justify-content-center align-items-center">
                             <Col xs={12} sm={6} md={3} className="border-end-md px-4">
                                 <div className="d-flex align-items-center">
-                                    <div className="p-2 rounded-circle bg-sanjeevani bg-opacity-10 text-sanjeevani me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px' }}>
+                                    <div className="p-2 rounded-circle me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px', backgroundColor: 'rgba(17, 73, 52, 0.08)', border: '1px solid rgba(17, 73, 52, 0.1)' }}>
                                         <FaLeaf size={20} style={{ color: '#114934' }} />
                                     </div>
                                     <div>
@@ -366,7 +366,7 @@ export default function ContactPage() {
 
                             <Col xs={12} sm={6} md={3} className="border-end-md px-4">
                                 <div className="d-flex align-items-center">
-                                    <div className="p-2 rounded-circle bg-sanjeevani bg-opacity-10 text-sanjeevani me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px' }}>
+                                    <div className="p-2 rounded-circle me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px', backgroundColor: 'rgba(17, 73, 52, 0.08)', border: '1px solid rgba(17, 73, 52, 0.1)' }}>
                                         <FaShieldAlt size={20} style={{ color: '#114934' }} />
                                     </div>
                                     <div>
@@ -378,7 +378,7 @@ export default function ContactPage() {
 
                             <Col xs={12} sm={6} md={3} className="border-end-md px-4">
                                 <div className="d-flex align-items-center">
-                                    <div className="p-2 rounded-circle bg-sanjeevani bg-opacity-10 text-sanjeevani me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px' }}>
+                                    <div className="p-2 rounded-circle me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px', backgroundColor: 'rgba(17, 73, 52, 0.08)', border: '1px solid rgba(17, 73, 52, 0.1)' }}>
                                         <FaUsers size={20} style={{ color: '#114934' }} />
                                     </div>
                                     <div>
@@ -390,7 +390,7 @@ export default function ContactPage() {
 
                             <Col xs={12} sm={6} md={3} className="px-4">
                                 <div className="d-flex align-items-center">
-                                    <div className="p-2 rounded-circle bg-sanjeevani bg-opacity-10 text-sanjeevani me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px' }}>
+                                    <div className="p-2 rounded-circle me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px', backgroundColor: 'rgba(17, 73, 52, 0.08)', border: '1px solid rgba(17, 73, 52, 0.1)' }}>
                                         <FaSeedling size={20} style={{ color: '#114934' }} />
                                     </div>
                                     <div>

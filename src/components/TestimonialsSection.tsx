@@ -47,14 +47,6 @@ export default function TestimonialsSection() {
                 overflow: 'hidden'
             }}
         >
-            {/* Top Leaf Accent Decorator */}
-            <div
-                className="position-absolute d-none d-lg-block"
-                style={{ top: '30px', right: '30px', opacity: 0.1, pointerEvents: 'none' }}
-            >
-                <FaLeaf size={90} style={{ color: '#114934' }} />
-            </div>
-
             <Container className="py-lg-5">
                 {/* Header */}
                 <div className="text-center mb-5">
@@ -116,21 +108,6 @@ export default function TestimonialsSection() {
                                 >
                                     {testimonials.map((testimonial, idx) => (
                                         <Carousel.Item key={idx} className="text-center px-md-4">
-                                            {/* Leaf Icon Avatar Ring */}
-                                            <div className="mb-4 d-flex justify-content-center">
-                                                <div
-                                                    className="d-flex align-items-center justify-content-center rounded-circle text-white shadow-sm"
-                                                    style={{
-                                                        width: '72px',
-                                                        height: '72px',
-                                                        backgroundColor: '#114934',
-                                                        border: '2.5px solid #c5a059',
-                                                        boxShadow: '0 4px 10px rgba(17, 73, 52, 0.2)'
-                                                    }}
-                                                >
-                                                    <FaLeaf size={24} style={{ color: '#c5a059' }} />
-                                                </div>
-                                            </div>
 
                                             <p
                                                 className="fs-5 fst-italic mb-4 lh-lg text-secondary"

@@ -93,11 +93,11 @@ body {
 
 .footer-links li a:hover {
   transform: translateX(5px);
-  color: var(--sanjeevani-green) !important;
+  color: #ffffff !important;
 }
 
 .hover-sanjeevani:hover {
-  color: var(--sanjeevani-green) !important;
+  color: #ffffff !important;
 }
 
 .social-icon-btn {

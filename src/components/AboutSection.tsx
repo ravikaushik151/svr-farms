@@ -14,13 +14,6 @@ export default function AboutSection() {
                 overflow: 'hidden'
             }}
         >
-            {/* Subtle floating leaves on the left edge */}
-            <div
-                className="position-absolute d-none d-lg-block"
-                style={{ left: '-30px', top: '25%', opacity: 0.1, pointerEvents: 'none', transform: 'rotate(-15deg)' }}
-            >
-                <FaLeaf size={140} style={{ color: '#114934' }} />
-            </div>
 
             <Container className="py-lg-4 position-relative">
                 <Row className="gy-5 align-items-center">
@@ -127,7 +120,7 @@ export default function AboutSection() {
 
                             {/* Floating Highlights Box overlapping the bottom */}
                             <div
-                                className="p-4 rounded-4 shadow-sm border position-relative z-2"
+                                className="p-4 rounded-4 shadow-sm border position-relative z-2 d-none"
                                 style={{
                                     backgroundColor: '#faf8f2', // Soft warm light beige
                                     borderColor: 'rgba(197, 160, 89, 0.25)',

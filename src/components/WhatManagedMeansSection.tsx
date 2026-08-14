@@ -1,12 +1,12 @@
 'use client';
 
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { 
-    FaFileContract, 
-    FaTint, 
-    FaHome, 
-    FaWalking, 
-    FaClipboardList, 
+import {
+    FaFileContract,
+    FaTint,
+    FaHome,
+    FaWalking,
+    FaClipboardList,
     FaTree,
     FaShieldAlt,
     FaUsers,
@@ -56,7 +56,7 @@ const points = [
 
 export default function WhatManagedMeansSection() {
     return (
-        <section 
+        <section
             className="py-5 position-relative overflow-hidden"
             style={{
                 backgroundImage: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url("/Home_page.webp")',
@@ -65,29 +65,13 @@ export default function WhatManagedMeansSection() {
                 backgroundAttachment: 'scroll'
             }}
         >
-            {/* Top Leaf Accent Decorator */}
-            <div 
-                className="position-absolute d-md-block d-none" 
-                style={{ top: '20px', right: '40px', opacity: 0.15, transform: 'rotate(20deg)', pointerEvents: 'none' }}
-            >
-                <FaLeaf size={80} style={{ color: '#114934' }} />
-            </div>
-            
-            {/* Bottom Leaf Accent Decorator */}
-            <div 
-                className="position-absolute d-md-block d-none" 
-                style={{ bottom: '20px', left: '40px', opacity: 0.15, transform: 'rotate(-45deg)', pointerEvents: 'none' }}
-            >
-                <FaLeaf size={80} style={{ color: '#114934' }} />
-            </div>
-
             <Container className="py-lg-5 position-relative">
-                
+
                 {/* 1. Header Section */}
                 <div className="text-center mb-5">
                     <div className="d-flex justify-content-center align-items-center gap-2 mb-2">
                         <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
-                        <h6 
+                        <h6
                             className="text-uppercase letter-spacing-2 mb-0 small fw-bold"
                             style={{ color: '#114934', fontSize: '0.85rem' }}
                         >
@@ -95,8 +79,8 @@ export default function WhatManagedMeansSection() {
                         </h6>
                         <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
                     </div>
-                    
-                    <h2 
+
+                    <h2
                         className="display-4 fw-bold mb-3"
                         style={{
                             fontFamily: '"Playfair Display", "Georgia", serif',
@@ -106,7 +90,7 @@ export default function WhatManagedMeansSection() {
                         <span style={{ color: '#114934' }}>Own the Land.</span> <br />
                         <span style={{ color: '#c5a059' }}>Leave the Farming to Experts.</span>
                     </h2>
-                    
+
                     <p className="text-muted max-w-2xl mx-auto mb-1" style={{ fontSize: '1.05rem' }}>
                         We make farmland ownership simple, secure, and truly rewarding.
                     </p>
@@ -119,7 +103,7 @@ export default function WhatManagedMeansSection() {
                 <Row className="g-4 mb-5">
                     {points.map((point, index) => (
                         <Col key={index} md={6} lg={4}>
-                            <Card 
+                            <Card
                                 className="border-0 shadow-sm p-4 text-center rounded-4 position-relative hover-lift bg-white h-100"
                                 style={{
                                     transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
@@ -127,8 +111,8 @@ export default function WhatManagedMeansSection() {
                                 }}
                             >
                                 {/* Circle Badge Number in Top Left */}
-                                <div 
-                                    className="position-absolute d-flex align-items-center justify-content-center text-white rounded-circle"
+                                <div
+                                    className="position-absolute d-flex align-items-center justify-content-center text-white rounded-circle d-none"
                                     style={{
                                         width: '28px',
                                         height: '28px',
@@ -144,7 +128,7 @@ export default function WhatManagedMeansSection() {
                                 </div>
 
                                 {/* Icon Circle wrapper */}
-                                <div 
+                                <div
                                     className="mx-auto rounded-circle d-flex align-items-center justify-content-center mb-4 mt-2"
                                     style={{
                                         width: '72px',
@@ -158,7 +142,7 @@ export default function WhatManagedMeansSection() {
                                 </div>
 
                                 {/* Title */}
-                                <h4 
+                                <h4
                                     className="fw-bold mb-3 text-dark"
                                     style={{
                                         fontFamily: '"Playfair Display", "Georgia", serif',
@@ -178,7 +162,7 @@ export default function WhatManagedMeansSection() {
                 </Row>
 
                 {/* 3. Horizontal Highlights Bar */}
-                <div 
+                <div
                     className="p-4 rounded-4 shadow-sm border mb-4"
                     style={{
                         backgroundColor: 'rgba(255, 255, 255, 0.92)',
@@ -189,7 +173,7 @@ export default function WhatManagedMeansSection() {
                     <Row className="gy-4 text-start justify-content-center align-items-center">
                         <Col xs={12} sm={6} md={3} className="bar-column">
                             <div className="d-flex align-items-center px-lg-3">
-                                <div className="p-2 rounded-circle bg-sanjeevani bg-opacity-10 text-sanjeevani me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px' }}>
+                                <div className="p-2 rounded-circle me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px', backgroundColor: 'rgba(17, 73, 52, 0.08)', border: '1px solid rgba(17, 73, 52, 0.1)' }}>
                                     <FaShieldAlt size={22} style={{ color: '#114934' }} />
                                 </div>
                                 <div>
@@ -198,10 +182,10 @@ export default function WhatManagedMeansSection() {
                                 </div>
                             </div>
                         </Col>
-                        
+
                         <Col xs={12} sm={6} md={3} className="bar-column">
                             <div className="d-flex align-items-center px-lg-3">
-                                <div className="p-2 rounded-circle bg-sanjeevani bg-opacity-10 text-sanjeevani me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px' }}>
+                                <div className="p-2 rounded-circle me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px', backgroundColor: 'rgba(17, 73, 52, 0.08)', border: '1px solid rgba(17, 73, 52, 0.1)' }}>
                                     <FaUsers size={22} style={{ color: '#114934' }} />
                                 </div>
                                 <div>
@@ -210,10 +194,10 @@ export default function WhatManagedMeansSection() {
                                 </div>
                             </div>
                         </Col>
-                        
+
                         <Col xs={12} sm={6} md={3} className="bar-column">
                             <div className="d-flex align-items-center px-lg-3">
-                                <div className="p-2 rounded-circle bg-sanjeevani bg-opacity-10 text-sanjeevani me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px' }}>
+                                <div className="p-2 rounded-circle me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px', backgroundColor: 'rgba(17, 73, 52, 0.08)', border: '1px solid rgba(17, 73, 52, 0.1)' }}>
                                     <FaSeedling size={22} style={{ color: '#114934' }} />
                                 </div>
                                 <div>
@@ -222,10 +206,10 @@ export default function WhatManagedMeansSection() {
                                 </div>
                             </div>
                         </Col>
-                        
+
                         <Col xs={12} sm={6} md={3} className="bar-column border-0">
                             <div className="d-flex align-items-center px-lg-3">
-                                <div className="p-2 rounded-circle bg-sanjeevani bg-opacity-10 text-sanjeevani me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px' }}>
+                                <div className="p-2 rounded-circle me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px', backgroundColor: 'rgba(17, 73, 52, 0.08)', border: '1px solid rgba(17, 73, 52, 0.1)' }}>
                                     <FaLock size={22} style={{ color: '#114934' }} />
                                 </div>
                                 <div>
@@ -242,11 +226,11 @@ export default function WhatManagedMeansSection() {
                     <div className="d-flex justify-content-center align-items-center gap-3">
                         <span style={{ width: '60px', height: '1px', backgroundColor: 'rgba(197, 160, 89, 0.4)' }}></span>
                         <FaLeaf className="mx-1" size={14} style={{ color: '#c5a059' }} />
-                        <span 
-                            className="fw-bold text-uppercase" 
-                            style={{ 
-                                fontFamily: '"Playfair Display", "Georgia", serif', 
-                                color: '#114934', 
+                        <span
+                            className="fw-bold text-uppercase"
+                            style={{
+                                fontFamily: '"Playfair Display", "Georgia", serif',
+                                color: '#114934',
                                 letterSpacing: '2px',
                                 fontSize: '0.85rem'
                             }}
