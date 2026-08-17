@@ -251,20 +251,7 @@ export default function FaqSection() {
                                                 className="p-4 d-flex align-items-start gap-3 bg-white"
                                                 style={{ borderTop: '1px solid rgba(197, 160, 89, 0.15)' }}
                                             >
-                                                {/* Left Green Icon Badge */}
-                                                <div
-                                                    className="rounded-circle d-none d-sm-flex align-items-center justify-content-center text-white"
-                                                    style={{
-                                                        width: '56px',
-                                                        height: '56px',
-                                                        backgroundColor: 'rgba(17, 73, 52, 0.06)',
-                                                        border: '1.5px solid rgba(17, 73, 52, 0.15)',
-                                                        color: '#114934',
-                                                        minWidth: '56px'
-                                                    }}
-                                                >
-                                                    <FaSeedling size={22} />
-                                                </div>
+
 
                                                 {/* Answer description */}
                                                 <p className="text-secondary lh-lg mb-0 flex-grow-1" style={{ fontSize: '0.88rem' }}>
