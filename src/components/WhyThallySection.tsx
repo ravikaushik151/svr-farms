@@ -41,7 +41,13 @@ export default function WhyThallySection() {
                 overflow: 'hidden'
             }}
         >
-
+            {/* Subtle floating leaves on the right edge */}
+            <div
+                className="position-absolute d-none d-lg-block"
+                style={{ right: '-20px', top: '15%', opacity: 0.1, pointerEvents: 'none' }}
+            >
+                <FaLeaf size={140} style={{ color: '#114934' }} />
+            </div>
 
             <Container className="py-lg-4 position-relative">
 
