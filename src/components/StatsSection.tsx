@@ -7,7 +7,7 @@ import { useEffect, useState, useRef } from 'react';
 const stats = [
     {
         icon: FaUsers,
-        count: 15,
+        count: 350,
         label: "Happy Families",
         suffix: "+",
         description: "Already living the Little England lifestyle"
@@ -35,10 +35,10 @@ const stats = [
     },
     {
         icon: FaHome,
-        count: 3000,
-        label: "Sq. Ft. Clubhouse",
+        count: 15,
+        label: "Projects",
         suffix: "+",
-        description: "Where comfort meets community"
+        description: "Completed & ongoing projects"
     },
 ];
 

@@ -61,7 +61,7 @@ export default function Hero() {
                                 Managed Organic Farmland Near Bengaluru
                             </h1>
                             <p className="lead fs-4 mb-5 text-white-90" style={{ letterSpacing: '0.5px' }}>
-                                In the belt the British called Little England
+                                In the belt British called Little England
                             </p>
                             <div className="d-flex flex-wrap justify-content-center gap-3">
                                 <Link href="/contact" className="btn btn-primary px-5 py-3">

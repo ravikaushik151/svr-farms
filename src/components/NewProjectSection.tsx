@@ -202,7 +202,7 @@ export default function NewProjectSection() {
                                             <span style={{ fontSize: '0.78rem', fontWeight: 'bold', letterSpacing: '0.5px' }} className="text-uppercase">Distance from Bangalore</span>
                                         </div>
                                         <div className="p-3 bg-white flex-grow-1 d-flex align-items-center" style={{ fontSize: '0.85rem', color: '#2d3748' }}>
-                                            ~55 km (55 minutes, off NH-44)
+                                            55 km (55 minutes, off NH 44)
                                         </div>
                                     </div>
 
@@ -213,7 +213,7 @@ export default function NewProjectSection() {
                                             <span style={{ fontSize: '0.78rem', fontWeight: 'bold', letterSpacing: '0.5px' }} className="text-uppercase">Distance from Electronic City</span>
                                         </div>
                                         <div className="p-3 bg-light flex-grow-1 d-flex align-items-center" style={{ fontSize: '0.85rem', color: '#2d3748' }}>
-                                            ~45 km
+                                            45 km
                                         </div>
                                     </div>
 

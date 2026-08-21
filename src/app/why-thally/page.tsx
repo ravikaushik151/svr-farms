@@ -10,7 +10,7 @@ export default function WhyThallyPage() {
     return (
         <>
             <PageBanner title="Why Thally" backgroundImage="/banner/About us_Banner.webp" />
-            
+
             {/* 1. Introduction Section */}
             <Container className="py-5 mt-4">
                 <Row className="justify-content-center">
@@ -20,7 +20,7 @@ export default function WhyThallyPage() {
                             Thally sits in Krishnagiri district, Tamil Nadu, just over the Karnataka border — close enough that most of the drive is still Bangalore roads. British planters found it too cool and too green to feel like Tamil Nadu at all, and started calling it <strong>"Little England"</strong>. The name outlasted them.
                         </p>
                         <p className="text-muted lh-lg mt-3" style={{ fontSize: '1.05rem' }}>
-                            What's left behind: a belt of hills at around 1,000 feet, Kenilworth Fort — the only fort in India built in the style of an English castle — and land prices that haven't yet caught up to what the location can actually do.
+                            What's left behind: a belt of hills at around 1,000 meters, Kenilworth Fort — the only fort in India built in the style of an English castle — and land prices that haven't yet caught up to what the location can actually do.
                         </p>
                     </Col>
                 </Row>
@@ -40,7 +40,7 @@ export default function WhyThallyPage() {
                                     <h3 className="h5 fw-bold mb-0 text-dark text-uppercase letter-spacing-1">Close Enough to Actually Use</h3>
                                 </div>
                                 <p className="text-muted lh-lg mb-0" style={{ fontSize: '0.95rem' }}>
-                                    At 50 km from Silk Board and 25 km from Hosur, Thally lies about 55 minutes off NH-44 for our own projects, and roughly 45 km from Electronic City. This is close enough for a genuine weekend getaway, not a major expedition. That's the whole reason Thally functions as a real farmland market and not just a tourist detour.
+                                    At 50 km from Silk Board and 25 km from Hosur, Thally lies about 55 minutes off NH 44 for our own projects, and roughly 45 km from Electronic City. This is close enough for a genuine weekend getaway, not a major expedition. That's the whole reason Thally functions as a real farmland market and not just a tourist detour.
                                 </p>
                             </Card>
                         </Col>
@@ -55,7 +55,7 @@ export default function WhyThallyPage() {
                                     <h3 className="h5 fw-bold mb-0 text-dark text-uppercase letter-spacing-1">A Climate That Does the Work For You</h3>
                                 </div>
                                 <p className="text-muted lh-lg mb-0" style={{ fontSize: '0.95rem' }}>
-                                    At around 1,000 feet elevation, Thally stays cool through most of the year — including the months Bangalore is sweating. Misty valleys and long rainy seasons have made it a real agricultural belt too: potatoes, carrots, cabbage, and flowers, especially marigold and rose grown partly for export. It's earned an unofficial "Rose City" title for exactly that reason, and it's why organic farming and off-grid cottage living both work here without a fight.
+                                    At around 1,000 meters elevation, Thally stays cool through most of the year — including the months Bangalore is sweating. Misty valleys and long rainy seasons have made it a real agricultural belt too: potatoes, carrots, cabbage, and flowers, especially marigold and rose grown partly for export. It's earned an unofficial "Rose City" title for exactly that reason, and it's why organic farming and off-grid cottage living both work here without a fight.
                                 </p>
                             </Card>
                         </Col>
@@ -93,7 +93,7 @@ export default function WhyThallyPage() {
                                         </li>
                                         <li className="d-flex align-items-start mb-2">
                                             <FaCheckCircle className="text-sanjeevani mt-1 me-2 flex-shrink-0" size={14} />
-                                            <span><strong>Satellite Town Ring Road (STRR / NH-948A)</strong> — Loops around Bengaluru, letting freight and commuter traffic skip the city center entirely.</span>
+                                            <span><strong>Satellite Town Ring Road (STRR / NH 948A)</strong> — Loops around Bengaluru, letting freight and commuter traffic skip the city center entirely.</span>
                                         </li>
                                         <li className="d-flex align-items-start mb-2">
                                             <FaCheckCircle className="text-sanjeevani mt-1 me-2 flex-shrink-0" size={14} />
@@ -121,7 +121,7 @@ export default function WhyThallyPage() {
                         </p>
                     </Col>
                 </Row>
-                
+
                 <Row className="justify-content-center">
                     <Col lg={10}>
                         <div className="table-responsive shadow-sm rounded-3 border border-1 border-light">
@@ -139,40 +139,40 @@ export default function WhyThallyPage() {
                                 <tbody>
                                     <tr style={{ backgroundColor: 'rgba(17, 73, 52, 0.04)' }}>
                                         <td className="py-3 px-3 fw-bold text-sanjeevani"><FaCompass className="me-2" /> Thally</td>
-                                        <td className="py-3 px-3">~50 km</td>
-                                        <td className="py-3 px-3">~1 hour</td>
-                                        <td className="py-3 px-3">~1,000 ft</td>
+                                        <td className="py-3 px-3">50 km</td>
+                                        <td className="py-3 px-3">1 hour</td>
+                                        <td className="py-3 px-3">1,000 ft</td>
                                         <td className="py-3 px-3 text-success fw-semibold">Low</td>
                                         <td className="py-3 px-3 text-dark fw-semibold">Active, early-stage (High Growth)</td>
                                     </tr>
                                     <tr>
                                         <td className="py-3 px-3 fw-semibold">Nandi Hills</td>
-                                        <td className="py-3 px-3">~60 km</td>
-                                        <td className="py-3 px-3">~1.5 hours</td>
-                                        <td className="py-3 px-3">~4,850 ft</td>
+                                        <td className="py-3 px-3">60 km</td>
+                                        <td className="py-3 px-3">1.5 hours</td>
+                                        <td className="py-3 px-3">4,850 ft</td>
                                         <td className="py-3 px-3 text-danger">High</td>
                                         <td className="py-3 px-3">Minimal</td>
                                     </tr>
                                     <tr>
                                         <td className="py-3 px-3 fw-semibold">Coorg</td>
-                                        <td className="py-3 px-3">~260 km</td>
-                                        <td className="py-3 px-3">~5–6 hours</td>
-                                        <td className="py-3 px-3">~3,500–4,500 ft</td>
+                                        <td className="py-3 px-3">260 km</td>
+                                        <td className="py-3 px-3">5–6 hours</td>
+                                        <td className="py-3 px-3">3,500–4,500 ft</td>
                                         <td className="py-3 px-3 text-warning">High in season</td>
                                         <td className="py-3 px-3">Established, pricier</td>
                                     </tr>
                                     <tr>
                                         <td className="py-3 px-3 fw-semibold">Ooty</td>
-                                        <td className="py-3 px-3">~275 km</td>
-                                        <td className="py-3 px-3">~7–8 hours</td>
-                                        <td className="py-3 px-3">~7,400 ft</td>
+                                        <td className="py-3 px-3">275 km</td>
+                                        <td className="py-3 px-3">7–8 hours</td>
+                                        <td className="py-3 px-3">7,400 ft</td>
                                         <td className="py-3 px-3 text-danger">Very high in season</td>
                                         <td className="py-3 px-3">Established, pricier</td>
                                     </tr>
                                 </tbody>
                             </Table>
                         </div>
-                        
+
                         <p className="text-secondary lh-lg mt-4 px-1" style={{ fontSize: '1.05rem' }}>
                             The Thally Garden and Lake, local dams, and the twin viewpoint hills of Devarabetta give you scenic, uncrowded alternatives to Ooty or Coorg. Kenilworth Fort remains a heritage stop unlike anything else in the country. You're not just buying land here — you have somewhere to actually go.
                         </p>
@@ -194,7 +194,7 @@ export default function WhyThallyPage() {
                                 <a href="tel:+919986410709" className="text-decoration-none text-sanjeevani fw-bold">+91 99864 10709</a>
                             </div>
                         </Col>
-                        
+
                         <Col lg={5} className="offset-lg-1">
                             <div className="p-4 p-md-5 bg-white rounded-3 shadow-sm">
                                 <h4 className="fw-bold text-dark mb-4 text-center">Book a Site Visit</h4>

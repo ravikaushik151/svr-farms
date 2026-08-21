@@ -31,7 +31,7 @@ export default function PageBanner({
                 <h1 className="display-4 fw-bold text-white text-uppercase" style={{ letterSpacing: '1px' }}>
                     {title}
                 </h1>
-                <nav aria-label="breadcrumb" className="mt-3">
+                <nav aria-label="breadcrumb" className="mt-3 d-none">
                     <ol className="breadcrumb justify-content-center mb-0" style={{ fontSize: '0.9rem', letterSpacing: '0.5px' }}>
                         <li className="breadcrumb-item">
                             <Link href="/" className="text-white-50 text-decoration-none hover-sanjeevani">

@@ -222,7 +222,7 @@ export const posts: Post[] = [
         title: "Owning Land That Heals the Planet: Carbon Positive Farmland",
         date: "29th June 2026",
         image: "/blog/carbon-positive-farmland-5-powerful-reasons-to-invest.webp",
-        text: "Land isn’t just dirt under your feet anymore. For a growing number of investors, land is a climate solution. Carbon positive farmland is flipping th...",
+        text: "Land isn’t just dirt under your meter anymore. For a growing number of investors, land is a climate solution. Carbon positive farmland is flipping th...",
         slug: "carbon-positive-farmland-5-powerful-reasons-to-invest"
     },
     {

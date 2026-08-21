@@ -10,13 +10,13 @@ const items = [
         number: "01",
         icon: FaMapMarkerAlt,
         title: "Close Enough to Actually Use",
-        description: "50 km from Silk Board and 25 km from Hosur. Close enough for a genuine weekend retreat, not a long expedition."
+        description: "45 km from Silk Board and 25 km from Hosur. Close enough for a genuine weekend retreat, not a long expedition."
     },
     {
         number: "02",
         icon: FaCloudSun,
         title: "A Climate That Does the Work",
-        description: "At around 1,000 feet elevation, Thally stays misty and cool. Ideal for organic farming and off-grid cottage living."
+        description: "At around 1,000 meters elevation, Thally stays misty and cool. Ideal for organic farming and off-grid cottage living."
     },
     {
         number: "03",
@@ -28,7 +28,7 @@ const items = [
         number: "04",
         icon: FaRoad,
         title: "Funded Infrastructure",
-        description: "Moving projects like Namma Metro extension to Hosur, STRR (NH-948A) ring road, and planned Greenfield Airport."
+        description: "Moving projects like Namma Metro extension to Hosur, STRR (NH 948A) ring road, and planned Greenfield Airport."
     }
 ];
 
@@ -114,7 +114,7 @@ export default function WhyThallySection() {
                         >
                             Thally sits just over the Karnataka border in the scenic valleys of Krishnagiri.
                             British planters found it so cool and green they called it <strong>“Little England”</strong>.
-                            With hills at 1,000 feet elevation, misty weather, and booming infrastructure nearby, it represents the ideal blend of peace, accessibility, and high appreciation value.
+                            With hills at 1,000 meters elevation, misty weather, and booming infrastructure nearby, it represents the ideal blend of peace, accessibility, and high appreciation value.
                         </p>
                     </Col>
                 </Row>

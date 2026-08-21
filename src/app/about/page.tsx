@@ -37,7 +37,7 @@ export default function About() {
                 <Container className="py-lg-5">
                     <Row className="justify-content-center">
                         <Col lg={10} className="text-center">
-                            <span className="text-uppercase fw-bold text-spacing-2 mb-3 d-block" style={{ color: '#c5a059', fontSize: '0.9rem', letterSpacing: '2px' }}>
+                            <span className="text-uppercase fw-bold text-spacing-2 mb-3 d-none" style={{ color: '#c5a059', fontSize: '0.9rem', letterSpacing: '2px' }}>
                                 ABOUT LITTLE ENGLAND
                             </span>
                             <h2 className="display-4 fw-bold text-sanjeevani mb-4" style={{ fontFamily: '"Playfair Display", "Georgia", serif', lineHeight: '1.2' }}>
@@ -142,48 +142,125 @@ export default function About() {
             </div>
 
             {/* 3. Brand Philosophy Section */}
-            <div className="py-5" style={{ backgroundColor: '#114934', color: '#ffffff' }}>
+            <div className="py-5" style={{ backgroundColor: '#f2f6f3', color: '#333333' }}>
                 <Container className="py-lg-5">
+                    <div className="text-center mb-5">
+                        <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                            BRAND PHILOSOPHY
+                        </span>
+                        <h2 className="display-5 fw-bold text-sanjeevani" style={{ fontFamily: '"Playfair Display", "Georgia", serif' }}>
+                            In Harmony with Nature. For Generations to Come.
+                        </h2>
+                        <div className="d-flex justify-content-center mt-3">
+                            <span style={{ width: '50px', height: '2px', backgroundColor: '#c5a059' }}></span>
+                        </div>
+                    </div>
+
                     <Row className="gy-4">
-                        <Col lg={5} className="pe-lg-5 d-flex flex-column justify-content-center">
-                            <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
-                                BRAND PHILOSOPHY
-                            </span>
-                            <h2 className="display-6 fw-bold mb-4 text-white" style={{ fontFamily: '"Playfair Display", "Georgia", serif', lineHeight: '1.3' }}>
-                                In Harmony with Nature.<br />For Generations to Come.
-                            </h2>
-                            <div className="mb-4" style={{ width: '60px', height: '2px', backgroundColor: '#c5a059' }}></div>
-                            <p className="text-white-50 lh-lg" style={{ fontSize: '0.95rem' }}>
-                                We believe the best spaces are shaped by nature, not against it. Our philosophy is simple – respect the land, enrich life, and create value that lasts.
-                            </p>
+                        {/* Left Card: A Truly Organic Haven */}
+                        <Col lg={6} className="d-flex align-items-stretch">
+                            <Card className="border-0 shadow-sm rounded-4 w-100 bg-white overflow-hidden" style={{
+                                border: '1px solid rgba(17, 73, 52, 0.08)',
+                                borderLeft: '5px solid #114934',
+                                transition: 'all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1)',
+                                boxShadow: '0 8px 30px rgba(17, 73, 52, 0.03)'
+                            }}
+                            onMouseOver={(e) => {
+                                e.currentTarget.style.transform = 'translateY(-5px)';
+                                e.currentTarget.style.boxShadow = '0 15px 35px rgba(17, 73, 52, 0.08)';
+                            }}
+                            onMouseOut={(e) => {
+                                e.currentTarget.style.transform = 'none';
+                                e.currentTarget.style.boxShadow = '0 8px 30px rgba(17, 73, 52, 0.03)';
+                            }}
+                            >
+                                <Card.Body className="p-4 p-md-5 d-flex flex-column justify-content-between">
+                                    <div>
+                                        {/* Veda Quote Block */}
+                                        <div className="p-3 mb-4 rounded-3 text-start" style={{
+                                            backgroundColor: '#faf8f2',
+                                            borderLeft: '3px solid #c5a059',
+                                        }}>
+                                            <h5 className="fst-italic mb-2 text-sanjeevani fw-bold" style={{ fontFamily: '"Playfair Display", serif', fontSize: '1.05rem', color: '#114934', lineHeight: '1.4' }}>
+                                                “माता भूमि: पुत्रोऽहं पृथिव्याः। तौं मा हिंसीः।”
+                                            </h5>
+                                            <p className="text-secondary small mb-2 lh-relaxed">
+                                                The Earth is my mother, and I am her son. May I not harm her.
+                                            </p>
+                                            <span className="d-block text-uppercase fw-bold text-end" style={{ color: '#c5a059', fontSize: '0.72rem', letterSpacing: '1px' }}>
+                                                — Atharva Veda 12.1.12
+                                            </span>
+                                        </div>
+
+                                        <h3 className="h4 fw-bold text-sanjeevani mb-3 text-start" style={{ fontFamily: '"Playfair Display", "Georgia", serif', color: '#114934' }}>
+                                            A Truly Organic Haven
+                                        </h3>
+                                        
+                                        <p className="text-muted lh-lg mb-3 text-start" style={{ fontSize: '0.92rem' }}>
+                                            At Little England Farms, we do not just talk about organic living — we embody it. Our commitment to the land begins long before you make it your home. We meticulously manage each farm plot using 100% organic practices, ensuring the soil is free from harmful chemicals and rich with natural vitality.
+                                        </p>
+                                        
+                                        <p className="text-muted lh-lg mb-0 text-start" style={{ fontSize: '0.92rem' }}>
+                                            Imagine harvesting your own organic produce, knowing it is grown in soil nurtured with care and respect for nature. This is the foundation of health and wellness Little England Farms offers you and your family.
+                                        </p>
+                                    </div>
+                                </Card.Body>
+                            </Card>
                         </Col>
-                        <Col lg={7} className="d-flex align-items-center">
-                            <Row className="g-4 w-100">
-                                <Col sm={6} md={3} className="text-center text-md-start">
-                                    <div className="mb-3" style={{ color: '#c5a059' }}><FaLeaf size={28} /></div>
-                                    <h4 className="h6 fw-bold text-white text-uppercase tracking-wider mb-2" style={{ letterSpacing: '1px' }}>Respect</h4>
-                                    <div className="mb-3 bg-white bg-opacity-25" style={{ width: '40px', height: '1px' }}></div>
-                                    <p className="text-white-50 small mb-0 lh-lg" style={{ fontSize: '0.78rem' }}>We honour the land, its resources and its rhythms.</p>
-                                </Col>
-                                <Col sm={6} md={3} className="text-center text-md-start">
-                                    <div className="mb-3" style={{ color: '#c5a059' }}><FaSeedling size={28} /></div>
-                                    <h4 className="h6 fw-bold text-white text-uppercase tracking-wider mb-2" style={{ letterSpacing: '1px' }}>Responsibility</h4>
-                                    <div className="mb-3 bg-white bg-opacity-25" style={{ width: '40px', height: '1px' }}></div>
-                                    <p className="text-white-50 small mb-0 lh-lg" style={{ fontSize: '0.78rem' }}>We act with care today for a better tomorrow.</p>
-                                </Col>
-                                <Col sm={6} md={3} className="text-center text-md-start">
-                                    <div className="mb-3" style={{ color: '#c5a059' }}><FaSun size={28} /></div>
-                                    <h4 className="h6 fw-bold text-white text-uppercase tracking-wider mb-2" style={{ letterSpacing: '1px' }}>Balance</h4>
-                                    <div className="mb-3 bg-white bg-opacity-25" style={{ width: '40px', height: '1px' }}></div>
-                                    <p className="text-white-50 small mb-0 lh-lg" style={{ fontSize: '0.78rem' }}>We create harmony between people, nature and progress.</p>
-                                </Col>
-                                <Col sm={6} md={3} className="text-center text-md-start">
-                                    <div className="mb-3" style={{ color: '#c5a059' }}><FaLandmark size={28} /></div>
-                                    <h4 className="h6 fw-bold text-white text-uppercase tracking-wider mb-2" style={{ letterSpacing: '1px' }}>Legacy</h4>
-                                    <div className="mb-3 bg-white bg-opacity-25" style={{ width: '40px', height: '1px' }}></div>
-                                    <p className="text-white-50 small mb-0 lh-lg" style={{ fontSize: '0.78rem' }}>We build places that grow in value and meaning.</p>
-                                </Col>
-                            </Row>
+
+                        {/* Right Card: Our Eco-Conscious Vision */}
+                        <Col lg={6} className="d-flex align-items-stretch">
+                            <Card className="border-0 shadow-sm rounded-4 w-100 bg-white overflow-hidden" style={{
+                                border: '1px solid rgba(17, 73, 52, 0.08)',
+                                borderLeft: '5px solid #c5a059',
+                                transition: 'all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1)',
+                                boxShadow: '0 8px 30px rgba(17, 73, 52, 0.03)'
+                            }}
+                            onMouseOver={(e) => {
+                                e.currentTarget.style.transform = 'translateY(-5px)';
+                                e.currentTarget.style.boxShadow = '0 15px 35px rgba(17, 73, 52, 0.08)';
+                            }}
+                            onMouseOut={(e) => {
+                                e.currentTarget.style.transform = 'none';
+                                e.currentTarget.style.boxShadow = '0 8px 30px rgba(17, 73, 52, 0.03)';
+                            }}
+                            >
+                                <Card.Body className="p-4 p-md-5 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h3 className="h4 fw-bold text-sanjeevani mb-3 text-start" style={{ fontFamily: '"Playfair Display", "Georgia", serif', color: '#114934' }}>
+                                            Our Eco-Conscious Vision
+                                        </h3>
+                                        
+                                        <p className="text-muted lh-lg mb-3 text-start" style={{ fontSize: '0.92rem' }}>
+                                            Choosing Little England Farms means embracing a lifestyle in harmony with nature. We do not just sell land; we offer a gateway to sustainable living. Our team provides expert guidance on eco-dream homes with grey and black water management, rainwater harvesting, and groundwater recharging solutions.
+                                        </p>
+                                        
+                                        <p className="text-muted lh-lg mb-4 text-start" style={{ fontSize: '0.92rem' }}>
+                                            By making Little England Farms your home, you are not just buying land — you are investing in a future where your daily life contributes positively to the environment.
+                                        </p>
+
+                                        {/* Mahabharata Quote Block */}
+                                        <div className="p-3 rounded-3 text-start" style={{
+                                            backgroundColor: '#f5f7f5',
+                                            borderLeft: '3px solid #114934',
+                                        }}>
+                                            <h5 className="fst-italic mb-2 text-sanjeevani fw-bold" style={{ fontFamily: '"Playfair Display", serif', fontSize: '1.05rem', color: '#114934', lineHeight: '1.4' }}>
+                                                “दशपुत्रसमो द्रुमः”
+                                            </h5>
+                                            <p className="text-secondary small mb-2 lh-relaxed">
+                                                A tree is equivalent to ten sons.
+                                            </p>
+                                            <span className="d-block text-uppercase fw-bold text-end" style={{ color: '#c5a059', fontSize: '0.72rem', letterSpacing: '1px' }}>
+                                                — Mahabharata, Anushasana Parva 115.38
+                                            </span>
+                                        </div>
+                                        
+                                        <p className="text-muted lh-lg mt-4 mb-0 text-start" style={{ fontSize: '0.92rem' }}>
+                                            Embracing this ancient wisdom, we are committed to extensive reforestation. When you choose Little England Farms, you become part of a legacy that will benefit generations to come.
+                                        </p>
+                                    </div>
+                                </Card.Body>
+                            </Card>
                         </Col>
                     </Row>
                 </Container>
@@ -370,7 +447,7 @@ export default function About() {
                                 desc: "Every decision is guided by what will sustain the land, enrich the ownership experience and preserve its relevance for years to come."
                             }
                         ].map((col, i) => (
-                            <Col lg={2} md={4} sm={6} className={`mx-auto ${i > 2 ? 'mt-4 mt-lg-0' : ''}`} key={i} style={{ minWidth: '220px' }}>
+                            <Col lg={2} md={4} sm={6} className="mx-auto" key={i} style={{ minWidth: '220px' }}>
                                 <div className="mb-3 text-sanjeevani d-flex justify-content-center">
                                     <div className="p-3 rounded-circle d-flex align-items-center justify-content-center" style={{ backgroundColor: 'rgba(17,73,52,0.05)', color: '#c5a059', width: '56px', height: '56px' }}>
                                         {col.icon}

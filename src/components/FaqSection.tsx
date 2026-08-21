@@ -15,40 +15,40 @@ import Image from 'next/image';
 
 const faqs = [
     {
-        question: 'What is Little England Farms?',
-        answer: 'A managed organic farmland brand on the Thally-Hosur corridor, about 55 minutes from Bangalore. Every plot comes with clear, freehold title, professionally farmed on the owner\'s behalf.'
+        question: "Where are Little England’s managed farmland communities located?",
+        answer: "Little England’s farmland communities are primarily positioned across the Thally belt in Krishnagiri district, Tamil Nadu - approximately 50 km from Bangalore’s Silk Board, around 25 km from Hosur and within convenient reach of Electronic City. The location offers the rare advantage of countryside living without feeling disconnected from Bangalore."
     },
     {
-        question: 'Where is Little England Farms located, and how far is it from Bangalore?',
-        answer: 'Across the Thally belt in Krishnagiri district, Tamil Nadu — about 50 km from Bangalore\'s Silk Board, 25 km from Hosur, and roughly 45 km from Electronic City. For our own projects specifically, that\'s about 55 minutes off NH-44.'
+        question: "What does “managed farmland” mean?",
+        answer: "Managed farmland allows you to own agricultural land while an experienced on-ground team takes care of essential activities such as cultivation, irrigation, routine maintenance and farm management. At Little England, the idea is to make farmland ownership more effortless - allowing owners to enjoy the land, its surroundings and its long-term potential without having to personally manage everyday agricultural operations."
     },
     {
-        question: 'Is Thally in Karnataka or Tamil Nadu?',
-        answer: 'Tamil Nadu. Thally falls under Krishnagiri district, right across the border from Karnataka — most of the drive from Bangalore runs through Karnataka before crossing into Tamil Nadu near the end. It\'s a common point of confusion, since almost every buyer is coming from Bangalore.'
+        question: "Where is Little England Farms located, and how far is it from Bangalore?",
+        answer: "Across the Thally belt in Krishnagiri district, Tamil Nadu - about 50 km from Bangalore's Silk Board, 25 km from Hosur, and roughly 45 km from Electronic City. For our own projects specifically, that’s about 55 minutes off NH-44."
     },
     {
-        question: 'Why is Thally called "Little England"?',
-        answer: 'British planters settled here for the cool climate and rolling hills — closer to the English countryside than anywhere else in South India — and the name stuck with locals long after the British left. Kenilworth Fort, modeled on England\'s own Kenilworth Castle, is the clearest physical trace of that history still standing.'
+        question: "What does “managed farmland” mean? (Tamara Valley)",
+        answer: "Managed farmland allows you to own a defined parcel of land while an experienced on-ground team handles activities such as cultivation, irrigation, farm upkeep, security and common-area management. At Tamara Valley, the project states that farming is professionally managed through organic practices, allowing owners to enjoy the land without personally overseeing its everyday operations."
     },
     {
-        question: 'What\'s the climate like in Thally?',
-        answer: 'Cool and consistent. At around 1,000 feet elevation, Thally stays comfortable through most of the year, genuinely pleasant in summer when Bangalore is heating up — which is part of why organic farming and off-grid cottage living both work here.'
+        question: "Why is Thally called “Little England”?",
+        answer: "British planters settled here for the cool climate and rolling hills - closer to the English countryside than anywhere else in South India - and the name stuck with locals long after the British left. Kenilworth Fort, modeled on England’s own Kenilworth Castle, is the clearest physical trace of that history still standing."
     },
     {
-        question: 'Is the title actually clear?',
-        answer: 'Yes. Every plot comes with freehold title, Patta Chitta documented before you sign anything. You\'re not buying shares in a pooled scheme — you own your specific plot, on paper, from day one.'
+        question: "Does Little England manage the farmland after purchase?",
+        answer: "Little England’s managed farmland model is designed to support owners with the day-to-day care and cultivation of their land. Depending on the individual project and management plan, this can include agricultural operations, irrigation, routine upkeep and other essential farm-management activities. Specific inclusions and charges should always be reviewed in the respective project’s management agreement."
     },
     {
-        question: 'Can I build a house on my land?',
-        answer: 'On most projects, yes. Cottage and farmhouse construction is allowed, and our team can help you plan and build it. A few projects have restrictions, so ask about the specific one before you buy.'
+        question: "Is the land legally verified and individually registered?",
+        answer: "Tamara Valley’s official website states that the project offers clear-title deeds and government-registered ownership. Before purchasing, buyers should still have an independent property lawyer examine the title history, encumbrance certificate, survey details, land classification, applicable revenue records, sale agreement and final sale deed for the specific plot being considered."
     },
     {
-        question: 'Do I have to farm it myself?',
-        answer: 'No — that\'s the point of "managed." Our team handles irrigation, fertilization, security, and crop planning. You show up when you want to.'
+        question: "What makes Little England different from conventional plotted developments?",
+        answer: "Little England is built around the idea that land ownership should offer more than a defined plot. Its managed farmland communities bring together productive land, professionally managed cultivation, natural landscapes and thoughtfully planned lifestyle experiences. The focus is on creating places that owners can genuinely spend time in - not merely parcels of land held for the future."
     },
     {
-        question: "What is the difference between managed farmland and buying land directly? ",
-        answer: "Buying land directly means you handle everything yourself — irrigation, security, cultivation, legal upkeep. Managed farmland means a professional team does that for you while you hold the title and collect the returns."
+        question: "How does Little England approach land documentation and registration?",
+        answer: "Land documentation and registration are handled on a project-specific basis, with buyers receiving the applicable ownership and property documents relating to their selected land parcel. As with any land purchase, buyers are encouraged to independently review the title history, encumbrance records, survey details, land classification and sale documentation with a qualified legal professional before completing the transaction."
     }
 ];
 

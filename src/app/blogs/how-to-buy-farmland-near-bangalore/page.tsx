@@ -77,7 +77,7 @@ export default function BlogPage() {
                                                 </span><strong data-start={8557} data-end={8599}>Book a free site visit today with SVR Farms : To book <a href="https://svrfarms.com/contact-us">Click here</a><br />
                                                     Follow SVR Farms for real stories and updates:&nbsp;[<a href="https://www.instagram.com/svrfarmsbangalore/" target="_blank" rel="noopener">Click Here</a>]<br />
                                                 </strong></p>
-                                            <p data-start={5446} data-end={5552}><em data-start={5446} data-end={5552}>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;~Stay informed with the latest in premium farmland and real estate investments — only With&nbsp;<a href="https://svrfarms.com/">svrfarms.com</a></em></p>
+                                            <p data-start={5446} data-end={5552}><em data-start={5446} data-end={5552}>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Stay informed with the latest in premium farmland and real estate investments — only With&nbsp;<a href="https://svrfarms.com/">svrfarms.com</a></em></p>
                                         </div>
 
                                     </div>

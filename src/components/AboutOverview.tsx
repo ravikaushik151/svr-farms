@@ -8,7 +8,7 @@ const features = [
     {
         icon: FaMapMarkedAlt,
         title: "Prime Corridor",
-        description: "Thally-Hosur belt, ~55 mins from NH-44 & 45 km off Electronic City."
+        description: "Thally-Hosur belt, 45 mins from NH 44 & 35 km off Electronic City."
     },
     {
         icon: FaFileSignature,
@@ -68,7 +68,7 @@ export default function AboutOverview() {
                                 className="text-muted mb-3 lh-lg"
                                 style={{ fontSize: '0.98rem' }}
                             >
-                                Little England Farms is a managed organic farmland brand operating across the Thally-Hosur corridor, about 55 minutes off NH-44 and roughly 45 km from Electronic City.
+                                Little England Farms is a managed organic farmland brand operating across the Thally-Hosur corridor, about 45 minutes off NH 44 and roughly 35 km from Electronic City.
                             </p>
 
                             <p

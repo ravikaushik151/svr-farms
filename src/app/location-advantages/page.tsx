@@ -230,7 +230,7 @@ export default function LocationAdvantages() {
                                 </div>
                                 <h3 className="h5 fw-bold text-sanjeevani mb-3">Salubrious Climate & Fertile Land</h3>
                                 <p className="text-secondary small lh-lg mb-3">
-                                    At around 1,000 feet elevation, Thally enjoys a cool, salubrious climate that rarely feels oppressive, even in summer. Mornings are often misty, evenings remain comfortable and the landscape stays visually refreshing.
+                                    At around 1,000 meters elevation, Thally enjoys a cool, salubrious climate that rarely feels oppressive, even in summer. Mornings are often misty, evenings remain comfortable and the landscape stays visually refreshing.
                                 </p>
                                 <p className="text-secondary small lh-lg mb-0">
                                     Extended rainy seasons and fertile soil have made Thally a hub for potatoes, carrots, cabbage and flowers. The region is particularly known for its sprawling marigold and rose fields (earning Thally the reputation of <strong>"Rose City"</strong>), offering the perfect foundation for managed agricultural activity.
@@ -309,7 +309,7 @@ export default function LocationAdvantages() {
                                     </div>
                                     <h3 className="h6 fw-bold text-white text-uppercase tracking-wide mb-3">Satellite Town Ring Road (STRR)</h3>
                                     <p className="text-white-50 small lh-lg" style={{ fontSize: '0.78rem' }}>
-                                        The STRR (NH-948A) is being developed to loop around Bengaluru. For the Hosur-Thally outskirts, this means smoother regional movement and reduced traffic bottlenecking. Commuters can bypass central Bengaluru entirely.
+                                        The STRR (NH 948A) is being developed to loop around Bengaluru. For the Hosur-Thally outskirts, this means smoother regional movement and reduced traffic bottlenecking. Commuters can bypass central Bengaluru entirely.
                                     </p>
                                 </div>
                                 <div className="mt-3 text-warning border-top border-secondary border-opacity-25 pt-2 small text-uppercase" style={{ fontSize: '0.68rem', letterSpacing: '1px' }}>

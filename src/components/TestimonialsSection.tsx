@@ -6,9 +6,9 @@ import { useState } from 'react';
 
 const testimonials = [
     {
-        name: "Arjun Reddy",
-        role: "Little England Farms",
-        text: "I was initially unsure about investing in farmland, especially with all the concerns around documentation and management. Little England made the entire process extremely transparent and structured. From site visits to final registration, everything was handled professionally. What stood out for me was their clarity and commitment at every step."
+        name: "Sowbhagyam Tangam nagabhushanam",
+        role: "Tamara Valley",
+        text: "Tamara valley managed farm lands........My visit to these farms was an amazing feel.....I never visited farm land till now seen only in videos posts. But actually the farm plots are well disciplined condition in the layout and beautifully earmarked by constructing compound wall to each plot making more secure to the owners...The bit of park n common area was ideally designed to kitchen, dining etc...swimming pool yet to come. Great feel, away from city sounds, gives you divine peace n heavenly experience. I recommend to buy these farms for future plans would be great."
     },
     {
         name: "Kavya Nair",

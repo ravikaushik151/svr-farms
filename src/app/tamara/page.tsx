@@ -25,7 +25,7 @@ export default function TamaraPage() {
             id: 1, title: 'Connected to Nature & Growth  ', content: `  <ul dir="ltr">
     <li>35–45 km from Electronic City</li>
     <li> 12–15 km from Hosur Town</li>
-    <li> Easy Access via NH-44</li>
+    <li> Easy Access via NH 44</li>
     <li>Near Proposed Hosur Airport Belt</li>
     <li>Surrounded by Hills & Green Valleys</li>
     
