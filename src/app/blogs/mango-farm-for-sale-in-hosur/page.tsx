@@ -73,7 +73,7 @@ export default function BlogPage() {
                                             <p>&nbsp;</p>
                                             <p>Investing in a <strong>mango farm for sale in Hosur</strong> is a choice that offers both financial rewards and a tranquil lifestyle. With expert management services, you can enjoy the benefits of owning farmland without the day-to-day hassles. Experience the joy of sustainable farming and create a legacy with SVR Farms.</p>
                                             <p><a href="https://svrfarms.com/contact-us">Contact SVR Farms today</a> for a site visit and start your green investment journey!</p>
-                                            <p><b>Call SVR Farms at 6363280653</b> for expert guidance and site visits today for <strong>mango farm for sale in Hosur</strong></p>
+                                            <p><b>Call SVR Farms at 9008991199, 9686777793</b> for expert guidance and site visits today for <strong>mango farm for sale in Hosur</strong></p>
                                             <p><b>Secure your future—invest in Bangalore land today!</b></p>
                                         </div>
 

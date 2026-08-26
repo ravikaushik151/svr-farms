@@ -98,7 +98,7 @@ export default function BlogPage() {
                                             <p>&nbsp;</p>
                                             <p><span style={{ fontWeight: 400 }}>Investing in </span><b>Vasudha Kalpataru Farmland</b><span style={{ fontWeight: 400 }}> is not just about financial returns — it’s about contributing to a <a href="https://svrfarms.com/agricultural-land-near-bangalore">sustainable agricultural future</a>. With managed farmland services, expert oversight, and eco-friendly practices, your investment will grow while making a positive impact.</span></p>
                                             <p><span style={{ fontWeight: 400 }}>Take the first step towards securing your future with a farmland investment that benefits both your finances and the planet.</span></p>
-                                            <p><b>Call</b><a href="https://svrfarms.com/contact-us"> <b>SVR Farms</b></a><b> at</b><b> 9916761010</b> <b>for expert guidance and site visits today!</b></p>
+                                            <p><b>Call</b><a href="https://svrfarms.com/contact-us"> <b>SVR Farms</b></a><b> at</b><b> 9008991199, 9686777793</b> <b>for expert guidance and site visits today!</b></p>
                                             <p><span style={{ fontWeight: 400 }}>Start your journey towards sustainable farmland ownership with Vasudha Kalpataru Farmland.</span></p>
                                         </div>
 

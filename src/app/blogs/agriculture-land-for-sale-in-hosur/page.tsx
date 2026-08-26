@@ -73,7 +73,7 @@ export default function BlogPage() {
                                             <h3><b>Ready to Invest?</b></h3>
                                             <p><span style={{ fontWeight: 400 }}>Explore premium </span><b>agriculture land for sale in Hosur</b><span style={{ fontWeight: 400 }}> with SVR Farms. Contact us today to schedule a site visit and begin your farmland investment journey!</span></p>
                                             <p><a href="https://svrfarms.com/contact-us"><b>Contact Us</b></a><span style={{ fontWeight: 400 }}> | </span><b>Explore Managed Farmlands | Explore <strong>mango farm for sale in Hosur</strong></b></p>
-                                            <p><b>Call SVR Farms at 6363280653&nbsp;for expert guidance and site visits today for&nbsp;<strong>mango farm for sale in Hosur</strong><br />
+                                            <p><b>Call SVR Farms at 9008991199, 9686777793&nbsp;for expert guidance and site visits today for&nbsp;<strong>mango farm for sale in Hosur</strong><br />
                                             </b></p>
                                         </div>
 

@@ -441,7 +441,9 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                                             <div className="d-flex gap-3 flex-column flex-sm-row">
                                                 <p className="mb-0 fw-semibold text-secondary" style={{ fontSize: '0.9rem' }}>
                                                     <FaPhoneAlt className="me-2 text-sanjeevani" style={{ color: '#c5a059' }} />
-                                                    <a href="tel:+919986410709" className="text-decoration-none text-dark hover-gold">+91 99864 10709</a>
+                                                    <a href="tel:+919008991199" className="text-decoration-none text-dark hover-gold">+91 90089 91199</a>
+                                                    <span className="text-muted mx-1">/</span>
+                                                    <a href="tel:+919686777793" className="text-decoration-none text-dark hover-gold">+91 96867 77793</a>
                                                 </p>
                                                 <p className="mb-0 fw-semibold text-secondary" style={{ fontSize: '0.9rem' }}>
                                                     <FaEnvelope className="me-2 text-sanjeevani" style={{ color: '#c5a059' }} />

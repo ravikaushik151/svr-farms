@@ -189,8 +189,8 @@ export default function Footer() {
                             <div className="d-flex mb-3  justify-content-md-start justify-content-center">
                                 <div className="text-sanjeevani md-md-3 me-2 mt-1"><FaPhoneAlt size={18} className="text-warm-white" /></div>
                                 <div>
-                                    <p className="text-white mb-0">+91 99864 10709</p>
-                                    <p className="text-white mb-0">+91 98459 59397</p>
+                                    <p className="text-white mb-0">+91 90089 91199</p>
+                                    <p className="text-white mb-0">+91 96867 77793</p>
                                 </div>
                             </div>
                             <div className="d-flex justify-content-md-start justify-content-center">
@@ -228,7 +228,7 @@ export default function Footer() {
                 }}>
                     {/* Call Button */}
                     <a
-                        href="tel:+919986410709"
+                        href="tel:+919008991199"
                         className="d-flex align-items-center justify-content-center rounded-circle text-white floating-btn-call"
                         style={{
                             width: '55px',
@@ -254,7 +254,7 @@ export default function Footer() {
 
                     {/* WhatsApp Button */}
                     <a
-                        href="https://wa.me/919986410709"
+                        href="https://wa.me/919008991199"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="d-flex align-items-center justify-content-center rounded-circle text-white floating-btn-whatsapp"

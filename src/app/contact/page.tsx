@@ -279,8 +279,8 @@ export default function ContactPage() {
                                             <div className="text-start">
                                                 <h6 className="fw-bold mb-1" style={{ color: '#c5a059', fontSize: '0.88rem' }}>Call Us</h6>
                                                 <p className="text-white-50 mb-0 small" style={{ lineHeight: '1.4' }}>
-                                                    <a href="tel:+919986410709" className="text-decoration-none text-white-50">+91 99864 10709</a> <br />
-                                                    <a href="tel:+919845959397" className="text-decoration-none text-white-50">+91 98459 59397</a>
+                                                    <a href="tel:+919008991199" className="text-decoration-none text-white-50">+91 90089 91199</a> <br />
+                                                    <a href="tel:+919686777793" className="text-decoration-none text-white-50">+91 96867 77793</a>
                                                 </p>
                                             </div>
                                         </div>

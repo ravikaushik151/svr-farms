@@ -92,7 +92,7 @@ export default function BlogPage() {
   <p>Whether you’re looking to build generational wealth, escape city chaos, or just grow mangoes without lifting a finger—<strong>hassle-free farming</strong> is your path to real, rooted prosperity.</p>
   <h2>Ready to Invest? Let’s Talk!</h2>
   <p>Still have questions about farmland investments or how to buy or book managed farmland near Bangalore?</p>
-  <p><strong>Visit </strong><a href="https://svrfarms.com/contact-us"><strong>SVR Farms</strong></a> or call us today @ 9986410709 to schedule a farm visit and explore plots starting at just half acres.</p>
+  <p><strong>Visit </strong><a href="https://svrfarms.com/contact-us"><strong>SVR Farms</strong></a> or call us today @ 9008991199, 9686777793 to schedule a farm visit and explore plots starting at just half acres.</p>
 </div>
 
 
