@@ -169,7 +169,7 @@ export default function NewProjectSection() {
                                             <span style={{ fontSize: '0.78rem', fontWeight: 'bold', letterSpacing: '0.5px' }} className="text-uppercase">Total Land Area</span>
                                         </div>
                                         <div className="p-3 bg-light flex-grow-1 d-flex align-items-center" style={{ fontSize: '0.85rem', color: '#2d3748' }}>
-                                            300 Acres
+                                            400 Acres
                                         </div>
                                     </div>
 
@@ -213,7 +213,7 @@ export default function NewProjectSection() {
                                             <span style={{ fontSize: '0.78rem', fontWeight: 'bold', letterSpacing: '0.5px' }} className="text-uppercase">Distance from Electronic City</span>
                                         </div>
                                         <div className="p-3 bg-light flex-grow-1 d-flex align-items-center" style={{ fontSize: '0.85rem', color: '#2d3748' }}>
-                                            45 km
+                                            35 km
                                         </div>
                                     </div>
 
