@@ -1,7 +1,7 @@
 'use client';
 
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaUsers, FaTree, FaSeedling, FaMapMarkedAlt, FaHome, FaLeaf } from 'react-icons/fa';
+import { FaUsers, FaTree, FaAward, FaMapMarkedAlt, FaHome, FaLeaf } from 'react-icons/fa';
 import { useEffect, useState, useRef } from 'react';
 
 const stats = [
@@ -15,16 +15,16 @@ const stats = [
     {
         icon: FaTree,
         count: 3500,
-        label: "Trees Planted",
+        label: "No. of Acres",
         suffix: "+",
         description: "Nurturing nature, creating a legacy"
     },
     {
-        icon: FaSeedling,
-        count: 5000,
-        label: "Fruit Trees Planted",
+        icon: FaAward,
+        count: 15,
+        label: "Years of Legacy",
         suffix: "+",
-        description: "Growing abundance for generations"
+        description: "Proudly shaping the Little England journey"
     },
     {
         icon: FaMapMarkedAlt,
