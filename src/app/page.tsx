@@ -27,7 +27,7 @@ export default function Home() {
 
             <div className="bg-light py-5 mt-5 d-none">
                 <Container>
-                    <SectionTitle title="Why Choose Little England?" subtitle="The SVR Advantage" />
+                    <SectionTitle title="Why Choose Little England?" subtitle="The Little England Advantage" />
                     <Row className="text-center g-4">
                         <Col md={4}>
                             <div className="p-4 bg-white rounded shadow-sm h-100 hover-lift">

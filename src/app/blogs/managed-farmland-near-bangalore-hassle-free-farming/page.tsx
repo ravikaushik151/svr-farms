@@ -34,7 +34,7 @@ export default function BlogPage() {
                                     <div className="card-text text-start mt-3 blog-details">
 <div>
   <p>For years, investing in farmland meant getting your hands dirty—literally. But not anymore. With the rise of <strong>managed farmland near Bangalore</strong>, urban investors now have the opportunity to own agricultural land without the daily burdens of farming. In this blog, we break down how <strong>hassle-free farming</strong> works and why it’s quickly becoming a popular <strong>passive income stream</strong> for city dwellers, NRIs, and first-time landowners.</p>
-  <p>Whether you’re a seasoned investor or a curious beginner, this guide to <strong>Managed Farmland </strong>will walk you through the<a href="https://svrfarms.com/invest-in-farmland-near-bangalore"> benefits</a>, income models, and key things to know before you invest.</p>
+  <p>Whether you’re a seasoned investor or a curious beginner, this guide to <strong>Managed Farmland </strong>will walk you through the<a href="https://littleengland.cm/invest-in-farmland-near-bangalore"> benefits</a>, income models, and key things to know before you invest.</p>
   <h2>What is Managed Farmland?</h2>
   <p><strong>Managed farmland</strong> refers to agricultural plots that are owned by individual investors but operated by a professional team. These management teams handle everything—from soil preparation and planting to irrigation, harvesting, and even selling the produce.</p>
   <h3>Core Features:</h3>
@@ -58,7 +58,7 @@ export default function BlogPage() {
   <h3>1. <strong>You Buy the Land</strong></h3>
   <p>The investor selects a plot from a managed farmland near bangalore projects are often located within 1.5 to 2.5 hours, such as Hosur, Denkanikottai, or Thalli.</p>
   <h3>2. <strong>You Sign a Management Agreement</strong></h3>
-  <p>An agreement is signed with the farmland management company (like SVR Farms) for long-term upkeep and operations.</p>
+  <p>An agreement is signed with the farmland management company (like Little England Farms) for long-term upkeep and operations.</p>
   <h3>3. <strong>The Farm is Developed</strong></h3>
   <p>Irrigation systems, fencing, crop planning, and infrastructure like cottages or gazebos are put in place.</p>
   <h3>4. <strong>Revenue Begins</strong></h3>
@@ -84,7 +84,7 @@ export default function BlogPage() {
   <h3>4. <strong>Retreat + Return</strong></h3>
   <p>Use your plot as a <strong>weekend retreat</strong> while also growing your money and having a dual benefit hard to find in traditional real estate.</p>
   <h2>Best Locations to Invest Near Bangalore</h2>
-  <p>These areas are home to projects by top companies like <strong>SVR Farms</strong>, which provide legal support, maintenance, and full transparency.</p>
+  <p>These areas are home to projects by top companies like <strong>Little England Farms</strong>, which provide legal support, maintenance, and full transparency.</p>
   <h2>Key Things to Check Before Investing</h2>
   <h2>Actionable Tips for New Investors</h2>
   <h2 data-pm-slice="1 1 []">Conclusion: Your Land, Your Legacy</h2>
@@ -92,7 +92,7 @@ export default function BlogPage() {
   <p>Whether you’re looking to build generational wealth, escape city chaos, or just grow mangoes without lifting a finger—<strong>hassle-free farming</strong> is your path to real, rooted prosperity.</p>
   <h2>Ready to Invest? Let’s Talk!</h2>
   <p>Still have questions about farmland investments or how to buy or book managed farmland near Bangalore?</p>
-  <p><strong>Visit </strong><a href="https://svrfarms.com/contact-us"><strong>SVR Farms</strong></a> or call us today @ 9008991199, 9686777793 to schedule a farm visit and explore plots starting at just half acres.</p>
+  <p><strong>Visit </strong><a href="https://littleengland.cm/contact-us"><strong>Little England Farms</strong></a> or call us today @ 9688777793 to schedule a farm visit and explore plots starting at just half acres.</p>
 </div>
 
 

@@ -190,10 +190,10 @@ export default function WhyThallyPage() {
                                 Schedule a premium, chauffeured site visit to our managed farmlands in Thally. Discover the misty climate and investment potential firsthand.
                             </p>
                             <div className="d-flex justify-content-center gap-3 align-items-center flex-wrap">
-                                <span className="fw-bold">Contact SVR Farms:</span>
-                                <a href="tel:+919008991199" className="text-decoration-none text-sanjeevani fw-bold">+91 90089 91199</a>
+                                <span className="fw-bold">Contact Little England:</span>
+                                <a href="tel:+919688777793" className="text-decoration-none text-sanjeevani fw-bold">+91 96887 77793</a>
                                 <span className="text-muted mx-1">/</span>
-                                <a href="tel:+919686777793" className="text-decoration-none text-sanjeevani fw-bold">+91 96867 77793</a>
+                                <a href="tel:+919688777793" className="text-decoration-none text-sanjeevani fw-bold">+91 96887 77793</a>
                             </div>
                         </Col>
 

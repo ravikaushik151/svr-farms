@@ -119,7 +119,7 @@ export default function BlogPage() {
   <h2 data-start={7668} data-end={7681}>Conclusion</h2>
   <p data-start={7683} data-end={7899}>NRI farmland investment India represents a strategic shift toward tangible, inflation-resistant assets. The appeal lies in scarcity, appreciation potential, diversification benefits, and multi-generational stability.</p>
   <p data-start={7901} data-end={8087}>For NRIs evaluating how to NRI buy land in Bangalore or considering farm land for sale in Tamil Nadu, structured managed farmland presents a compelling alternative to conventional flats.</p>
-  <p data-start={8089} data-end={8296}>Review detailed project information on our<a href="https://svrfarms.com/managed-farms"> Projects Page</a>.<br data-start={8188} data-end={8191} /><a href="https://svrfarms.com/contact-us">Schedule</a> a virtual consultation with a farmland advisor.<br data-start={8247} data-end={8250} />Plan a site visit during your next India trip.</p>
+  <p data-start={8089} data-end={8296}>Review detailed project information on our<a href="https://littleengland.cm/managed-farms"> Projects Page</a>.<br data-start={8188} data-end={8191} /><a href="https://littleengland.cm/contact-us">Schedule</a> a virtual consultation with a farmland advisor.<br data-start={8247} data-end={8250} />Plan a site visit during your next India trip.</p>
 </div>
 
 

@@ -266,7 +266,7 @@ export default function ContactPage() {
                                             <div className="text-start">
                                                 <h6 className="fw-bold mb-1" style={{ color: '#c5a059', fontSize: '0.88rem' }}>Our Location</h6>
                                                 <p className="text-white-50 mb-0 small" style={{ lineHeight: '1.4' }}>
-                                                    #1919, SVS Building, 21st Main Road, 25th Cross, 2nd Sector, HSR Layout, Bengaluru - 560102
+                                                    509, Third Floor, 17th Main, 6th Cross Rd, 6th Block, Koramangala, Bengaluru, Karnataka – 560095
                                                 </p>
                                             </div>
                                         </div>
@@ -279,8 +279,7 @@ export default function ContactPage() {
                                             <div className="text-start">
                                                 <h6 className="fw-bold mb-1" style={{ color: '#c5a059', fontSize: '0.88rem' }}>Call Us</h6>
                                                 <p className="text-white-50 mb-0 small" style={{ lineHeight: '1.4' }}>
-                                                    <a href="tel:+919008991199" className="text-decoration-none text-white-50">+91 90089 91199</a> <br />
-                                                    <a href="tel:+919686777793" className="text-decoration-none text-white-50">+91 96867 77793</a>
+                                                    <a href="tel:+919688777793" className="text-decoration-none text-white-50">+91 96887 77793</a>
                                                 </p>
                                             </div>
                                         </div>
@@ -293,7 +292,7 @@ export default function ContactPage() {
                                             <div className="text-start">
                                                 <h6 className="fw-bold mb-1" style={{ color: '#c5a059', fontSize: '0.88rem' }}>Email Us</h6>
                                                 <p className="text-white-50 mb-0 small">
-                                                    <a href="mailto:info@svrfarms.com" className="text-decoration-none text-white-50">info@svrfarms.com</a>
+                                                    <a href="mailto:info@littleengland.cm" className="text-decoration-none text-white-50">info@littleengland.cm</a>
                                                 </p>
                                             </div>
                                         </div>
@@ -306,7 +305,7 @@ export default function ContactPage() {
                                     >
                                         {/* Open in Maps Overlay button */}
                                         <a
-                                            href="https://maps.google.com/?q=SVS+Building,+21st+Main+Road,+HSR+Layout,+Bengaluru"
+                                            href="https://maps.google.com/?q=509,+17th+Main,+6th+Cross+Rd,+6th+Block,+Koramangala,+Bengaluru,+Karnataka+560095"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="position-absolute d-flex align-items-center gap-2 text-decoration-none shadow-sm z-3"
@@ -327,7 +326,7 @@ export default function ContactPage() {
                                         </a>
 
                                         <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7523992389926!2d77.636665!3d12.923611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14878a87adcf%3A0x600ff50212fc8514!2sHSR%20Layout%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1689234567890!5m2!1sen!2sin"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.587823522204!2d77.6214154!3d12.9348425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144e578c7cf1%3A0xc07c5a03e1a68453!2s6th%20Block%2C%20Koramangala%2C%20Bengaluru%2C%20Karnataka%20560095!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
                                             width="100%"
                                             height="100%"
                                             style={{ border: 0 }}

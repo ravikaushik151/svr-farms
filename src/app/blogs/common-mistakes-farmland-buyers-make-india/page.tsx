@@ -65,7 +65,7 @@ export default function BlogPage() {
                                             <h2 data-start={5062} data-end={5107}>Why Managed Farmland is the Ideal Solution</h2>
                                             <h3 data-start={5109} data-end={5128}>Legal Assurance</h3>
                                             <p data-start={5130} data-end={5298}>Managed farmland projects come with pre-vetted legal documents, clean titles, and often, DTCP or panchayat approvals. This eliminates 90% of the legal friction upfront.</p>
-                                            <p data-start={5300} data-end={5421}><strong data-start={5300} data-end={5310}>Proof:</strong> SVR Farms near Bangalore conducts 42-point legal due diligence before offering any farmland plot to customers.</p>
+                                            <p data-start={5300} data-end={5421}><strong data-start={5300} data-end={5310}>Proof:</strong> Little England Farms near Bangalore conducts 42-point legal due diligence before offering any farmland plot to customers.</p>
                                             <h3 data-start={5423} data-end={5449}>Hassle-Free Operations</h3>
                                             <p data-start={5451} data-end={5619}>From soil prep to drip irrigation, from seasonal plantations to harvest—everything is handled by an expert team. All you do is choose your plot and visit when you want.</p>
                                             <h3 data-start={5626} data-end={5656}>Better Returns, Better Use</h3>
@@ -97,10 +97,10 @@ export default function BlogPage() {
                                             <p data-start={7628} data-end={7757}>Because it removes the legal, operational, and financial friction. You focus on enjoying the farm, while experts manage the rest.</p>
                                             <h2 data-start={8065} data-end={8082}>Final Thoughts</h2>
                                             <p data-start={8084} data-end={8280}>Buying farmland in India can be rewarding—or a regret. It depends on how prepared you are. The most <strong data-start={8184} data-end={8233}>common mistakes farmland buyers make in India</strong> come down to poor research and legal missteps.</p>
-                                            <p data-start={8282} data-end={8450}>Weekend farming isn’t just a dream anymore. With the rise of <a href="https://svrfarms.com/managed-farmland-near-hosur-investment-benefits">managed farmland</a>, it’s now a real, safe, and smart way to reconnect with nature and build long-term wealth.</p>
+                                            <p data-start={8282} data-end={8450}>Weekend farming isn’t just a dream anymore. With the rise of <a href="https://littleengland.cm/managed-farmland-near-hosur-investment-benefits">managed farmland</a>, it’s now a real, safe, and smart way to reconnect with nature and build long-term wealth.</p>
                                             <h3 data-start={8457} data-end={8525}>Ready to explore legally vetted managed farmland near Bangalore?</h3>
-                                            <p data-start={8527} data-end={8608}><strong data-start={8527} data-end={8568}>→ <a href="https://svrfarms.com/contact-us">Contact us</a> for a free consultation.</strong><br data-start={8568} data-end={8571} /><strong data-start={8571} data-end={8608}>→ Book a farm visit this weekend – <a href="https://svrfarms.com/contact-us">Click Here&nbsp;</a></strong><strong data-start={343} data-end={393}><br />
-                                                → Follow SVR Farms for real stories and updates:</strong>&nbsp;[<a href="https://www.instagram.com/svrfarmsbangalore/" target="_blank" rel="noopener">Click Here</a>]</p>
+                                            <p data-start={8527} data-end={8608}><strong data-start={8527} data-end={8568}>→ <a href="https://littleengland.cm/contact-us">Contact us</a> for a free consultation.</strong><br data-start={8568} data-end={8571} /><strong data-start={8571} data-end={8608}>→ Book a farm visit this weekend – <a href="https://littleengland.cm/contact-us">Click Here&nbsp;</a></strong><strong data-start={343} data-end={393}><br />
+                                                → Follow Little England Farms for real stories and updates:</strong>&nbsp;[<a href="https://www.instagram.com/littleenglandfarms/" target="_blank" rel="noopener">Click Here</a>]</p>
                                         </div>
 
 

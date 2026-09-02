@@ -13,6 +13,7 @@ import {
     FaShieldAlt
 } from 'react-icons/fa';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function NewProjectSection() {
     return (
@@ -227,6 +228,36 @@ export default function NewProjectSection() {
                                             Clear, freehold – Patta Chitta documented
                                         </div>
                                     </div>
+                                </div>
+
+                                {/* Direct Action CTA Buttons */}
+                                <div className="d-flex flex-column flex-sm-row gap-3 mt-4 pt-2">
+                                    <Link
+                                        href="/tamara"
+                                        className="btn flex-grow-1 py-3 px-4 fw-bold text-center rounded-2 shadow-sm d-flex align-items-center justify-content-center gap-2"
+                                        style={{
+                                            backgroundColor: '#114934',
+                                            color: '#ffffff',
+                                            fontSize: '0.88rem',
+                                            letterSpacing: '0.5px',
+                                            transition: 'all 0.3s ease'
+                                        }}
+                                    >
+                                        <span>EXPLORE TAMARA VALLEY</span>
+                                        <span style={{ color: '#c5a059' }}>&rarr;</span>
+                                    </Link>
+                                    <Link
+                                        href="/contact"
+                                        className="btn py-3 px-4 fw-bold text-center rounded-2 border-2 d-flex align-items-center justify-content-center"
+                                        style={{
+                                            borderColor: '#c5a059',
+                                            color: '#114934',
+                                            backgroundColor: '#fcfbf7',
+                                            fontSize: '0.88rem'
+                                        }}
+                                    >
+                                        Book Site Visit
+                                    </Link>
                                 </div>
                             </div>
 

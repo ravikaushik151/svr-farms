@@ -49,7 +49,7 @@ export default function BlogPage() {
                                             <h3>3. Sustainable and Eco-Friendly Living</h3>
                                             <p>By investing in farmland, you contribute to sustainable development and gain an opportunity to adopt organic farming, water conservation techniques, and renewable energy usage.</p>
                                             <h2>What is Managed Farmland?</h2>
-                                            <p><strong>Managed farmland</strong> refers to agricultural land where professional services are provided for maintenance, cultivation, and even farm-to-table marketing. Companies like <strong>SVR Farms</strong> offer curated experiences that make ownership simple and profitable.</p>
+                                            <p><strong>Managed farmland</strong> refers to agricultural land where professional services are provided for maintenance, cultivation, and even farm-to-table marketing. Companies like <strong>Little England Farms</strong> offer curated experiences that make ownership simple and profitable.</p>
                                             <h3>Services Typically Included:</h3>
                                             <h2>How to Choose the Right Farmland</h2>
                                             <h3>1. Legal Clearances and Documentation</h3>
@@ -60,9 +60,9 @@ export default function BlogPage() {
                                             <p>A basic soil test and water availability assessment are crucial for successful farming.</p>
                                             <h3>4. Infrastructure and Amenities</h3>
                                             <p>Choose a property that offers fencing, borewells, internal roads, and electricity.</p>
-                                            <h2>Case Study: SVR Farms’ Tamara Valley Project</h2>
-                                            <p>Located near Denkanikottai, <strong>Tamara Valley by SVR Farms</strong> is a perfect example of a managed farmland project that combines natural beauty with professional land management. With mango plantations, scenic surroundings, and a strong community focus, Tamara Valley is ideal for both personal and investment purposes.</p>
-                                            <p><a href="https://svrfarms.com/tamara-valley">Explore Tamara Valley</a></p>
+                                            <h2>Case Study: Little England Farms’ Tamara Valley Project</h2>
+                                            <p>Located near Denkanikottai, <strong>Tamara Valley by Little England Farms</strong> is a perfect example of a managed farmland project that combines natural beauty with professional land management. With mango plantations, scenic surroundings, and a strong community focus, Tamara Valley is ideal for both personal and investment purposes.</p>
+                                            <p><a href="https://littleengland.cm/tamara-valley">Explore Tamara Valley</a></p>
                                             <h2>Who Should Invest in Farm Land?</h2>
                                             <h2>Tips for a Successful Farmland Investment</h2>
                                             <h2>Future of Farmland Investment Near Bangalore</h2>
@@ -70,8 +70,8 @@ export default function BlogPage() {
                                             <p>Investing now means capitalizing on early growth and securing a lifetime of green returns.</p>
                                             <h2>Final Thoughts</h2>
                                             <p>Buying <strong>farm land for sale near Bangalore</strong> is more than a real estate decision — it’s a lifestyle transformation. Whether you’re looking for <strong>affordable managed farmland for sale near Bangalore</strong> or a long-term investment, this opportunity promises both peace and profit.</p>
-                                            <p>✅ Ready to explore a greener future? <a href="https://svrfarms.com/contact-us">Contact SVR Farms</a> today to book a site visit and own your piece of paradise.</p>
-                                            <p><strong>Own. Grow. Thrive.</strong> With SVR Farms.</p>
+                                            <p>✅ Ready to explore a greener future? <a href="https://littleengland.cm/contact-us">Contact Little England Farms</a> today to book a site visit and own your piece of paradise.</p>
+                                            <p><strong>Own. Grow. Thrive.</strong> With Little England Farms.</p>
                                         </div>
 
 

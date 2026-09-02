@@ -83,14 +83,14 @@ export default function BlogPage() {
                                             <p><strong>Take the Next Step:</strong> Your Farmland Investment Journey Starts Here<br />
                                                 Whether you are an experienced investor or exploring farmland for the first time, <em>Farmland near Hosur</em> offers compelli&nbsp; ng advantages across growth, affordability, lifestyle, and long term value.</p>
                                             <p><strong>Ready to explore available farm plots?</strong><br />
-                                                Contact our farmland specialists for personalized options that match your goals: <a href="https://svrfarms.com/contact-us"><strong>Schedule a Site Visit</strong></a></p>
+                                                Contact our farmland specialists for personalized options that match your goals: <a href="https://littleengland.cm/contact-us"><strong>Schedule a Site Visit</strong></a></p>
                                             <p><strong>Want a custom investment plan?</strong><br />
-                                                Speak to our experts now and take decisive action: <a href="https://svrfarms.com/contact-us"><strong>Talk to a Farmland Expert</strong></a></p>
-                                            <p><strong data-start={8557} data-end={8599}>Follow SVR Farms for real stories and updates:&nbsp;[<a href="https://www.instagram.com/svrfarmsbangalore/" target="_blank" rel="noopener">Click Here</a>]</strong></p>
+                                                Speak to our experts now and take decisive action: <a href="https://littleengland.cm/contact-us"><strong>Talk to a Farmland Expert</strong></a></p>
+                                            <p><strong data-start={8557} data-end={8599}>Follow Little England Farms for real stories and updates:&nbsp;[<a href="https://www.instagram.com/littleenglandfarms/" target="_blank" rel="noopener">Click Here</a>]</strong></p>
                                             <h2>Final Thought</h2>
                                             <p><em>Farmland near Hosur</em> is no longer a fringe real estate option it’s a strategic choice backed by growth economics, lifestyle value, and emerging demand from <em>Bangalore farmland buyers</em>. Whether you’re planting crops or building a future, this region stands out as a land investment worth exploring.</p>
                                             <p>If you’d like related articles to boost your knowledge, try:<br />
-                                                <a href="https://svrfarms.com/5-reasons-to-choose-farmland-luxury-retreats"><strong>Top 5 Benefits of Managed Farmland Investments</strong></a></p>
+                                                <a href="https://littleengland.cm/5-reasons-to-choose-farmland-luxury-retreats"><strong>Top 5 Benefits of Managed Farmland Investments</strong></a></p>
                                         </div>
 
                                     </div>

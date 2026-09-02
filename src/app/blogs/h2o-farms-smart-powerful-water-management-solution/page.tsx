@@ -28,15 +28,15 @@ export default function BlogPage() {
                                     />
                                     <div>
                                         <h1 className='section-heading text-dark text-md-start text-center card-title'>
-                                            H2O Farms: A Sustainable Agricultural Venture by SVR Farms
+                                            H2O Farms: A Sustainable Agricultural Venture by Little England Farms
                                         </h1>
                                     </div>
                                     <div className="card-text text-start mt-3 blog-details">
                                         <div>
-                                            <p data-pm-slice="1 1 []">H2O Farms is an innovative initiative led by <a href="https://svrfarms.com"><strong>SVR Farms</strong></a>, focused on transforming agricultural practices through eco-conscious water management strategies. By integrating advanced technology with responsible cultivation methods, H2O Farms optimizes land use while preserving valuable water resources.</p>
+                                            <p data-pm-slice="1 1 []">H2O Farms is an innovative initiative led by <a href="https://littleengland.cm"><strong>Little England Farms</strong></a>, focused on transforming agricultural practices through eco-conscious water management strategies. By integrating advanced technology with responsible cultivation methods, H2O Farms optimizes land use while preserving valuable water resources.</p>
                                             <h2>The Vision Behind H2O Farms</h2>
-                                            <p>The primary goal of H2O Farms is to foster sustainable farming while achieving high productivity. With increasing concerns over water scarcity, SVR Farms saw the necessity for a solution that conserves water without reducing crop quality or yield.</p>
-                                            <p>Through H2O Farms, SVR Farms is developing a model of agriculture that serves as an exemplar for sustainable farming worldwide.</p>
+                                            <p>The primary goal of H2O Farms is to foster sustainable farming while achieving high productivity. With increasing concerns over water scarcity, Little England Farms saw the necessity for a solution that conserves water without reducing crop quality or yield.</p>
+                                            <p>Through H2O Farms, Little England Farms is developing a model of agriculture that serves as an exemplar for sustainable farming worldwide.</p>
                                             <h3>Goals and Commitments</h3>
                                             <h2>Understanding the Importance of Efficient Water Use</h2>
                                             <p>Water is the foundation of farming, yet its scarcity presents ongoing challenges. Traditional methods often lead to overuse, wastage, and soil degradation. H2O Farms tackles these issues by implementing solutions that optimize water usage while maintaining soil health.</p>
@@ -55,13 +55,13 @@ export default function BlogPage() {
                                             <h2>Technological Innovations</h2>
                                             <p>Partnering with research institutions and leading agritech firms, H2O Farms implements cutting-edge technologies to ensure optimal agricultural output.</p>
                                             <p>For more on technological advancements in agriculture, refer to the <a href="https://www.worldbank.org/en/topic/agriculture/overview" target="_blank" rel="noopener"><strong>World Bank Report on Smart Agriculture</strong></a>.</p>
-                                            <h2>Why Partner with SVR Farms?</h2>
-                                            <p>Joining H2O Farms under SVR Farms means supporting meaningful environmental change while securing financial benefits.</p>
+                                            <h2>Why Partner with Little England Farms?</h2>
+                                            <p>Joining H2O Farms under Little England Farms means supporting meaningful environmental change while securing financial benefits.</p>
                                             <h2>Frequently Asked Questions</h2>
                                             <p><strong>1. What makes H2O Farms sustainable?</strong><br />
                                                 Efficient water management, renewable energy use, and eco-friendly farming reduce environmental impact.</p>
                                             <p><strong>2. How can I invest in H2O Farms?</strong><br />
-                                                Visit the <a href="https://svrfarms.com/contact"><strong>SVR Farms website</strong></a> for detailed information.</p>
+                                                Visit the <a href="https://littleengland.cm/contact"><strong>Little England Farms website</strong></a> for detailed information.</p>
                                             <p><strong>3. What crops are grown at H2O Farms?</strong><br />
                                                 The farm cultivates a variety of organic and drought-resistant crops.</p>
                                             <p><strong>4. How is water conservation maintained?</strong><br />
@@ -69,8 +69,8 @@ export default function BlogPage() {
                                             <p><strong>5. Can I visit H2O Farms?</strong><br />
                                                 Yes, guided tours are available. Book a visit through our website.</p>
                                             <h2>Conclusion</h2>
-                                            <p>Choosing to invest in H2O Farms under SVR Farms means joining a movement toward responsible agriculture. By supporting innovative water management and sustainable farming, you are contributing to a greener future while securing a stable financial investment.</p>
-                                            <p><a href="https://svrfarms.com/contact"><strong>Contact SVR Farms</strong></a> today to learn more about participating in this sustainable agricultural journey.</p>
+                                            <p>Choosing to invest in H2O Farms under Little England Farms means joining a movement toward responsible agriculture. By supporting innovative water management and sustainable farming, you are contributing to a greener future while securing a stable financial investment.</p>
+                                            <p><a href="https://littleengland.cm/contact"><strong>Contact Little England Farms</strong></a> today to learn more about participating in this sustainable agricultural journey.</p>
                                         </div>
 
 

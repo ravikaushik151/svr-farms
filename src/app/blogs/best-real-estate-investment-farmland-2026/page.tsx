@@ -39,7 +39,7 @@ export default function BlogPage() {
                       <p><strong>Key data point:</strong></p>
                       <h3>Key Advantages of Farmland as an Asset</h3>
                       <h2>Why Managed Farmland is Gaining Momentum</h2>
-                      <p>Managing farmland independently requires time and knowledge. This is where <a href="https://svrfarms.com/premium-managed-farmland-near-bangalore"><strong>managed farmland</strong></a> steps in. These projects let you own the land while experienced teams take care of operations, crops, and sales.</p>
+                      <p>Managing farmland independently requires time and knowledge. This is where <a href="https://littleengland.cm/premium-managed-farmland-near-bangalore"><strong>managed farmland</strong></a> steps in. These projects let you own the land while experienced teams take care of operations, crops, and sales.</p>
                       <h3>The Twofold Appeal</h3>
                       <h4>🏡 Lifestyle Value</h4>
                       <h4>💸 Passive Financial Returns</h4>
@@ -49,7 +49,7 @@ export default function BlogPage() {
                       <h3>Why These Areas Stand Out</h3>
                       <p>These factors support the long-term value and appeal of owning farmland in this region.</p>
                       <h2>The H2O Farms Model: Smart, Sustainable, and Profitable</h2>
-                      <p>Among current farmland projects, <a href="https://svrfarms.com/organic-farmland-near-bangalore-h2o-farms-by-svr-farms"><strong>H2O Farms</strong></a> has gained a reputation for sustainability and investment potential.</p>
+                      <p>Among current farmland projects, <a href="https://littleengland.cm/organic-farmland-near-bangalore-h2o-farms-by-Little-England-Farms"><strong>H2O Farms</strong></a> has gained a reputation for sustainability and investment potential.</p>
                       <h3>📌 Overview of H2O Farms</h3>
                       <p>H2O Farms spans <strong>61 acres</strong> near Bangalore in Bergai, Tamil Nadu. The project emphasizes water conservation, biodiversity, and agricultural sustainability, making it attractive to both lifestyle buyers and investors.</p>
                       <h3>🌿 Investor Benefits</h3>
@@ -83,9 +83,9 @@ export default function BlogPage() {
                         Challenges include unclear ownership, water issues, and market liquidity. Choosing reputable projects helps reduce these risks.</p>
                       <p><strong>5️⃣ Why is water conservation important for farmland investments?</strong><br />
                         Reliable water systems ensure productivity and long-term land health. H2O Farms incorporates these systems into its development strategy.</p>
-                      <p data-start={0} data-end={68} data-is-last-node data-is-only-node><strong data-start={8557} data-end={8599}>Book a site visit today with SVR Farms : To book&nbsp;<a href="https://svrfarms.com/contact-us">Click here</a><br />
-                      </strong><strong data-start={8639} data-end={8704}>Explore Tamara Valley: 300 Acres of Premium&nbsp;<a href="https://www.instagram.com/svrfarmsbangalore/" target="_blank" rel="noopener">Managed Farmland</a>&nbsp;:&nbsp;</strong><strong data-start={8639} data-end={8704}><a href="https://svrfarms.com/tamara-valley-farm-project">Click here</a></strong></p>
-                      <p data-start={5446} data-end={5552}><em data-start={5446} data-end={5552}>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Stay informed with the latest in premium farmland and best real estate investments — only With <a href="https://svrfarms.com/">svrfarms.com</a></em></p>
+                      <p data-start={0} data-end={68} data-is-last-node data-is-only-node><strong data-start={8557} data-end={8599}>Book a site visit today with Little England Farms : To book&nbsp;<a href="https://littleengland.cm/contact-us">Click here</a><br />
+                      </strong><strong data-start={8639} data-end={8704}>Explore Tamara Valley: 300 Acres of Premium&nbsp;<a href="https://www.instagram.com/littleenglandfarms/" target="_blank" rel="noopener">Managed Farmland</a>&nbsp;:&nbsp;</strong><strong data-start={8639} data-end={8704}><a href="https://littleengland.cm/tamara-valley-farm-project">Click here</a></strong></p>
+                      <p data-start={5446} data-end={5552}><em data-start={5446} data-end={5552}>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Stay informed with the latest in premium farmland and best real estate investments — only With <a href="https://littleengland.cm/">littleengland.cm</a></em></p>
                     </div>
 
 

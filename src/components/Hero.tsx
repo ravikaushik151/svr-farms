@@ -57,6 +57,17 @@ export default function Hero() {
                 >
                     <Row className="justify-content-center">
                         <Col lg={10}>
+                            <div className="mb-3">
+                                <Link 
+                                    href="/tamara" 
+                                    className="d-inline-flex align-items-center gap-2 text-decoration-none px-4 py-2 rounded-pill shadow-sm border border-warning"
+                                    style={{ backgroundColor: 'rgba(17, 73, 52, 0.85)', color: '#c5a059', fontSize: '0.9rem', letterSpacing: '1px', backdropFilter: 'blur(5px)' }}
+                                >
+                                    <span>⭐ FLAGSHIP PROJECT:</span>
+                                    <strong className="text-white">TAMARA VALLEY (300+ ACRES)</strong>
+                                    <span>&rarr;</span>
+                                </Link>
+                            </div>
                             <h1 className="display-3 fw-bold mb-3 lh-sm">
                                 Managed Organic Farmland Near Bengaluru
                             </h1>
@@ -64,11 +75,18 @@ export default function Hero() {
                                 In the belt British called Little England
                             </p>
                             <div className="d-flex flex-wrap justify-content-center gap-3">
-                                <Link href="/contact" className="btn btn-primary px-5 py-3">
+                                <Link 
+                                    href="/tamara" 
+                                    className="btn px-4 py-3 fw-bold shadow-sm"
+                                    style={{ backgroundColor: '#c5a059', color: '#114934', border: 'none' }}
+                                >
+                                    Explore Tamara Valley ⭐
+                                </Link>
+                                <Link href="/contact" className="btn btn-primary px-4 py-3">
                                     Book a Site Visit
                                 </Link>
-                                <a href="#projects" className="btn btn-outline-light px-5 py-3">
-                                    See the Farmlands
+                                <a href="#projects" className="btn btn-outline-light px-4 py-3">
+                                    See All Projects
                                 </a>
                             </div>
                         </Col>

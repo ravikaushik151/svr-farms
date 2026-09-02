@@ -83,7 +83,7 @@ export default function WhyThallySection() {
                         <div className="d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-2">
                             <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
                             <h6 className="text-uppercase letter-spacing-2 mb-0 small fw-bold" style={{ color: '#c5a059', fontSize: '0.8rem' }}>
-                                The SVR Farms Advantage
+                                The Little England Advantage
                             </h6>
                             <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
                         </div>

@@ -78,7 +78,7 @@ export default function BlogPage() {
                                             <p>Ready to explore the <strong>best managed farmland near Bangalore</strong>?</p>
                                             <p>Join the green revolution with a <strong>sustainable farmland investment near Bangalore</strong> that offers more than just returns. Contact our expert team today for site visits, brochures, and investment plans tailored to your goals.</p>
                                             <p>Learn more about sustainable agriculture policies on the <a href="https://agriwelfare.gov.in/" target="_blank" rel="noopener">Ministry of Agriculture &amp; Farmers Welfare</a>.</p>
-                                            <p><a href="https://svrfarms.com/contact-us"> Call now or book your farm visit</a> — your green investment journey starts here!</p>
+                                            <p><a href="https://littleengland.cm/contact-us"> Call now or book your farm visit</a> — your green investment journey starts here!</p>
                                             <h2>Conclusion: Invest in the Future You Believe In</h2>
                                             <p>The <strong>best managed farmland near Bangalore</strong> offers more than just land—it offers a chance to grow something real, both financially and environmentally. In a time when green choices matter more than ever, farmland investment stands as a beacon of sustainable prosperity.</p>
                                             <p>Whether you’re buying for returns, peace of mind, or purpose, make sure your land grows value <em>and</em> values.</p>

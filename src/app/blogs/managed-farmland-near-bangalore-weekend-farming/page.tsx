@@ -35,17 +35,17 @@ export default function BlogPage() {
 <div>
   <p>If you live in a fast-paced city like Bangalore, you might be experiencing this every day <strong>crowds</strong>, <strong>traffic</strong>, <strong>noise</strong>, and <strong>constant screen time</strong>. In such an environment, life has become a hustle bustle. <strong>Mind</strong>, <strong>body</strong>, and <strong>soul</strong>, <strong>all need nature</strong>.</p>
   <p>Now imagine, if every weekend you could spend time not in a resort or cafe, but in your own farmhouse, where fresh air, red soil, lush trees, and the smell of the earth would rejuvenate you.</p>
-  <p><strong>This is where the real solution comes in</strong>: <a href="https://svrfarms.com/managed-farmland-near-bangalore-hassle-free-farming">Managed Farmland Near Bangalore</a> where everything feels real and your own.</p>
+  <p><strong>This is where the real solution comes in</strong>: <a href="https://littleengland.cm/managed-farmland-near-bangalore-hassle-free-farming">Managed Farmland Near Bangalore</a> where everything feels real and your own.</p>
   <p>It’s not just a real estate investment. It’s a lifestyle where you connect with farming, connect with nature, and connect with yourself. Projects like Managed farmland Bangalore don’t just offer a property or a piece of land anymore. They offer an experience that turns every weekend into a festival, every visit into a therapy and every moment into a live long memories.</p>
-  <p data-start={86} data-end={439}>Managed farmland is not just an agricultural plot developed and operated by professional farming companies. It’s a farmland where the landowner can simply sip tea, whether at home or on the farm and watch it grow, because SVR Farms handles the farm maintenance, irrigation, labour, and crop management. Everything is taken care of by an experienced team.</p>
+  <p data-start={86} data-end={439}>Managed farmland is not just an agricultural plot developed and operated by professional farming companies. It’s a farmland where the landowner can simply sip tea, whether at home or on the farm and watch it grow, because Little England Farms handles the farm maintenance, irrigation, labour, and crop management. Everything is taken care of by an experienced team.</p>
   <p data-start={441} data-end={690}>You don’t have to worry about hiring workers, checking water levels, or figuring out which crop to plant next season. We are there to guide you. From preparing the soil to harvesting the fruits, it’s all managed by people who live and breathe farming.</p>
   <p data-start={692} data-end={877}>All you do is own the land and enjoy the returns whether that’s steady crop income, rising land value, or just the peace of knowing your farm is thriving without your daily involvement.</p>
   <h2>Managed Farmland</h2>
   <p>Managed Farmland an agricultural plot that is prepared and fully maintained by professional farming companies. The land is in your name, but the care is of our team.</p>
-  <p>At SVR Farms, we take complete responsibility of the farm—like irrigation, labor, soil preparation, and complete crop management.</p>
+  <p>At Little England Farms, we take complete responsibility of the farm—like irrigation, labor, soil preparation, and complete crop management.</p>
   <p>You don’t need to look for laborers, check water levels, or think about which crop to sow next. Our team guides you at every step—from preparing the soil to plucking the fruits.</p>
   <p>You just become the owner and enjoy it—whether it is the income from the crop, the increasing value of the land, or the satisfaction that your farm is flourishing without your tension.<br />
-    Read More 2025 edition of Managed Farmland : <a href="https://svrfarms.com/managed-farmland-near-bangalore-2025-edition">Click Here</a></p>
+    Read More 2025 edition of Managed Farmland : <a href="https://littleengland.cm/managed-farmland-near-bangalore-2025-edition">Click Here</a></p>
   <h2>Why There is Increasing demand for weekend farming ?</h2>
   <p data-start={233} data-end={498}>City life has become so fast that people are struggling with mental and physical fatigue. In such an environment, weekend farming is not just becoming a trend, but a necessity. Urban life is not just tiring, it is also taking us away from things that really matter.</p>
   <p data-start={500} data-end={729}>Parents feel it. Their children are confined to their homes all day—sometimes homework, sometimes TV, sometimes mobile screens. No playing in the mud, no climbing trees, no catching butterflies. Just moving fingers on the screen.</p>
@@ -91,8 +91,8 @@ export default function BlogPage() {
     you listen to the sound of breathing,<br />
     the smell of the soil soothes you,<br />
     this is the experience where you can truly find yourself again—Find Yourself.</p>
-  <h2>An example: SVR Farms, Hosur</h2>
-  <p>SVR Farms, a popular managed farmland near Bangalore project located near Hosur, is a perfect example of this concept. It has:</p>
+  <h2>An example: Little England Farms, Hosur</h2>
+  <p>Little England Farms, a popular managed farmland near Bangalore project located near Hosur, is a perfect example of this concept. It has:</p>
   <h2>Read Mo</h2>
   <h2>FAQs</h2>
   <p><strong>1. Is weekend stay possible at Managed Farmland Near Bangalore?</strong><br />
@@ -106,7 +106,7 @@ export default function BlogPage() {
   <p><strong>5. How can I get started?</strong><br />
     Contact us, book a site visit, understand the project and then invest.</p>
   <p data-start={111} data-end={203}><strong data-start={111} data-end={191}>Your dream of owning a piece of green, living land is closer than you think.</strong><br data-start={191} data-end={194} />Why wait?</p>
-  <p data-start={205} data-end={406}><a href="https://svrfarms.com/contact-us"><strong data-start={208} data-end={220}>Call now</strong></a> or <a href="https://svrfarms.com/contact-us"><strong data-start={224} data-end={252}>schedule your farm visit</strong></a> — let’s walk the soil together.<br data-start={284} data-end={287} /><strong data-start={290} data-end={324}>Check out our Project Profile:</strong> [<a href="https://svrfarms.com/managed-farms">Click Here</a>]<br data-start={337} data-end={340} /><strong data-start={343} data-end={393}>Follow SVR Farms for real stories and updates:</strong> [<a href="https://www.instagram.com/svrfarmsbangalore/" target="_blank" rel="noopener">Click Here</a>]</p>
+  <p data-start={205} data-end={406}><a href="https://littleengland.cm/contact-us"><strong data-start={208} data-end={220}>Call now</strong></a> or <a href="https://littleengland.cm/contact-us"><strong data-start={224} data-end={252}>schedule your farm visit</strong></a> — let’s walk the soil together.<br data-start={284} data-end={287} /><strong data-start={290} data-end={324}>Check out our Project Profile:</strong> [<a href="https://littleengland.cm/managed-farms">Click Here</a>]<br data-start={337} data-end={340} /><strong data-start={343} data-end={393}>Follow Little England Farms for real stories and updates:</strong> [<a href="https://www.instagram.com/littleenglandfarms/" target="_blank" rel="noopener">Click Here</a>]</p>
   <p data-start={408} data-end={577}>Whether you’re here for long-term returns, weekend peace, or a purpose-driven lifestyle — choose land that grows more than just crops. Choose land that grows <strong data-start={566} data-end={576}>legacy</strong>.</p>
 </div>
 

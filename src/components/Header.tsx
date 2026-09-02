@@ -6,12 +6,15 @@ export default function Header() {
     return (
         <Navbar expand="lg" className="bg-sanjeevani py-3 shadow-sm sticky-top" data-bs-theme="dark">
             <Container>
-                <Navbar.Brand as={Link} href="/" className="fw-bold text-white fs-4"> <Image src="/LE_Web Logo.png" alt="SVR Farms Logo" width={220} height={40} priority className="mb-0 img-fluid" style={{ width: '220px', height: 'auto' }} /></Navbar.Brand>
+                <Navbar.Brand as={Link} href="/" className="fw-bold text-white fs-4"> <Image src="/LE_Web Logo.png" alt="Little England Logo" width={220} height={40} priority className="mb-0 img-fluid" style={{ width: '220px', height: 'auto' }} /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto align-items-center">
                         <Nav.Link as={Link} href="/">Home</Nav.Link>
                         <Nav.Link as={Link} href="/about">About Us</Nav.Link>
+                        <Nav.Link as={Link} href="/tamara" className="fw-bold px-3 py-1 my-1 my-lg-0 rounded-pill text-nowrap" style={{ backgroundColor: '#c5a059', color: '#114934', fontSize: '0.88rem', letterSpacing: '0.5px' }}>
+                            Tamara Valley ⭐
+                        </Nav.Link>
                         <Nav.Link as={Link} href="/projects">Projects</Nav.Link>
                         <Nav.Link as={Link} href="/location-advantages">Location Advantages</Nav.Link>
                         <Nav.Link as={Link} href="/blogs">Blogs</Nav.Link>

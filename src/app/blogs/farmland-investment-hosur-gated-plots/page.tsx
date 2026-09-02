@@ -34,7 +34,7 @@ export default function BlogPage() {
                                     <div className="card-text text-start mt-3 blog-details">
 <div>
   <p data-start={458} data-end={877}>In recent years, <strong data-start={475} data-end={498}>farmland investment</strong> has emerged as a secure, rewarding, and emotionally fulfilling real estate option. For those seeking a blend of nature, privacy, and profitability, <strong data-start={647} data-end={681}>gated community plots in Hosur</strong> provide the perfect setting. Surrounded by the greenery of Tamil Nadu and the rapid urban development of Bangalore’s outskirts, these plots offer a unique mix of scenic beauty and smart security.</p>
-  <p data-start={879} data-end={1178}>This blog explores why investing in gated community plots, especially those integrated into <a href="https://svrfarms.com/managed-farmland-near-bangalore-3"><strong data-start={971} data-end={992}>managed farmlands</strong></a>, is a wise choice. Whether you’re a first-time investor or an NRI looking for a reliable, long-term asset, this guide will provide expert insights, current trends, and practical advice.</p>
+  <p data-start={879} data-end={1178}>This blog explores why investing in gated community plots, especially those integrated into <a href="https://littleengland.cm/managed-farmland-near-bangalore-3"><strong data-start={971} data-end={992}>managed farmlands</strong></a>, is a wise choice. Whether you’re a first-time investor or an NRI looking for a reliable, long-term asset, this guide will provide expert insights, current trends, and practical advice.</p>
   <h2 data-start={1185} data-end={1222}>Why Hosur is a Real Estate Hotspot</h2>
   <h3 data-start={1224} data-end={1249}>1. Strategic Location</h3>
   <p data-start={1251} data-end={1500}>Hosur, often dubbed as the “Little England of India” due to its pleasant climate, is just 40 km from Bangalore. Its connectivity via NH 44, industrial presence, and proximity to the IT capital make it a preferred destination for <strong data-start={1480} data-end={1499}>land investment</strong>.</p>
@@ -48,7 +48,7 @@ export default function BlogPage() {
   <h3 data-start={2288} data-end={2323}>3. Amenities and Infrastructure</h3>
   <p data-start={2325} data-end={2478}>From internal roads and water pipelines to clubhouse facilities and smart irrigation systems, these projects offer urban conveniences in a rural setting.</p>
   <h2 data-start={2485} data-end={2542}>Understanding Managed Farmlands: Invest Without Stress</h2>
-  <p data-start={2544} data-end={2652}><a href="https://svrfarms.com/managed-farmland-near-hosur-investment-benefits"><strong data-start={2544} data-end={2565}>Managed farmlands</strong></a> are curated plots within a gated community that come with end-to-end services such as:</p>
+  <p data-start={2544} data-end={2652}><a href="https://littleengland.cm/managed-farmland-near-hosur-investment-benefits"><strong data-start={2544} data-end={2565}>Managed farmlands</strong></a> are curated plots within a gated community that come with end-to-end services such as:</p>
   <p data-start={2656} data-end={2674}>Land maintenance</p>
   <p data-start={2677} data-end={2698}>Organic cultivation</p>
   <p data-start={2701} data-end={2725}>Revenue-sharing models</p>
@@ -91,12 +91,12 @@ export default function BlogPage() {
   <p data-start={5260} data-end={5306}>Review <strong data-start={5267} data-end={5299}>FMB (Field Measurement Book)</strong> maps</p>
   <p data-start={5310} data-end={5354}>Ensure <strong data-start={5317} data-end={5354}>road access &amp; approach road width</strong></p>
   <h2 data-start={5431} data-end={5448}>Why Choose Us?</h2>
-  <p data-start={5450} data-end={5606}>We at <strong data-start={5456} data-end={5469}>SVR Farms</strong> have helped 500+ investors across India and overseas own a piece of secure, scenic, and income-generating land. Our specialties include:</p>
+  <p data-start={5450} data-end={5606}>We at <strong data-start={5456} data-end={5469}>Little England Farms</strong> have helped 500+ investors across India and overseas own a piece of secure, scenic, and income-generating land. Our specialties include:</p>
   <p data-start={5610} data-end={5645}><strong data-start={5610} data-end={5643}>End-to-end project management</strong></p>
   <p data-start={5648} data-end={5679}><strong data-start={5648} data-end={5677}>Transparent documentation</strong></p>
   <p data-start={5682} data-end={5722}><strong data-start={5682} data-end={5720}>Free site visits and consultations</strong></p>
   <p data-start={5725} data-end={5765}><strong data-start={5725} data-end={5765}>100% Legally Clear projects</strong></p>
-  <p data-start={5767} data-end={5815}>Ready to explore? <a href="https://svrfarms.com/contact-us">Book a site visit now!</a></p>
+  <p data-start={5767} data-end={5815}>Ready to explore? <a href="https://littleengland.cm/contact-us">Book a site visit now!</a></p>
   <h2 data-start={5822} data-end={5829}>FAQs</h2>
   <p data-start={5831} data-end={5947}><strong data-start={5831} data-end={5870}>Q1: Can NRIs buy farmland in Hosur?</strong><br data-start={5870} data-end={5873} />A: Yes, under certain conditions. We assist NRIs through every legal step.</p>
   <p data-start={5949} data-end={6043}><strong data-start={5949} data-end={5987}>Q2: What’s the minimum investment?</strong><br data-start={5987} data-end={5990} />A: It starts as low as ₹10 Lakhs for half-acre plots.</p>
@@ -104,7 +104,7 @@ export default function BlogPage() {
   <h2 data-start={6155} data-end={6172}>Final Thoughts</h2>
   <p data-start={6174} data-end={6502}>Investing in <strong data-start={6187} data-end={6221}>gated community plots in Hosur</strong> is more than just a real estate decision—it’s a step toward sustainable, secure living and long-term wealth creation. Whether you’re drawn by the scenic views, passive income, or future-proof investment model, <strong data-start={6432} data-end={6453}>managed farmlands</strong> offer unmatched value in today’s dynamic market.</p>
   <p data-start={6504} data-end={6590}><strong data-start={6507} data-end={6518}>Act now</strong>—Hosur’s land prices are rising, and opportunities like this won’t last.</p>
-  <p data-start={6592} data-end={6694}><a href="https://svrfarms.com/contact-us">Schedule a site visit</a></p>
+  <p data-start={6592} data-end={6694}><a href="https://littleengland.cm/contact-us">Schedule a site visit</a></p>
 </div>
 
 

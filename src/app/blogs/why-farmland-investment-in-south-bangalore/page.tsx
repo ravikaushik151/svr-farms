@@ -34,7 +34,7 @@ export default function BlogPage() {
                                     <div className="card-text text-start mt-3 blog-details">
 <div>
   <p data-start={483} data-end={809}>South Bangalore has emerged as one of the top destinations for farmland investment in south bangalore, especially among high-net-worth individuals, IT professionals, retirees, and NRIs. With rapid infrastructure growth, rising land value, and the increasing popularity of managed farmlands, this region is redefining the real estate landscape.</p>
-  <p data-start={811} data-end={1088}>For people who want both <strong data-start={836} data-end={857}>investment growth</strong> and <a href="https://svrfarms.com/biodiversity-in-agroforestry-farms"><strong data-start={862} data-end={894}>a peaceful natural lifestyle</strong></a>, farmland in South Bangalore offers the perfect blend. This guide explores the benefits, profitability, investor trends, and long-term advantages of owning farmland in this fast-growing region.</p>
+  <p data-start={811} data-end={1088}>For people who want both <strong data-start={836} data-end={857}>investment growth</strong> and <a href="https://littleengland.cm/biodiversity-in-agroforestry-farms"><strong data-start={862} data-end={894}>a peaceful natural lifestyle</strong></a>, farmland in South Bangalore offers the perfect blend. This guide explores the benefits, profitability, investor trends, and long-term advantages of owning farmland in this fast-growing region.</p>
   <h2 data-start={1095} data-end={1129}><strong data-start={1100} data-end={1129}>Summary of Key Points</strong></h2>
   <h3 data-start={1131} data-end={1192}><strong data-start={1135} data-end={1192}>1. Why people are buying farmland in South Bangalore</strong></h3>
   <p data-start={1195} data-end={1236}>Rising land value due to city expansion</p>
@@ -162,12 +162,12 @@ export default function BlogPage() {
   <p data-start={8276} data-end={8405}>From nature lovers to investors and retirees, everyone is showing strong interest in this region, and for all the right reasons.</p>
   <h2 data-start={8440} data-end={8552}>Ready to explore premium <strong data-start={8465} data-end={8505}>managed farmlands in South Bangalore</strong>?</h2>
   <p data-start={8440} data-end={8552}>Let us guide you to the perfect investment.</p>
-  <p data-start={8554} data-end={8761}><strong data-start={8557} data-end={8599}>Book a site visit today with SVR Farms : To book <a href="https://svrfarms.com/contact-us">Click here</a></strong><br data-start={8633} data-end={8636} /><strong data-start={8639} data-end={8704}>Explore Tamara Valley: 300 Acres of Premium <a href="https://www.instagram.com/svrfarmsbangalore/" target="_blank" rel="noopener">Managed Farmland</a> : </strong><strong data-start={8639} data-end={8704}><a href="https://svrfarms.com/tamara-valley-farm-project">Click here</a></strong></p>
+  <p data-start={8554} data-end={8761}><strong data-start={8557} data-end={8599}>Book a site visit today with Little England Farms : To book <a href="https://littleengland.cm/contact-us">Click here</a></strong><br data-start={8633} data-end={8636} /><strong data-start={8639} data-end={8704}>Explore Tamara Valley: 300 Acres of Premium <a href="https://www.instagram.com/littleenglandfarms/" target="_blank" rel="noopener">Managed Farmland</a> : </strong><strong data-start={8639} data-end={8704}><a href="https://littleengland.cm/tamara-valley-farm-project">Click here</a></strong></p>
   <p>Read more about Farmland investment and how to earn passive income from Managed Farmland:<br />
-    1. <a href="https://svrfarms.com/5-upcoming-trends-in-future-of-farmland-investment">5 Upcoming Trends in Farmland Investment</a><br />
-    2. <a href="https://svrfarms.com/red-soil-farmlands-near-bangalore-svr-farms">Why Red Soil is a Game-Changer for Farmland Investors in Bangalore</a><br />
-    3. <a href="https://svrfarms.com/leasing-out-managed-farmland-2025">From Bengaluru to steady farm income: A story</a><br />
-    4. <a href="https://svrfarms.com/agroforestry-on-farmland">Agroforestry on Farmland: How Bangalore, Hosur, and Thalli Investors Are Unlocking Hidden Value</a></p>
+    1. <a href="https://littleengland.cm/5-upcoming-trends-in-future-of-farmland-investment">5 Upcoming Trends in Farmland Investment</a><br />
+    2. <a href="https://littleengland.cm/red-soil-farmlands-near-bangalore-Little-England-Farms">Why Red Soil is a Game-Changer for Farmland Investors in Bangalore</a><br />
+    3. <a href="https://littleengland.cm/leasing-out-managed-farmland-2025">From Bengaluru to steady farm income: A story</a><br />
+    4. <a href="https://littleengland.cm/agroforestry-on-farmland">Agroforestry on Farmland: How Bangalore, Hosur, and Thalli Investors Are Unlocking Hidden Value</a></p>
 </div>
 
 

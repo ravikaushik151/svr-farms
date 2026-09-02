@@ -21,7 +21,7 @@ export const posts: Post[] = [
     {
         id: 2,
         category: "Investment",
-        title: "Managed Farm Plots Hosur Tamil Nadu | SVR Farms Weekend Visit Experience",
+        title: "Managed Farm Plots Hosur Tamil Nadu | Little England Weekend Visit Experience",
         date: "29th June 2026",
         image: "/blog/managed-farm-plots-hosur-tamil-nadu.webp",
         text: "Most investment articles talk about numbers — CAGRs, tax benefits, projected land appreciation, and 10-year valuation potential. But numbers do not ...",
@@ -84,11 +84,11 @@ export const posts: Post[] = [
     {
         id: 9,
         category: "Investment",
-        title: "H2O Farms Near Bangalore: A Premium Managed Farmland Experience By SVR Farms",
+        title: "H2O Farms Near Bangalore: A Premium Managed Farmland Experience By Little England",
         date: "29th June 2026",
-        image: "/blog/organic-farmland-near-bangalore-h2o-farms-by-svr-farms.webp",
+        image: "/blog/organic-farmland-near-bangalore-h2o-farms-by-Little-England-Farms.webp",
         text: "Organic farmland near Bangalore has rapidly become a preferred asset for urban investors and families seeking clean living, long-term land security, a...",
-        slug: "organic-farmland-near-bangalore-h2o-farms-by-svr-farms"
+        slug: "organic-farmland-near-bangalore-h2o-farms-by-Little-England-Farms"
     },
     {
         id: 10,
@@ -114,7 +114,7 @@ export const posts: Post[] = [
         title: "5 Upcoming Trends in Farmland Investment",
         date: "29th June 2026",
         image: "/blog/5-upcoming-trends-in-future-of-farmland-investment.webp",
-        text: "Reach out today to book your ideal farmland plot with SVR Farms and start your investment journey with confidence.",
+        text: "Reach out today to book your ideal farmland plot with Little England and start your investment journey with confidence.",
         slug: "5-upcoming-trends-in-future-of-farmland-investment"
     },
     {
@@ -192,10 +192,10 @@ export const posts: Post[] = [
     {
         id: 21,
         category: "Investment",
-        title: "More Than Just Trees: The Biodiversity We’re Nurturing at SVR Farms",
+        title: "More Than Just Trees: The Biodiversity We’re Nurturing at Little England",
         date: "29th June 2026",
         image: "/blog/biodiversity-in-agroforestry-farms.webp",
-        text: "It’s early morning at SVR Farms. The air is cool, mist hangs over young trees, and bees buzz around wildflowers. A small bird darts through the bran...",
+        text: "It’s early morning at Little England. The air is cool, mist hangs over young trees, and bees buzz around wildflowers. A small bird darts through the bran...",
         slug: "biodiversity-in-agroforestry-farms"
     },
     {
@@ -210,11 +210,11 @@ export const posts: Post[] = [
     {
         id: 23,
         category: "Investment",
-        title: "Why SVR Farms Is the Best Managed Farmland Near Bangalore in 2025",
+        title: "Why Little England Is the Best Managed Farmland Near Bangalore in 2025",
         date: "29th June 2026",
-        image: "/blog/best-managed-farmland-near-bangalore-svr-farms.webp",
+        image: "/blog/best-managed-farmland-near-bangalore-Little-England-Farms.webp",
         text: "Looking for safe, profitable, and lifestyle-friendly managed farmland near Bangalore? You’re not alone. As city investors look for cleaner air, bett...",
-        slug: "best-managed-farmland-near-bangalore-svr-farms"
+        slug: "best-managed-farmland-near-bangalore-Little-England-Farms"
     },
     {
         id: 24,
@@ -309,10 +309,10 @@ export const posts: Post[] = [
     {
         id: 34,
         category: "Investment",
-        title: "H2O Farms: A Sustainable Agricultural Venture by SVR Farms",
+        title: "H2O Farms: A Sustainable Agricultural Venture by Little England",
         date: "29th June 2026",
         image: "/blog/h2o-farms-smart-powerful-water-management-solution.webp",
-        text: "H2O Farms is an innovative initiative led by SVR Farms, focused on transforming agricultural practices through eco-conscious water management strategi...",
+        text: "H2O Farms is an innovative initiative led by Little England, focused on transforming agricultural practices through eco-conscious water management strategi...",
         slug: "h2o-farms-smart-powerful-water-management-solution"
     },
     {
@@ -383,9 +383,9 @@ export const posts: Post[] = [
         category: "Investment",
         title: "Why Red Soil is a Game-Changer for Farmland Investors in Bangalore",
         date: "29th June 2026",
-        image: "/blog/red-soil-farmlands-near-bangalore-svr-farms.webp",
+        image: "/blog/red-soil-farmlands-near-bangalore-Little-England-Farms.webp",
         text: "The future of farming is not just green — it’s red.",
-        slug: "red-soil-farmlands-near-bangalore-svr-farms"
+        slug: "red-soil-farmlands-near-bangalore-Little-England-Farms"
     },
     {
         id: 43,
@@ -510,7 +510,7 @@ export const posts: Post[] = [
         title: "How to Grow Organic Vegetables and Fruits on Your Own Farmland",
         date: "29th June 2026",
         image: "/blog/how-to-grow-organic-vegetables-and-fruits-on-your-own-farmland.jpg",
-        text: "In the lush landscapes surrounding Bengaluru, SVR Farms stands out as a reputable farmland seller dedicated to providing individuals with the opportun...",
+        text: "In the lush landscapes surrounding Bengaluru, Little England stands out as a reputable farmland seller dedicated to providing individuals with the opportun...",
         slug: "how-to-grow-organic-vegetables-and-fruits-on-your-own-farmland"
     },
     {
@@ -552,19 +552,19 @@ export const posts: Post[] = [
     {
         id: 61,
         category: "Investment",
-        title: "Best Individual Farmland Near Bangalore: Explore Individual Farmland  for Sale in SVR Farmland",
+        title: "Best Individual Farmland Near Bangalore: Explore Individual Farmland  for Sale in Little England",
         date: "29th June 2026",
         image: "/blog/individual-farmland-near-bangalore-explore.jpeg",
-        text: "SVR Farms’ Individual Farmland Near Bangalore is available in various sizes, ranging from 1-acre to 10-acre land. Choose SVR Farms for individual fa...",
+        text: "Little England’s Individual Farmland Near Bangalore is available in various sizes, ranging from 1-acre to 10-acre land. Choose Little England for individual fa...",
         slug: "individual-farmland-near-bangalore-explore"
     },
     {
         id: 62,
         category: "Investment",
-        title: "Investing in Individual Farmland in Bangalore: A Profitable Opportunity with SVR Farm",
+        title: "Investing in Individual Farmland in Bangalore: A Profitable Opportunity with Little England",
         date: "29th June 2026",
         image: "/blog/farmland-in-bangalore.webp",
-        text: "Investing in individual agricultural farmland in Bangalore through SVR Farms offers a unique opportunity to be part of the thriving agricultural secto...",
+        text: "Investing in individual agricultural farmland in Bangalore through Little England offers a unique opportunity to be part of the thriving agricultural secto...",
         slug: "farmland-in-bangalore"
     },
     {
@@ -579,10 +579,10 @@ export const posts: Post[] = [
     {
         id: 64,
         category: "Investment",
-        title: "SVR Farms: Cultivating Sustainable Living and Organic Excellence with Agricultural Land for Sale in Bangalore",
+        title: "Little England: Cultivating Sustainable Living and Organic Excellence with Agricultural Land for Sale in Bangalore",
         date: "29th June 2026",
         image: "/blog/agricultural-land-for-sale-in-bangalore.webp",
-        text: "In the heart of Bangalore, a city increasingly focused on healthier living and sustainable choices, SVR Farms stands out as a beacon of hope – an oa...",
+        text: "In the heart of Bangalore, a city increasingly focused on healthier living and sustainable choices, Little England stands out as a beacon of hope – an oa...",
         slug: "agricultural-land-for-sale-in-bangalore"
     },
     {
@@ -597,16 +597,16 @@ export const posts: Post[] = [
     {
         id: 66,
         category: "Investment",
-        title: "Agricultural Land in Bangalore: Cultivating Prosperity with SVR Farms",
+        title: "Agricultural Land in Bangalore: Cultivating Prosperity with Little England",
         date: "29th June 2026",
         image: "/blog/agricultural-land-in-bangalore-cultivating-prosperity.webp",
-        text: "Investing in agricultural land in Bangalore is more than just a financial decision—it’s a pathway to prosperity, and SVR Farms stands as your gate...",
+        text: "Investing in agricultural land in Bangalore is more than just a financial decision—it’s a pathway to prosperity, and Little England stands as your gate...",
         slug: "agricultural-land-in-bangalore-cultivating-prosperity"
     },
     {
         id: 67,
         category: "Investment",
-        title: "Managed Farmland near Bangalore: A Great way to connect with nature and your food at SVR Farms",
+        title: "Managed Farmland near Bangalore: A Great way to connect with nature and your food at Little England",
         date: "29th June 2026",
         image: "/blog/managed-farmland-near-bangalore-3.webp",
         text: "In the midst of urban chaos, the desire to reconnect with nature and the origins of our food has given rise to a unique phenomenon— Managed Farmland...",
@@ -618,16 +618,16 @@ export const posts: Post[] = [
         title: "Cultivate Community, Cultivate Dreams with Our Unique Community Farmland near Bangalore",
         date: "29th June 2026",
         image: "/blog/cultivate-community-cultivate-dreams-with-our-unique-community-farmland-near-bangalore.webp",
-        text: "The need for a sense of community and a connection to nature has grown in popularity in our fast-paced society. Seeing this need, SVR Farms has been a...",
+        text: "The need for a sense of community and a connection to nature has grown in popularity in our fast-paced society. Seeing this need, Little England has been a...",
         slug: "cultivate-community-cultivate-dreams-with-our-unique-community-farmland-near-bangalore"
     },
     {
         id: 69,
         category: "Investment",
-        title: "SVR Farms: Your Gateway to Managed Farmland Near Bangalore",
+        title: "Little England: Your Gateway to Managed Farmland Near Bangalore",
         date: "29th June 2026",
         image: "/blog/managed-farmland-near-bangalore.webp",
-        text: " If you have ever dreamed of owning a Managed Farmland Near Bangalore, then SVR Farms is the ideal place. Our Managed farmland Near Bangalore provide...",
+        text: " If you have ever dreamed of owning a Managed Farmland Near Bangalore, then Little England is the ideal place. Our Managed farmland Near Bangalore provide...",
         slug: "managed-farmland-near-bangalore"
     },
 ];

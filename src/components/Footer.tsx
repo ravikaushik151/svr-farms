@@ -82,13 +82,13 @@ export default function Footer() {
                             <div className="mb-4">
                                 {/* <h3 className="fw-bold text-white mb-3 letter-spacing-1 text-md-start text-center">Little England</h3> */}
                                 <div className="d-flex justify-content-md-start justify-content-center mb-1">
-                                    <Image src="/LE_Web Logo.png" alt="SVR Farms Logo" width={300} height={80} className="mb-0 img-fluid" style={{ width: '300px', height: 'auto' }} />
+                                    <Image src="/LE_Web Logo.png" alt="Little England Logo" width={300} height={80} className="mb-0 img-fluid" style={{ width: '300px', height: 'auto' }} />
                                 </div>
                                 <p className="text-white lh-lg text-md-start text-center px-1">
                                     Premium Farm Land Developers dedicated to creating sustainable and beautiful living spaces. We blend nature with modern amenities to find your perfect managed farmland.
                                 </p>
                                 <div className="d-flex gap-3 mt-4 justify-content-md-start justify-content-center">
-                                    <a href="https://www.facebook.com/svrfarms" target="_blank" rel="noopener noreferrer" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
                                         <FaFacebookF size={16} />
                                     </a>
                                     <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
@@ -103,10 +103,10 @@ export default function Footer() {
                                             <path d="M357.2 48L427.8 48 273.6 224.2 455 464 313 464 201.7 318.6 74.5 464 3.8 464 168.7 275.5-5.2 48 140.4 48 240.9 180.9 357.2 48zM332.4 421.8l39.1 0-252.4-333.8-42 0 255.3 333.8z" />
                                         </svg>
                                     </a>
-                                    <a href="https://www.instagram.com/svrfarmsbangalore/" target="_blank" rel="noopener noreferrer" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
                                         <FaInstagram size={16} />
                                     </a>
-                                    <a href="https://www.linkedin.com/company/svr-farms-official/" target="_blank" rel="noopener noreferrer" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
                                         <FaLinkedinIn size={16} />
                                     </a>
                                 </div>
@@ -125,6 +125,11 @@ export default function Footer() {
                                 <li className="mb-3">
                                     <Link href="/about" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all  justify-content-md-start justify-content-center">
                                         <FaArrowRight size={10} className="md-md-2 me-2 text-warm-white" /> About Us
+                                    </Link>
+                                </li>
+                                <li className="mb-3">
+                                    <Link href="/tamara" className="text-warning text-decoration-none d-flex align-items-center hover-sanjeevani transition-all  justify-content-md-start justify-content-center fw-semibold">
+                                        <FaArrowRight size={10} className="md-md-2 me-2 text-warning" /> Tamara Valley ⭐
                                     </Link>
                                 </li>
                                 <li className="mb-3">
@@ -183,19 +188,18 @@ export default function Footer() {
                             <div className="d-flex mb-3">
                                 <div className="text-sanjeevani md-md-3 me-2 mt-1 "><FaMapMarkerAlt size={20} className="text-warm-white" /></div>
                                 <p className="text-white mb-0 ">
-                                    #1919, SVS Building, 21st Main Road, 25th Cross, 2nd Sector, HSR Layout, Bengaluru- 560 102
+                                    509, Third Floor, 17th Main, 6th Cross Rd, 6th Block, Koramangala, Bengaluru, Karnataka – 560095
                                 </p>
                             </div>
                             <div className="d-flex mb-3  justify-content-md-start justify-content-center">
                                 <div className="text-sanjeevani md-md-3 me-2 mt-1"><FaPhoneAlt size={18} className="text-warm-white" /></div>
                                 <div>
-                                    <p className="text-white mb-0">+91 90089 91199</p>
-                                    <p className="text-white mb-0">+91 96867 77793</p>
+                                    <p className="text-white mb-0"><a href="tel:+919688777793" className="text-white text-decoration-none">+91 96887 77793</a></p>
                                 </div>
                             </div>
                             <div className="d-flex justify-content-md-start justify-content-center">
                                 <div className="text-sanjeevani md-md-3 me-2 mt-1"><FaEnvelope size={18} className="text-warm-white" /></div>
-                                <p className="text-white mb-0">info@svrfarms.com</p>
+                                <p className="text-white mb-0"><a href="mailto:info@littleengland.cm" className="text-white text-decoration-none">info@littleengland.cm</a></p>
                             </div>
                         </Col>
                     </Row>
@@ -228,7 +232,7 @@ export default function Footer() {
                 }}>
                     {/* Call Button */}
                     <a
-                        href="tel:+919008991199"
+                        href="tel:+919688777793"
                         className="d-flex align-items-center justify-content-center rounded-circle text-white floating-btn-call"
                         style={{
                             width: '55px',
@@ -254,7 +258,7 @@ export default function Footer() {
 
                     {/* WhatsApp Button */}
                     <a
-                        href="https://wa.me/919008991199"
+                        href="https://wa.me/919688777793"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="d-flex align-items-center justify-content-center rounded-circle text-white floating-btn-whatsapp"

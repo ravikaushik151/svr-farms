@@ -121,8 +121,8 @@ export default function BlogPage() {
                                             <p data-start={7964} data-end={7996}>✅ Budget at least 65% upfront.</p>
                                             <p data-start={7999} data-end={8046}>✅ Fence land and update mutation immediately.</p>
                                             <p data-start={8048} data-end={8199}>Owning farmland in Karnataka or farmland in Tamil Nadu is no longer a maze. With the right guidance, you can enjoy fresh air, passive income, and a legacy asset. <em data-start={8314} data-end={8386}>Book Your Farm Visit Today and see for yourself how this community can change your life.<br />
-                                                <a href="https://svrfarms.com/contact-us">Contact us</a>&nbsp;for Managed Farmland Communities near Bangalore and be a part of a sustainable future.<strong data-start={343} data-end={393}><br />
-                                                    Follow SVR Farms for real stories and updates:</strong>&nbsp;[<a href="https://www.instagram.com/svrfarmsbangalore/" target="_blank" rel="noopener">Click Here</a>]<br />
+                                                <a href="https://littleengland.cm/contact-us">Contact us</a>&nbsp;for Managed Farmland Communities near Bangalore and be a part of a sustainable future.<strong data-start={343} data-end={393}><br />
+                                                    Follow Little England Farms for real stories and updates:</strong>&nbsp;[<a href="https://www.instagram.com/littleenglandfarms/" target="_blank" rel="noopener">Click Here</a>]<br />
                                             </em></p>
                                         </div>
 

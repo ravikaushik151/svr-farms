@@ -79,7 +79,7 @@ export default function BlogPage() {
   <h2>Final Thoughts: The Future is Flowing</h2>
   <p>In an era where sustainability is more than a buzzword, <strong>water-rich farmlands</strong> offer a powerful combination of <strong>profitability, resilience, and environmental stewardship</strong>. Whether you’re a first-time investor or a seasoned real estate buyer, these lands promise not just returns—but relevance.</p>
   <p>Ready to invest in water-rich farmland that grows more than crops?<br />
-    <a href="https://svrfarms.com/contact-us">Contact <strong>SVR Farms</strong> </a>today and explore high-potential <strong>real estate</strong> plots tailored for sustainable growth.<br />
+    <a href="https://littleengland.cm/contact-us">Contact <strong>Little England Farms</strong> </a>today and explore high-potential <strong>real estate</strong> plots tailored for sustainable growth.<br />
     Visit us near Hosur and witness the future of farming firsthand.</p>
   <h2 data-start={5816} data-end={5879}>FAQs: Addressing Common Questions About Water-Rich Farmlands</h2>
   <h3 data-start={5881} data-end={5959}>1. What makes water-rich farmlands more valuable than other types of land?</h3>

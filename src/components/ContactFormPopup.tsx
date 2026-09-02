@@ -74,8 +74,8 @@ export default function ContactFormPopup({
             email: formData.email,
             phone: formData.phone,
             message: formData.message || 'interested',
-            subject: 'Enquire From SVR Farms - Website',
-            form_source: 'Enquire From SVR Farms - Website',
+            subject: 'Enquire From Little England - Website',
+            form_source: 'Enquire From Little England - Website',
             additionalRecipients: ['lokesh@imsolutions.mobi', 'ravi.k@imsolutions.mobi'],
         };
 

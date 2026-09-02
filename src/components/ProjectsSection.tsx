@@ -17,18 +17,18 @@ import Link from 'next/link';
 const projects = [
     {
         title: "Tamara Valley",
-        badge: "Thalli, Tamil Nadu",
+        badge: "⭐ FLAGSHIP PROJECT - 300+ ACRES",
         image: "/projects/Tamara Valley (Upcoming).webp",
-        shortDesc: "A 300+ acre managed farmland community offering premium resort-inspired organic living.",
+        shortDesc: "A 300+ acre managed farmland community offering premium resort-inspired organic living in Thalli.",
         link: "/tamara",
         location: "Thalli, Tamil Nadu. A tranquil green belt positioned as a nature-led retreat within reach of Bangalore.",
-        scale: "A 300+ acre managed farmland community, with plot options starting from 0.25 acre and extending to 0.5 acre and 1 acre formats.",
+        scale: "A 300+ acre flagship managed farmland community, with plot options starting from 0.25 acre and extending to 0.5 acre and 1 acre formats.",
         usp: "A large-format organic farm-living destination that blends managed green ownership with 25+ lifestyle, wellness and leisure amenities in a resort-inspired setting."
     },
     {
         title: "Vaikuntam",
         badge: "Binnamangalam, TN",
-        image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
+        image: "/projects/vaikuntam.jpg",
         shortDesc: "A refined farm-living retreat pairing private land ownership with curated leisure amenities.",
         location: "Binnamangalam, Tamil Nadu. A serene countryside setting within convenient reach of Bangalore.",
         scale: "Approx. 17 acres of managed farmland, with individual plots starting from 10,890 sq. ft.",
@@ -37,7 +37,7 @@ const projects = [
     {
         title: "Girivanam Farms",
         badge: "Near Bangalore",
-        image: "https://svrfarms.com/wp-content/uploads/2023/08/Tapovan-by-SVR-Farms.webp",
+        image: "/projects/girivanam.jpg",
         shortDesc: "A hands-free farmland experience combining organic plantations and professional management.",
         location: "Near Bangalore. A countryside setting designed for convenient weekend access and nature-led living.",
         scale: "A professionally managed farmland community planned across 130 farm plots, supported by a 35,000 sq. ft. clubhouse and curated infrastructure.",
@@ -46,7 +46,7 @@ const projects = [
     {
         title: "Vasudha Kalpataru",
         badge: "Agalakotta, TN",
-        image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
+        image: "/projects/vasudha_kalpataru.jpg",
         shortDesc: "A plantation-led farm retreat anchored by 4,000 teak, 500 coconut and 500 mango trees.",
         location: "Settipalli, Agalakotta, Tamil Nadu. A peaceful managed farmland destination within reach of Bangalore.",
         scale: "Spread across 44 acres with 140 farm plots, ranging from 10,890 sq. ft. to 50,000 sq. ft.",
@@ -73,7 +73,7 @@ const projects = [
     {
         title: "Madhuvan Farms",
         badge: "Denkanikottai, TN",
-        image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
+        image: "/projects/madhuvan.jpg",
         shortDesc: "A nature-rich farm retreat featuring a 40-acre pre-developed food forest and a 2-acre natural lake.",
         location: "Santhanapalli, Denkanikottai, Tamil Nadu. A lush countryside setting within convenient reach of Bangalore.",
         scale: "A 65-acre managed farmland community comprising 160 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
@@ -82,7 +82,7 @@ const projects = [
     {
         title: "Tapovan",
         badge: "Thally, Tamil Nadu",
-        image: "https://svrfarms.com/wp-content/uploads/2023/08/Tapovan-by-SVR-Farms.webp",
+        image: "/projects/tapovan.jpg",
         shortDesc: "A wellness-led farm retreat with mango orchards, Zen gardens, and lakeside experiences.",
         location: "Jowlagiri, Thally, Tamil Nadu. A serene countryside destination approximately 59 km from Bengaluru.",
         scale: "A 65-acre managed farmland community comprising 160 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
@@ -91,7 +91,7 @@ const projects = [
     {
         title: "Kamyaka Woods",
         badge: "Gumlapuram, TN",
-        image: "https://svrfarms.com/wp-content/uploads/2023/08/Tapovan-by-SVR-Farms.webp",
+        image: "/projects/kamyaka_woods.jpg",
         shortDesc: "A sustainability-led farm retreat distinguished by a lush Miyawaki forest and modern essentials.",
         location: "Gumlapuram, Tamil Nadu. A serene valley setting near Bangalore, surrounded by natural water bodies.",
         scale: "A 15-acre managed farmland community comprising 50 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
@@ -109,7 +109,7 @@ const projects = [
     {
         title: "Gokulam Farmland",
         badge: "Thalli, Tamil Nadu",
-        image: "https://svrfarms.com/wp-content/uploads/2023/08/fm7.webp",
+        image: "/projects/gokulam.jpg",
         shortDesc: "A fully managed farm-living community with professionally maintained plantations and expert caretaking.",
         location: "Thalli, Tamil Nadu. A scenic countryside setting approximately 50 minutes from Electronic City, Bangalore.",
         scale: "A 20-acre managed farmland community comprising 50 farm plots, ranging from 10,890 sq. ft. to 50,000 sq. ft.",
@@ -118,7 +118,7 @@ const projects = [
     {
         title: "Sanjeevani Farms",
         badge: "Athalavadi, TN",
-        image: "https://svrfarms.com/wp-content/uploads/2023/08/Sanjeevani-Farms-by-SVR-Farms.webp",
+        image: "/projects/sanjeevani.jpg",
         shortDesc: "A thoughtfully planned farm community with direct farm-road access and dependable infrastructure.",
         location: "Athalavadi, Tamil Nadu. A peaceful countryside setting with direct farm-road access and essential infrastructure.",
         scale: "A 10-acre community farmland project comprising 45 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
@@ -127,7 +127,7 @@ const projects = [
     {
         title: "Lake View Farm",
         badge: "Denkanikottai, TN",
-        image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
+        image: "/projects/lake_view.jpg",
         shortDesc: "A lake-centric farm retreat combining mango orchards, timber plantations, and waterside tranquility.",
         location: "Denkanikottai, Tamil Nadu. A serene countryside setting shaped by greenery, open landscapes and waterside tranquillity.",
         scale: "A 65-acre community farmland project comprising 160 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
@@ -136,7 +136,7 @@ const projects = [
     {
         title: "Ibbani",
         badge: "Agalakotta, TN",
-        image: "https://svrfarms.com/wp-content/uploads/2023/08/fm7.webp",
+        image: "/projects/ibbani.jpg",
         shortDesc: "A nature-led farm retreat shaped by mango orchards, gardens, and a 2-acre natural lake.",
         location: "Agalakotta, Tamil Nadu. A serene countryside setting surrounded by fertile landscapes and natural greenery.",
         scale: "A 65-acre community farmland project comprising 160 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
@@ -154,7 +154,7 @@ const projects = [
     {
         title: "Amrutvan",
         badge: "Denkanikottai, TN",
-        image: "https://svrfarms.com/wp-content/uploads/2023/08/farmland-9.webp",
+        image: "/projects/amrutvan.jpg",
         shortDesc: "A wellness-inspired farm retreat shaped by orchards, gardens, and a 2-acre natural lake.",
         location: "Denkanikottai, Tamil Nadu - a tranquil countryside setting surrounded by fertile landscapes and natural greenery.",
         scale: "A 30-acre community farmland project comprising 80 farm plots, ranging from 10,000 sq. ft. to 50,000 sq. ft.",
@@ -172,7 +172,7 @@ const projects = [
     {
         title: "Govardhana Estate",
         badge: "Denkanikottai, TN",
-        image: "https://svrfarms.com/wp-content/uploads/2023/08/fm7.webp",
+        image: "/projects/govardhana.jpg",
         shortDesc: "A low-density farmland estate featuring generously sized plots and a private countryside experience.",
         location: "Denkanikottai, Tamil Nadu. A peaceful countryside setting suited to expansive, nature-led farmland ownership.",
         scale: "A 20-acre community farmland project comprising just 35 farm plots, ranging from 21,780 sq. ft. to 50,000 sq. ft.",
@@ -441,13 +441,11 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                                             <div className="d-flex gap-3 flex-column flex-sm-row">
                                                 <p className="mb-0 fw-semibold text-secondary" style={{ fontSize: '0.9rem' }}>
                                                     <FaPhoneAlt className="me-2 text-sanjeevani" style={{ color: '#c5a059' }} />
-                                                    <a href="tel:+919008991199" className="text-decoration-none text-dark hover-gold">+91 90089 91199</a>
-                                                    <span className="text-muted mx-1">/</span>
-                                                    <a href="tel:+919686777793" className="text-decoration-none text-dark hover-gold">+91 96867 77793</a>
+                                                    <a href="tel:+919688777793" className="text-decoration-none text-dark hover-gold">+91 96887 77793</a>
                                                 </p>
                                                 <p className="mb-0 fw-semibold text-secondary" style={{ fontSize: '0.9rem' }}>
                                                     <FaEnvelope className="me-2 text-sanjeevani" style={{ color: '#c5a059' }} />
-                                                    <a href="mailto:info@svrfarms.com" className="text-decoration-none text-dark hover-gold">info@svrfarms.com</a>
+                                                    <a href="mailto:info@littleengland.cm" className="text-decoration-none text-dark hover-gold">info@littleengland.cm</a>
                                                 </p>
                                             </div>
                                             <Button

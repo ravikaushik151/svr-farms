@@ -61,7 +61,7 @@ export default function BlogPage() {
                                             <p><strong>Strategic Location: </strong>Hosur and Thalli, 1–2 hours away from Bangalore, are ideal weekend destinations for IT professionals and businessmen.</p>
                                             <p><strong>Fertile Soil and Climate: </strong>Red soil, moderate rainfall and fertile land make these areas perfect for farming and agroforestry.</p>
                                             <p><strong>Connectivity: </strong>The Bangalore-Hosur expressway and the upcoming satellite town ring road (STRR) are increasing the demand and appreciation of these areas.</p>
-                                            <p>Why to Invest in Managed Farmland Communities <a href="https://svrfarms.com/why-you-should-invest-in-community-farming-in-bengaluru">Read More</a></p>
+                                            <p>Why to Invest in Managed Farmland Communities <a href="https://littleengland.cm/why-you-should-invest-in-community-farming-in-bengaluru">Read More</a></p>
                                             <h2>FAQs</h2>
                                             <p><strong>Q1: What are Managed Farmland Communities?<br />
                                             </strong>It is a blend of farmland ownership and professional management.</p>
@@ -76,8 +76,8 @@ export default function BlogPage() {
                                             <h2>Conclusion</h2>
                                             <p>Managed Farmland Communities in India are not just an investment but a lifestyle revolution.</p>
                                             <p>Book Your Farm Visit Today and see for yourself how this community can change your life.<br />
-                                                <a href="https://svrfarms.com/contact-us">Contact us</a> for Managed Farmland Communities near Bangalore and be a part of a sustainable future.<strong data-start={343} data-end={393}><br />
-                                                    Follow SVR Farms for real stories and updates:</strong>&nbsp;[<a href="https://www.instagram.com/svrfarmsbangalore/" target="_blank" rel="noopener">Click Here</a>]</p>
+                                                <a href="https://littleengland.cm/contact-us">Contact us</a> for Managed Farmland Communities near Bangalore and be a part of a sustainable future.<strong data-start={343} data-end={393}><br />
+                                                    Follow Little England Farms for real stories and updates:</strong>&nbsp;[<a href="https://www.instagram.com/littleenglandfarms/" target="_blank" rel="noopener">Click Here</a>]</p>
                                         </div>
 
 

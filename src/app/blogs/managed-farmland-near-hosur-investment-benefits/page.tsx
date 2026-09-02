@@ -85,8 +85,8 @@ export default function BlogPage() {
   <p>NRIs are currently restricted from buying agricultural land in India. However, they can explore lease models or invest via Indian relatives.</p>
   <h3>What is the minimum investment required?</h3>
   <p>Prices vary, but entry-level investments start from INR 15-25 lakhs for a well-developed managed farmland plot near Hosur.</p>
-  <p>Ready to invest in a greener, stress-free future? Explore top <strong>managed farmland near Hosur</strong> projects with trusted developers like SVR Farms. Enjoy passive income, tax benefits, and a serene getaway—all in one package.</p>
-  <p><a href="https://svrfarms.com/contact-us"> Contact us now </a>to schedule a site visit or get a free consultation. <a href="https://svrfarms.com/managed-farms"> Explore available plots </a>and choose your perfect farm retreat.</p>
+  <p>Ready to invest in a greener, stress-free future? Explore top <strong>managed farmland near Hosur</strong> projects with trusted developers like Little England Farms. Enjoy passive income, tax benefits, and a serene getaway—all in one package.</p>
+  <p><a href="https://littleengland.cm/contact-us"> Contact us now </a>to schedule a site visit or get a free consultation. <a href="https://littleengland.cm/managed-farms"> Explore available plots </a>and choose your perfect farm retreat.</p>
   <h2>Final Thoughts: A Green Investment for the Future</h2>
   <p>In a fast-paced world, owning <strong>managed farmland near Hosur</strong> is not just an investment—it’s a lifestyle shift. From tangible returns to mental well-being, the benefits are both measurable and priceless. With the right research and guidance, your dream of farm ownership can become a sustainable reality.</p>
 </div>

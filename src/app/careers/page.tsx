@@ -18,28 +18,44 @@ import {
 
 const jobOpenings = [
     {
-        title: "Farm Operations Specialist",
+        title: "Sales Associates",
         type: "Full-time",
-        location: "Bangalore",
-        description: "Manage day-to-day farm activities, implement best practices, and contribute to efficient agricultural operations.",
+        mode: "Work from Office",
+        experience: "1–2 Years Experience",
+        location: "Koramangala, Bengaluru",
+        department: "Sales & Client Advisory",
+        incentives: "Good Incentives & High Commission",
+        description: "Engage with prospective farmland investors, present our prime managed communities including Tamara Valley, lead site tours, and drive sales closures with competitive incentive rewards.",
     },
     {
-        title: "Sustainability Analyst",
+        title: "Pre-Sales Executives",
         type: "Full-time",
-        location: "Bangalore",
-        description: "Analyze data to develop sustainable farming strategies that minimize environmental impact and enhance productivity.",
+        mode: "Work from Office",
+        experience: "1–2 Years Experience",
+        location: "Koramangala, Bengaluru",
+        department: "Pre-Sales & Lead Qualification",
+        incentives: "Attractive Monthly Incentives",
+        description: "Handle high-intent inbound inquiries, qualify prospective real estate and farmland buyers, introduce project highlights, and schedule qualified site visits for our sales consultants.",
     },
     {
-        title: "Marketing & Outreach Coordinator",
-        type: "Full-time",
-        location: "Bangalore",
-        description: "Drive our mission by creating compelling marketing campaigns and engaging with our community.",
+        title: "Interns (Sales & Marketing)",
+        type: "Internship",
+        mode: "Work from Office",
+        experience: "Fresher / 0–1 Year",
+        location: "Koramangala, Bengaluru",
+        department: "Growth & Sales Support",
+        incentives: "Stipend + Performance Incentives",
+        description: "Gain hands-on experience in luxury farmland real estate. Assist senior sales executives in lead management, client coordination, digital marketing campaigns, and site visits with pre-placement opportunities.",
     },
     {
-        title: "Supply Chain Manager",
+        title: "Farmland Sales Consultants",
         type: "Full-time",
-        location: "Bangalore",
-        description: "Oversee the logistics and distribution of our agricultural products while ensuring quality and timely delivery.",
+        mode: "Work from Office",
+        experience: "1–2+ Years Experience",
+        location: "Koramangala, Bengaluru",
+        department: "Direct Sales & Portfolio Management",
+        incentives: "Lucrative Incentive Structure",
+        description: "Advise high-net-worth individuals and NRI investors on managed agricultural farmland acquisition, lead weekend farm visits at Tamara Valley, and manage end-to-end sales transactions.",
     }
 ];
 
@@ -74,7 +90,7 @@ const values = [
 const benefits = [
     {
         title: "Career Growth",
-        desc: "We're invested in your professional journey. Join SVR Farms, and you'll have access to a wealth of resources, mentorship, and opportunities to advance your career."
+        desc: "We're invested in your professional journey. Join Little England, and you'll have access to a wealth of resources, mentorship, and opportunities to advance your career."
     },
     {
         title: "Innovative Environment",
@@ -82,7 +98,7 @@ const benefits = [
     },
     {
         title: "Meaningful Work",
-        desc: "At SVR Farms, your work will have a tangible impact on food production, sustainability, and rural communities. Join us in making a positive difference."
+        desc: "At Little England, your work will have a tangible impact on food production, sustainability, and rural communities. Join us in making a positive difference."
     },
     {
         title: "Collaborative Culture",
@@ -90,7 +106,7 @@ const benefits = [
     },
     {
         title: "Personal Development",
-        desc: "We encourage continuous learning and skill development. Whether it's honing your technical expertise or developing leadership skills, SVR Farms is here to help you grow."
+        desc: "We encourage continuous learning and skill development. Whether it's honing your technical expertise or developing leadership skills, Little England is here to help you grow."
     }
 ];
 
@@ -117,11 +133,11 @@ export default function Careers() {
             
             {/* Intro Section */}
             <Container className="py-5">
-                <SectionTitle title="Careers" subtitle="Join the SVR Farms Team – Build Your Career With Us" />
+                <SectionTitle title="Careers" subtitle="Join the Little England Team – Build Your Career With Us" />
                 <Row className="justify-content-center text-center mt-4">
                     <Col lg={10}>
                         <p className="lead text-muted lh-lg fs-5">
-                            At SVR Farms, we believe that a thriving team is the cornerstone of our success. We’re dedicated to nurturing a collaborative and dynamic work environment that encourages innovation, growth, and professional development. Join us as we cultivate opportunities, foster creativity, and contribute to the agriculture industry’s transformation.
+                            At Little England, we believe that a thriving team is the cornerstone of our success. We’re dedicated to nurturing a collaborative and dynamic work environment that encourages innovation, growth, and professional development. Join us as we cultivate opportunities, foster creativity, and contribute to the agriculture industry’s transformation.
                         </p>
                     </Col>
                 </Row>
@@ -171,7 +187,7 @@ export default function Careers() {
                             Why You&rsquo;ll Love Working Here
                         </h2>
                         <p className="text-muted lh-lg mb-4">
-                            We value our team and seek to provide a productive, satisfying, and growth-oriented workspace. Here is what we offer to every member of the SVR Farms family.
+                            We value our team and seek to provide a productive, satisfying, and growth-oriented workspace. Here is what we offer to every member of the Little England family.
                         </p>
                         <div className="border-start border-3 border-success ps-3 py-2 bg-light rounded-end">
                             <span className="fw-semibold text-sanjeevani d-block">Join a sustainable revolution</span>
@@ -213,23 +229,35 @@ export default function Careers() {
                                     <Card.Body className="p-4 d-flex flex-column">
                                         <div className="d-flex justify-content-between align-items-start mb-3 gap-2 flex-wrap">
                                             <h4 className="fw-bold text-dark mb-0 fs-5">{job.title}</h4>
-                                            <div className="d-flex gap-2">
-                                                <Badge bg="" className="bg-sanjeevani text-white px-3 py-2 rounded-pill font-jost text-uppercase fw-semibold" style={{ fontSize: '0.7rem' }}>
+                                            <div className="d-flex flex-wrap gap-2">
+                                                <Badge bg="" className="bg-sanjeevani text-white px-3 py-1.5 rounded-pill font-jost text-uppercase fw-semibold" style={{ fontSize: '0.7rem' }}>
                                                     <FiClock className="me-1" /> {job.type}
                                                 </Badge>
-                                                <Badge bg="" className="bg-secondary-subtle text-dark px-3 py-2 rounded-pill font-jost text-uppercase fw-semibold" style={{ fontSize: '0.7rem' }}>
-                                                    <FiMapPin className="me-1" /> {job.location}
+                                                <Badge bg="" className="bg-success text-white px-3 py-1.5 rounded-pill font-jost text-uppercase fw-semibold" style={{ fontSize: '0.7rem', backgroundColor: '#114934' }}>
+                                                    🏢 {job.mode}
                                                 </Badge>
                                             </div>
                                         </div>
+
+                                        <div className="d-flex flex-wrap gap-2 mb-3">
+                                            <Badge bg="" className="bg-light text-dark border px-3 py-1 rounded-pill font-jost fw-medium" style={{ fontSize: '0.75rem' }}>
+                                                ⏳ {job.experience}
+                                            </Badge>
+                                            <Badge bg="" className="bg-light text-dark border px-3 py-1 rounded-pill font-jost fw-medium" style={{ fontSize: '0.75rem' }}>
+                                                <FiMapPin className="me-1 text-danger" /> {job.location}
+                                            </Badge>
+                                            <Badge bg="" className="text-dark px-3 py-1 rounded-pill font-jost fw-bold border" style={{ fontSize: '0.75rem', backgroundColor: '#fff8e6', borderColor: '#c5a059' }}>
+                                                💰 {job.incentives}
+                                            </Badge>
+                                        </div>
                                         
-                                        <Card.Text className="text-muted mb-4 font-jost lh-lg flex-grow-1" style={{ fontSize: '0.95rem' }}>
+                                        <Card.Text className="text-muted mb-4 font-jost lh-lg flex-grow-1" style={{ fontSize: '0.92rem' }}>
                                             {job.description}
                                         </Card.Text>
                                         
                                         <div className="mt-auto d-flex justify-content-between align-items-center pt-3 border-top border-light">
                                             <span className="text-muted small font-jost d-flex align-items-center">
-                                                <FiBriefcase className="me-2" /> Agriculture & Operations
+                                                <FiBriefcase className="me-2 text-sanjeevani" /> {job.department}
                                             </span>
                                             <Button 
                                                 variant="outline-primary" 
@@ -331,11 +359,10 @@ export default function Careers() {
                                         className="py-2.5 rounded-3 border-light-subtle shadow-none font-jost"
                                     >
                                         <option value="">Select experience...</option>
-                                        <option value="fresher">Fresher</option>
-                                        <option value="1-3">1 - 3 Years</option>
+                                        <option value="fresher">Fresher / Intern</option>
+                                        <option value="1-2">1 - 2 Years</option>
                                         <option value="3-5">3 - 5 Years</option>
-                                        <option value="5-10">5 - 10 Years</option>
-                                        <option value="10+">10+ Years</option>
+                                        <option value="5+">5+ Years</option>
                                     </Form.Select>
                                 </Form.Group>
                             </Col>

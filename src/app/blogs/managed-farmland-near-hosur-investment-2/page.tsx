@@ -34,7 +34,7 @@ export default function BlogPage() {
                                     <div className="card-text text-start mt-3 blog-details">
 
                                    <div>
-  <p><span style={{fontWeight: 400}}>Investing in </span><a href="https://svrfarms.com/farmland-near-hosur-greener-lifestyle-investment-2"><b>managed farmland near Hosur</b></a><span style={{fontWeight: 400}}> is a smart and sustainable choice for investors looking for long-term growth, passive income, and a serene lifestyle. With </span><b>real estate</b><span style={{fontWeight: 400}}> prices soaring in metropolitan areas, managed farmland offers an affordable yet high-yield investment alternative. Whether you’re an experienced investor or a first-time buyer, understanding the advantages, legal aspects, and potential returns of managed farmland is essential.</span></p>
+  <p><span style={{fontWeight: 400}}>Investing in </span><a href="https://littleengland.cm/farmland-near-hosur-greener-lifestyle-investment-2"><b>managed farmland near Hosur</b></a><span style={{fontWeight: 400}}> is a smart and sustainable choice for investors looking for long-term growth, passive income, and a serene lifestyle. With </span><b>real estate</b><span style={{fontWeight: 400}}> prices soaring in metropolitan areas, managed farmland offers an affordable yet high-yield investment alternative. Whether you’re an experienced investor or a first-time buyer, understanding the advantages, legal aspects, and potential returns of managed farmland is essential.</span></p>
   <p><span style={{fontWeight: 400}}>In this guide, we will explore everything you need to know about </span><b>hassle-free farm ownership near Hosur</b><span style={{fontWeight: 400}}>, including investment benefits, key considerations, and how managed farmlands simplify the process for buyers.</span></p>
   <h2><b>Why Choose </b><b>Managed </b><b>Farmland Near Hosur </b><b>?</b></h2>
   <p><span style={{fontWeight: 400}}>Managed farmland offers a unique opportunity for investors who want to enjoy the benefits of land ownership without the operational hassles of farming. Here’s why it’s a preferred choice:</span></p>
@@ -73,7 +73,7 @@ export default function BlogPage() {
   <p><span style={{fontWeight: 400}}>Agricultural income in India is </span><b>tax-free</b><span style={{fontWeight: 400}}>, making farmland investment a financially attractive option compared to commercial real estate.</span></p>
   <h2><b>How to Get Started with Managed Farmland Investment?</b></h2>
   <h3><b>Step 1: Identify a Reliable Farmland Developer</b></h3>
-  <p><span style={{fontWeight: 400}}>Choose a </span><b>trusted real estate company</b><span style={{fontWeight: 400}}> that specializes in </span><b><a href="https://svrfarms.com/why-managed-farmland-investment-in-bangalore">managed farmland</a> projects</b><span style={{fontWeight: 400}}> near Hosur.</span></p>
+  <p><span style={{fontWeight: 400}}>Choose a </span><b>trusted real estate company</b><span style={{fontWeight: 400}}> that specializes in </span><b><a href="https://littleengland.cm/why-managed-farmland-investment-in-bangalore">managed farmland</a> projects</b><span style={{fontWeight: 400}}> near Hosur.</span></p>
   <h3><b>Step 2: Visit the Site &amp; Verify Documents</b></h3>
   <p><span style={{fontWeight: 400}}>Schedule a visit to inspect the land and confirm all legal documents before purchase.</span></p>
   <h3><b>Step 3: Choose a Management Plan</b></h3>
@@ -84,7 +84,7 @@ export default function BlogPage() {
   <h3><b>1. Can non-agriculturists buy farmland in Tamil Nadu?</b></h3>
   <p><span style={{fontWeight: 400}}>Yes, Tamil Nadu allows non-agriculturists to purchase farmland, unlike some other states in India.</span></p>
   <h3><b>2. How much does farmland near Hosur cost?</b></h3>
-  <p><span style={{fontWeight: 400}}>Prices vary based on location, soil quality, and amenities, but on average, <a href="https://svrfarms.com/experience-tranquility-invest-in-a-farm-house-in-hosur">farmland near Hosur</a> ranges between ₹10-₹25 lakh per acre.</span></p>
+  <p><span style={{fontWeight: 400}}>Prices vary based on location, soil quality, and amenities, but on average, <a href="https://littleengland.cm/experience-tranquility-invest-in-a-farm-house-in-hosur">farmland near Hosur</a> ranges between ₹10-₹25 lakh per acre.</span></p>
   <h3><b>3. What are the maintenance costs for managed farmland?</b></h3>
   <p><span style={{fontWeight: 400}}>Maintenance costs depend on the services included, such as security, irrigation, and farming operations. Most managed farmland projects have transparent pricing for these services.</span></p>
   <h3><b>4. Can I build a farmhouse on my managed farmland?</b></h3>
@@ -94,7 +94,7 @@ export default function BlogPage() {
   <h2><b>Conclusion</b></h2>
   <p><b>Managed farmland near Hosur</b><span style={{fontWeight: 400}}> presents an excellent opportunity for real estate investors, NRIs, and urban professionals seeking sustainable, passive income investments. With its </span><b>high appreciation rates, hassle-free management, and proximity to Bangalore</b><span style={{fontWeight: 400}}>, <a href="https://nowheaven.in/buying-farmland-in-hosur-taxes-and-incentives" target="_blank" rel="noopener">farmland ownership in Hosur</a> is a lucrative choice for long-term wealth creation.</span></p>
   <h3><b>Ready to Invest in Managed Farmland Near Hosur?</b></h3>
-  <p><a href="https://svrfarms.com/contact-us"><span style={{fontWeight: 400}}> Contact </span><b>SVR Farms</b></a><span style={{fontWeight: 400}}> today to explore premium farmland investment opportunities and secure your future in sustainable real estate!</span></p>
+  <p><a href="https://littleengland.cm/contact-us"><span style={{fontWeight: 400}}> Contact </span><b>Little England Farms</b></a><span style={{fontWeight: 400}}> today to explore premium farmland investment opportunities and secure your future in sustainable real estate!</span></p>
 </div>
 
 
