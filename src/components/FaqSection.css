@@ -45,3 +45,13 @@
 .faq-section {
     background-color: #fcfcf9 !important; /* light subtle beige/cream background to match image */
 }
+
+.faq-img-card {
+    min-height: 260px;
+}
+
+@media (min-width: 992px) {
+    .faq-img-card {
+        min-height: 440px;
+    }
+}

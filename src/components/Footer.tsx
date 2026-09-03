@@ -221,39 +221,14 @@ export default function Footer() {
                 </div>
 
                 {/* Floating Call & WhatsApp Buttons */}
-                <div style={{
-                    position: 'fixed',
-                    right: '30px',
-                    bottom: '10%',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '35px',
-                    zIndex: 1000
-                }}>
+                <div className="floating-action-cluster">
                     {/* Call Button */}
                     <a
                         href="tel:+919688777793"
                         className="d-flex align-items-center justify-content-center rounded-circle text-white floating-btn-call"
-                        style={{
-                            width: '55px',
-                            height: '55px',
-                            backgroundColor: '#114934',
-                            textDecoration: 'none',
-                            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
-                            transition: 'all 0.3s ease',
-                            cursor: 'pointer'
-                        }}
-                        onMouseEnter={(e) => {
-                            e.currentTarget.style.transform = 'scale(1.1)';
-                            e.currentTarget.style.boxShadow = '0 6px 16px rgba(0, 0, 0, 0.4)';
-                        }}
-                        onMouseLeave={(e) => {
-                            e.currentTarget.style.transform = 'scale(1)';
-                            e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.3)';
-                        }}
                         title="Call Us"
                     >
-                        <FaPhoneAlt size={24} />
+                        <FaPhoneAlt size={19} />
                     </a>
 
                     {/* WhatsApp Button */}
@@ -262,39 +237,23 @@ export default function Footer() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="d-flex align-items-center justify-content-center rounded-circle text-white floating-btn-whatsapp"
-                        style={{
-                            width: '55px',
-                            height: '55px',
-                            backgroundColor: '#25D366',
-                            textDecoration: 'none',
-                            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
-                            transition: 'all 0.3s ease',
-                            cursor: 'pointer'
-                        }}
-                        onMouseEnter={(e) => {
-                            e.currentTarget.style.transform = 'scale(1.1)';
-                            e.currentTarget.style.boxShadow = '0 6px 16px rgba(0, 0, 0, 0.4)';
-                        }}
-                        onMouseLeave={(e) => {
-                            e.currentTarget.style.transform = 'scale(1)';
-                            e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.3)';
-                        }}
                         title="Chat on WhatsApp"
                     >
-                        <FaWhatsapp size={24} />
+                        <FaWhatsapp size={22} />
                     </a>
                 </div>
 
-                {/* Enquire Now Button - Fixed Right Side Vertical Center */}
-                <div style={{
-                    position: 'fixed',
-                    right: '0',
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    zIndex: 1000
-                }}>
-
-
+                {/* Enquire Now Button - Desktop Only to prevent mobile crowding */}
+                <div 
+                    className="d-none d-lg-block"
+                    style={{
+                        position: 'fixed',
+                        right: '0',
+                        top: '50%',
+                        transform: 'translateY(-50%)',
+                        zIndex: 1000
+                    }}
+                >
                     <ContactForm
                         button={true}
                         popup={true}
@@ -303,11 +262,48 @@ export default function Footer() {
                     />
                 </div>
 
-                {/* Enquire Form Modal Overlay */}
-
-
-                {/* Custom styles for Enquire Now button */}
+                {/* Custom styles for floating action cluster and Enquire Now button */}
                 <style>{`
+                .floating-action-cluster {
+                    position: fixed;
+                    right: 24px;
+                    bottom: 28px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    z-index: 1000;
+                }
+
+                .floating-action-cluster a {
+                    width: 50px;
+                    height: 50px;
+                    text-decoration: none;
+                    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                }
+
+                .floating-action-cluster .floating-btn-call {
+                    background-color: #114934;
+                }
+
+                .floating-action-cluster .floating-btn-whatsapp {
+                    background-color: #25D366;
+                }
+
+                @media (max-width: 767.98px) {
+                    .floating-action-cluster {
+                        right: 14px;
+                        bottom: 16px;
+                        gap: 10px;
+                    }
+                    .floating-action-cluster a {
+                        width: 44px;
+                        height: 44px;
+                        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.22);
+                    }
+                }
+
                 .enquire-now-btn {
                     width: 40px !important;
                     height: 140px !important;

@@ -64,8 +64,9 @@ export default function TestimonialsSection() {
                     <h2
                         className="display-4 fw-bold mb-3 text-sanjeevani"
                         style={{
-                            fontFamily: '"Playfair Display", "Georgia", serif',
-                            lineHeight: '1.2'
+                            fontFamily: 'var(--font-serif)',
+                            lineHeight: '1.2',
+                            fontSize: 'clamp(1.85rem, 5.5vw, 3rem)'
                         }}
                     >
                         What Landowners Say
@@ -86,7 +87,7 @@ export default function TestimonialsSection() {
                         >
                             {/* Premium Background Watermark Quote */}
                             <FaQuoteLeft
-                                className="position-absolute"
+                                className="position-absolute d-none d-md-block"
                                 style={{
                                     top: '10px',
                                     left: '20px',
@@ -97,23 +98,24 @@ export default function TestimonialsSection() {
                                 }}
                             />
 
-                            <Card.Body className="p-4 p-md-5 position-relative" style={{ zIndex: 1 }}>
+                            <Card.Body className="p-3 p-sm-4 p-md-5 position-relative" style={{ zIndex: 1 }}>
                                 <Carousel
                                     activeIndex={index}
                                     onSelect={handleSelect}
                                     variant="dark"
                                     indicators={true}
                                     controls={false}
-                                    className="testimonial-carousel pb-4"
+                                    className="testimonial-carousel pb-3 pb-md-4"
                                 >
                                     {testimonials.map((testimonial, idx) => (
-                                        <Carousel.Item key={idx} className="text-center px-md-4">
+                                        <Carousel.Item key={idx} className="text-center px-2 px-md-4">
 
                                             <p
-                                                className="fs-5 fst-italic mb-4 lh-lg text-secondary"
+                                                className="fst-italic mb-3 mb-md-4 lh-lg text-secondary"
                                                 style={{
-                                                    fontFamily: '"Playfair Display", "Georgia", serif',
-                                                    color: '#2d3748'
+                                                    fontFamily: 'var(--font-serif)',
+                                                    color: '#2d3748',
+                                                    fontSize: 'clamp(0.92rem, 2.5vw, 1.15rem)'
                                                 }}
                                             >
                                                 "{testimonial.text}"
@@ -121,12 +123,12 @@ export default function TestimonialsSection() {
 
                                             <h5
                                                 className="fw-bold mb-0"
-                                                style={{ color: '#114934', letterSpacing: '0.5px' }}
+                                                style={{ color: '#114934', letterSpacing: '0.5px', fontSize: '1.05rem' }}
                                             >
                                                 {testimonial.name}
                                             </h5>
 
-                                            <p className="text-muted small mt-1 mb-4 fw-semibold text-uppercase" style={{ letterSpacing: '1px', fontSize: '0.75rem' }}>
+                                            <p className="text-muted small mt-1 mb-3 mb-md-4 fw-semibold text-uppercase" style={{ letterSpacing: '1px', fontSize: '0.72rem' }}>
                                                 {testimonial.role}
                                             </p>
                                         </Carousel.Item>

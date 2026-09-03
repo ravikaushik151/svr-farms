@@ -105,8 +105,9 @@ export default function FaqSection() {
                     <h2
                         className="display-4 fw-bold mb-3 text-sanjeevani"
                         style={{
-                            fontFamily: '"Playfair Display", "Georgia", serif',
-                            lineHeight: '1.2'
+                            fontFamily: 'var(--font-serif)',
+                            lineHeight: '1.2',
+                            fontSize: 'clamp(1.85rem, 5.5vw, 3rem)'
                         }}
                     >
                         Frequently Asked Questions
@@ -116,7 +117,7 @@ export default function FaqSection() {
                         <FaLeaf size={16} style={{ color: '#c5a059', opacity: 0.8 }} />
                     </div>
 
-                    <p className="text-muted max-w-xl mx-auto" style={{ fontSize: '0.98rem' }}>
+                    <p className="text-muted max-w-xl mx-auto" style={{ fontSize: 'clamp(0.9rem, 2vw, 0.98rem)' }}>
                         All your questions answered about Little England Farms
                     </p>
                 </div>
@@ -127,9 +128,8 @@ export default function FaqSection() {
                     {/* Left Side: Styled Vertical Farmland Image Card */}
                     <Col lg={4}>
                         <div
-                            className="h-100 rounded-4 overflow-hidden shadow-sm position-relative d-flex flex-column justify-content-end p-4 border border-light"
+                            className="h-100 rounded-4 overflow-hidden shadow-sm position-relative d-flex flex-column justify-content-end p-3 p-md-4 border border-light faq-img-card"
                             style={{
-                                minHeight: '440px',
                                 border: '1.5px solid rgba(197, 160, 89, 0.2)'
                             }}
                         >
@@ -150,31 +150,31 @@ export default function FaqSection() {
                             />
 
                             {/* Text overlay content */}
-                            <div className="position-relative text-center text-white z-2 w-100 mb-2">
+                            <div className="position-relative text-center text-white z-2 w-100 mb-1 mb-md-2">
                                 <div
-                                    className="rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                                    className="rounded-circle d-inline-flex align-items-center justify-content-center mb-2 mb-md-3"
                                     style={{
-                                        width: '48px',
-                                        height: '48px',
+                                        width: '42px',
+                                        height: '42px',
                                         border: '1.5px solid #c5a059',
                                         color: '#c5a059'
                                     }}
                                 >
-                                    <FaLeaf size={18} />
+                                    <FaLeaf size={16} />
                                 </div>
                                 <h3
-                                    className="fw-bold mb-3 text-white"
+                                    className="fw-bold mb-2 mb-md-3 text-white"
                                     style={{
-                                        fontFamily: '"Playfair Display", "Georgia", serif',
-                                        fontSize: '1.8rem',
+                                        fontFamily: 'var(--font-serif)',
+                                        fontSize: 'clamp(1.35rem, 4vw, 1.8rem)',
                                         lineHeight: '1.3'
                                     }}
                                 >
                                     Nature. Ownership. <br />
                                     <span style={{ color: '#c5a059' }}>Peace of Mind.</span>
                                 </h3>
-                                <span style={{ width: '40px', height: '1.5px', backgroundColor: '#c5a059', display: 'inline-block', marginBottom: '15px' }}></span>
-                                <p className="small text-white-50 mb-0 px-2" style={{ lineHeight: '1.5' }}>
+                                <span style={{ width: '40px', height: '1.5px', backgroundColor: '#c5a059', display: 'inline-block', marginBottom: '10px' }}></span>
+                                <p className="small text-white-50 mb-0 px-2" style={{ lineHeight: '1.5', fontSize: '0.82rem' }}>
                                     We take care of the land, so you can enjoy the returns.
                                 </p>
                             </div>

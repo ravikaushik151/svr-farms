@@ -91,22 +91,22 @@ export default function WhyThallySection() {
                         <h2
                             className="display-4 fw-bold mb-3"
                             style={{
-                                fontFamily: '"Playfair Display", "Georgia", serif',
-                                fontSize: '3rem'
+                                fontFamily: 'var(--font-serif)',
+                                fontSize: 'clamp(1.85rem, 5.5vw, 3rem)'
                             }}
                         >
                             <span style={{ color: '#114934' }}>Why </span>
                             <span style={{ color: '#c5a059' }}>Thally?</span>
                         </h2>
 
-                        <div className="d-flex justify-content-center justify-content-lg-start mb-4">
+                        <div className="d-flex justify-content-center justify-content-lg-start mb-3 mb-md-4">
                             <FaLeaf size={18} style={{ color: '#114934' }} />
                         </div>
 
                         <p
                             className="text-muted lh-lg mb-0"
                             style={{
-                                fontSize: '1.05rem',
+                                fontSize: 'clamp(0.92rem, 2.5vw, 1.05rem)',
                                 maxWidth: '780px',
                                 margin: '0 auto',
                                 marginLeft: 'lg-0'

@@ -36,10 +36,10 @@ export default function AboutOverview() {
 
                     {/* Left Column: Title, Copy Text & Scenic Landscaping Frame */}
                     <Col lg={6}>
-                        <div className="pe-lg-3">
+                        <div className="pe-lg-3 text-center text-lg-start">
 
                             {/* Little England Experience Badge */}
-                            <div className="d-flex align-items-center gap-2 mb-3">
+                            <div className="d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3">
                                 <FaLeaf size={14} style={{ color: '#c5a059' }} />
                                 <h6
                                     className="text-uppercase letter-spacing-2 mb-0 small fw-bold"
@@ -54,14 +54,14 @@ export default function AboutOverview() {
                             <h2
                                 className="display-5 fw-bold mb-3"
                                 style={{
-                                    fontFamily: '"Playfair Display", "Georgia", serif',
-                                    lineHeight: '1.2'
+                                    fontFamily: 'var(--font-serif)',
+                                    lineHeight: '1.2',
+                                    fontSize: 'clamp(1.75rem, 5vw, 2.5rem)'
                                 }}
                             >
                                 <span style={{ color: '#114934' }}>What Little England </span> <br />
                                 <span style={{ color: '#c5a059' }}>Farms Actually Is</span>
                             </h2>
-
 
                             {/* Formatted Double Paragraph Block */}
                             <p
@@ -78,11 +78,10 @@ export default function AboutOverview() {
                                 Every plot comes with clear, freehold title — Patta Chitta documented — and is professionally farmed on the owner's behalf: irrigation, security, and cultivation included.
                             </p>
 
-                            {/* Scenic Landscaping Image Wrapper with Embedded Pill Box */}
+                            {/* Scenic Landscaping Image Wrapper */}
                             <div
-                                className="position-relative rounded-4 overflow-hidden shadow-sm mt-3"
+                                className="position-relative rounded-4 overflow-hidden shadow-sm mt-3 about-scenic-img"
                                 style={{
-                                    height: '280px',
                                     border: '1.5px solid rgba(197, 160, 89, 0.2)'
                                 }}
                             >
@@ -92,47 +91,6 @@ export default function AboutOverview() {
                                     fill
                                     style={{ objectFit: 'cover', objectPosition: 'center' }}
                                 />
-
-                                {/* Floating Premium Accent Pill box */}
-                                <div
-                                    className="position-absolute shadow-sm d-none"
-                                    style={{
-                                        backgroundColor: '#114934',
-                                        border: '1.5px solid #c5a059',
-                                        borderRadius: '16px',
-                                        padding: '12px 20px',
-                                        bottom: '20px',
-                                        left: '20px',
-                                        maxWidth: '90%',
-                                        zIndex: 2,
-                                        display: 'flex',
-                                        alignItems: 'center'
-                                    }}
-                                >
-                                    <div
-                                        className="rounded-circle d-flex align-items-center justify-content-center me-3"
-                                        style={{
-                                            width: '36px',
-                                            height: '36px',
-                                            backgroundColor: 'rgba(255,255,255,0.08)',
-                                            border: '1px solid rgba(197, 160, 89, 0.5)',
-                                            color: '#c5a059',
-                                            minWidth: '36px'
-                                        }}
-                                    >
-                                        <FaLeaf size={14} />
-                                    </div>
-                                    <span
-                                        className="text-white fw-medium"
-                                        style={{
-                                            fontSize: '0.78rem',
-                                            letterSpacing: '0.5px',
-                                            lineHeight: '1.4'
-                                        }}
-                                    >
-                                        We don't just sell land, we deliver peace of mind and long-term prosperity.
-                                    </span>
-                                </div>
                             </div>
 
                         </div>
@@ -140,7 +98,7 @@ export default function AboutOverview() {
 
                     {/* Right Column: Stacked Premium Feature Cards */}
                     <Col lg={6}>
-                        <div className="d-flex flex-column gap-4">
+                        <div className="d-flex flex-column gap-3 gap-md-4 mt-4 mt-lg-0">
                             {features.map((feat, index) => (
                                 <Card
                                     key={index}
@@ -154,37 +112,33 @@ export default function AboutOverview() {
 
                                         {/* Left Side: Curved Green Block */}
                                         <div
-                                            className="d-flex align-items-center justify-content-center"
+                                            className="d-flex align-items-center justify-content-center feature-icon-block"
                                             style={{
                                                 backgroundColor: '#114934',
-                                                width: '125px',
-                                                minWidth: '125px',
-                                                borderRadius: '16px 36px 36px 16px', // Premium bulging curve
+                                                borderRadius: '16px 36px 36px 16px',
                                                 position: 'relative'
                                             }}
                                         >
                                             {/* Dashed Gold Circle Icon Ring */}
                                             <div
-                                                className="rounded-circle d-flex align-items-center justify-content-center text-white"
+                                                className="rounded-circle d-flex align-items-center justify-content-center text-white feature-icon-ring"
                                                 style={{
-                                                    width: '64px',
-                                                    height: '64px',
                                                     border: '1.5px dashed #c5a059',
                                                     color: '#c5a059'
                                                 }}
                                             >
-                                                <feat.icon size={26} />
+                                                <feat.icon size={22} className="feature-icon" />
                                             </div>
                                         </div>
 
                                         {/* Right Side: Feature Details */}
-                                        <div className="p-5 flex-grow-1 d-flex flex-column justify-content-center">
+                                        <div className="p-3 p-sm-4 p-md-4 flex-grow-1 d-flex flex-column justify-content-center text-start">
                                             {/* Title */}
                                             <h4
                                                 className="fw-bold mb-1 text-dark"
                                                 style={{
-                                                    fontSize: '0.95rem',
-                                                    letterSpacing: '1px',
+                                                    fontSize: '0.92rem',
+                                                    letterSpacing: '0.5px',
                                                     textTransform: 'uppercase'
                                                 }}
                                             >
@@ -192,15 +146,15 @@ export default function AboutOverview() {
                                             </h4>
 
                                             {/* Tiny golden-brown line and dot indicator */}
-                                            <div className="d-flex align-items-center gap-1 my-2">
-                                                <span style={{ width: '25px', height: '1.5px', backgroundColor: '#c5a059' }}></span>
+                                            <div className="d-flex align-items-center gap-1 my-1.5">
+                                                <span style={{ width: '22px', height: '1.5px', backgroundColor: '#c5a059' }}></span>
                                                 <span style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: '#c5a059' }}></span>
                                             </div>
 
                                             {/* Description */}
                                             <p
-                                                className="text-muted mb-0 lh-relaxed"
-                                                style={{ fontSize: '0.85rem' }}
+                                                className="text-muted mb-0 lh-base"
+                                                style={{ fontSize: '0.84rem' }}
                                             >
                                                 {feat.description}
                                             </p>
@@ -214,6 +168,33 @@ export default function AboutOverview() {
 
                 </Row>
             </Container>
+
+            <style jsx>{`
+                .about-scenic-img {
+                    height: 240px;
+                }
+                .feature-icon-block {
+                    width: 85px;
+                    min-width: 85px;
+                }
+                .feature-icon-ring {
+                    width: 48px;
+                    height: 48px;
+                }
+                @media (min-width: 768px) {
+                    .about-scenic-img {
+                        height: 280px;
+                    }
+                    .feature-icon-block {
+                        width: 125px;
+                        min-width: 125px;
+                    }
+                    .feature-icon-ring {
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+            `}</style>
         </section>
     );
 }

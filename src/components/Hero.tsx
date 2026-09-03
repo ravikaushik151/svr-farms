@@ -60,32 +60,45 @@ export default function Hero() {
                             <div className="mb-3">
                                 <Link 
                                     href="/tamara" 
-                                    className="d-inline-flex align-items-center gap-2 text-decoration-none px-4 py-2 rounded-pill shadow-sm border border-warning"
-                                    style={{ backgroundColor: 'rgba(17, 73, 52, 0.85)', color: '#c5a059', fontSize: '0.9rem', letterSpacing: '1px', backdropFilter: 'blur(5px)' }}
+                                    className="d-inline-flex flex-wrap align-items-center justify-content-center gap-1 gap-md-2 text-decoration-none px-3 py-2 rounded-pill shadow-sm border border-warning"
+                                    style={{ 
+                                        backgroundColor: 'rgba(17, 73, 52, 0.88)', 
+                                        color: '#c5a059', 
+                                        fontSize: 'clamp(0.72rem, 2.2vw, 0.88rem)', 
+                                        letterSpacing: '0.8px', 
+                                        backdropFilter: 'blur(5px)',
+                                        maxWidth: '100%'
+                                    }}
                                 >
                                     <span>⭐ FLAGSHIP PROJECT:</span>
                                     <strong className="text-white">TAMARA VALLEY (300+ ACRES)</strong>
                                     <span>&rarr;</span>
                                 </Link>
                             </div>
-                            <h1 className="display-3 fw-bold mb-3 lh-sm">
+                            <h1 
+                                className="display-3 fw-bold mb-3 lh-sm text-white"
+                                style={{ 
+                                    fontFamily: 'var(--font-serif)',
+                                    fontSize: 'clamp(1.85rem, 5.5vw, 3.75rem)'
+                                }}
+                            >
                                 Managed Organic Farmland Near Bengaluru
                             </h1>
-                            <p className="lead fs-4 mb-5 text-white-90" style={{ letterSpacing: '0.5px' }}>
+                            <p className="lead fs-5 fs-md-4 mb-4 mb-md-5 text-white-90" style={{ letterSpacing: '0.5px' }}>
                                 In the belt British called Little England
                             </p>
-                            <div className="d-flex flex-wrap justify-content-center gap-3">
+                            <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-2 gap-md-3">
                                 <Link 
                                     href="/tamara" 
-                                    className="btn px-4 py-3 fw-bold shadow-sm"
+                                    className="btn px-4 py-2.5 py-md-3 fw-bold shadow-sm w-100 w-sm-auto text-nowrap"
                                     style={{ backgroundColor: '#c5a059', color: '#114934', border: 'none' }}
                                 >
                                     Explore Tamara Valley ⭐
                                 </Link>
-                                <Link href="/contact" className="btn btn-primary px-4 py-3">
+                                <Link href="/contact" className="btn btn-primary px-4 py-2.5 py-md-3 w-100 w-sm-auto text-nowrap">
                                     Book a Site Visit
                                 </Link>
-                                <a href="#projects" className="btn btn-outline-light px-4 py-3">
+                                <a href="#projects" className="btn btn-outline-light px-4 py-2.5 py-md-3 w-100 w-sm-auto text-nowrap">
                                     See All Projects
                                 </a>
                             </div>

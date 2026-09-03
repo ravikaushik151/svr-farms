@@ -11,11 +11,11 @@ export default function Header() {
                     <Image 
                         src="/LE_Web Logo.png" 
                         alt="Little England Logo" 
-                        width={260} 
-                        height={50} 
+                        width={240} 
+                        height={46} 
                         priority 
                         className="mb-0" 
-                        style={{ width: 'auto', height: '48px', maxHeight: '52px' }} 
+                        style={{ width: 'auto', height: '40px', maxHeight: '46px' }} 
                     />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0 shadow-none" />

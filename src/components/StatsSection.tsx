@@ -132,11 +132,11 @@ export default function StatsSection() {
                 </div>
 
                 {/* Grid Cards of Stats */}
-                <Row className="g-4 justify-content-center">
+                <Row className="g-3 g-md-4 justify-content-center">
                     {stats.map((stat, index) => (
-                        <Col key={index} xs={12} sm={6} md={4} lg={2} className="d-flex align-items-stretch">
+                        <Col key={index} xs={6} sm={6} md={4} lg={2} className="d-flex align-items-stretch">
                             <Card
-                                className="border-0 shadow-sm p-4 text-center rounded-4 position-relative hover-lift bg-white w-100 d-flex flex-column"
+                                className="border-0 shadow-sm p-3 p-md-4 text-center rounded-4 position-relative hover-lift bg-white w-100 d-flex flex-column"
                                 style={{
                                     transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
                                     boxShadow: '0 4px 15px rgba(0, 0, 0, 0.04)'
@@ -144,26 +144,23 @@ export default function StatsSection() {
                             >
                                 {/* Circle icon wrapper */}
                                 <div
-                                    className="mx-auto rounded-circle d-flex align-items-center justify-content-center mb-4 mt-2"
+                                    className="mx-auto rounded-circle d-flex align-items-center justify-content-center mb-3 mb-md-4 mt-1 mt-md-2 stat-circle"
                                     style={{
-                                        width: '72px',
-                                        height: '72px',
                                         backgroundColor: '#114934',
-                                        border: '3.5px solid #c5a059',
+                                        border: '3px solid #c5a059',
                                         color: '#c5a059',
-                                        boxShadow: '0 4px 10px rgba(17, 73, 52, 0.2)',
-                                        minHeight: '72px'
+                                        boxShadow: '0 4px 10px rgba(17, 73, 52, 0.2)'
                                     }}
                                 >
-                                    <stat.icon size={28} />
+                                    <stat.icon className="stat-icon" />
                                 </div>
 
                                 {/* Count value */}
                                 <h2
-                                    className="fw-bold mb-2 text-dark"
+                                    className="fw-bold mb-1 mb-md-2 text-dark"
                                     style={{
-                                        fontFamily: '"Playfair Display", "Georgia", serif',
-                                        fontSize: '2rem'
+                                        fontFamily: 'var(--font-serif)',
+                                        fontSize: 'clamp(1.45rem, 4vw, 2.1rem)'
                                     }}
                                 >
                                     <Counter end={stat.count} suffix={stat.suffix} />
@@ -171,23 +168,23 @@ export default function StatsSection() {
 
                                 {/* Label */}
                                 <h5
-                                    className="fw-bold mb-2 text-uppercase"
+                                    className="fw-bold mb-1 mb-md-2 text-uppercase"
                                     style={{
-                                        fontSize: '0.78rem',
+                                        fontSize: 'clamp(0.68rem, 1.8vw, 0.78rem)',
                                         color: '#114934',
                                         letterSpacing: '0.5px',
                                         lineHeight: '1.3',
-                                        minHeight: '36px'
+                                        minHeight: '28px'
                                     }}
                                 >
                                     {stat.label}
                                 </h5>
 
                                 {/* Divider line */}
-                                <div className="mx-auto my-2" style={{ width: '20px', height: '1.5px', backgroundColor: '#c5a059' }}></div>
+                                <div className="mx-auto my-1.5 my-md-2" style={{ width: '20px', height: '1.5px', backgroundColor: '#c5a059' }}></div>
 
                                 {/* Description */}
-                                <p className="text-muted small lh-relaxed mb-0 mt-auto" style={{ fontSize: '0.8rem' }}>
+                                <p className="text-muted small lh-sm lh-md-relaxed mb-0 mt-auto" style={{ fontSize: 'clamp(0.68rem, 1.8vw, 0.8rem)' }}>
                                     {stat.description}
                                 </p>
                             </Card>
@@ -196,6 +193,27 @@ export default function StatsSection() {
                 </Row>
 
             </Container>
+
+            <style jsx>{`
+                .stat-circle {
+                    width: 52px;
+                    height: 52px;
+                    min-height: 52px;
+                }
+                :global(.stat-icon) {
+                    font-size: 20px;
+                }
+                @media (min-width: 768px) {
+                    .stat-circle {
+                        width: 72px;
+                        height: 72px;
+                        min-height: 72px;
+                    }
+                    :global(.stat-icon) {
+                        font-size: 28px;
+                    }
+                }
+            `}</style>
         </section>
     );
 }

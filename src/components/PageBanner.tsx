@@ -18,8 +18,9 @@ export default function PageBanner({
     const currentName = breadcrumbCurrent || title;
 
     return (
-        <div className="position-relative d-flex align-items-center justify-content-center" style={{
-            height: '400px',
+        <div className="position-relative d-flex align-items-center justify-content-center page-banner-wrap" style={{
+            minHeight: '220px',
+            height: 'clamp(220px, 35vh, 380px)',
             backgroundImage: `url("${backgroundImage}")`,
             backgroundSize: 'cover',
             backgroundPosition: isbackgoundpostion,
@@ -27,8 +28,15 @@ export default function PageBanner({
         }}>
             <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50"></div>
 
-            <Container className="position-relative z-1 text-center">
-                <h1 className="display-4 fw-bold text-white text-uppercase" style={{ letterSpacing: '1px' }}>
+            <Container className="position-relative z-1 text-center px-3">
+                <h1 
+                    className="display-4 fw-bold text-white text-uppercase mb-0" 
+                    style={{ 
+                        fontFamily: 'var(--font-serif)',
+                        fontSize: 'clamp(1.5rem, 5vw, 2.75rem)',
+                        letterSpacing: '1px' 
+                    }}
+                >
                     {title}
                 </h1>
                 <nav aria-label="breadcrumb" className="mt-3 d-none">

@@ -83,77 +83,61 @@ export default function WhatManagedMeansSection() {
                     <h2
                         className="display-4 fw-bold mb-3"
                         style={{
-                            fontFamily: '"Playfair Display", "Georgia", serif',
-                            lineHeight: '1.2'
+                            fontFamily: 'var(--font-serif)',
+                            lineHeight: '1.2',
+                            fontSize: 'clamp(1.75rem, 5.5vw, 2.75rem)'
                         }}
                     >
                         <span style={{ color: '#114934' }}>Own the Land.</span> <br />
                         <span style={{ color: '#c5a059' }}>Leave the Farming to Experts.</span>
                     </h2>
 
-                    <p className="text-muted max-w-2xl mx-auto mb-1" style={{ fontSize: '1.05rem' }}>
+                    <p className="text-muted max-w-2xl mx-auto mb-1" style={{ fontSize: 'clamp(0.92rem, 2.2vw, 1.05rem)' }}>
                         We make farmland ownership simple, secure, and truly rewarding.
                     </p>
-                    <p className="fw-semibold mb-0" style={{ color: '#114934', fontSize: '1.1rem' }}>
+                    <p className="fw-semibold mb-0" style={{ color: '#114934', fontSize: 'clamp(0.95rem, 2.5vw, 1.1rem)' }}>
                         You own the land. We take care of the rest.
                     </p>
                 </div>
 
                 {/* 2. Grid of 6 Advantage Cards */}
-                <Row className="g-4 mb-5">
+                <Row className="g-3 g-md-4 mb-5">
                     {points.map((point, index) => (
-                        <Col key={index} md={6} lg={4}>
+                        <Col key={index} xs={12} sm={6} lg={4}>
                             <Card
-                                className="border-0 shadow-sm p-4 text-center rounded-4 position-relative hover-lift bg-white h-100"
+                                className="border-0 shadow-sm p-3 p-sm-4 text-center rounded-4 position-relative hover-lift bg-white h-100"
                                 style={{
                                     transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
                                     boxShadow: '0 4px 15px rgba(0, 0, 0, 0.05)'
                                 }}
                             >
-                                {/* Circle Badge Number in Top Left */}
-                                <div
-                                    className="position-absolute d-flex align-items-center justify-content-center text-white rounded-circle d-none"
-                                    style={{
-                                        width: '28px',
-                                        height: '28px',
-                                        backgroundColor: '#114934',
-                                        top: '-10px',
-                                        left: '20px',
-                                        fontSize: '0.75rem',
-                                        fontWeight: 'bold',
-                                        boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)'
-                                    }}
-                                >
-                                    {point.number}
-                                </div>
-
                                 {/* Icon Circle wrapper */}
                                 <div
-                                    className="mx-auto rounded-circle d-flex align-items-center justify-content-center mb-4 mt-2"
+                                    className="mx-auto rounded-circle d-flex align-items-center justify-content-center mb-3 mb-md-4 mt-1 mt-md-2"
                                     style={{
-                                        width: '72px',
-                                        height: '72px',
+                                        width: '60px',
+                                        height: '60px',
                                         backgroundColor: '#f6fbf8',
                                         border: '1.5px solid rgba(17, 73, 52, 0.1)',
                                         color: '#114934'
                                     }}
                                 >
-                                    <point.icon size={30} style={{ opacity: 0.9 }} />
+                                    <point.icon size={26} style={{ opacity: 0.9 }} />
                                 </div>
 
                                 {/* Title */}
                                 <h4
-                                    className="fw-bold mb-3 text-dark"
+                                    className="fw-bold mb-2 mb-md-3 text-dark"
                                     style={{
-                                        fontFamily: '"Playfair Display", "Georgia", serif',
-                                        fontSize: '1.25rem'
+                                        fontFamily: 'var(--font-serif)',
+                                        fontSize: 'clamp(1.05rem, 3vw, 1.25rem)'
                                     }}
                                 >
                                     {point.title}
                                 </h4>
 
                                 {/* Description */}
-                                <p className="text-muted small lh-relaxed mb-0" style={{ fontSize: '0.88rem' }}>
+                                <p className="text-muted small lh-relaxed mb-0" style={{ fontSize: '0.86rem' }}>
                                     {point.description}
                                 </p>
                             </Card>

@@ -231,24 +231,25 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                     <h2
                         className="display-4 fw-bold mb-3 text-sanjeevani"
                         style={{
-                            fontFamily: '"Playfair Display", "Georgia", serif',
-                            lineHeight: '1.2'
+                            fontFamily: 'var(--font-serif)',
+                            lineHeight: '1.2',
+                            fontSize: 'clamp(1.85rem, 5.5vw, 3rem)'
                         }}
                     >
                         Our Projects
                     </h2>
 
-                    <div className="d-flex justify-content-center mb-4">
+                    <div className="d-flex justify-content-center mb-3 mb-md-4">
                         <FaLeaf size={16} style={{ color: '#c5a059', opacity: 0.8 }} />
                     </div>
 
-                    <p className="text-muted max-w-2xl mx-auto" style={{ fontSize: '1.02rem' }}>
+                    <p className="text-muted max-w-2xl mx-auto" style={{ fontSize: 'clamp(0.92rem, 2.2vw, 1.02rem)' }}>
                         Explore thoughtfully developed farmland communities set in the serene landscapes of Thalli. Spaces designed for nature, accessibility, and long-term value.
                     </p>
                 </div>
 
                 {/* Grid Cards of Projects */}
-                <Row className="g-4 mb-5">
+                <Row className="g-3 g-md-4 mb-5">
                     {displayedProjects.map((project, index) => {
                         return (
                             <Col key={index} xs={12} md={6} lg={4}>
@@ -260,7 +261,7 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                                     }}
                                 >
                                     {/* Image Wrapper */}
-                                    <div className="position-relative" style={{ height: '230px', overflow: 'hidden' }}>
+                                    <div className="position-relative" style={{ height: '210px', overflow: 'hidden' }}>
                                         <img
                                             src={project.image}
                                             alt={project.title}
@@ -272,15 +273,15 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                                         <div
                                             className="position-absolute d-flex align-items-center gap-2"
                                             style={{
-                                                top: '15px',
-                                                left: '15px',
-                                                backgroundColor: 'rgba(17, 73, 52, 0.85)',
+                                                top: '12px',
+                                                left: '12px',
+                                                backgroundColor: 'rgba(17, 73, 52, 0.88)',
                                                 color: '#ffffff',
                                                 borderRadius: '4px',
-                                                padding: '4px 12px',
-                                                fontSize: '0.7rem',
+                                                padding: '4px 10px',
+                                                fontSize: '0.68rem',
                                                 fontWeight: 'bold',
-                                                letterSpacing: '1px'
+                                                letterSpacing: '0.8px'
                                             }}
                                         >
                                             <FaMapMarkerAlt size={11} />
@@ -289,12 +290,12 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                                     </div>
 
                                     {/* Card Content body */}
-                                    <Card.Body className="pt-4 px-4 pb-4 d-flex flex-column text-center flex-grow-1">
+                                    <Card.Body className="pt-3 px-3 pb-3 pt-md-4 px-md-4 pb-md-4 d-flex flex-column text-center flex-grow-1">
                                         <h4
-                                            className="fw-bold mb-3 text-dark"
+                                            className="fw-bold mb-2 mb-md-3 text-dark"
                                             style={{
-                                                fontFamily: '"Playfair Display", "Georgia", serif',
-                                                fontSize: '1.35rem'
+                                                fontFamily: 'var(--font-serif)',
+                                                fontSize: 'clamp(1.15rem, 3vw, 1.35rem)'
                                             }}
                                         >
                                             {project.title}
@@ -381,20 +382,20 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                                             src={selectedProject.image}
                                             alt={selectedProject.title}
                                             className="w-100 object-fit-cover"
-                                            style={{ maxHeight: '350px' }}
+                                            style={{ maxHeight: 'clamp(200px, 40vh, 350px)' }}
                                         />
-                                        <div className="position-absolute bottom-0 start-0 p-4 text-white w-100" style={{ background: 'linear-gradient(transparent, rgba(11, 43, 31, 0.95))' }}>
-                                            <span className="text-uppercase fw-bold text-spacing-2" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                                        <div className="position-absolute bottom-0 start-0 p-3 p-md-4 text-white w-100" style={{ background: 'linear-gradient(transparent, rgba(11, 43, 31, 0.95))' }}>
+                                            <span className="text-uppercase fw-bold text-spacing-2" style={{ color: '#c5a059', fontSize: 'clamp(0.7rem, 2vw, 0.8rem)', letterSpacing: '1.5px' }}>
                                                 Managed Farmland Community
                                             </span>
-                                            <h2 className="fw-bold mb-0 text-white" style={{ fontFamily: '"Playfair Display", "Georgia", serif', fontSize: '2rem' }}>
+                                            <h2 className="fw-bold mb-0 text-white" style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(1.4rem, 4.5vw, 2rem)' }}>
                                                 {selectedProject.title}
                                             </h2>
                                         </div>
                                     </div>
                                 )}
                             </div>
-                            <div className="col-lg-12 p-4 p-lg-5">
+                            <div className="col-lg-12 p-3 p-sm-4 p-lg-5">
                                 {selectedProject && (
                                     <div className="d-flex flex-column gap-4">
                                         {/* Specifications Grid */}
