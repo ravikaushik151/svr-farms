@@ -1,7 +1,6 @@
 import Hero from '@/components/Hero';
 import AboutOverview from '@/components/AboutOverview';
 import SectionTitle from '@/components/SectionTitle';
-import AboutSection from '@/components/AboutSection';
 import WhyThallySection from '@/components/WhyThallySection';
 import WhatManagedMeansSection from '@/components/WhatManagedMeansSection';
 import NewProjectSection from '@/components/NewProjectSection';
@@ -18,10 +17,9 @@ export default function Home() {
             <Hero />
             <AboutOverview />
             <StatsSection />
-            <AboutSection />
+            <NewProjectSection />
             <WhyThallySection />
             <WhatManagedMeansSection />
-            <NewProjectSection />
             <TestimonialsSection />
             <ProjectsSection limit={6} showExploreButton={true} />
 
