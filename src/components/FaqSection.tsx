@@ -90,32 +90,20 @@ export default function FaqSection() {
             <Container className="py-lg-5 position-relative">
 
                 {/* 1. Header Section */}
-                <div className="text-center mb-5">
-                    <div className="d-flex justify-content-center align-items-center gap-2 mb-2">
+                <div className="text-center mb-4 mb-md-5 section-header-wrap">
+                    <div className="d-flex justify-content-center align-items-center section-subtitle-wrap gap-2 mb-2">
                         <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
-                        <h6
-                            className="text-uppercase letter-spacing-2 mb-0 small fw-bold"
-                            style={{ color: '#c5a059', fontSize: '0.8rem' }}
-                        >
+                        <h6 className="section-subheading mb-0">
                             Help & Support
                         </h6>
                         <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
                     </div>
 
-                    <h2
-                        className="display-4 fw-bold mb-3 text-sanjeevani"
-                        style={{
-                            fontFamily: 'var(--font-serif)',
-                            lineHeight: '1.2',
-                            fontSize: 'clamp(1.85rem, 5.5vw, 3rem)'
-                        }}
-                    >
+                    <h2 className="section-heading mb-2 text-sanjeevani">
                         Frequently Asked Questions
                     </h2>
 
-                    <div className="d-flex justify-content-center mb-3">
-                        <FaLeaf size={16} style={{ color: '#c5a059', opacity: 0.8 }} />
-                    </div>
+                    <div className="section-divider-bar mx-auto"></div>
 
                     <p className="text-muted max-w-xl mx-auto" style={{ fontSize: 'clamp(0.9rem, 2vw, 0.98rem)' }}>
                         All your questions answered about Little England Farms

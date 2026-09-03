@@ -31,39 +31,33 @@ export default function NewProjectSection() {
                 <Row className="gy-5 align-items-center">
 
                     {/* Left Column: Title Header & Landscaping Image Card */}
-                    <Col lg={6} className="pe-lg-4 text-center text-lg-start">
-                        {/* Project Highlight Badge */}
-                        <div className="d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3">
-                            <FaLeaf size={14} style={{ color: '#c5a059' }} />
-                            <h6
-                                className="text-uppercase letter-spacing-2 mb-0 small fw-bold"
-                                style={{ color: '#c5a059', fontSize: '0.8rem' }}
-                            >
-                                Project Highlight
-                            </h6>
-                            <span style={{ width: '40px', height: '1px', backgroundColor: 'rgba(197, 160, 89, 0.4)' }}></span>
+                    <Col lg={6} className="pe-lg-4 text-center text-lg-start section-header-wrap">
+                        <div className="d-flex flex-column align-items-center align-items-lg-start mb-2">
+                            {/* Project Highlight Badge */}
+                            <div className="d-flex align-items-center justify-content-center justify-content-lg-start section-subtitle-wrap gap-2 mb-2">
+                                <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
+                                <h6 className="section-subheading mb-0">
+                                    Project Highlight
+                                </h6>
+                                <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
+                            </div>
+
+                            {/* Title Heading & Tagline */}
+                            <div className="d-inline-flex flex-column align-items-center text-center">
+                                <h2 className="section-heading mb-2 text-sanjeevani">
+                                    TAMARA VALLEY
+                                </h2>
+
+                                <h5
+                                    className="text-uppercase letter-spacing-2 mb-2 fw-semibold"
+                                    style={{ color: '#c5a059', fontSize: 'clamp(0.82rem, 2.2vw, 0.9rem)' }}
+                                >
+                                    The One We'd Show You First
+                                </h5>
+
+                                <div className="section-divider-bar mx-auto"></div>
+                            </div>
                         </div>
-
-                        {/* Title Heading */}
-                        <h2
-                            className="display-4 fw-bold mb-2 text-sanjeevani"
-                            style={{
-                                fontFamily: 'var(--font-serif)',
-                                fontSize: 'clamp(1.85rem, 5.5vw, 3rem)',
-                                overflowWrap: 'break-word',
-                                wordBreak: 'break-word'
-                            }}
-                        >
-                            TAMARA VALLEY
-                        </h2>
-
-                        {/* Tagline */}
-                        <h5
-                            className="text-uppercase letter-spacing-2 mb-3 mb-md-4 fw-semibold"
-                            style={{ color: '#c5a059', fontSize: 'clamp(0.82rem, 2.5vw, 0.92rem)' }}
-                        >
-                            The One We'd Show You First
-                        </h5>
 
                         {/* Copy details */}
                         <p className="text-muted lh-lg mb-4" style={{ fontSize: '0.96rem' }}>

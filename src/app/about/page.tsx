@@ -40,9 +40,10 @@ export default function About() {
                             <span className="text-uppercase fw-bold text-spacing-2 mb-3 d-none" style={{ color: '#c5a059', fontSize: '0.9rem', letterSpacing: '2px' }}>
                                 ABOUT LITTLE ENGLAND
                             </span>
-                            <h2 className="display-4 fw-bold text-sanjeevani mb-4" style={{ fontFamily: '"Playfair Display", "Georgia", serif', lineHeight: '1.2' }}>
+                            <h2 className="section-heading text-sanjeevani mb-2">
                                 Land, Reimagined <br />for a Life Well Lived.
                             </h2>
+                            <div className="section-divider-bar mx-auto"></div>
                             <p className="lead text-secondary mb-3 lh-lg animate-fade-in" style={{ fontSize: '1.1rem' }}>
                                 Little England creates thoughtfully planned managed farmland communities where nature, purposeful design and effortless ownership come together.
                             </p>
@@ -71,13 +72,18 @@ export default function About() {
             <div className="py-5" style={{ backgroundColor: '#fcfbf7' }}>
                 <Container className="py-lg-5">
                     <Row className="gy-5 align-items-center">
-                        <Col lg={6} className="pe-lg-5">
-                            <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
-                                BRAND INTRODUCTION
-                            </span>
-                            <h2 className="display-5 fw-bold text-sanjeevani mb-4" style={{ fontFamily: '"Playfair Display", "Georgia", serif' }}>
-                                A New Standard in <br />Managed Farmland
-                            </h2>
+                        <Col lg={6} className="pe-lg-5 text-center text-lg-start section-header-wrap">
+                            <div className="d-flex flex-column align-items-center align-items-lg-start mb-2">
+                                <span className="section-subheading mb-2 d-block">
+                                    BRAND INTRODUCTION
+                                </span>
+                                <div className="d-inline-flex flex-column align-items-center text-center">
+                                    <h2 className="section-heading text-sanjeevani mb-2">
+                                        A New Standard in <br />Managed Farmland
+                                    </h2>
+                                    <div className="section-divider-bar mx-auto"></div>
+                                </div>
+                            </div>
                             <p className="text-secondary lh-lg mb-3" style={{ fontSize: '1rem' }}>
                                 At Little England, we believe land should offer more than ownership. It should provide a sense of belonging, a connection with nature and something meaningful to preserve for generations.
                             </p>
@@ -144,16 +150,14 @@ export default function About() {
             {/* 3. Brand Philosophy Section */}
             <div className="py-5" style={{ backgroundColor: '#f2f6f3', color: '#333333' }}>
                 <Container className="py-lg-5">
-                    <div className="text-center mb-5">
-                        <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                    <div className="text-center mb-4 mb-md-5 section-header-wrap">
+                        <span className="section-subheading mb-2 d-block">
                             BRAND PHILOSOPHY
                         </span>
-                        <h2 className="display-5 fw-bold text-sanjeevani" style={{ fontFamily: '"Playfair Display", "Georgia", serif' }}>
+                        <h2 className="section-heading text-sanjeevani mb-2">
                             In Harmony with Nature. For Generations to Come.
                         </h2>
-                        <div className="d-flex justify-content-center mt-3">
-                            <span style={{ width: '50px', height: '2px', backgroundColor: '#c5a059' }}></span>
-                        </div>
+                        <div className="section-divider-bar mx-auto"></div>
                     </div>
 
                     <Row className="gy-4">
@@ -269,16 +273,14 @@ export default function About() {
             {/* 4. What We Do Section */}
             <div className="py-5" style={{ backgroundColor: '#ffffff' }}>
                 <Container className="py-lg-5">
-                    <div className="text-center mb-5">
-                        <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                    <div className="text-center mb-4 mb-md-5 section-header-wrap">
+                        <span className="section-subheading mb-2 d-block">
                             WHAT WE DO
                         </span>
-                        <h2 className="display-5 fw-bold text-sanjeevani" style={{ fontFamily: '"Playfair Display", "Georgia", serif' }}>
+                        <h2 className="section-heading text-sanjeevani mb-2">
                             Responsible Land. Thoughtfully Managed.
                         </h2>
-                        <div className="d-flex justify-content-center mt-3">
-                            <span style={{ width: '50px', height: '2px', backgroundColor: '#c5a059' }}></span>
-                        </div>
+                        <div className="section-divider-bar mx-auto"></div>
                     </div>
 
                     <Row className="g-4">
@@ -383,13 +385,18 @@ export default function About() {
                             </div>
                         </Col>
 
-                        <Col lg={7} className="ps-lg-5">
-                            <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
-                                THE LITTLE ENGLAND DIFFERENCE
-                            </span>
-                            <h2 className="display-5 fw-bold text-sanjeevani mb-4" style={{ fontFamily: '"Playfair Display", "Georgia", serif' }}>
-                                More Than a Piece of Land
-                            </h2>
+                        <Col lg={7} className="ps-lg-5 text-center text-lg-start section-header-wrap">
+                            <div className="d-flex flex-column align-items-center align-items-lg-start mb-2">
+                                <span className="section-subheading mb-2 d-block">
+                                    THE LITTLE ENGLAND DIFFERENCE
+                                </span>
+                                <div className="d-inline-flex flex-column align-items-center text-center">
+                                    <h2 className="section-heading text-sanjeevani mb-2">
+                                        More Than a Piece of Land
+                                    </h2>
+                                    <div className="section-divider-bar mx-auto"></div>
+                                </div>
+                            </div>
                             <p className="text-secondary lh-lg mb-3" style={{ fontSize: '1rem' }}>
                                 For some, it is a peaceful weekend escape. For others, it is a future home, a family legacy or a long-term investment.
                             </p>
@@ -407,16 +414,14 @@ export default function About() {
             {/* 6. Why Little England Section */}
             <div className="py-5" style={{ backgroundColor: '#ffffff' }}>
                 <Container className="py-lg-5">
-                    <div className="text-center mb-5">
-                        <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                    <div className="text-center mb-4 mb-md-5 section-header-wrap">
+                        <span className="section-subheading mb-2 d-block">
                             WHY LITTLE ENGLAND
                         </span>
-                        <h2 className="display-5 fw-bold text-sanjeevani" style={{ fontFamily: '"Playfair Display", "Georgia", serif' }}>
+                        <h2 className="section-heading text-sanjeevani mb-2">
                             Own with Confidence. Live with Purpose.
                         </h2>
-                        <div className="d-flex justify-content-center mt-3">
-                            <span style={{ width: '50px', height: '2px', backgroundColor: '#c5a059' }}></span>
-                        </div>
+                        <div className="section-divider-bar mx-auto"></div>
                     </div>
 
                     <Row className="g-4 text-center justify-content-center">
@@ -472,13 +477,14 @@ export default function About() {
             }}>
                 <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(11, 43, 31, 0.88)' }}></div>
 
-                <Container className="position-relative z-1 py-lg-4 text-center">
-                    <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                <Container className="position-relative z-1 py-lg-4 text-center section-header-wrap">
+                    <span className="section-subheading mb-2 d-block" style={{ color: '#c5a059' }}>
                         SUSTAINABILITY
                     </span>
-                    <h2 className="display-5 fw-bold text-white mb-4" style={{ fontFamily: '"Playfair Display", "Georgia", serif' }}>
+                    <h2 className="section-heading text-white mb-2">
                         Stewardship That Begins with the Land
                     </h2>
+                    <div className="section-divider-bar divider-gold mx-auto"></div>
 
                     <Row className="justify-content-center">
                         <Col lg={8}>
@@ -501,13 +507,18 @@ export default function About() {
             <div className="py-5" style={{ backgroundColor: '#ffffff' }}>
                 <Container className="py-lg-5">
                     <Row className="gy-5 align-items-center">
-                        <Col lg={6} className="pe-lg-5">
-                            <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
-                                OUR VISION
-                            </span>
-                            <h2 className="display-5 fw-bold text-sanjeevani mb-4" style={{ fontFamily: '"Playfair Display", "Georgia", serif' }}>
-                                Creating Legacies, Naturally
-                            </h2>
+                        <Col lg={6} className="pe-lg-5 text-center text-lg-start section-header-wrap">
+                            <div className="d-flex flex-column align-items-center align-items-lg-start mb-2">
+                                <span className="section-subheading mb-2 d-block">
+                                    OUR VISION
+                                </span>
+                                <div className="d-inline-flex flex-column align-items-center text-center">
+                                    <h2 className="section-heading text-sanjeevani mb-2">
+                                        Creating Legacies, Naturally
+                                    </h2>
+                                    <div className="section-divider-bar mx-auto"></div>
+                                </div>
+                            </div>
                             <p className="text-secondary lh-lg mb-3" style={{ fontSize: '1rem' }}>
                                 Our vision is to redefine how people experience, own and preserve land. Through landmark managed farmland communities, Little England aspires to create a more thoughtful standard of ownership — one that brings together nature, hospitality, agriculture, wellness and long-term value.
                             </p>

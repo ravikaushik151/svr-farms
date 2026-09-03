@@ -55,8 +55,8 @@ export default function Gallery() {
     <section className="gallery-section same-gap gallery faq-section py-5" id="gallery">
       <div className="container">
         <div className="title text-center mb-4">
-          <h2 className="section-heading text-center mb-3">Gallery</h2>
-          <div className="mx-auto mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+          <h2 className="section-heading text-center mb-2">Gallery</h2>
+          <div className="section-divider-bar mx-auto"></div>
         </div>
 
         <div className="row">

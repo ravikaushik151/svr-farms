@@ -1,7 +1,7 @@
 'use client';
 
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaMapMarkedAlt, FaFileSignature, FaShieldAlt, FaLeaf } from 'react-icons/fa';
+import { FaMapMarkedAlt, FaFileSignature, FaShieldAlt } from 'react-icons/fa';
 import Image from 'next/image';
 
 const features = [
@@ -37,31 +37,25 @@ export default function AboutOverview() {
                     {/* Left Column: Title, Copy Text & Scenic Landscaping Frame */}
                     <Col lg={6}>
                         <div className="pe-lg-3 text-center text-lg-start">
+                            <div className="d-flex flex-column align-items-center align-items-lg-start mb-2">
+                                {/* Little England Experience Badge */}
+                                <div className="d-flex align-items-center justify-content-center justify-content-lg-start section-subtitle-wrap gap-2 mb-2">
+                                    <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
+                                    <h6 className="section-subheading mb-0">
+                                        The Little England Experience
+                                    </h6>
+                                    <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
+                                </div>
 
-                            {/* Little England Experience Badge */}
-                            <div className="d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3">
-                                <FaLeaf size={14} style={{ color: '#c5a059' }} />
-                                <h6
-                                    className="text-uppercase letter-spacing-2 mb-0 small fw-bold"
-                                    style={{ color: '#c5a059', fontSize: '0.8rem' }}
-                                >
-                                    The Little England Experience
-                                </h6>
-                                <span style={{ width: '40px', height: '1px', backgroundColor: 'rgba(197, 160, 89, 0.4)' }}></span>
+                                {/* Section Header */}
+                                <div className="d-inline-flex flex-column align-items-center text-center">
+                                    <h2 className="section-heading mb-2">
+                                        <span style={{ color: '#114934' }}>What Little England </span> <br />
+                                        <span style={{ color: '#c5a059' }}>Farms Actually Is</span>
+                                    </h2>
+                                    <div className="section-divider-bar mx-auto"></div>
+                                </div>
                             </div>
-
-                            {/* Section Header */}
-                            <h2
-                                className="display-5 fw-bold mb-3"
-                                style={{
-                                    fontFamily: 'var(--font-serif)',
-                                    lineHeight: '1.2',
-                                    fontSize: 'clamp(1.75rem, 5vw, 2.5rem)'
-                                }}
-                            >
-                                <span style={{ color: '#114934' }}>What Little England </span> <br />
-                                <span style={{ color: '#c5a059' }}>Farms Actually Is</span>
-                            </h2>
 
                             {/* Formatted Double Paragraph Block */}
                             <p

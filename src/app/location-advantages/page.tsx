@@ -42,13 +42,14 @@ export default function LocationAdvantages() {
             {/* Introduction Section */}
             <Container className="py-5 mt-4 text-center">
                 <Row className="justify-content-center">
-                    <Col lg={10}>
-                        <span className="text-uppercase fw-bold text-spacing-2 mb-3 d-flex align-items-center justify-content-center gap-2" style={{ color: '#c5a059', fontSize: '0.9rem', letterSpacing: '2px' }}>
+                    <Col lg={10} className="section-header-wrap">
+                        <span className="section-subheading mb-3 d-flex align-items-center justify-content-center gap-2">
                             <FaCompass size={14} /> LOCATION INSIGHTS
                         </span>
-                        <h2 className="display-5 fw-bold text-sanjeevani mb-4" style={{ fontFamily: '"Playfair Display", "Georgia", serif' }}>
+                        <h2 className="section-heading text-sanjeevani mb-2">
                             Thally - Little England
                         </h2>
+                        <div className="section-divider-bar mx-auto"></div>
                         <p className="lead text-dark lh-lg mb-4" style={{ fontSize: '1.2rem', fontWeight: 400 }}>
                             A best-kept-secret summer destination of the British, home to the twin hills of Devarabetta and a viewpoint that opens onto the region's rolling landscape.
                         </p>
@@ -81,16 +82,14 @@ export default function LocationAdvantages() {
             {/* 2. Heritage Timeline & Forts Block ("A Slice of England") */}
             <section id="heritage" className="py-5" style={{ backgroundColor: '#ffffff' }}>
                 <Container className="py-lg-5">
-                    <div className="text-center mb-5">
-                        <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                    <div className="text-center mb-4 mb-md-5 section-header-wrap">
+                        <span className="section-subheading mb-2 d-block">
                             A SLICE OF ENGLAND IN KARNATAKA
                         </span>
-                        <h2 className="display-4 fw-bold text-sanjeevani" style={{ fontFamily: '"Playfair Display", "Georgia", serif' }}>
+                        <h2 className="section-heading text-sanjeevani mb-2">
                             A Heritage That Built an Identity
                         </h2>
-                        <div className="d-flex justify-content-center mt-3">
-                            <span style={{ width: '50px', height: '2px', backgroundColor: '#c5a059' }}></span>
-                        </div>
+                        <div className="section-divider-bar mx-auto"></div>
                     </div>
 
                     <Row className="gy-5 align-items-stretch">
@@ -184,19 +183,14 @@ export default function LocationAdvantages() {
             {/* 3. Core Advantages Grid ("Advantages That Matter") */}
             <section id="advantages" className="py-5" style={{ backgroundColor: '#fcfbf7', borderTop: '1px solid rgba(197, 160, 89, 0.1)' }}>
                 <Container className="py-lg-5">
-                    <div className="text-center mb-5">
-                        <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                    <div className="text-center mb-4 mb-md-5 section-header-wrap">
+                        <span className="section-subheading mb-2 d-block">
                             INVESTMENT & ENVIRONMENT
                         </span>
-                        <h2 className="display-4 fw-bold text-sanjeevani" style={{ fontFamily: '"Playfair Display", "Georgia", serif' }}>
+                        <h2 className="section-heading text-sanjeevani mb-2">
                             Location Advantages That Matter
                         </h2>
-                        <p className="text-muted max-w-xl mx-auto" style={{ fontSize: '0.95rem' }}>
-                            Thally’s appeal lies not in a single advantage, but in a rare combination of climate, connectivity, fertile land, heritage and long-term growth potential.
-                        </p>
-                        <div className="d-flex justify-content-center mt-3">
-                            <span style={{ width: '50px', height: '2px', backgroundColor: '#c5a059' }}></span>
-                        </div>
+                        <div className="section-divider-bar mx-auto"></div>
                     </div>
 
                     <Row className="gy-5 text-start">
@@ -266,19 +260,14 @@ export default function LocationAdvantages() {
                 backgroundImage: 'linear-gradient(135deg, #09251b 0%, #114934 100%)'
             }}>
                 <Container className="py-lg-5">
-                    <div className="text-center mb-5">
-                        <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                    <div className="text-center mb-4 mb-md-5 section-header-wrap">
+                        <span className="section-subheading mb-2 d-block">
                             REGIONAL CONNECTIVITY PROJECTS
                         </span>
-                        <h2 className="display-4 fw-bold text-white mb-3" style={{ fontFamily: '"Playfair Display", "Georgia", serif' }}>
+                        <h2 className="section-heading text-white mb-2">
                             Infrastructure on the Horizon
                         </h2>
-                        <p className="text-white-50 max-w-xl mx-auto" style={{ fontSize: '0.95rem' }}>
-                            A handful of infrastructure projects are set to reshape Thally’s connectivity and economic weight over the next several years, bridging the gaps between Bangalore and Hosur corridors.
-                        </p>
-                        <div className="d-flex justify-content-center mt-3">
-                            <span style={{ width: '50px', height: '1.5px', backgroundColor: '#c5a059' }}></span>
-                        </div>
+                        <div className="section-divider-bar divider-gold mx-auto"></div>
                     </div>
 
                     <Row className="g-4 text-start mt-2">
@@ -361,16 +350,14 @@ export default function LocationAdvantages() {
             {/* 5. Tourism and Lifestyle Appeal (Mosaic Layout) */}
             <section id="tourism" className="py-5" style={{ backgroundColor: '#ffffff' }}>
                 <Container className="py-lg-5">
-                    <div className="text-center mb-5">
-                        <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                    <div className="text-center mb-4 mb-md-5 section-header-wrap">
+                        <span className="section-subheading mb-2 d-block">
                             ESCAPE & EXPLORE
                         </span>
-                        <h2 className="display-4 fw-bold text-sanjeevani" style={{ fontFamily: '"Playfair Display", "Georgia", serif' }}>
+                        <h2 className="section-heading text-sanjeevani mb-2">
                             Tourism and Lifestyle Appeal
                         </h2>
-                        <div className="d-flex justify-content-center mt-3">
-                            <span style={{ width: '50px', height: '2px', backgroundColor: '#c5a059' }}></span>
-                        </div>
+                        <div className="section-divider-bar mx-auto"></div>
                     </div>
 
                     <Row className="gy-4 text-start">
@@ -441,14 +428,18 @@ export default function LocationAdvantages() {
             <section className="py-5" style={{ backgroundColor: '#fcfbf7', borderTop: '1px solid rgba(197, 160, 89, 0.15)', borderBottom: '1px solid rgba(197, 160, 89, 0.15)' }}>
                 <Container className="py-lg-4 text-start">
                     <Row className="gy-4 align-items-center">
-                        <Col lg={5} className="pe-lg-5">
-                            <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
-                                A STRATEGIC OUTLOOK
-                            </span>
-                            <h2 className="display-5 fw-bold text-sanjeevani mb-4" style={{ fontFamily: '"Playfair Display", "Georgia", serif', lineHeight: '1.2' }}>
-                                A Destination Growing into Its Potential
-                            </h2>
-                            <div className="bg-warning mb-4" style={{ width: '50px', height: '1.5px', backgroundColor: '#c5a059' }}></div>
+                        <Col lg={5} className="pe-lg-5 text-center text-lg-start section-header-wrap">
+                            <div className="d-flex flex-column align-items-center align-items-lg-start mb-2">
+                                <span className="section-subheading mb-2 d-block">
+                                    A STRATEGIC OUTLOOK
+                                </span>
+                                <div className="d-inline-flex flex-column align-items-center text-center">
+                                    <h2 className="section-heading text-sanjeevani mb-2">
+                                        A Destination Growing into Its Potential
+                                    </h2>
+                                    <div className="section-divider-bar mx-auto"></div>
+                                </div>
+                            </div>
                             <p className="text-secondary lh-lg mb-0" style={{ fontSize: '0.98rem' }}>
                                 Thally’s appeal lies in the fact that it already possesses what many destinations attempt to manufacture - pleasant weather, fertile land, scenic topography, cultural character and a genuine sense of escape.
                             </p>
@@ -502,14 +493,15 @@ export default function LocationAdvantages() {
 
                 <Container className="position-relative z-1 text-center">
                     <Row className="justify-content-center">
-                        <Col lg={8} md={10}>
-                            <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                        <Col lg={8} md={10} className="section-header-wrap text-center">
+                            <span className="section-subheading mb-2 d-block" style={{ color: '#c5a059' }}>
                                 OWN SOMETHING THAT LASTS
                             </span>
 
-                            <h2 className="display-4 fw-bold text-white mb-3" style={{ fontFamily: '"Playfair Display", "Georgia", serif', lineHeight: '1.2' }}>
+                            <h2 className="section-heading text-white mb-2">
                                 Own Something That Grows Beyond Value.
                             </h2>
+                            <div className="section-divider-bar divider-gold mx-auto"></div>
 
                             <p className="text-white-50 mb-5 lh-lg" style={{ fontSize: '1rem', maxWidth: '600px', margin: '0 auto' }}>
                                 Discover a place to pause, grow and belong.

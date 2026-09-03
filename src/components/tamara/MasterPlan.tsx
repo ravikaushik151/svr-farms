@@ -71,8 +71,8 @@ export default function MasterPlanSection() {
                         <div className="row">
                             <div className="col-md-12 mb-5 d-flex align-items-center">
                                 <div className="text-center">
-                                    <h2 className="section-heading text-center mb-3"> Master Plan</h2>
-                                    <div className="mx-auto  mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                                    <h2 className="section-heading text-center mb-2"> Master Plan</h2>
+                                    <div className="section-divider-bar mx-auto"></div>
                                     
                                     {/* Masterplan Image with Clickable Popup */}
                                     <div

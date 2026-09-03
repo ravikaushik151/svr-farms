@@ -79,28 +79,23 @@ export default function WhyThallySection() {
                     </Col>
 
                     {/* Right Side: Header and Description */}
-                    <Col lg={8} className="text-center text-lg-start">
-                        <div className="d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-2">
-                            <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
-                            <h6 className="text-uppercase letter-spacing-2 mb-0 small fw-bold" style={{ color: '#c5a059', fontSize: '0.8rem' }}>
-                                The Little England Advantage
-                            </h6>
-                            <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
-                        </div>
+                    <Col lg={8} className="text-center text-lg-start section-header-wrap">
+                        <div className="d-flex flex-column align-items-center align-items-lg-start mb-2">
+                            <div className="d-flex align-items-center justify-content-center justify-content-lg-start section-subtitle-wrap gap-2 mb-2">
+                                <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
+                                <h6 className="section-subheading mb-0">
+                                    The Little England Advantage
+                                </h6>
+                                <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
+                            </div>
 
-                        <h2
-                            className="display-4 fw-bold mb-3"
-                            style={{
-                                fontFamily: 'var(--font-serif)',
-                                fontSize: 'clamp(1.85rem, 5.5vw, 3rem)'
-                            }}
-                        >
-                            <span style={{ color: '#114934' }}>Why </span>
-                            <span style={{ color: '#c5a059' }}>Thally?</span>
-                        </h2>
-
-                        <div className="d-flex justify-content-center justify-content-lg-start mb-3 mb-md-4">
-                            <FaLeaf size={18} style={{ color: '#114934' }} />
+                            <div className="d-inline-flex flex-column align-items-center text-center">
+                                <h2 className="section-heading mb-2">
+                                    <span style={{ color: '#114934' }}>Why </span>
+                                    <span style={{ color: '#c5a059' }}>Thally?</span>
+                                </h2>
+                                <div className="section-divider-bar mx-auto"></div>
+                            </div>
                         </div>
 
                         <p

@@ -1,7 +1,7 @@
 'use client';
 
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaUsers, FaTree, FaAward, FaMapMarkedAlt, FaHome, FaLeaf } from 'react-icons/fa';
+import { FaUsers, FaTree, FaAward, FaMapMarkedAlt, FaHome } from 'react-icons/fa';
 import { useEffect, useState, useRef } from 'react';
 
 const stats = [
@@ -100,31 +100,20 @@ export default function StatsSection() {
             <Container fluid className="py-lg-5 position-relative">
 
                 {/* Header */}
-                <div className="text-center mb-5">
-                    <div className="d-flex justify-content-center align-items-center gap-2 mb-2">
+                <div className="text-center mb-4 mb-md-5 section-header-wrap">
+                    <div className="d-flex justify-content-center align-items-center section-subtitle-wrap gap-2 mb-2">
                         <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
-                        <h6
-                            className="text-uppercase letter-spacing-2 mb-0 small fw-bold"
-                            style={{ color: '#c5a059', fontSize: '0.8rem' }}
-                        >
+                        <h6 className="section-subheading mb-0">
                             Rooted in Nature. Built for Life.
                         </h6>
                         <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
                     </div>
 
-                    <h2
-                        className="display-4 fw-bold mb-3 text-sanjeevani"
-                        style={{
-                            fontFamily: '"Playfair Display", "Georgia", serif',
-                            lineHeight: '1.2'
-                        }}
-                    >
+                    <h2 className="section-heading mb-2 text-sanjeevani">
                         Little England in Numbers
                     </h2>
 
-                    <div className="d-flex justify-content-center mb-4">
-                        <FaLeaf size={16} style={{ color: '#c5a059', opacity: 0.8 }} />
-                    </div>
+                    <div className="section-divider-bar mx-auto"></div>
 
                     <p className="text-muted max-w-2xl mx-auto" style={{ fontSize: '1.02rem' }}>
                         A thriving community. A greener tomorrow.

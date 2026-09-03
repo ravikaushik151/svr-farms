@@ -46,6 +46,78 @@ body {
   font-family: var(--font-jost), sans-serif;
 }
 
+/* ==========================================================================
+   Standardized Global Section Title & Subtitle System
+   Guarantees:
+   1. All section titles have identical uniform size on Desktop and Mobile
+   2. All section subtitles/eyebrows have identical uniform size on Desktop and Mobile
+   3. All titles and subtitles are centered on Mobile viewports (<992px)
+   ========================================================================== */
+.section-heading,
+.site-section-title {
+  font-family: var(--font-serif) !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  color: var(--sanjeevani-green);
+  font-size: clamp(1.65rem, 4.2vw, 2.35rem) !important;
+  letter-spacing: -0.2px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.section-subheading,
+.site-section-subtitle {
+  font-family: var(--font-sans) !important;
+  font-size: clamp(0.74rem, 1.8vw, 0.82rem) !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  color: #c5a059 !important;
+  line-height: 1.3 !important;
+}
+
+/* Mobile Centering for Titles and Subtitles across full website */
+@media (max-width: 991.98px) {
+  .section-heading,
+  .site-section-title,
+  .section-subheading,
+  .site-section-subtitle,
+  .section-header-wrap,
+  .mobile-center-header {
+    text-align: center !important;
+  }
+
+  .section-header-wrap .d-flex,
+  .mobile-center-header .d-flex,
+  .section-subtitle-wrap {
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .section-divider-bar {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+  }
+}
+
+/* Standardized Section Underline Bar - Always Centered Mobile & Desktop */
+.section-divider-bar {
+  display: block !important;
+  width: 60px !important;
+  height: 3px !important;
+  background-color: var(--sanjeevani-green);
+  margin-top: 0.5rem !important;
+  margin-bottom: 1.25rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.section-divider-bar.divider-gold {
+  background-color: #c5a059 !important;
+}
+
 @media (max-width: 767.98px) {
   .display-3 {
     font-size: clamp(2rem, 7vw, 2.75rem) !important;

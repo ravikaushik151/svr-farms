@@ -15,7 +15,12 @@ export default function About() {
                 <Row className="gy-5 align-items-start">
                     <Col lg={12} className=""></Col>
 
-                    <h2 className="entry-title mb-3" >Privacy Policy</h2>
+                    <div className="d-flex flex-column align-items-center align-items-lg-start mb-2">
+                        <div className="d-inline-flex flex-column align-items-center text-center">
+                            <h2 className="section-heading mb-2">Privacy Policy</h2>
+                            <div className="section-divider-bar mx-auto"></div>
+                        </div>
+                    </div>
 
                     <div className="entry-content mt-3" >
                         <p><strong>Little England – Farmland Property Privacy Policy</strong></p>

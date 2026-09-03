@@ -146,12 +146,12 @@ export default function Careers() {
             {/* Our Values Section */}
             <div className="py-5" style={{ backgroundColor: '#fcfbf7' }}>
                 <Container>
-                    <div className="text-center mb-5">
-                        <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                    <div className="text-center mb-4 mb-md-5 section-header-wrap">
+                        <span className="section-subheading mb-2 d-block">
                             HOW WE WORK
                         </span>
-                        <h2 className="display-6 fw-bold text-sanjeevani">Our Core Values</h2>
-                        <div className="bg-sanjeevani mx-auto mt-2" style={{ width: '60px', height: '3px' }}></div>
+                        <h2 className="section-heading mb-2">Our Core Values</h2>
+                        <div className="section-divider-bar mx-auto"></div>
                     </div>
 
                     <Row className="g-4 justify-content-center">
@@ -179,13 +179,18 @@ export default function Careers() {
             {/* Why Join Us Section */}
             <Container className="py-5 my-5">
                 <Row className="align-items-center gy-5">
-                    <Col lg={5}>
-                        <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
-                            WORK WITH PURPOSE
-                        </span>
-                        <h2 className="display-5 fw-bold text-sanjeevani mb-4">
-                            Why You&rsquo;ll Love Working Here
-                        </h2>
+                    <Col lg={5} className="text-center text-lg-start section-header-wrap">
+                        <div className="d-flex flex-column align-items-center align-items-lg-start mb-2">
+                            <span className="section-subheading mb-2 d-block">
+                                WORK WITH PURPOSE
+                            </span>
+                            <div className="d-inline-flex flex-column align-items-center text-center">
+                                <h2 className="section-heading mb-2">
+                                    Why You&rsquo;ll Love Working Here
+                                </h2>
+                                <div className="section-divider-bar mx-auto"></div>
+                            </div>
+                        </div>
                         <p className="text-muted lh-lg mb-4">
                             We value our team and seek to provide a productive, satisfying, and growth-oriented workspace. Here is what we offer to every member of the Little England family.
                         </p>
@@ -214,12 +219,12 @@ export default function Careers() {
             {/* Job Opportunities Section */}
             <div className="py-5" style={{ backgroundColor: '#f4f6f5' }}>
                 <Container className="py-4">
-                    <div className="text-center mb-5">
-                        <span className="text-uppercase fw-bold text-spacing-2 mb-2 d-block" style={{ color: '#c5a059', fontSize: '0.8rem', letterSpacing: '1.5px' }}>
+                    <div className="text-center mb-4 mb-md-5 section-header-wrap">
+                        <span className="section-subheading mb-2 d-block">
                             WE ARE HIRING
                         </span>
-                        <h2 className="display-6 fw-bold text-sanjeevani">Current Opportunities</h2>
-                        <div className="bg-sanjeevani mx-auto mt-2" style={{ width: '60px', height: '3px' }}></div>
+                        <h2 className="section-heading mb-2">Current Opportunities</h2>
+                        <div className="section-divider-bar mx-auto"></div>
                     </div>
 
                     <Row className="g-4">

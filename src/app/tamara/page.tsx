@@ -58,8 +58,8 @@ export default function TamaraPage() {
                             </div>
                             <div className="col-md-6 d-flex align-items-center" >
                                 <div className=" ">
-                                    <h2 className="section-heading text-center mb-3">About Tamara Valley</h2>
-                                    <div className="mx-auto  mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                                    <h2 className="section-heading text-center mb-2">About Tamara Valley</h2>
+                                    <div className="section-divider-bar mx-auto"></div>
 
                                     <h3 className='fs-6 mt-4 fw-semibold text-md-start text-center'>Experience The
                                         Luxury of Green Ownership
@@ -96,8 +96,8 @@ export default function TamaraPage() {
 
                             <div className="col-md-6 d-flex align-items-center" >
                                 <div className=" ">
-                                    <h2 className="section-heading text-center mb-3">A Breath of Nature </h2>
-                                    <div className="mx-auto   mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                                    <h2 className="section-heading text-center mb-2">A Breath of Nature </h2>
+                                    <div className="section-divider-bar mx-auto"></div>
 
                                     <h3 className='fs-6 mt-4  text-md-start text-center fw-semibold'>Experience The
                                         Luxury of Green Ownership
@@ -140,8 +140,8 @@ export default function TamaraPage() {
                                     id="w-node-_147bc8d0-b385-cc95-4439-b2fc20fb618b-ac1b3eca"
                                     className=""
                                 >
-                                    <h2 className="section-heading text-center mb-3"> Amenities</h2>
-                                    <div className="mx-auto mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                                    <h2 className="section-heading text-center mb-2"> Amenities</h2>
+                                    <div className="section-divider-bar mx-auto"></div>
 
 
                                 </div>
@@ -159,8 +159,8 @@ export default function TamaraPage() {
                                     <div className="row">
                                         <div className="col-md-12">
                                             <div><div className="title text-center">
-                                                <h2 className="section-heading text-center mb-3">Crafted For Calm</h2>
-                                                <div className="mx-auto mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                                                <h2 className="section-heading text-center mb-2">Crafted For Calm</h2>
+                                                <div className="section-divider-bar mx-auto"></div>
 
                                             </div>
                                             </div>
@@ -333,8 +333,8 @@ export default function TamaraPage() {
                     <div className="container">
 
                         <div className="text-center mb-5">
-                            <h2 className="section-heading text-center mb-3">Select Your Farms</h2>
-                            <div className="mx-auto mb-md-5 mb-4 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                            <h2 className="section-heading text-center mb-2">Select Your Farms</h2>
+                            <div className="section-divider-bar mx-auto"></div>
 
                         </div>
                         <div className="row">
@@ -443,8 +443,8 @@ export default function TamaraPage() {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12">
-                                <h2 className="section-heading text-center mb-3"> Location</h2>
-                                <div className="mx-auto mb-5 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                                <h2 className="section-heading text-center mb-2"> Location</h2>
+                                <div className="section-divider-bar mx-auto"></div>
                             </div>
                             <div className="row">
                                 <div className="col-md-8 ">

@@ -122,9 +122,9 @@ export default function StatsSection() {
     return (
         <section className="py-5 faq-section position-relative overflow-hidden">
             <Container fluid className='px-md-5'>
-                <Row className="g-4 justify-content-center ">
-                    <h2 className="section-heading text-center mb-0">Overview</h2>
-                    <div className="mx-auto mb-5 bg-sanjeevani" style={{ width: '80px', height: '3px' }}></div>
+                <Row className="justify-content-center text-center">
+                    <h2 className="section-heading text-center mb-2">Overview</h2>
+                    <div className="section-divider-bar mx-auto"></div>
                 </Row>
 
                 <Row className="g-4 justify-content-center mb-3">

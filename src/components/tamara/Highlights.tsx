@@ -13,8 +13,9 @@ const items = [
 
 export default function Highlights(){
   return (
-    <div className="container">
-      <h2 className="mb-5 text-center">Project Highlights</h2>
+    <div className="container section-header-wrap text-center">
+      <h2 className="section-heading mb-2 text-center">Project Highlights</h2>
+      <div className="section-divider-bar mx-auto"></div>
       <div className="row tv-cards">
         {items.map((it,idx)=> (
           <div className="col-md-6 col-lg-3 mb-4" key={idx}>
