@@ -116,9 +116,9 @@ export default function TamaraPage() {
                                 <div className="px-md-3">
                                     <Image
                                         alt="Project"
-                                        src="/about.webp"
-                                        width={650}
-                                        height={750}
+                                        src="/Breath of Nature.webp"
+                                        width={263}
+                                        height={470}
                                         className="img-fluid  mb-3  rounded-4"
                                         priority
                                         style={{ height: '470px', objectFit: "cover", objectPosition: "center" }}

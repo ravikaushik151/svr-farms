@@ -30,7 +30,7 @@ export default function Hero() {
                             className="w-100 h-100"
                             style={{
                                 minHeight: '100svh',
-                                backgroundImage: 'url("/banner-4.webp")',
+                                backgroundImage: 'url("/Home page_updated_Banner.webp")',
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                             }}
@@ -58,14 +58,14 @@ export default function Hero() {
                     <Row className="justify-content-center">
                         <Col lg={10}>
                             <div className="mb-3">
-                                <Link 
-                                    href="/tamara" 
+                                <Link
+                                    href="/tamara"
                                     className="d-inline-flex flex-wrap align-items-center justify-content-center gap-1 gap-md-2 text-decoration-none px-3 py-2 rounded-pill shadow-sm border border-warning"
-                                    style={{ 
-                                        backgroundColor: 'rgba(17, 73, 52, 0.88)', 
-                                        color: '#c5a059', 
-                                        fontSize: 'clamp(0.72rem, 2.2vw, 0.88rem)', 
-                                        letterSpacing: '0.8px', 
+                                    style={{
+                                        backgroundColor: 'rgba(17, 73, 52, 0.88)',
+                                        color: '#c5a059',
+                                        fontSize: 'clamp(0.72rem, 2.2vw, 0.88rem)',
+                                        letterSpacing: '0.8px',
                                         backdropFilter: 'blur(5px)',
                                         maxWidth: '100%'
                                     }}
@@ -75,9 +75,9 @@ export default function Hero() {
                                     <span>&rarr;</span>
                                 </Link>
                             </div>
-                            <h1 
+                            <h1
                                 className="display-3 fw-bold mb-3 lh-sm text-white"
-                                style={{ 
+                                style={{
                                     fontFamily: 'var(--font-serif)',
                                     fontSize: 'clamp(1.85rem, 5.5vw, 3.75rem)'
                                 }}
@@ -88,8 +88,8 @@ export default function Hero() {
                                 In the belt British called Little England
                             </p>
                             <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-2 gap-md-3">
-                                <Link 
-                                    href="/tamara" 
+                                <Link
+                                    href="/tamara"
                                     className="btn px-4 py-2.5 py-md-3 fw-bold shadow-sm w-100 w-sm-auto text-nowrap"
                                     style={{ backgroundColor: '#c5a059', color: '#114934', border: 'none' }}
                                 >
