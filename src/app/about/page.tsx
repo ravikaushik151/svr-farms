@@ -77,8 +77,8 @@ export default function About() {
                 <Container className="py-lg-5">
                     <Row className="gy-5 align-items-center">
                         <Col lg={6} className="pe-lg-5 text-center text-lg-start section-header-wrap">
-                            <div className="d-flex flex-column align-items-center text-center mb-2">
-                                <div className="d-flex align-items-center justify-content-center section-subtitle-wrap gap-2 mb-2">
+                            <div className="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start mb-2">
+                                <div className="d-flex align-items-center justify-content-center justify-content-lg-start section-subtitle-wrap gap-2 mb-2">
                                     <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
                                     <h6 className="section-subheading mb-0">
                                         Brand Introduction
@@ -86,9 +86,9 @@ export default function About() {
                                     <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
                                 </div>
                                 <h2 className="section-heading text-sanjeevani mb-2">
-                                    A New Standard in <br />Managed Farmland
+                                    A New Standard in <br className="d-none d-lg-block" />Managed Farmland
                                 </h2>
-                                <div className="section-divider-bar mx-auto"></div>
+                                <div className="section-divider-bar ms-lg-0 mx-auto"></div>
                             </div>
                             <p className="text-secondary lh-lg mb-3" style={{ fontSize: '1rem' }}>
                                 At Little England, we believe land should offer more than ownership. It should provide a sense of belonging, a connection with nature and something meaningful to preserve for generations.
@@ -400,8 +400,8 @@ export default function About() {
                         </Col>
 
                         <Col lg={7} className="ps-lg-5 text-center text-lg-start section-header-wrap">
-                            <div className="d-flex flex-column align-items-center text-center mb-2">
-                                <div className="d-flex align-items-center justify-content-center section-subtitle-wrap gap-2 mb-2">
+                            <div className="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start mb-2">
+                                <div className="d-flex align-items-center justify-content-center justify-content-lg-start section-subtitle-wrap gap-2 mb-2">
                                     <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
                                     <h6 className="section-subheading mb-0">
                                         The Little England Difference
@@ -411,7 +411,7 @@ export default function About() {
                                 <h2 className="section-heading text-sanjeevani mb-2">
                                     More Than a Piece of Land
                                 </h2>
-                                <div className="section-divider-bar mx-auto"></div>
+                                <div className="section-divider-bar ms-lg-0 mx-auto"></div>
                             </div>
                             <p className="text-secondary lh-lg mb-3" style={{ fontSize: '1rem' }}>
                                 For some, it is a peaceful weekend escape. For others, it is a future home, a family legacy or a long-term investment.
@@ -532,8 +532,8 @@ export default function About() {
                 <Container className="py-lg-5">
                     <Row className="gy-5 align-items-center">
                         <Col lg={6} className="pe-lg-5 text-center text-lg-start section-header-wrap">
-                            <div className="d-flex flex-column align-items-center text-center mb-2">
-                                <div className="d-flex align-items-center justify-content-center section-subtitle-wrap gap-2 mb-2">
+                            <div className="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start mb-2">
+                                <div className="d-flex align-items-center justify-content-center justify-content-lg-start section-subtitle-wrap gap-2 mb-2">
                                     <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
                                     <h6 className="section-subheading mb-0">
                                         Our Vision
@@ -543,7 +543,7 @@ export default function About() {
                                 <h2 className="section-heading text-sanjeevani mb-2">
                                     Creating Legacies, Naturally
                                 </h2>
-                                <div className="section-divider-bar mx-auto"></div>
+                                <div className="section-divider-bar ms-lg-0 mx-auto"></div>
                             </div>
                             <p className="text-secondary lh-lg mb-3" style={{ fontSize: '1rem' }}>
                                 Our vision is to redefine how people experience, own and preserve land. Through landmark managed farmland communities, Little England aspires to create a more thoughtful standard of ownership — one that brings together nature, hospitality, agriculture, wellness and long-term value.

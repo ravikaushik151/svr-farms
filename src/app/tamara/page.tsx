@@ -39,48 +39,45 @@ export default function TamaraPage() {
             <main className="main-wrapper">
                 <Hero />
                 <StatsSection />
-                <section className="section bg-white page-project-amidst" id="about" >
-                    <div className="container">
-                        <div className="row  px-md-5">
+                <section className="py-5 bg-white" id="about" >
+                    <div className="container py-lg-4">
+                        <div className="row align-items-center px-md-4 gy-4">
 
-                            <div className="col-md-6 ">
-                                <div className="px-md-3">
+                            <div className="col-md-6 d-flex align-items-center justify-content-center">
+                                <div className="text-center d-flex justify-content-center align-items-center w-100">
                                     <Image
-                                        alt="Project"
+                                        alt="About Tamara Valley"
                                         src="/Tamara-Valley-farm-1.webp"
                                         width={468}
                                         height={550}
-                                        className="img-fluid  mb-4  rounded-4"
+                                        className="img-fluid rounded-4 shadow-sm mx-auto d-block"
                                         priority
-                                        style={{ objectFit: "cover", objectPosition: "bottom" }}
+                                        style={{ maxHeight: '500px', width: 'auto', objectFit: "cover", objectPosition: "bottom" }}
                                     />
                                 </div>
                             </div>
                             <div className="col-md-6 d-flex align-items-center" >
-                                <div className=" ">
-                                    <h2 className="section-heading text-center mb-2">About Tamara Valley</h2>
-                                    <div className="section-divider-bar mx-auto"></div>
+                                <div className="ps-lg-4">
+                                    <h2 className="section-heading text-center text-md-start mb-2">About Tamara Valley</h2>
+                                    <div className="section-divider-bar ms-md-0 mx-auto"></div>
 
-                                    <h3 className='fs-6 mt-4 fw-semibold text-md-start text-center'>Experience The
-                                        Luxury of Green Ownership
+                                    <h3 className='fs-6 mt-4 fw-semibold text-md-start text-center' style={{ color: '#c5a059', letterSpacing: '1px', textTransform: 'uppercase' }}>
+                                        Experience The Luxury of Green Ownership
                                     </h3>
-                                    <p className="mt-2  theme-color-dark">
-                                        <span>Set within the green landscapes of Thalli, Tamil Nadu, Tamara Valley is a 300-acre gated organic managed farmland project designed for those who seek a quieter, richer, and more meaningful way to own real estate.
-                                        </span></p>
-                                    <p className=" theme-color-dark"><span>Blending fertile land, cool climate, curated amenities, and professional farm management, the project offers more than a weekend retreat. It creates a rare opportunity to own a nature-backed asset shaped for lifestyle, legacy, and long-term value.
-                                    </span>
-
+                                    <p className="mt-2 theme-color-dark lh-lg" style={{ fontSize: '0.98rem' }}>
+                                        Set within the green landscapes of Thalli, Tamil Nadu, Tamara Valley is a 300-acre gated organic managed farmland project designed for those who seek a quieter, richer, and more meaningful way to own real estate.
+                                    </p>
+                                    <p className="theme-color-dark lh-lg" style={{ fontSize: '0.98rem' }}>
+                                        Blending fertile land, cool climate, curated amenities, and professional farm management, the project offers more than a weekend retreat. It creates a rare opportunity to own a nature-backed asset shaped for lifestyle, legacy, and long-term value.
                                     </p>
 
-                                    <div className="text-center  my-4">
+                                    <div className="text-center text-md-start my-4">
                                         <ContactForm
                                             button={true}
                                             popup={true}
-
-                                            formInputClass='py-2 mb-0 form-control '
+                                            formInputClass='py-2 mb-0 form-control'
                                             buttonText="Download Brochure"
                                             triggerButtonClassName='btn btn-success'
-
                                         />
                                     </div>
                                 </div>
@@ -89,39 +86,34 @@ export default function TamaraPage() {
                     </div>
                 </section>
 
-                <section className="section faq-section page-project-amidst" id="about" >
-                    <div className="container">
-                        <div className="row  px-md-5">
-
+                <section className="py-5 faq-section" id="breath-of-nature" >
+                    <div className="container py-lg-4">
+                        <div className="row align-items-center justify-content-center px-md-4 gy-4">
 
                             <div className="col-md-6 d-flex align-items-center" >
-                                <div className=" ">
-                                    <h2 className="section-heading text-center mb-2">A Breath of Nature </h2>
-                                    <div className="section-divider-bar mx-auto"></div>
+                                <div className="pe-lg-4 text-center text-md-start">
+                                    <h2 className="section-heading text-center text-md-start mb-2">A Breath of Nature</h2>
+                                    <div className="section-divider-bar ms-md-0 mx-auto"></div>
 
-                                    <h3 className='fs-6 mt-4  text-md-start text-center fw-semibold'>Experience The
-                                        Luxury of Green Ownership
+                                    <h3 className='fs-6 mt-4 text-md-start text-center fw-semibold' style={{ color: '#c5a059', letterSpacing: '1px', textTransform: 'uppercase' }}>
+                                        Experience The Luxury of Green Ownership
                                     </h3>
-                                    <p className="mt-3  theme-color-dark">
-                                        <span>Enter a world shaped by open land, quiet mornings, and nature-led comfort. At Tamara Valley, organic farmland, curated leisure spaces, and serene community experiences come together to create a lifestyle that feels calm, rooted, and effortlessly enriching.
-
-                                        </span></p>
-
-
-
+                                    <p className="mt-3 theme-color-dark lh-lg" style={{ fontSize: '0.98rem' }}>
+                                        Enter a world shaped by open land, quiet mornings, and nature-led comfort. At Tamara Valley, organic farmland, curated leisure spaces, and serene community experiences come together to create a lifestyle that feels calm, rooted, and effortlessly enriching.
+                                    </p>
                                 </div>
                             </div>
 
-                            <div className="col-md-6 ">
-                                <div className="px-md-3">
+                            <div className="col-md-6 d-flex align-items-center justify-content-center">
+                                <div className="text-center d-flex justify-content-center align-items-center w-100">
                                     <Image
-                                        alt="Project"
+                                        alt="A Breath of Nature"
                                         src="/Breath of Nature.webp"
-                                        width={263}
-                                        height={470}
-                                        className="img-fluid  mb-3  rounded-4"
+                                        width={340}
+                                        height={480}
+                                        className="img-fluid rounded-4 shadow-sm mx-auto d-block"
                                         priority
-                                        style={{ height: '470px', objectFit: "cover", objectPosition: "center" }}
+                                        style={{ maxHeight: '480px', width: 'auto', objectFit: "cover", objectPosition: "center" }}
                                     />
                                 </div>
                             </div>

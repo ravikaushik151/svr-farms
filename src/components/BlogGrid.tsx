@@ -89,7 +89,7 @@ const BlogGrid: React.FC = () => {
     return (
         <div id="blog-grid-section" className="py-5 bg-light">
             <Container>
-                <SectionTitle title="Our Blog" subtitle="Latest News & Updates" />
+                <SectionTitle title="Insights, Stories & Land Guides" subtitle="Latest News & Updates" />
 
                 {/* Search Bar Row */}
                 <Row className="justify-content-center mb-5 mt-4">
@@ -103,7 +103,7 @@ const BlogGrid: React.FC = () => {
                                 placeholder="Search our articles..."
                                 value={searchQuery}
                                 onChange={handleSearchChange}
-                                className="border-0 shadow-none py-2 text-dark font-jost"
+                                className="border-0 shadow-none py-2 text-dark"
                                 style={{ fontSize: '1rem', outline: 'none' }}
                             />
                             {searchQuery && (
@@ -140,17 +140,17 @@ const BlogGrid: React.FC = () => {
                                                 className="object-fit-cover hover-zoom"
                                                 priority={post.id <= 3}
                                             />
-                                            <div className="position-absolute top-0 start-0 m-3 bg-sanjeevani text-white px-3 py-1 rounded-pill font-jost text-uppercase fw-semibold" style={{ fontSize: '0.75rem', letterSpacing: '0.5px' }}>
+                                            <div className="position-absolute top-0 start-0 m-3 bg-sanjeevani text-white px-3 py-1 rounded-pill text-uppercase fw-semibold" style={{ fontSize: '0.75rem', letterSpacing: '0.5px' }}>
                                                 {post.category}
                                             </div>
                                         </div>
 
                                         <Card.Body className="p-4 d-flex flex-column flex-grow-1">
-                                            <div className="text-muted small mb-2 font-jost">{post.date}</div>
+                                            <div className="text-muted small mb-2">{post.date}</div>
                                             <Card.Title className="fw-bold text-dark text-start title-clamp-2 mb-3 fs-5" style={{ lineHeight: '1.4' }}>
                                                 {post.title}
                                             </Card.Title>
-                                            <Card.Text className="text-start text-clamp-3 text-muted mb-4 font-jost" style={{ fontSize: '0.95rem' }}>
+                                            <Card.Text className="text-start text-clamp-3 text-muted mb-4" style={{ fontSize: '0.95rem' }}>
                                                 {post.text}
                                             </Card.Text>
                                             <div className="mt-auto d-flex justify-content-start">
@@ -164,12 +164,12 @@ const BlogGrid: React.FC = () => {
                             ))}
                         </Row>
 
-                        {/* Pagination Row */}
+                        {/* Pagination Controls */}
                         {totalPages > 1 && (
-                            <Row className="mt-5 pt-4">
+                            <Row className="mt-5">
                                 <Col className="d-flex justify-content-center">
                                     <nav aria-label="Blog pagination">
-                                        <ul className="pagination custom-pagination gap-2">
+                                        <ul className="pagination gap-2 align-items-center">
                                             {/* Previous Button */}
                                             <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
                                                 <button
@@ -187,7 +187,7 @@ const BlogGrid: React.FC = () => {
                                             {pageNumbers.map(page => (
                                                 <li key={page} className={`page-item ${currentPage === page ? 'active' : ''}`}>
                                                     <button
-                                                        className="page-link rounded-circle border-0 d-flex align-items-center justify-content-center fw-semibold font-jost"
+                                                        className="page-link rounded-circle border-0 d-flex align-items-center justify-content-center fw-semibold"
                                                         onClick={() => handlePageChange(page)}
                                                         style={{ width: '42px', height: '42px' }}
                                                     >
@@ -216,7 +216,7 @@ const BlogGrid: React.FC = () => {
                     </>
                 ) : (
                     <div className="text-center py-5">
-                        <h4 className="text-muted mb-3 font-jost">No articles found</h4>
+                        <h4 className="text-muted mb-3">No articles found</h4>
                         <p className="text-secondary">Try adjusting your search terms or clearing the filter.</p>
                         <button className="btn btn-primary mt-3" onClick={handleClearSearch}>
                             Clear Search
@@ -226,8 +226,6 @@ const BlogGrid: React.FC = () => {
             </Container>
 
             <style jsx global>{`
-                .font-jost { font-family: var(--font-jost), sans-serif; }
-                
                 .hover-zoom {
                     transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
                 }

@@ -84,6 +84,11 @@ const values = [
         icon: <FiAward className="text-sanjeevani fs-3" />,
         title: "Community Impact",
         desc: "Our work extends beyond the fields. We're committed to giving back to the communities we operate in and creating a positive impact on society as a whole."
+    },
+    {
+        icon: <FiCheckCircle className="text-sanjeevani fs-3" />,
+        title: "Integrity & Excellence",
+        desc: "We uphold the highest ethical standards across every interaction, prioritizing complete transparency, client trust, and long-term relationships that stand the test of time."
     }
 ];
 
@@ -107,6 +112,10 @@ const benefits = [
     {
         title: "Personal Development",
         desc: "We encourage continuous learning and skill development. Whether it's honing your technical expertise or developing leadership skills, Little England is here to help you grow."
+    },
+    {
+        title: "Competitive Rewards",
+        desc: "We offer attractive compensation, rewarding performance-based incentive structures, and recognition programs that celebrate your dedication and milestones."
     }
 ];
 
@@ -133,8 +142,8 @@ export default function Careers() {
             
             {/* Intro Section */}
             <Container className="py-5">
-                <SectionTitle title="Careers" subtitle="Join the Little England Team – Build Your Career With Us" />
-                <Row className="justify-content-center text-center mt-4">
+                <SectionTitle title="Build Your Career With Us" subtitle="Join The Little England Team" />
+                <Row className="justify-content-center text-center mt-3">
                     <Col lg={10}>
                         <p className="lead text-muted lh-lg fs-5">
                             At Little England, we believe that a thriving team is the cornerstone of our success. We’re dedicated to nurturing a collaborative and dynamic work environment that encourages innovation, growth, and professional development. Join us as we cultivate opportunities, foster creativity, and contribute to the agriculture industry’s transformation.
@@ -146,13 +155,7 @@ export default function Careers() {
             {/* Our Values Section */}
             <div className="py-5" style={{ backgroundColor: '#fcfbf7' }}>
                 <Container>
-                    <div className="text-center mb-4 mb-md-5 section-header-wrap">
-                        <span className="section-subheading mb-2 d-block">
-                            HOW WE WORK
-                        </span>
-                        <h2 className="section-heading mb-2">Our Core Values</h2>
-                        <div className="section-divider-bar mx-auto"></div>
-                    </div>
+                    <SectionTitle title="Our Core Values" subtitle="How We Work" />
 
                     <Row className="g-4 justify-content-center">
                         {values.map((val, idx) => (
@@ -165,7 +168,7 @@ export default function Careers() {
                                             </div>
                                             <h4 className="fw-bold text-dark mb-0 fs-5">{val.title}</h4>
                                         </div>
-                                        <p className="text-muted mb-0 font-jost lh-lg" style={{ fontSize: '0.95rem' }}>
+                                        <p className="text-muted mb-0 lh-lg" style={{ fontSize: '0.95rem' }}>
                                             {val.desc}
                                         </p>
                                     </Card.Body>
@@ -177,55 +180,45 @@ export default function Careers() {
             </div>
 
             {/* Why Join Us Section */}
-            <Container className="py-5 my-5">
-                <Row className="align-items-center gy-5">
-                    <Col lg={5} className="text-center text-lg-start section-header-wrap">
-                        <div className="d-flex flex-column align-items-center align-items-lg-start mb-2">
-                            <span className="section-subheading mb-2 d-block">
-                                WORK WITH PURPOSE
-                            </span>
-                            <div className="d-inline-flex flex-column align-items-center text-center">
-                                <h2 className="section-heading mb-2">
-                                    Why You&rsquo;ll Love Working Here
-                                </h2>
-                                <div className="section-divider-bar mx-auto"></div>
-                            </div>
-                        </div>
-                        <p className="text-muted lh-lg mb-4">
+            <Container className="py-5 my-4">
+                <SectionTitle title="Why You’ll Love Working Here" subtitle="Work With Purpose" />
+                <Row className="justify-content-center text-center mb-5">
+                    <Col lg={8}>
+                        <p className="text-muted lh-lg fs-5 mb-3">
                             We value our team and seek to provide a productive, satisfying, and growth-oriented workspace. Here is what we offer to every member of the Little England family.
                         </p>
-                        <div className="border-start border-3 border-success ps-3 py-2 bg-light rounded-end">
-                            <span className="fw-semibold text-sanjeevani d-block">Join a sustainable revolution</span>
-                            <span className="text-muted small">Our actions today impact generations tomorrow.</span>
+                        <div className="d-inline-flex align-items-center gap-2 border-start border-3 border-success ps-3 py-2 bg-light rounded-end text-start">
+                            <div>
+                                <span className="fw-semibold text-sanjeevani d-block">Join a sustainable revolution</span>
+                                <span className="text-muted small">Our actions today impact generations tomorrow.</span>
+                            </div>
                         </div>
                     </Col>
-                    
-                    <Col lg={7} className="ps-lg-5">
-                        <div className="d-flex flex-column gap-4">
-                            {benefits.map((benefit, idx) => (
-                                <div key={idx} className="d-flex align-items-start">
-                                    <FiCheckCircle className="text-sanjeevani mt-1 me-3 flex-shrink-0" size={24} />
+                </Row>
+
+                <Row className="g-4">
+                    {benefits.map((benefit, idx) => (
+                        <Col key={idx} xs={12} md={6} lg={4}>
+                            <Card className="h-100 border-0 shadow-sm p-4 rounded-3 hover-lift bg-white">
+                                <div className="d-flex align-items-start gap-3">
+                                    <div className="p-2 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style={{ backgroundColor: 'rgba(17,73,52,0.08)', color: '#114934', width: '42px', height: '42px' }}>
+                                        <FiCheckCircle size={22} />
+                                    </div>
                                     <div>
-                                        <h5 className="fw-bold text-dark mb-1">{benefit.title}</h5>
-                                        <p className="text-muted mb-0 font-jost" style={{ fontSize: '0.95rem' }}>{benefit.desc}</p>
+                                        <h5 className="fw-bold text-dark mb-2 fs-5">{benefit.title}</h5>
+                                        <p className="text-muted mb-0 lh-lg" style={{ fontSize: '0.92rem' }}>{benefit.desc}</p>
                                     </div>
                                 </div>
-                            ))}
-                        </div>
-                    </Col>
+                            </Card>
+                        </Col>
+                    ))}
                 </Row>
             </Container>
 
             {/* Job Opportunities Section */}
             <div className="py-5" style={{ backgroundColor: '#f4f6f5' }}>
                 <Container className="py-4">
-                    <div className="text-center mb-4 mb-md-5 section-header-wrap">
-                        <span className="section-subheading mb-2 d-block">
-                            WE ARE HIRING
-                        </span>
-                        <h2 className="section-heading mb-2">Current Opportunities</h2>
-                        <div className="section-divider-bar mx-auto"></div>
-                    </div>
+                    <SectionTitle title="Current Opportunities" subtitle="We Are Hiring" />
 
                     <Row className="g-4">
                         {jobOpenings.map((job, index) => (
@@ -235,39 +228,39 @@ export default function Careers() {
                                         <div className="d-flex justify-content-between align-items-start mb-3 gap-2 flex-wrap">
                                             <h4 className="fw-bold text-dark mb-0 fs-5">{job.title}</h4>
                                             <div className="d-flex flex-wrap gap-2">
-                                                <Badge bg="" className="bg-sanjeevani text-white px-3 py-1.5 rounded-pill font-jost text-uppercase fw-semibold" style={{ fontSize: '0.7rem' }}>
+                                                <Badge bg="" className="bg-sanjeevani text-white px-3 py-1.5 rounded-pill text-uppercase fw-semibold" style={{ fontSize: '0.7rem' }}>
                                                     <FiClock className="me-1" /> {job.type}
                                                 </Badge>
-                                                <Badge bg="" className="bg-success text-white px-3 py-1.5 rounded-pill font-jost text-uppercase fw-semibold" style={{ fontSize: '0.7rem', backgroundColor: '#114934' }}>
+                                                <Badge bg="" className="bg-success text-white px-3 py-1.5 rounded-pill text-uppercase fw-semibold" style={{ fontSize: '0.7rem', backgroundColor: '#114934' }}>
                                                     🏢 {job.mode}
                                                 </Badge>
                                             </div>
                                         </div>
 
                                         <div className="d-flex flex-wrap gap-2 mb-3">
-                                            <Badge bg="" className="bg-light text-dark border px-3 py-1 rounded-pill font-jost fw-medium" style={{ fontSize: '0.75rem' }}>
+                                            <Badge bg="" className="bg-light text-dark border px-3 py-1 rounded-pill fw-medium" style={{ fontSize: '0.75rem' }}>
                                                 ⏳ {job.experience}
                                             </Badge>
-                                            <Badge bg="" className="bg-light text-dark border px-3 py-1 rounded-pill font-jost fw-medium" style={{ fontSize: '0.75rem' }}>
+                                            <Badge bg="" className="bg-light text-dark border px-3 py-1 rounded-pill fw-medium" style={{ fontSize: '0.75rem' }}>
                                                 <FiMapPin className="me-1 text-danger" /> {job.location}
                                             </Badge>
-                                            <Badge bg="" className="text-dark px-3 py-1 rounded-pill font-jost fw-bold border" style={{ fontSize: '0.75rem', backgroundColor: '#fff8e6', borderColor: '#c5a059' }}>
+                                            <Badge bg="" className="text-dark px-3 py-1 rounded-pill fw-bold border" style={{ fontSize: '0.75rem', backgroundColor: '#fff8e6', borderColor: '#c5a059' }}>
                                                 💰 {job.incentives}
                                             </Badge>
                                         </div>
                                         
-                                        <Card.Text className="text-muted mb-4 font-jost lh-lg flex-grow-1" style={{ fontSize: '0.92rem' }}>
+                                        <Card.Text className="text-muted mb-4 lh-lg flex-grow-1" style={{ fontSize: '0.92rem' }}>
                                             {job.description}
                                         </Card.Text>
                                         
                                         <div className="mt-auto d-flex justify-content-between align-items-center pt-3 border-top border-light">
-                                            <span className="text-muted small font-jost d-flex align-items-center">
+                                            <span className="text-muted small d-flex align-items-center">
                                                 <FiBriefcase className="me-2 text-sanjeevani" /> {job.department}
                                             </span>
                                             <Button 
                                                 variant="outline-primary" 
                                                 onClick={() => handleShow(job.title)}
-                                                className="px-4 py-2 border-2 fw-semibold rounded-pill font-jost"
+                                                className="px-4 py-2 border-2 fw-semibold rounded-pill"
                                                 style={{ fontSize: '0.85rem' }}
                                             >
                                                 Apply Now
@@ -298,7 +291,7 @@ export default function Careers() {
                                         value={selectedJob}
                                         onChange={(e) => setSelectedJob(e.target.value)}
                                         required
-                                        className="py-2.5 rounded-3 border-light-subtle shadow-none font-jost"
+                                        className="py-2.5 rounded-3 border-light-subtle shadow-none"
                                     >
                                         <option value="" disabled>Select a position...</option>
                                         {jobOpenings.map((job, i) => (
@@ -315,7 +308,7 @@ export default function Careers() {
                                         type="text" 
                                         placeholder="Enter your full name" 
                                         required 
-                                        className="py-2.5 rounded-3 border-light-subtle shadow-none font-jost"
+                                        className="py-2.5 rounded-3 border-light-subtle shadow-none"
                                     />
                                 </Form.Group>
                             </Col>
@@ -327,7 +320,7 @@ export default function Careers() {
                                         type="email" 
                                         placeholder="Enter your email" 
                                         required 
-                                        className="py-2.5 rounded-3 border-light-subtle shadow-none font-jost"
+                                        className="py-2.5 rounded-3 border-light-subtle shadow-none"
                                     />
                                 </Form.Group>
                             </Col>
@@ -339,7 +332,7 @@ export default function Careers() {
                                         type="tel" 
                                         placeholder="Enter phone number" 
                                         required 
-                                        className="py-2.5 rounded-3 border-light-subtle shadow-none font-jost"
+                                        className="py-2.5 rounded-3 border-light-subtle shadow-none"
                                     />
                                 </Form.Group>
                             </Col>
@@ -351,7 +344,7 @@ export default function Careers() {
                                         type="text" 
                                         placeholder="Enter your city" 
                                         required 
-                                        className="py-2.5 rounded-3 border-light-subtle shadow-none font-jost"
+                                        className="py-2.5 rounded-3 border-light-subtle shadow-none"
                                     />
                                 </Form.Group>
                             </Col>
@@ -361,7 +354,7 @@ export default function Careers() {
                                     <Form.Label className="fw-semibold text-secondary">Years of Experience</Form.Label>
                                     <Form.Select 
                                         required
-                                        className="py-2.5 rounded-3 border-light-subtle shadow-none font-jost"
+                                        className="py-2.5 rounded-3 border-light-subtle shadow-none"
                                     >
                                         <option value="">Select experience...</option>
                                         <option value="fresher">Fresher / Intern</option>
@@ -379,7 +372,7 @@ export default function Careers() {
                                         type="file" 
                                         accept=".pdf,.doc,.docx" 
                                         required 
-                                        className="py-2 rounded-3 border-light-subtle shadow-none font-jost"
+                                        className="py-2 rounded-3 border-light-subtle shadow-none"
                                     />
                                 </Form.Group>
                             </Col>
@@ -392,7 +385,7 @@ export default function Careers() {
                                         rows={4} 
                                         placeholder="Tell us why you are a good fit for this role..." 
                                         required 
-                                        className="rounded-3 border-light-subtle shadow-none font-jost"
+                                        className="rounded-3 border-light-subtle shadow-none"
                                     />
                                 </Form.Group>
                             </Col>
@@ -402,7 +395,7 @@ export default function Careers() {
                             <Button 
                                 variant="light" 
                                 onClick={handleClose} 
-                                className="me-2 px-4 py-2 rounded-pill font-jost text-muted"
+                                className="me-2 px-4 py-2 rounded-pill text-muted"
                                 style={{ fontSize: '0.9rem' }}
                             >
                                 Cancel
@@ -410,7 +403,7 @@ export default function Careers() {
                             <Button 
                                 variant="primary" 
                                 type="submit" 
-                                className="px-5 py-2 rounded-pill font-jost"
+                                className="px-5 py-2 rounded-pill text-white fw-semibold"
                                 style={{ fontSize: '0.9rem' }}
                             >
                                 Submit Application
@@ -421,8 +414,6 @@ export default function Careers() {
             </Modal>
 
             <style jsx global>{`
-                .font-jost { font-family: var(--font-jost), sans-serif; }
-                
                 .hover-lift {
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                 }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Jost:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 :root {
-  --bs-primary: #0d6efd;
+  --bs-primary: #114934;
   --bs-secondary: #6c757d;
   --sanjeevani-green: #114934;
   --sanjeevani-green-dark: #197723;
@@ -77,11 +77,8 @@ body {
 }
 
 .section-subtitle-wrap {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  display: inline-flex;
+  align-items: center;
 }
 
 /* Mobile Centering for Titles and Subtitles across full website */
@@ -110,16 +107,26 @@ body {
   }
 }
 
-/* Standardized Section Underline Bar - Always Centered Mobile & Desktop */
+/* Standardized Section Underline Bar */
 .section-divider-bar {
-  display: block !important;
-  width: 60px !important;
-  height: 3px !important;
+  display: block;
+  width: 60px;
+  height: 3px;
   background-color: var(--sanjeevani-green);
-  margin-top: 0.5rem !important;
-  margin-bottom: 1.25rem !important;
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-divider-bar.mx-auto {
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+@media (min-width: 992px) {
+  .section-divider-bar.ms-lg-0 {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
 }
 
 .section-divider-bar.divider-gold {
@@ -146,13 +153,29 @@ body {
 
 /* Global Button Styles for Consistency */
 .btn {
-  border-radius: 0 !important;
-  padding: 12px 30px !important;
+  border-radius: 0;
+  padding: 12px 30px;
   text-transform: uppercase;
-  font-size: 0.9rem !important;
-  font-weight: 500 !important;
+  font-size: 0.9rem;
+  font-weight: 500;
   letter-spacing: 1px;
   transition: all 0.3s ease-in-out;
+}
+
+.btn.rounded-pill {
+  border-radius: 50rem !important;
+}
+
+.btn.rounded-3 {
+  border-radius: 0.75rem !important;
+}
+
+.btn.rounded-4 {
+  border-radius: 1rem !important;
+}
+
+.btn.rounded-circle {
+  border-radius: 50% !important;
 }
 
 @media (max-width: 575.98px) {
@@ -211,10 +234,30 @@ body {
   letter-spacing: 0.2px;
   white-space: nowrap !important;
   transition: all 0.2s ease-in-out;
+  position: relative;
 }
 
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link[aria-current="page"] {
   color: #c5a059 !important;
+}
+
+.navbar-nav .nav-link.active:not(.tamara-nav-btn):not(.contact-nav-btn) {
+  color: #c5a059 !important;
+  font-weight: 700 !important;
+}
+
+.navbar-nav .nav-link.active:not(.tamara-nav-btn):not(.contact-nav-btn)::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 8px;
+  right: 8px;
+  height: 2px;
+  background-color: #c5a059;
+  border-radius: 2px;
+  box-shadow: 0 0 6px rgba(197, 160, 89, 0.8);
 }
 
 /* Footer Styles */

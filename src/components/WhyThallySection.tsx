@@ -51,68 +51,35 @@ export default function WhyThallySection() {
 
             <Container className="py-lg-4 position-relative">
 
-                {/* Top Section: Split Crop Image & Title Header */}
-                <Row className="align-items-center mb-5">
-                    {/* Left Side: Artistic Golden-Clipped Circular Crop Image */}
-                    <Col lg={4} className="d-none d-lg-block position-relative">
-                        <div
-                            style={{
-                                width: '320px',
-                                height: '320px',
-                                borderRadius: '50%',
-                                borderRight: '4px solid #c5a059',
-                                borderTop: '4px solid #c5a059',
-                                borderBottom: '4px solid #c5a059',
-                                overflow: 'hidden',
-                                marginLeft: '0',
-                                boxShadow: '5px 5px 20px rgba(0,0,0,0.08)',
-                                position: 'relative'
-                            }}
-                        >
-                            <Image
-                                src="/Why-Thally.webp"
-                                alt="Misty Thally Valley landscape view"
-                                fill
-                                style={{ objectFit: 'cover', objectPosition: 'center' }}
-                            />
-                        </div>
-                    </Col>
+                {/* Top Section: Centered Title Header */}
+                <div className="text-center mb-4 mb-md-5 section-header-wrap">
+                    <div className="d-flex justify-content-center align-items-center section-subtitle-wrap gap-2 mb-2">
+                        <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
+                        <h6 className="section-subheading mb-0">
+                            The Little England Advantage
+                        </h6>
+                        <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
+                    </div>
 
-                    {/* Right Side: Header and Description */}
-                    <Col lg={8} className="text-center text-lg-start section-header-wrap">
-                        <div className="d-flex flex-column align-items-center align-items-lg-start mb-2">
-                            <div className="d-flex align-items-center justify-content-center justify-content-lg-start section-subtitle-wrap gap-2 mb-2">
-                                <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
-                                <h6 className="section-subheading mb-0">
-                                    The Little England Advantage
-                                </h6>
-                                <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
-                            </div>
+                    <h2 className="section-heading mb-2">
+                        <span style={{ color: '#114934' }}>Why </span>
+                        <span style={{ color: '#c5a059' }}>Thally?</span>
+                    </h2>
 
-                            <div className="d-inline-flex flex-column align-items-center text-center">
-                                <h2 className="section-heading mb-2">
-                                    <span style={{ color: '#114934' }}>Why </span>
-                                    <span style={{ color: '#c5a059' }}>Thally?</span>
-                                </h2>
-                                <div className="section-divider-bar mx-auto"></div>
-                            </div>
-                        </div>
+                    <div className="section-divider-bar mx-auto"></div>
 
-                        <p
-                            className="text-muted lh-lg mb-0"
-                            style={{
-                                fontSize: 'clamp(0.92rem, 2.5vw, 1.05rem)',
-                                maxWidth: '780px',
-                                margin: '0 auto',
-                                marginLeft: 'lg-0'
-                            }}
-                        >
-                            Thally sits just over the Karnataka border in the scenic valleys of Krishnagiri.
-                            British planters found it so cool and green they called it <strong>“Little England”</strong>.
-                            With hills at 1,000 meters elevation, misty weather, and booming infrastructure nearby, it represents the ideal blend of peace, accessibility, and high appreciation value.
-                        </p>
-                    </Col>
-                </Row>
+                    <p
+                        className="text-muted lh-lg mx-auto mb-0"
+                        style={{
+                            fontSize: 'clamp(0.92rem, 2.2vw, 1.05rem)',
+                            maxWidth: '780px'
+                        }}
+                    >
+                        Thally sits just over the Karnataka border in the scenic valleys of Krishnagiri.
+                        British planters found it so cool and green they called it <strong>“Little England”</strong>.
+                        With hills at 1,000 meters elevation, misty weather, and booming infrastructure nearby, it represents the ideal blend of peace, accessibility, and high appreciation value.
+                    </p>
+                </div>
 
                 {/* Middle Section: 4 Interactive Cards */}
                 <Row className="g-4 mb-5">

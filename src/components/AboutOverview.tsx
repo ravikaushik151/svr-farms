@@ -32,67 +32,61 @@ export default function AboutOverview() {
             }}
         >
             <Container className="py-lg-4 position-relative">
-                <Row className="gy-5 align-items-center">
+                {/* 1. Centered Section Title Header */}
+                <div className="text-center mb-4 mb-md-5 section-header-wrap">
+                    <div className="d-flex justify-content-center align-items-center section-subtitle-wrap gap-2 mb-2">
+                        <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
+                        <h6 className="section-subheading mb-0">
+                            The Little England Experience
+                        </h6>
+                        <span style={{ width: '40px', height: '1px', backgroundColor: '#c5a059' }}></span>
+                    </div>
 
-                    {/* Left Column: Title, Copy Text & Scenic Landscaping Frame */}
-                    <Col lg={6}>
-                        <div className="pe-lg-3 text-center text-lg-start">
-                            <div className="d-flex flex-column align-items-center align-items-lg-start mb-2">
-                                {/* Little England Experience Badge */}
-                                <div className="d-flex align-items-center justify-content-center justify-content-lg-start section-subtitle-wrap gap-2 mb-2">
-                                    <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
-                                    <h6 className="section-subheading mb-0">
-                                        The Little England Experience
-                                    </h6>
-                                    <span style={{ width: '30px', height: '1px', backgroundColor: '#c5a059' }}></span>
-                                </div>
+                    <h2 className="section-heading mb-2">
+                        <span style={{ color: '#114934' }}>What Little England </span>
+                        <span style={{ color: '#c5a059' }}>Farms Actually Is</span>
+                    </h2>
 
-                                {/* Section Header */}
-                                <div className="d-inline-flex flex-column align-items-center text-center">
-                                    <h2 className="section-heading mb-2">
-                                        <span style={{ color: '#114934' }}>What Little England </span> <br />
-                                        <span style={{ color: '#c5a059' }}>Farms Actually Is</span>
-                                    </h2>
-                                    <div className="section-divider-bar mx-auto"></div>
-                                </div>
-                            </div>
+                    <div className="section-divider-bar mx-auto"></div>
 
-                            {/* Formatted Double Paragraph Block */}
-                            <p
-                                className="text-muted mb-3 lh-lg"
-                                style={{ fontSize: '0.98rem' }}
-                            >
-                                Little England Farms is a managed organic farmland brand operating across the Thally-Hosur corridor, about 45 minutes off NH 44 and roughly 35 km from Electronic City.
-                            </p>
+                    <p
+                        className="text-muted lh-lg mx-auto mb-2"
+                        style={{ fontSize: 'clamp(0.92rem, 2.2vw, 1.02rem)', maxWidth: '780px' }}
+                    >
+                        Little England Farms is a managed organic farmland brand operating across the Thally-Hosur corridor, about 45 minutes off NH 44 and roughly 35 km from Electronic City.
+                    </p>
+                    <p
+                        className="text-muted lh-lg mx-auto mb-0"
+                        style={{ fontSize: 'clamp(0.92rem, 2.2vw, 1.02rem)', maxWidth: '780px' }}
+                    >
+                        Every plot comes with clear, freehold title — Patta Chitta documented — and is professionally farmed on the owner's behalf: irrigation, security, and cultivation included.
+                    </p>
+                </div>
 
-                            <p
-                                className="text-muted mb-4 pb-2 lh-lg"
-                                style={{ fontSize: '0.98rem' }}
-                            >
-                                Every plot comes with clear, freehold title — Patta Chitta documented — and is professionally farmed on the owner's behalf: irrigation, security, and cultivation included.
-                            </p>
+                {/* 2. Content Row: Left Scenic Image Card & Right Feature Cards */}
+                <Row className="gy-4 align-items-stretch">
 
-                            {/* Scenic Landscaping Image Wrapper */}
-                            <div
-                                className="position-relative rounded-4 overflow-hidden shadow-sm mt-3 about-scenic-img"
-                                style={{
-                                    border: '1.5px solid rgba(197, 160, 89, 0.2)'
-                                }}
-                            >
-                                <Image
-                                    src="/What-Little-England.webp"
-                                    alt="White cottage in organic managed farmland belt"
-                                    fill
-                                    style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                />
-                            </div>
-
+                    {/* Left Column: Scenic Landscaping Frame */}
+                    <Col lg={6} className="d-flex">
+                        <div
+                            className="position-relative rounded-4 overflow-hidden shadow-sm about-scenic-img w-100 h-100"
+                            style={{
+                                border: '1.5px solid rgba(197, 160, 89, 0.25)',
+                                minHeight: '320px'
+                            }}
+                        >
+                            <Image
+                                src="/What-Little-England.webp"
+                                alt="White cottage in organic managed farmland belt"
+                                fill
+                                style={{ objectFit: 'cover', objectPosition: 'center' }}
+                            />
                         </div>
                     </Col>
 
                     {/* Right Column: Stacked Premium Feature Cards */}
                     <Col lg={6}>
-                        <div className="d-flex flex-column gap-3 gap-md-4 mt-4 mt-lg-0">
+                        <div className="d-flex flex-column gap-3 gap-md-4">
                             {features.map((feat, index) => (
                                 <Card
                                     key={index}
@@ -165,7 +159,7 @@ export default function AboutOverview() {
 
             <style jsx>{`
                 .about-scenic-img {
-                    height: 240px;
+                    min-height: 280px;
                 }
                 .feature-icon-block {
                     width: 85px;
@@ -176,9 +170,6 @@ export default function AboutOverview() {
                     height: 48px;
                 }
                 @media (min-width: 768px) {
-                    .about-scenic-img {
-                        height: 280px;
-                    }
                     .feature-icon-block {
                         width: 125px;
                         min-width: 125px;
@@ -186,6 +177,11 @@ export default function AboutOverview() {
                     .feature-icon-ring {
                         width: 64px;
                         height: 64px;
+                    }
+                }
+                @media (min-width: 992px) {
+                    .about-scenic-img {
+                        min-height: 100%;
                     }
                 }
             `}</style>
