@@ -1,4 +1,5 @@
 'use client';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Container, Nav, Navbar } from 'react-bootstrap';
@@ -6,6 +7,11 @@ import Image from 'next/image';
 
 export default function Header() {
     const pathname = usePathname();
+    const [expanded, setExpanded] = useState(false);
+
+    useEffect(() => {
+        setExpanded(false);
+    }, [pathname]);
 
     const isActive = (href: string) => {
         if (href === '/') {
@@ -14,10 +20,25 @@ export default function Header() {
         return pathname === href || pathname.startsWith(`${href}/`);
     };
 
+    const handleNavClick = () => {
+        setExpanded(false);
+    };
+
     return (
-        <Navbar expand="xl" className="bg-sanjeevani py-2 py-xl-2.5 shadow-sm sticky-top" data-bs-theme="dark">
+        <Navbar 
+            expanded={expanded} 
+            onToggle={setExpanded} 
+            expand="xl" 
+            className="bg-sanjeevani py-2 py-xl-2.5 shadow-sm sticky-top" 
+            data-bs-theme="dark"
+        >
             <Container fluid="xxl" className="px-3 px-xl-4">
-                <Navbar.Brand as={Link} href="/" className="fw-bold text-white d-flex align-items-center me-2 me-xl-4 py-1">
+                <Navbar.Brand 
+                    as={Link} 
+                    href="/" 
+                    onClick={handleNavClick}
+                    className="fw-bold text-white d-flex align-items-center me-2 me-xl-4 py-1"
+                >
                     <Image 
                         src="/LE_Web Logo.png" 
                         alt="Little England Logo" 
@@ -34,6 +55,7 @@ export default function Header() {
                         <Nav.Link 
                             as={Link} 
                             href="/" 
+                            onClick={handleNavClick}
                             active={isActive('/')}
                             className={`text-nowrap px-2 py-1 ${isActive('/') ? 'active fw-bold' : ''}`}
                         >
@@ -42,6 +64,7 @@ export default function Header() {
                         <Nav.Link 
                             as={Link} 
                             href="/about" 
+                            onClick={handleNavClick}
                             active={isActive('/about')}
                             className={`text-nowrap px-2 py-1 ${isActive('/about') ? 'active fw-bold' : ''}`}
                         >
@@ -50,6 +73,7 @@ export default function Header() {
                         <Nav.Link 
                             as={Link} 
                             href="/tamara" 
+                            onClick={handleNavClick}
                             className="fw-bold px-3 py-1 my-1 my-xl-0 rounded-pill text-nowrap d-inline-flex align-items-center gap-1 shadow-sm tamara-nav-btn" 
                             style={{ 
                                 backgroundColor: '#c5a059', 
@@ -64,12 +88,13 @@ export default function Header() {
                                 transition: 'all 0.2s ease'
                             }}
                         >
-                            <span>Tamara Valley</span>
-                            <span style={{ fontSize: '0.82rem' }}>⭐</span>
+                            <span style={{ color: '#114934' }}>Tamara Valley</span>
+                            <span style={{ fontSize: '0.82rem', color: '#114934' }}>⭐</span>
                         </Nav.Link>
                         <Nav.Link 
                             as={Link} 
                             href="/projects" 
+                            onClick={handleNavClick}
                             active={isActive('/projects')}
                             className={`text-nowrap px-2 py-1 ${isActive('/projects') ? 'active fw-bold' : ''}`}
                         >
@@ -78,6 +103,7 @@ export default function Header() {
                         <Nav.Link 
                             as={Link} 
                             href="/location-advantages" 
+                            onClick={handleNavClick}
                             active={isActive('/location-advantages')}
                             className={`text-nowrap px-2 py-1 ${isActive('/location-advantages') ? 'active fw-bold' : ''}`}
                         >
@@ -86,6 +112,7 @@ export default function Header() {
                         <Nav.Link 
                             as={Link} 
                             href="/blogs" 
+                            onClick={handleNavClick}
                             active={isActive('/blogs')}
                             className={`text-nowrap px-2 py-1 ${isActive('/blogs') ? 'active fw-bold' : ''}`}
                         >
@@ -94,6 +121,7 @@ export default function Header() {
                         <Nav.Link 
                             as={Link} 
                             href="/careers" 
+                            onClick={handleNavClick}
                             active={isActive('/careers')}
                             className={`text-nowrap px-2 py-1 ${isActive('/careers') ? 'active fw-bold' : ''}`}
                         >
@@ -102,6 +130,7 @@ export default function Header() {
                         <Nav.Link 
                             as={Link} 
                             href="/testimonials" 
+                            onClick={handleNavClick}
                             active={isActive('/testimonials')}
                             className={`text-nowrap px-2 py-1 ${isActive('/testimonials') ? 'active fw-bold' : ''}`}
                         >
@@ -110,6 +139,7 @@ export default function Header() {
                         <Nav.Link 
                             as={Link} 
                             href="/faq" 
+                            onClick={handleNavClick}
                             active={isActive('/faq')}
                             className={`text-nowrap px-2 py-1 ${isActive('/faq') ? 'active fw-bold' : ''}`}
                         >
@@ -118,17 +148,9 @@ export default function Header() {
                         <Nav.Link 
                             as={Link} 
                             href="/contact" 
-                            className="text-nowrap px-3 py-1 rounded-pill border fw-semibold ms-xl-1 contact-nav-btn"
-                            style={{
-                                borderColor: isActive('/contact') ? '#c5a059' : 'rgba(197, 160, 89, 0.6)',
-                                backgroundColor: isActive('/contact') ? '#c5a059' : 'transparent',
-                                color: isActive('/contact') ? '#114934' : '#c5a059',
-                                fontWeight: isActive('/contact') ? 700 : 600,
-                                fontSize: '0.8rem',
-                                lineHeight: '1.2',
-                                boxShadow: isActive('/contact') ? '0 0 12px rgba(197, 160, 89, 0.5)' : 'none',
-                                transition: 'all 0.2s ease'
-                            }}
+                            onClick={handleNavClick}
+                            active={isActive('/contact')}
+                            className={`text-nowrap px-2 py-1 ${isActive('/contact') ? 'active fw-bold' : ''}`}
                         >
                             Contact Us
                         </Nav.Link>
@@ -138,3 +160,4 @@ export default function Header() {
         </Navbar>
     );
 }
+

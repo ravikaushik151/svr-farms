@@ -113,30 +113,38 @@ export default function ContactPage() {
                                     <div className="bg-sanjeevani mb-4" style={{ width: '40px', height: '2px', backgroundColor: '#c5a059' }}></div>
 
                                     {/* Form Fields */}
-                                    <Form onSubmit={handleSubmit}>
+                                    <Form onSubmit={handleSubmit} className="contact-page-form">
                                         <Row className="g-3 mb-3">
                                             <Col md={6}>
-                                                <InputGroup>
-                                                    <InputGroup.Text style={{ backgroundColor: '#fff', borderRight: 'none', color: '#adb5bd' }}>
-                                                        <FaUser size={14} />
+                                                <InputGroup className="contact-input-group rounded-3 overflow-hidden">
+                                                    <InputGroup.Text 
+                                                        className="bg-white border-end-0 text-muted px-3"
+                                                        style={{ minHeight: '48px' }}
+                                                    >
+                                                        <FaUser size={14} style={{ color: '#adb5bd' }} />
                                                     </InputGroup.Text>
                                                     <Form.Control
                                                         type="text"
                                                         placeholder="Full Name"
-                                                        style={{ borderLeft: 'none', fontSize: '0.88rem' }}
+                                                        className="border-start-0 py-2 ps-1"
+                                                        style={{ fontSize: '0.9rem', minHeight: '48px' }}
                                                         required
                                                     />
                                                 </InputGroup>
                                             </Col>
                                             <Col md={6}>
-                                                <InputGroup>
-                                                    <InputGroup.Text style={{ backgroundColor: '#fff', borderRight: 'none', color: '#adb5bd' }}>
-                                                        <FaEnvelope size={14} />
+                                                <InputGroup className="contact-input-group rounded-3 overflow-hidden">
+                                                    <InputGroup.Text 
+                                                        className="bg-white border-end-0 text-muted px-3"
+                                                        style={{ minHeight: '48px' }}
+                                                    >
+                                                        <FaEnvelope size={14} style={{ color: '#adb5bd' }} />
                                                     </InputGroup.Text>
                                                     <Form.Control
                                                         type="email"
                                                         placeholder="Email Address"
-                                                        style={{ borderLeft: 'none', fontSize: '0.88rem' }}
+                                                        className="border-start-0 py-2 ps-1"
+                                                        style={{ fontSize: '0.9rem', minHeight: '48px' }}
                                                         required
                                                     />
                                                 </InputGroup>
@@ -145,14 +153,19 @@ export default function ContactPage() {
 
                                         {/* Phone Number Field */}
                                         <Form.Group className="mb-3">
-                                            <InputGroup>
-                                                <InputGroup.Text style={{ backgroundColor: '#fff', borderRight: 'none', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.88rem', color: '#495057' }}>
-                                                    <span>🇮🇳 +91</span>
+                                            <InputGroup className="contact-input-group rounded-3 overflow-hidden">
+                                                <InputGroup.Text 
+                                                    className="bg-white border-end-0 px-3 d-flex align-items-center gap-1"
+                                                    style={{ minHeight: '48px', color: '#495057', fontSize: '0.9rem' }}
+                                                >
+                                                    <span>🇮🇳</span>
+                                                    <span className="fw-medium">+91</span>
                                                 </InputGroup.Text>
                                                 <Form.Control
                                                     type="tel"
                                                     placeholder="Phone Number"
-                                                    style={{ fontSize: '0.88rem' }}
+                                                    className="border-start-0 py-2 ps-1"
+                                                    style={{ fontSize: '0.9rem', minHeight: '48px' }}
                                                     required
                                                 />
                                             </InputGroup>
@@ -160,15 +173,18 @@ export default function ContactPage() {
 
                                         {/* Message Textarea */}
                                         <Form.Group className="mb-4">
-                                            <InputGroup>
-                                                <InputGroup.Text style={{ backgroundColor: '#fff', borderRight: 'none', color: '#adb5bd', alignItems: 'flex-start', paddingTop: '12px' }}>
-                                                    <FaPen size={14} />
+                                            <InputGroup className="contact-input-group rounded-3 overflow-hidden align-items-stretch">
+                                                <InputGroup.Text 
+                                                    className="bg-white border-end-0 text-muted px-3 align-items-start pt-3"
+                                                >
+                                                    <FaPen size={14} style={{ color: '#adb5bd' }} />
                                                 </InputGroup.Text>
                                                 <Form.Control
                                                     as="textarea"
                                                     rows={5}
                                                     placeholder="Your Message"
-                                                    style={{ borderLeft: 'none', fontSize: '0.88rem' }}
+                                                    className="border-start-0 py-2 ps-1"
+                                                    style={{ fontSize: '0.9rem' }}
                                                     required
                                                 />
                                             </InputGroup>
@@ -193,7 +209,7 @@ export default function ContactPage() {
                                         {/* Submit Button */}
                                         <Button
                                             type="submit"
-                                            className="w-100 py-3 text-white rounded-1 d-flex align-items-center justify-content-center gap-2"
+                                            className="w-100 py-3 text-white rounded-3 d-flex align-items-center justify-content-center gap-2 shadow-sm"
                                             style={{
                                                 backgroundColor: '#114934',
                                                 border: 'none',
@@ -392,12 +408,32 @@ export default function ContactPage() {
 
                 </Container>
 
-                {/* Custom Responsive styling rules */}
-                <style jsx>{`
+                {/* Custom Responsive and Form styling rules */}
+                <style jsx global>{`
                 @media (min-width: 768px) {
                     .border-end-md {
                         border-right: 1.5px solid rgba(197, 160, 89, 0.25);
                     }
+                }
+                .contact-input-group {
+                    border: 1px solid #dee2e6;
+                    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+                }
+                .contact-input-group:focus-within {
+                    border-color: #114934;
+                    box-shadow: 0 0 0 3px rgba(17, 73, 52, 0.12);
+                }
+                .contact-input-group .input-group-text,
+                .contact-input-group .form-control {
+                    border: none !important;
+                    box-shadow: none !important;
+                }
+                .contact-input-group .input-group-text {
+                    background-color: #ffffff !important;
+                }
+                .contact-input-group .form-control:focus {
+                    background-color: #ffffff !important;
+                    box-shadow: none !important;
                 }
             `}</style>
             </div>

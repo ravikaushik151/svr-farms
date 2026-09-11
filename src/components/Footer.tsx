@@ -1,6 +1,6 @@
 'use client';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaArrowRight, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
 import { useState, MouseEvent } from 'react';
 import { PhoneInput } from 'react-international-phone';
@@ -118,33 +118,33 @@ export default function Footer() {
                             <h5 className="fw-bold mb-4 ">Quick Links</h5>
                             <ul className="list-unstyled footer-links">
                                 <li className="mb-3">
-                                    <Link href="/" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all  justify-content-md-start justify-content-center">
-                                        <FaArrowRight size={10} className="md-md-2 me-2 text-warm-white" /> Home
+                                    <Link href="/" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
+                                        Home
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/about" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all  justify-content-md-start justify-content-center">
-                                        <FaArrowRight size={10} className="md-md-2 me-2 text-warm-white" /> About Us
+                                    <Link href="/about" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
+                                        About Us
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/tamara" className="text-warning text-decoration-none d-flex align-items-center hover-sanjeevani transition-all  justify-content-md-start justify-content-center fw-semibold">
-                                        <FaArrowRight size={10} className="md-md-2 me-2 text-warning" /> Tamara Valley ⭐
+                                    <Link href="/tamara" className="text-warning text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center fw-semibold">
+                                        Tamara Valley ⭐
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/projects" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all  justify-content-md-start justify-content-center">
-                                        <FaArrowRight size={10} className="md-md-2 me-2 text-warm-white" /> Projects
+                                    <Link href="/projects" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
+                                        Projects
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/location-advantages" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all  justify-content-md-start justify-content-center">
-                                        <FaArrowRight size={10} className="md-md-2 me-2 text-warm-white" /> Location Advantages
+                                    <Link href="/location-advantages" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
+                                        Location Advantages
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/blogs" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all  justify-content-md-start justify-content-center">
-                                        <FaArrowRight size={10} className="md-md-2 me-2 text-warm-white" /> Blogs
+                                    <Link href="/blogs" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
+                                        Blogs
                                     </Link>
                                 </li>
                             </ul>
@@ -153,30 +153,30 @@ export default function Footer() {
                         {/* Column 3: Utility Links */}
                         <Col lg={2} md={6} className='text-md-start text-center'>
                             <h5 className="fw-bold mb-4">Support</h5>
-                            <ul className="list-unstyled footer-links text-md-start text-center ">
+                            <ul className="list-unstyled footer-links text-md-start text-center">
                                 <li className="mb-3">
-                                    <Link href="/contact" className="text-white text-decoration-none d-flex align-items-center  justify-content-md-start justify-content-center hover-sanjeevani transition-all">
-                                        <FaArrowRight size={10} className="md-md-2 me-2 text-warm-white" /> Contact Us
+                                    <Link href="/contact" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
+                                        Contact Us
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/faq" className="text-white text-decoration-none d-flex align-items-center  justify-content-md-start justify-content-center hover-sanjeevani transition-all">
-                                        <FaArrowRight size={10} className="md-md-2 me-2 text-warm-white" /> FAQ
+                                    <Link href="/faq" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
+                                        FAQ
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/testimonials" className="text-white text-decoration-none d-flex align-items-center  justify-content-md-start justify-content-center hover-sanjeevani transition-all">
-                                        <FaArrowRight size={10} className="md-md-2 me-2 text-warm-white" /> Testimonials
+                                    <Link href="/testimonials" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
+                                        Testimonials
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/careers" className="text-white text-decoration-none d-flex align-items-center  justify-content-md-start justify-content-center hover-sanjeevani transition-all">
-                                        <FaArrowRight size={10} className="md-md-2 me-2 text-warm-white" /> Careers
+                                    <Link href="/careers" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
+                                        Careers
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/privacy-policy" className="text-white text-decoration-none d-flex align-items-center  justify-content-md-start justify-content-center hover-sanjeevani transition-all">
-                                        <FaArrowRight size={10} className="md-md-2 me-2 text-warm-white" /> Privacy Policy
+                                    <Link href="/privacy-policy" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
+                                        Privacy Policy
                                     </Link>
                                 </li>
                             </ul>

@@ -237,18 +237,33 @@ body {
   position: relative;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link[aria-current="page"] {
+.navbar-nav .nav-link:not(.tamara-nav-btn):hover,
+.navbar-nav .nav-link:not(.tamara-nav-btn).active,
+.navbar-nav .nav-link:not(.tamara-nav-btn)[aria-current="page"] {
   color: #c5a059 !important;
 }
 
-.navbar-nav .nav-link.active:not(.tamara-nav-btn):not(.contact-nav-btn) {
+.navbar-nav .nav-link.tamara-nav-btn,
+.navbar-nav .nav-link.tamara-nav-btn:hover,
+.navbar-nav .nav-link.tamara-nav-btn:focus,
+.navbar-nav .nav-link.tamara-nav-btn:active,
+.navbar-nav .nav-link.tamara-nav-btn.active {
+  color: #114934 !important;
+  background-color: #c5a059 !important;
+}
+
+.navbar-nav .nav-link.tamara-nav-btn:hover,
+.navbar-nav .nav-link.tamara-nav-btn:focus {
+  background-color: #d8b268 !important;
+  color: #0b2e21 !important;
+}
+
+.navbar-nav .nav-link.active:not(.tamara-nav-btn) {
   color: #c5a059 !important;
   font-weight: 700 !important;
 }
 
-.navbar-nav .nav-link.active:not(.tamara-nav-btn):not(.contact-nav-btn)::after {
+.navbar-nav .nav-link.active:not(.tamara-nav-btn)::after {
   content: '';
   position: absolute;
   bottom: 0px;
@@ -287,7 +302,14 @@ body {
   letter-spacing: 1px;
 }
 .modal-title {color:#114934 !important;font-weight: bold !important;font-size: 1.25em !important;}
-.form-control {margin-bottom: 15px  !important; }
+
+/* Input Group and Form Control Consistency */
+.input-group > .form-control,
+.input-group > .form-select,
+.input-group > .input-group-text {
+  margin-bottom: 0 !important;
+}
+
 .about-img {
   width: 100%;
   height: auto;
