@@ -71,7 +71,7 @@ export default function PrivacyPolicy() {
 
                                     <div>
                                         <h5 className="fw-bold text-dark fs-6 mb-1">10. Contact Us</h5>
-                                        <p className="mb-0">If you have questions, concerns, or requests related to your personal information or this Privacy Policy, please contact us at <span className="fw-semibold text-sanjeevani">+91 96887 77793</span> or email <span className="fw-semibold text-sanjeevani">info@littleengland.in</span>.</p>
+                                        <p className="mb-0">If you have questions, concerns, or requests related to your personal information or this Privacy Policy, please contact us at <span className="fw-semibold text-sanjeevani">+91 96867 77793</span> or email <span className="fw-semibold text-sanjeevani">info@littleengland.com</span>.</p>
                                     </div>
 
                                     <div>

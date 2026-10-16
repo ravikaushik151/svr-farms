@@ -235,9 +235,9 @@ export default function NewProjectSection() {
                                     >
                                         <div>
                                             <span className="fw-bold" style={{ fontSize: '1.05rem', color: '#114934' }}>
-                                                ₹79.9L*
+                                                ₹79.9 Lakhs*
                                             </span>
-                                            <span className="text-muted fw-semibold ms-1" style={{ fontSize: '0.78rem' }}>/ Acre</span>
+                                            <span className="text-muted fw-semibold ms-1" style={{ fontSize: '0.78rem' }}>per quarter acre</span>
                                         </div>
                                         <span
                                             className="badge px-2 py-0.5 rounded text-uppercase fw-bold ms-1"

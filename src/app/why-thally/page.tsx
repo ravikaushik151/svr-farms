@@ -191,9 +191,7 @@ export default function WhyThallyPage() {
                             </p>
                             <div className="d-flex justify-content-center gap-3 align-items-center flex-wrap">
                                 <span className="fw-bold">Contact Little England:</span>
-                                <a href="tel:+919688777793" className="text-decoration-none text-sanjeevani fw-bold">+91 96887 77793</a>
-                                <span className="text-muted mx-1">/</span>
-                                <a href="tel:+919688777793" className="text-decoration-none text-sanjeevani fw-bold">+91 96887 77793</a>
+                                <a href="tel:+919686777793" className="text-decoration-none text-sanjeevani fw-bold">+91 96867 77793</a>
                             </div>
                         </Col>
 

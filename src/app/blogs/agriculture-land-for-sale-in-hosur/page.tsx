@@ -73,7 +73,7 @@ export default function BlogPage() {
                                             <h3><b>Ready to Invest?</b></h3>
                                             <p><span style={{ fontWeight: 400 }}>Explore premium </span><b>agriculture land for sale in Hosur</b><span style={{ fontWeight: 400 }}> with Little England Farms. Contact us today to schedule a site visit and begin your farmland investment journey!</span></p>
                                             <p><a href="https://littleengland.cm/contact-us"><b>Contact Us</b></a><span style={{ fontWeight: 400 }}> | </span><b>Explore Managed Farmlands | Explore <strong>mango farm for sale in Hosur</strong></b></p>
-                                            <p><b>Call Little England Farms at 9688777793&nbsp;for expert guidance and site visits today for&nbsp;<strong>mango farm for sale in Hosur</strong><br />
+                                            <p><b>Call Little England Farms at 96867 77793&nbsp;for expert guidance and site visits today for&nbsp;<strong>mango farm for sale in Hosur</strong><br />
                                             </b></p>
                                         </div>
 

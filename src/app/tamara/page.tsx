@@ -365,7 +365,7 @@ export default function TamaraPage() {
                                                         popup={true}
                                                         buttonClassName='btn btn-outline-primary px-4 py-2 '
                                                         formInputClass='py-2 mb-0 form-control '
-                                                        buttonText="On Request*"
+                                                        buttonText="₹79.9 Lakhs*"
 
 
                                                     />

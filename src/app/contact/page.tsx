@@ -284,7 +284,7 @@ export default function ContactPage() {
                                             <div className="text-start">
                                                 <h6 className="fw-bold mb-1" style={{ color: '#c5a059', fontSize: '0.88rem' }}>Call Us</h6>
                                                 <p className="text-white-50 mb-0 small" style={{ lineHeight: '1.4' }}>
-                                                    <a href="tel:+919688777793" className="text-decoration-none text-white-50">+91 96887 77793</a>
+                                                    <a href="tel:+919686777793" className="text-decoration-none text-white-50">+91 96867 77793</a>
                                                 </p>
                                             </div>
                                         </div>
@@ -297,7 +297,7 @@ export default function ContactPage() {
                                             <div className="text-start">
                                                 <h6 className="fw-bold mb-1" style={{ color: '#c5a059', fontSize: '0.88rem' }}>Email Us</h6>
                                                 <p className="text-white-50 mb-0 small">
-                                                    <a href="mailto:info@littleengland.cm" className="text-decoration-none text-white-50">info@littleengland.cm</a>
+                                                    <a href="mailto:info@littleengland.com" className="text-decoration-none text-white-50">info@littleengland.com</a>
                                                 </p>
                                             </div>
                                         </div>

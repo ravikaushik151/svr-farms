@@ -73,7 +73,7 @@ export default function BlogPage() {
                                             <p>&nbsp;</p>
                                             <p>Investing in a <strong>mango farm for sale in Hosur</strong> is a choice that offers both financial rewards and a tranquil lifestyle. With expert management services, you can enjoy the benefits of owning farmland without the day-to-day hassles. Experience the joy of sustainable farming and create a legacy with Little England Farms.</p>
                                             <p><a href="https://littleengland.cm/contact-us">Contact Little England Farms today</a> for a site visit and start your green investment journey!</p>
-                                            <p><b>Call Little England Farms at 9688777793</b> for expert guidance and site visits today for <strong>mango farm for sale in Hosur</strong></p>
+                                            <p><b>Call Little England Farms at 96867 77793</b> for expert guidance and site visits today for <strong>mango farm for sale in Hosur</strong></p>
                                             <p><b>Secure your future—invest in Bangalore land today!</b></p>
                                         </div>
 

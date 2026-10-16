@@ -194,12 +194,12 @@ export default function Footer() {
                             <div className="d-flex mb-3  justify-content-md-start justify-content-center">
                                 <div className="text-sanjeevani md-md-3 me-2 mt-1"><FaPhoneAlt size={18} className="text-warm-white" /></div>
                                 <div>
-                                    <p className="text-white mb-0"><a href="tel:+919688777793" className="text-white text-decoration-none">+91 96887 77793</a></p>
+                                    <p className="text-white mb-0"><a href="tel:+919686777793" className="text-white text-decoration-none">+91 96867 77793</a></p>
                                 </div>
                             </div>
                             <div className="d-flex justify-content-md-start justify-content-center">
                                 <div className="text-sanjeevani md-md-3 me-2 mt-1"><FaEnvelope size={18} className="text-warm-white" /></div>
-                                <p className="text-white mb-0"><a href="mailto:info@littleengland.cm" className="text-white text-decoration-none">info@littleengland.cm</a></p>
+                                <p className="text-white mb-0"><a href="mailto:info@littleengland.com" className="text-white text-decoration-none">info@littleengland.com</a></p>
                             </div>
                         </Col>
                     </Row>
@@ -224,7 +224,7 @@ export default function Footer() {
                 <div className="floating-action-cluster">
                     {/* Call Button */}
                     <a
-                        href="tel:+919688777793"
+                        href="tel:+919686777793"
                         className="d-flex align-items-center justify-content-center rounded-circle text-white floating-btn-call"
                         title="Call Us"
                     >
@@ -233,7 +233,7 @@ export default function Footer() {
 
                     {/* WhatsApp Button */}
                     <a
-                        href="https://wa.me/919688777793"
+                        href="https://wa.me/919686777793"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="d-flex align-items-center justify-content-center rounded-circle text-white floating-btn-whatsapp"

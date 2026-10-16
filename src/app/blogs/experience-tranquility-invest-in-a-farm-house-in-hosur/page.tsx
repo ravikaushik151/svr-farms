@@ -67,7 +67,7 @@ export default function BlogPage() {
                                             <p>Managed farmlands provide professional maintenance and agricultural services, allowing you to enjoy farm ownership without the hassle.</p>
                                             <p><strong>Why choose Little England Farms for your farm house investment in Hosur?</strong></p>
                                             <p>Little England Farms offers premium managed farmland communities with excellent amenities, providing both lifestyle and financial benefits.</p>
-                                            <p><span style={{ fontWeight: 400 }}> </span><b>Call Little England Farms at 9688777793</b><span style={{ fontWeight: 400 }}> for expert guidance and site visits today!</span></p>
+                                            <p><span style={{ fontWeight: 400 }}> </span><b>Call Little England Farms at 96867 77793</b><span style={{ fontWeight: 400 }}> for expert guidance and site visits today!</span></p>
                                             <p><b>Secure your future—invest in Bangalore land today!</b></p>
                                         </div>
 
