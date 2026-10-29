@@ -1,30 +1,27 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './bootstrap-custom.min.css';
 import './globals.css';
 import type { Metadata, Viewport } from 'next';
 import { Inter, Jost, Playfair_Display } from 'next/font/google';
 import Script from 'next/script';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import BootstrapClient from '@/components/BootstrapClient';
 
 const inter = Inter({
     subsets: ['latin'],
-    weight: ['300', '400', '500', '600', '700', '800'],
     variable: '--font-sans',
     display: 'swap',
 });
 
 const jost = Jost({
     subsets: ['latin'],
-    weight: ['400', '500', '600', '700'],
     variable: '--font-jost',
     display: 'swap',
 });
 
 const playfair = Playfair_Display({
     subsets: ['latin'],
-    weight: ['400', '600', '700'],
-    style: ['normal', 'italic'],
+    weight: ['400', '700'],
+    style: ['normal'],
     variable: '--font-serif',
     display: 'swap',
 });
@@ -107,7 +104,7 @@ const jsonLd = {
             '@id': 'https://svr-farms.vercel.app/#organization',
             name: 'SVR Farms',
             url: 'https://svr-farms.vercel.app',
-            logo: 'https://svr-farms.vercel.app/LE_Web%20Logo.png',
+            logo: 'https://svr-farms.vercel.app/LE_Web_Logo.png',
             image: 'https://svr-farms.vercel.app/banner-1.webp',
             description: 'Premium managed farmland and farm plots developer near Bangalore, presenting Tamara Valley in Thally.',
             telephone: '+91-9686777793',
@@ -152,7 +149,7 @@ const jsonLd = {
     ],
 };
 
-const gaId = process.env.NEXT_PUBLIC_GA_ID || 'G-SVRFARMS01';
+const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
 export default function RootLayout({
     children,
@@ -166,7 +163,7 @@ export default function RootLayout({
                 <link
                     rel="preload"
                     as="image"
-                    href="/Homepage_banner Img1_Mob.webp"
+                    href="/Homepage_banner_Img1_Mob.webp"
                     media="(max-width: 767.98px)"
                     fetchPriority="high"
                 />
@@ -185,7 +182,6 @@ export default function RootLayout({
                 />
             </head>
             <body className="font-sans">
-                <BootstrapClient />
                 <div className="d-flex flex-column min-vh-100">
                     <Header />
                     <main className="flex-grow-1">

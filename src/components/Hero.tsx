@@ -1,67 +1,91 @@
 'use client';
 import { useState } from 'react';
-import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import Link from 'next/link';
 
 export default function Hero() {
-    const [index, setIndex] = useState(0);
+    const [activeSlide, setActiveSlide] = useState(0);
 
-    const handleSelect = (selectedIndex: number) => {
-        setIndex(selectedIndex);
-    };
+    const slides = [
+        {
+            mobileImg: '/Homepage_banner_Img1_Mob.webp',
+            desktopImg: '/banner-1.webp',
+            alt: 'Managed Organic Farmland Near Bengaluru - SVR Farms Tamara Valley',
+            eager: true,
+        },
+        {
+            mobileImg: '/Homepage_banner_Img2_Mob.webp',
+            desktopImg: '/Home_page_updated_Banner.webp',
+            alt: 'Luxury Farmland Plots in Thalli Near Bangalore - SVR Farms',
+            eager: false,
+        }
+    ];
 
     return (
-        <div
-            className="position-relative w-100 overflow-hidden"
-            style={{ minHeight: '100svh' }}
-        >
-            {/* Background Carousel */}
+        <div className="position-relative w-100 overflow-hidden" style={{ minHeight: '100svh' }}>
+            {/* Background Slides */}
             <div className="position-absolute top-0 start-0 w-100 h-100" style={{ zIndex: 1 }}>
-                <Carousel 
-                    activeIndex={index}
-                    onSelect={handleSelect}
-                    fade 
-                    controls={true} 
-                    indicators={true} 
-                    interval={4500} 
-                    pause="hover" 
-                    className="w-100 h-100 hero-carousel"
-                >
-                    <Carousel.Item className="w-100 h-100">
-                        <div className="position-relative w-100 h-100" style={{ minHeight: '100svh' }}>
-                            <picture>
-                                <source media="(max-width: 767.98px)" srcSet="/Homepage_banner Img1_Mob.webp" />
-                                <img
-                                    src="/banner-1.webp"
-                                    alt="Managed Organic Farmland Near Bengaluru - SVR Farms Tamara Valley"
-                                    fetchPriority="high"
-                                    loading="eager"
-                                    decoding="async"
-                                    className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-                                    style={{ minHeight: '100svh' }}
-                                />
-                            </picture>
-                            <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25" style={{ zIndex: 1 }}></div>
-                        </div>
-                    </Carousel.Item>
+                {slides.map((slide, idx) => (
+                    <div
+                        key={idx}
+                        className="position-absolute top-0 start-0 w-100 h-100"
+                        style={{
+                            opacity: activeSlide === idx ? 1 : 0,
+                            visibility: activeSlide === idx ? 'visible' : 'hidden',
+                            transition: 'opacity 0.6s ease-in-out, visibility 0.6s ease-in-out',
+                            height: '100svh',
+                            minHeight: '100svh'
+                        }}
+                    >
+                        <picture className="w-100 h-100">
+                            <source media="(min-width: 768px)" srcSet={slide.desktopImg} width={1920} height={1080} />
+                            <img
+                                src={slide.mobileImg}
+                                alt={slide.alt}
+                                fetchPriority={slide.eager ? 'high' : 'auto'}
+                                loading={slide.eager ? 'eager' : 'lazy'}
+                                decoding="async"
+                                width={slide.eager ? 640 : 1920}
+                                height={slide.eager ? 1140 : 1080}
+                                className="w-100 h-100 object-fit-cover"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
+                        </picture>
+                        <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25" style={{ zIndex: 1 }} />
+                    </div>
+                ))}
 
-                    <Carousel.Item className="w-100 h-100">
-                        <div className="position-relative w-100 h-100" style={{ minHeight: '100svh' }}>
-                            <picture>
-                                <source media="(max-width: 767.98px)" srcSet="/Homepage_banner Img2_Mob.webp" />
-                                <img
-                                    src="/Home page_updated_Banner.webp"
-                                    alt="Luxury Farmland Plots in Thalli Near Bangalore - SVR Farms"
-                                    loading="lazy"
-                                    decoding="async"
-                                    className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-                                    style={{ minHeight: '100svh' }}
-                                />
-                            </picture>
-                            <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25" style={{ zIndex: 1 }}></div>
-                        </div>
-                    </Carousel.Item>
-                </Carousel>
+                {/* Slider Controls (Next / Prev) */}
+                <button
+                    type="button"
+                    className="carousel-control-prev"
+                    style={{ zIndex: 5, background: 'none', border: 'none', opacity: 0.8 }}
+                    onClick={() => setActiveSlide(prev => (prev === 0 ? 1 : 0))}
+                    aria-label="Previous Slide"
+                >
+                    <span className="carousel-control-prev-icon" aria-hidden="true" />
+                </button>
+                <button
+                    type="button"
+                    className="carousel-control-next"
+                    style={{ zIndex: 5, background: 'none', border: 'none', opacity: 0.8 }}
+                    onClick={() => setActiveSlide(prev => (prev === 0 ? 1 : 0))}
+                    aria-label="Next Slide"
+                >
+                    <span className="carousel-control-next-icon" aria-hidden="true" />
+                </button>
+
+                {/* Indicators */}
+                <div className="carousel-indicators" style={{ zIndex: 5, marginBottom: '1.5rem' }}>
+                    {slides.map((_, idx) => (
+                        <button
+                            key={idx}
+                            type="button"
+                            className={activeSlide === idx ? 'active' : ''}
+                            aria-label={`Slide ${idx + 1}`}
+                            onClick={() => setActiveSlide(idx)}
+                        />
+                    ))}
+                </div>
             </div>
 
             {/* Static Content Overlay */}
@@ -74,14 +98,15 @@ export default function Hero() {
                     paddingBottom: '3rem',
                 }}
             >
-                <Container
-                    className="position-relative text-center text-white px-3"
+                <div
+                    className="container position-relative text-center text-white px-3"
                     style={{ pointerEvents: 'none', maxWidth: '960px' }}
                 >
-                    <Row className="justify-content-center" style={{ pointerEvents: 'none' }}>
-                        <Col lg={10} style={{ pointerEvents: 'none' }}>
+                    <div className="row justify-content-center" style={{ pointerEvents: 'none' }}>
+                        <div className="col-lg-10" style={{ pointerEvents: 'none' }}>
                             <div className="mb-3" style={{ pointerEvents: 'auto' }}>
                                 <Link
+                                    prefetch={false}
                                     href="/tamara"
                                     className="d-inline-flex flex-wrap align-items-center justify-content-center gap-1 gap-md-2 text-decoration-none px-3 py-2 rounded-pill shadow-sm border border-warning"
                                     style={{
@@ -112,73 +137,24 @@ export default function Hero() {
                             </p>
                             <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-2 gap-md-3" style={{ pointerEvents: 'auto' }}>
                                 <Link
+                                    prefetch={false}
                                     href="/tamara"
                                     className="btn px-4 py-2.5 py-md-3 fw-bold shadow-sm w-100 w-sm-auto text-nowrap"
                                     style={{ backgroundColor: '#c5a059', color: '#114934', border: 'none' }}
                                 >
                                     Explore Tamara Valley ⭐
                                 </Link>
-                                <Link href="/contact" className="btn btn-primary px-4 py-2.5 py-md-3 w-100 w-sm-auto text-nowrap">
+                                <Link prefetch={false} href="/contact" className="btn btn-primary px-4 py-2.5 py-md-3 w-100 w-sm-auto text-nowrap">
                                     Book a Site Visit
                                 </Link>
                                 <a href="#projects" className="btn btn-outline-light px-4 py-2.5 py-md-3 w-100 w-sm-auto text-nowrap">
                                     See All Projects
                                 </a>
                             </div>
-                        </Col>
-                    </Row>
-                </Container>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <style jsx global>{`
-                .hero-carousel .carousel-control-prev,
-                .hero-carousel .carousel-control-next {
-                    z-index: 10 !important;
-                    pointer-events: auto !important;
-                    width: 60px;
-                    opacity: 0.75;
-                    transition: opacity 0.2s ease, transform 0.2s ease;
-                }
-                .hero-carousel .carousel-control-prev:hover,
-                .hero-carousel .carousel-control-next:hover {
-                    opacity: 1;
-                }
-                .hero-carousel .carousel-control-prev-icon,
-                .hero-carousel .carousel-control-next-icon {
-                    width: 2.2rem;
-                    height: 2.2rem;
-                    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
-                }
-                .hero-carousel .carousel-indicators {
-                    z-index: 10 !important;
-                    pointer-events: auto !important;
-                    bottom: 24px;
-                }
-                .hero-carousel .carousel-indicators [data-bs-target] {
-                    width: 32px;
-                    height: 4px;
-                    border-radius: 2px;
-                    background-color: #ffffff;
-                    opacity: 0.6;
-                    transition: all 0.3s ease;
-                }
-                .hero-carousel .carousel-indicators .active {
-                    opacity: 1;
-                    background-color: #c5a059;
-                    width: 44px;
-                }
-                @media (max-width: 767.98px) {
-                    .hero-carousel .carousel-control-prev,
-                    .hero-carousel .carousel-control-next {
-                        width: 46px;
-                    }
-                    .hero-carousel .carousel-control-prev-icon,
-                    .hero-carousel .carousel-control-next-icon {
-                        width: 1.8rem;
-                        height: 1.8rem;
-                    }
-                }
-            `}</style>
         </div>
     );
-}
+}

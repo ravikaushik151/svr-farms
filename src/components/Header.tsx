@@ -40,7 +40,7 @@ export default function Header() {
                     className="fw-bold text-white d-flex align-items-center me-2 me-xl-4 py-1"
                 >
                     <Image 
-                        src="/LE_Web Logo.png" 
+                        src="/LE_Web_Logo.png" 
                         alt="SVR Farms - Little England Managed Farmland" 
                         width={240} 
                         height={46} 

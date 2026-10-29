@@ -1,6 +1,3 @@
-'use client';
-
-import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaMapMarkedAlt, FaFileSignature, FaShieldAlt } from 'react-icons/fa';
 import Image from 'next/image';
 
@@ -27,11 +24,11 @@ export default function AboutOverview() {
         <section
             className="py-5 position-relative"
             style={{
-                backgroundColor: '#fcfbf7', // Premium warm cream background
+                backgroundColor: '#fcfbf7',
                 overflow: 'hidden'
             }}
         >
-            <Container className="py-lg-4 position-relative">
+            <div className="container py-lg-4 position-relative">
                 {/* 1. Centered Section Title Header */}
                 <div className="text-center mb-4 mb-md-5 section-header-wrap">
                     <div className="d-flex justify-content-center align-items-center section-subtitle-wrap gap-2 mb-2">
@@ -64,10 +61,10 @@ export default function AboutOverview() {
                 </div>
 
                 {/* 2. Content Row: Left Scenic Image Card & Right Feature Cards */}
-                <Row className="gy-4 align-items-stretch">
+                <div className="row gy-4 align-items-stretch">
 
                     {/* Left Column: Scenic Landscaping Frame */}
-                    <Col lg={6} className="d-flex">
+                    <div className="col-lg-6 d-flex">
                         <div
                             className="position-relative rounded-4 overflow-hidden shadow-sm about-scenic-img w-100 h-100"
                             style={{
@@ -84,15 +81,15 @@ export default function AboutOverview() {
                                 style={{ objectFit: 'cover', objectPosition: 'center' }}
                             />
                         </div>
-                    </Col>
+                    </div>
 
                     {/* Right Column: Stacked Premium Feature Cards */}
-                    <Col lg={6}>
+                    <div className="col-lg-6">
                         <div className="d-flex flex-column gap-3 gap-md-4">
                             {features.map((feat, index) => (
-                                <Card
+                                <div
                                     key={index}
-                                    className="border-0 shadow-sm rounded-4 overflow-hidden bg-white"
+                                    className="card border-0 shadow-sm rounded-4 overflow-hidden bg-white"
                                     style={{
                                         boxShadow: '0 4px 20px rgba(0, 0, 0, 0.04)',
                                         transition: 'all 0.3s ease'
@@ -151,42 +148,13 @@ export default function AboutOverview() {
                                         </div>
 
                                     </div>
-                                </Card>
+                                </div>
                             ))}
                         </div>
-                    </Col>
+                    </div>
 
-                </Row>
-            </Container>
-
-            <style jsx>{`
-                .about-scenic-img {
-                    min-height: 280px;
-                }
-                .feature-icon-block {
-                    width: 85px;
-                    min-width: 85px;
-                }
-                .feature-icon-ring {
-                    width: 48px;
-                    height: 48px;
-                }
-                @media (min-width: 768px) {
-                    .feature-icon-block {
-                        width: 125px;
-                        min-width: 125px;
-                    }
-                    .feature-icon-ring {
-                        width: 64px;
-                        height: 64px;
-                    }
-                }
-                @media (min-width: 992px) {
-                    .about-scenic-img {
-                        min-height: 100%;
-                    }
-                }
-            `}</style>
+                </div>
+            </div>
         </section>
     );
 }

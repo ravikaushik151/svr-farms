@@ -127,28 +127,6 @@ export default function TestimonialsSection() {
                     </Col>
                 </Row>
             </Container>
-
-            {/* Custom Styles for Premium Carousel Indicators */}
-            <style jsx global>{`
-                .testimonial-carousel .carousel-indicators {
-                    margin-bottom: 0;
-                    bottom: 0px;
-                }
-                .testimonial-carousel .carousel-indicators [data-bs-target] {
-                    width: 8px;
-                    height: 8px;
-                    border-radius: 50%;
-                    background-color: #adb5bd;
-                    transition: all 0.3s ease;
-                    border: none;
-                    margin: 0 4px;
-                }
-                .testimonial-carousel .carousel-indicators .active {
-                    width: 24px;
-                    border-radius: 10px;
-                    background-color: #114934;
-                }
-            `}</style>
         </section>
     );
 }

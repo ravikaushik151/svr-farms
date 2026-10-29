@@ -3,75 +3,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
 import { useState, MouseEvent } from 'react';
-import { PhoneInput } from 'react-international-phone';
-import 'react-international-phone/style.css';
 import Image from 'next/image';
 import ContactForm from '@/components/ContactForm';
 export default function Footer() {
 
-    const floatingButtonStyles = `
-        @keyframes pulse-float {
-            0% {
-                transform: translateY(0px);
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            }
-            50% {
-                transform: translateY(-8px);
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-            }
-            100% {
-                transform: translateY(0px);
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            }
-        }
-
-        @keyframes spin-pulse {
-            0% {
-                transform: rotate(0deg) scale(1);
-            }
-            50% {
-                transform: rotate(5deg) scale(1.05);
-            }
-            100% {
-                transform: rotate(0deg) scale(1);
-            }
-        }
-
-        @keyframes glow-shine {
-            0%, 100% {
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            }
-            50% {
-                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-            }
-        }
-
-        .floating-btn-call {
-            animation: pulse-float 3s ease-in-out infinite;
-        }
-
-        .floating-btn-whatsapp {
-            animation: pulse-float 3s ease-in-out infinite;
-            animation-delay: 0.3s;
-        }
-
-        .floating-btn-call:hover {
-            animation: spin-pulse 0.6s ease-in-out;
-        }
-
-        .floating-btn-whatsapp:hover {
-            animation: spin-pulse 0.6s ease-in-out;
-        }
-
-        .text-warm-white {
-            color: #fcfbf7 !important;
-        }
-    `;
-
+    
     return (
         <>
-            <style>{floatingButtonStyles}</style>
-            <footer className="text-white mt-auto position-relative" style={{ backgroundColor: '#114934' }}>
+                        <footer className="text-white mt-auto position-relative" style={{ backgroundColor: '#114934' }}>
                 {/* Top Border Line */}
                 <div className="w-100 bg-sanjeevani" style={{ height: '4px' }}></div>
 
@@ -82,7 +21,7 @@ export default function Footer() {
                             <div className="mb-4">
                                 {/* <h3 className="fw-bold text-white mb-3 letter-spacing-1 text-md-start text-center">Little England</h3> */}
                                 <div className="d-flex justify-content-md-start justify-content-center mb-1">
-                                    <Image src="/LE_Web Logo.png" alt="SVR Farms - Little England Managed Farmland" width={300} height={80} className="mb-0 img-fluid" style={{ width: '300px', height: 'auto' }} />
+                                    <Image src="/LE_Web_Logo.png" alt="SVR Farms - Little England Managed Farmland" width={300} height={80} className="mb-0 img-fluid" style={{ width: '300px', height: 'auto' }} />
                                 </div>
                                 <p className="text-white lh-lg text-md-start text-center px-1">
                                     Premium Farm Land Developers dedicated to creating sustainable and beautiful living spaces. We blend nature with modern amenities to find your perfect managed farmland.
@@ -118,32 +57,32 @@ export default function Footer() {
                             <h5 className="fw-bold mb-4 ">Quick Links</h5>
                             <ul className="list-unstyled footer-links">
                                 <li className="mb-3">
-                                    <Link href="/" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
+                                    <Link prefetch={false} href="/" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
                                         Home
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/about" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
+                                    <Link prefetch={false} href="/about" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
                                         About Us
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/tamara" className="text-warning text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center fw-semibold">
+                                    <Link prefetch={false} href="/tamara" className="text-warning text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center fw-semibold">
                                         Tamara Valley ⭐
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/projects" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
+                                    <Link prefetch={false} href="/projects" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
                                         Projects
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/location-advantages" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
+                                    <Link prefetch={false} href="/location-advantages" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
                                         Location Advantages
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/blogs" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
+                                    <Link prefetch={false} href="/blogs" className="text-white text-decoration-none d-flex align-items-center hover-sanjeevani transition-all justify-content-md-start justify-content-center">
                                         Blogs
                                     </Link>
                                 </li>
@@ -155,27 +94,27 @@ export default function Footer() {
                             <h5 className="fw-bold mb-4">Support</h5>
                             <ul className="list-unstyled footer-links text-md-start text-center">
                                 <li className="mb-3">
-                                    <Link href="/contact" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
+                                    <Link prefetch={false} href="/contact" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
                                         Contact Us
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/faq" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
+                                    <Link prefetch={false} href="/faq" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
                                         FAQ
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/testimonials" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
+                                    <Link prefetch={false} href="/testimonials" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
                                         Testimonials
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/careers" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
+                                    <Link prefetch={false} href="/careers" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
                                         Careers
                                     </Link>
                                 </li>
                                 <li className="mb-3">
-                                    <Link href="/privacy-policy" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
+                                    <Link prefetch={false} href="/privacy-policy" className="text-white text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center hover-sanjeevani transition-all">
                                         Privacy Policy
                                     </Link>
                                 </li>

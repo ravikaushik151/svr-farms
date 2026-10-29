@@ -1,6 +1,3 @@
-'use client';
-
-import { Container, Row, Col, Card } from 'react-bootstrap';
 import {
     FaFileContract,
     FaTint,
@@ -58,14 +55,9 @@ export default function WhatManagedMeansSection() {
     return (
         <section
             className="py-5 position-relative overflow-hidden"
-            style={{
-                backgroundImage: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url("/Home_page.webp")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundAttachment: 'scroll'
-            }}
+            style={{ backgroundColor: '#faf8f2' }}
         >
-            <Container className="py-lg-5 position-relative">
+            <div className="container py-lg-5 position-relative">
 
                 {/* 1. Header Section */}
                 <div className="text-center mb-4 mb-md-5 section-header-wrap">
@@ -93,11 +85,11 @@ export default function WhatManagedMeansSection() {
                 </div>
 
                 {/* 2. Grid of 6 Advantage Cards */}
-                <Row className="g-3 g-md-4 mb-5">
+                <div className="row g-3 g-md-4 mb-5">
                     {points.map((point, index) => (
-                        <Col key={index} xs={12} sm={6} lg={4}>
-                            <Card
-                                className="border-0 shadow-sm p-3 p-sm-4 text-center rounded-4 position-relative hover-lift bg-white h-100"
+                        <div key={index} className="col-12 col-sm-6 col-lg-4">
+                            <div
+                                className="card border-0 shadow-sm p-3 p-sm-4 text-center rounded-4 position-relative hover-lift bg-white h-100"
                                 style={{
                                     transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
                                     boxShadow: '0 4px 15px rgba(0, 0, 0, 0.05)'
@@ -132,10 +124,10 @@ export default function WhatManagedMeansSection() {
                                 <p className="text-muted small lh-relaxed mb-0" style={{ fontSize: '0.86rem' }}>
                                     {point.description}
                                 </p>
-                            </Card>
-                        </Col>
+                            </div>
+                        </div>
                     ))}
-                </Row>
+                </div>
 
                 {/* 3. Horizontal Highlights Bar */}
                 <div
@@ -146,8 +138,8 @@ export default function WhatManagedMeansSection() {
                         boxShadow: '0 4px 15px rgba(0, 0, 0, 0.03)'
                     }}
                 >
-                    <Row className="gy-4 text-start justify-content-center align-items-center">
-                        <Col xs={12} sm={6} md={3} className="bar-column">
+                    <div className="row gy-4 text-start justify-content-center align-items-center">
+                        <div className="col-12 col-sm-6 col-md-3 bar-column">
                             <div className="d-flex align-items-center px-lg-3">
                                 <div className="p-2 rounded-circle me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px', backgroundColor: 'rgba(17, 73, 52, 0.08)', border: '1px solid rgba(17, 73, 52, 0.1)' }}>
                                     <FaShieldAlt size={22} style={{ color: '#114934' }} />
@@ -157,9 +149,9 @@ export default function WhatManagedMeansSection() {
                                     <p className="text-muted mb-0" style={{ fontSize: '0.75rem' }}>100% legal & transparent titles</p>
                                 </div>
                             </div>
-                        </Col>
+                        </div>
 
-                        <Col xs={12} sm={6} md={3} className="bar-column">
+                        <div className="col-12 col-sm-6 col-md-3 bar-column">
                             <div className="d-flex align-items-center px-lg-3">
                                 <div className="p-2 rounded-circle me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px', backgroundColor: 'rgba(17, 73, 52, 0.08)', border: '1px solid rgba(17, 73, 52, 0.1)' }}>
                                     <FaUsers size={22} style={{ color: '#114934' }} />
@@ -169,9 +161,9 @@ export default function WhatManagedMeansSection() {
                                     <p className="text-muted mb-0" style={{ fontSize: '0.75rem' }}>Agriculture & ops experts</p>
                                 </div>
                             </div>
-                        </Col>
+                        </div>
 
-                        <Col xs={12} sm={6} md={3} className="bar-column">
+                        <div className="col-12 col-sm-6 col-md-3 bar-column">
                             <div className="d-flex align-items-center px-lg-3">
                                 <div className="p-2 rounded-circle me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px', backgroundColor: 'rgba(17, 73, 52, 0.08)', border: '1px solid rgba(17, 73, 52, 0.1)' }}>
                                     <FaSeedling size={22} style={{ color: '#114934' }} />
@@ -181,9 +173,9 @@ export default function WhatManagedMeansSection() {
                                     <p className="text-muted mb-0" style={{ fontSize: '0.75rem' }}>Organic, eco-friendly farming</p>
                                 </div>
                             </div>
-                        </Col>
+                        </div>
 
-                        <Col xs={12} sm={6} md={3} className="bar-column border-0">
+                        <div className="col-12 col-sm-6 col-md-3 bar-column border-0">
                             <div className="d-flex align-items-center px-lg-3">
                                 <div className="p-2 rounded-circle me-3 d-flex align-items-center justify-content-center" style={{ width: '45px', height: '45px', minWidth: '45px', backgroundColor: 'rgba(17, 73, 52, 0.08)', border: '1px solid rgba(17, 73, 52, 0.1)' }}>
                                     <FaLock size={22} style={{ color: '#114934' }} />
@@ -193,8 +185,8 @@ export default function WhatManagedMeansSection() {
                                     <p className="text-muted mb-0" style={{ fontSize: '0.75rem' }}>Income & value appreciation</p>
                                 </div>
                             </div>
-                        </Col>
-                    </Row>
+                        </div>
+                    </div>
                 </div>
 
                 {/* 4. Footer Accent line & Leaf Flank */}
@@ -218,16 +210,7 @@ export default function WhatManagedMeansSection() {
                     </div>
                 </div>
 
-            </Container>
-
-            {/* Custom Responsive styling rules */}
-            <style jsx>{`
-                @media (min-width: 768px) {
-                    .bar-column {
-                        border-right: 1.5px solid rgba(197, 160, 89, 0.25);
-                    }
-                }
-            `}</style>
+            </div>
         </section>
     );
 }

@@ -1,6 +1,3 @@
-'use client';
-
-import { Container, Row, Col } from 'react-bootstrap';
 import {
     FaLeaf,
     FaSeedling,
@@ -26,7 +23,7 @@ export default function NewProjectSection() {
                 overflow: 'hidden'
             }}
         >
-            <Container className="position-relative">
+            <div className="container position-relative">
                 {/* 1. Centered Section Title Header */}
                 <div className="text-center mb-3 mb-md-3 section-header-wrap">
                     <div className="d-flex justify-content-center align-items-center section-subtitle-wrap gap-2 mb-1">
@@ -56,10 +53,10 @@ export default function NewProjectSection() {
                 </div>
 
                 {/* 2. Content Row: Left Aerial Image Card & Right Project Specs Card */}
-                <Row className="gy-3 align-items-stretch justify-content-center">
+                <div className="row gy-3 align-items-stretch justify-content-center">
 
                     {/* Left Column: Landscaping Aerial Image Card with Highlight Pills */}
-                    <Col lg={6} className="d-flex flex-column">
+                    <div className="col-lg-6 d-flex flex-column">
                         <div
                             className="position-relative rounded-4 overflow-hidden shadow-sm aerial-frame w-100 h-100 d-flex flex-column justify-content-end"
                             style={{
@@ -87,35 +84,35 @@ export default function NewProjectSection() {
                                     boxShadow: '0 4px 15px rgba(0, 0, 0, 0.15)'
                                 }}
                             >
-                                <Row className="text-center align-items-center g-1 text-white">
-                                    <Col xs={4} className="border-end border-white-50 px-1">
+                                <div className="row text-center align-items-center g-1 text-white">
+                                    <div className="col-4 border-end border-white-50 px-1">
                                         <div className="d-flex flex-column align-items-center">
                                             <FaSeedling className="mb-1" size={13} style={{ color: '#c5a059' }} />
                                             <span style={{ fontSize: 'clamp(0.58rem, 1.6vw, 0.65rem)', fontWeight: 600, letterSpacing: '0.3px', lineHeight: 1.2 }} className="text-uppercase text-white-80">Managed Farmland</span>
                                         </div>
-                                    </Col>
+                                    </div>
 
-                                    <Col xs={4} className="border-end border-white-50 px-1">
+                                    <div className="col-4 border-end border-white-50 px-1">
                                         <div className="d-flex flex-column align-items-center">
                                             <FaLock className="mb-1" size={13} style={{ color: '#c5a059' }} />
                                             <span style={{ fontSize: 'clamp(0.58rem, 1.6vw, 0.65rem)', fontWeight: 600, letterSpacing: '0.3px', lineHeight: 1.2 }} className="text-uppercase text-white-80">Gated Community</span>
                                         </div>
-                                    </Col>
+                                    </div>
 
-                                    <Col xs={4} className="px-1">
+                                    <div className="col-4 px-1">
                                         <div className="d-flex flex-column align-items-center">
                                             <FaLeaf className="mb-1" size={13} style={{ color: '#c5a059' }} />
                                             <span style={{ fontSize: 'clamp(0.58rem, 1.6vw, 0.65rem)', fontWeight: 600, letterSpacing: '0.3px', lineHeight: 1.2 }} className="text-uppercase text-white-80">Sustainable Living</span>
                                         </div>
-                                    </Col>
-                                </Row>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                    </Col>
+                    </div>
 
                     {/* Right Column: Prominent & Eye-Catching "AT A GLANCE" Information Card */}
-                    <Col lg={6} className="d-flex flex-column">
+                    <div className="col-lg-6 d-flex flex-column">
                         <div
                             className="rounded-4 bg-white position-relative overflow-hidden w-100 h-100 d-flex flex-column justify-content-between p-3 p-lg-3 px-xl-4"
                             style={{
@@ -294,7 +291,7 @@ export default function NewProjectSection() {
                             <div className="d-flex flex-column flex-sm-row gap-2 mt-2">
                                 <Link
                                     href="/tamara"
-                                    className="btn flex-grow-1 py-2 px-3 fw-bold text-center rounded-2 shadow-sm d-flex align-items-center justify-content-center gap-2"
+                                    className="btn flex-grow-1 py-2 px-3 fw-bold text-center rounded-2 shadow-sm d-flex align-items-center justify-content-center gap-2 hover-lift"
                                     style={{
                                         background: 'linear-gradient(135deg, #114934 0%, #1a6547 100%)',
                                         color: '#ffffff',
@@ -304,19 +301,13 @@ export default function NewProjectSection() {
                                         boxShadow: '0 4px 12px rgba(17, 73, 52, 0.2)',
                                         transition: 'all 0.3s ease'
                                     }}
-                                    onMouseOver={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(-2px)';
-                                    }}
-                                    onMouseOut={(e) => {
-                                        e.currentTarget.style.transform = 'translateY(0)';
-                                    }}
                                 >
                                     <span>EXPLORE TAMARA VALLEY</span>
                                     <span style={{ color: '#c5a059', fontSize: '0.95rem', fontWeight: 'bold' }}>&rarr;</span>
                                 </Link>
                                 <Link
                                     href="/contact"
-                                    className="btn py-2 px-3 fw-bold text-center rounded-2 d-flex align-items-center justify-content-center gap-2"
+                                    className="btn py-2 px-3 fw-bold text-center rounded-2 d-flex align-items-center justify-content-center gap-2 btn-book-visit hover-lift"
                                     style={{
                                         borderColor: '#c5a059',
                                         borderWidth: '1.5px',
@@ -325,16 +316,6 @@ export default function NewProjectSection() {
                                         backgroundColor: '#fdfbf7',
                                         fontSize: '0.82rem',
                                         transition: 'all 0.3s ease'
-                                    }}
-                                    onMouseOver={(e) => {
-                                        e.currentTarget.style.backgroundColor = '#c5a059';
-                                        e.currentTarget.style.color = '#ffffff';
-                                        e.currentTarget.style.transform = 'translateY(-2px)';
-                                    }}
-                                    onMouseOut={(e) => {
-                                        e.currentTarget.style.backgroundColor = '#fdfbf7';
-                                        e.currentTarget.style.color = '#114934';
-                                        e.currentTarget.style.transform = 'translateY(0)';
                                     }}
                                 >
                                     <FaCalendarAlt size={13} style={{ color: '#c5a059' }} />
@@ -357,43 +338,10 @@ export default function NewProjectSection() {
                                 </span>
                             </div>
                         </div>
-                    </Col>
+                    </div>
 
-                </Row>
-            </Container>
-
-            <style jsx>{`
-                .aerial-frame {
-                    min-height: 280px;
-                }
-                .spec-label-col {
-                    width: 135px;
-                    min-width: 135px;
-                    padding: 7px 10px;
-                }
-                .spec-value-col {
-                    padding: 7px 10px;
-                }
-                @media (min-width: 768px) {
-                    .aerial-frame {
-                        min-height: 380px;
-                    }
-                    .spec-label-col {
-                        width: 175px;
-                        min-width: 175px;
-                        padding: 7px 12px;
-                    }
-                    .spec-value-col {
-                        padding: 7px 12px;
-                    }
-                }
-                @media (min-width: 992px) {
-                    .aerial-frame {
-                        height: 100%;
-                        min-height: 100%;
-                    }
-                }
-            `}</style>
+                </div>
+            </div>
         </section>
     );
 }

@@ -1,9 +1,5 @@
-'use client';
-
-import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaMapMarkerAlt, FaCloudSun, FaIndustry, FaRoad, FaLeaf } from 'react-icons/fa';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const items = [
     {
@@ -37,7 +33,7 @@ export default function WhyThallySection() {
         <section
             className="py-5 position-relative"
             style={{
-                backgroundColor: '#fcfbf7', // Premium warm cream background
+                backgroundColor: '#fcfbf7',
                 overflow: 'hidden'
             }}
         >
@@ -49,7 +45,7 @@ export default function WhyThallySection() {
                 <FaLeaf size={140} style={{ color: '#114934' }} />
             </div>
 
-            <Container className="py-lg-4 position-relative">
+            <div className="container py-lg-4 position-relative">
 
                 {/* Top Section: Centered Title Header */}
                 <div className="text-center mb-4 mb-md-5 section-header-wrap">
@@ -82,12 +78,12 @@ export default function WhyThallySection() {
                 </div>
 
                 {/* Middle Section: 4 Interactive Cards */}
-                <Row className="g-4 mb-5">
+                <div className="row g-4 mb-5">
                     {items.map((item, index) => (
-                        <Col key={index} xs={12} sm={6} lg={3}>
+                        <div key={index} className="col-12 col-sm-6 col-lg-3">
                             <Link href="/why-thally" className="text-decoration-none h-100 d-block">
-                                <Card
-                                    className="border-0 shadow-sm text-center rounded-4 position-relative hover-lift bg-white h-100 overflow-hidden"
+                                <div
+                                    className="card border-0 shadow-sm text-center rounded-4 position-relative hover-lift bg-white h-100 overflow-hidden"
                                     style={{
                                         transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
                                         boxShadow: '0 4px 15px rgba(0, 0, 0, 0.04)',
@@ -119,7 +115,7 @@ export default function WhyThallySection() {
                                     </div>
 
                                     {/* Card Body */}
-                                    <Card.Body className="pt-5 px-3 pb-4">
+                                    <div className="card-body pt-5 px-3 pb-4">
                                         {/* Card Number */}
                                         <div
                                             className="small fw-bold mb-1"
@@ -159,12 +155,12 @@ export default function WhyThallySection() {
                                         >
                                             Know More &rarr;
                                         </div>
-                                    </Card.Body>
-                                </Card>
+                                    </div>
+                                </div>
                             </Link>
-                        </Col>
+                        </div>
                     ))}
-                </Row>
+                </div>
 
                 {/* Bottom Section: Clickable Solid Green Banner */}
                 <Link href="/why-thally" className="text-decoration-none d-block">
@@ -198,7 +194,7 @@ export default function WhyThallySection() {
                     </div>
                 </Link>
 
-            </Container>
+            </div>
         </section>
     );
 }

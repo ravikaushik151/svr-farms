@@ -1,8 +1,4 @@
-'use client';
-
-import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaUsers, FaTree, FaAward, FaMapMarkedAlt, FaHome } from 'react-icons/fa';
-import { useEffect, useState, useRef } from 'react';
 
 const stats = [
     {
@@ -42,62 +38,16 @@ const stats = [
     },
 ];
 
-function Counter({ end, duration = 2000, suffix = "" }: { end: number, duration?: number, suffix?: string }) {
-    const [count, setCount] = useState(0);
-    const countRef = useRef<HTMLSpanElement>(null);
-    const [inView, setInView] = useState(false);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setInView(true);
-                    observer.disconnect();
-                }
-            },
-            { threshold: 0.1 }
-        );
-
-        if (countRef.current) {
-            observer.observe(countRef.current);
-        }
-
-        return () => observer.disconnect();
-    }, []);
-
-    useEffect(() => {
-        if (!inView) return;
-
-        let startTime: number | null = null;
-        const step = (timestamp: number) => {
-            if (!startTime) startTime = timestamp;
-            const progress = Math.min((timestamp - startTime) / duration, 1);
-            setCount(Math.floor(progress * end));
-
-            if (progress < 1) {
-                window.requestAnimationFrame(step);
-            }
-        };
-
-        window.requestAnimationFrame(step);
-    }, [end, duration, inView]);
-
-    return <span ref={countRef}>{count}{suffix}</span>;
+function Counter({ end, suffix = "" }: { end: number, duration?: number, suffix?: string }) {
+    return <span>{end}{suffix}</span>;
 }
 
 export default function StatsSection() {
     return (
         <section
-            className="py-5 position-relative"
-            style={{
-                backgroundImage: 'linear-gradient(to bottom, #fcfbf7 60%, rgba(255, 255, 255, 0.4) 100%), url("/Home_page.webp")',
-                backgroundPosition: 'bottom center',
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover',
-                minHeight: '600px'
-            }}
+            className="py-5 position-relative stats-section-bg" style={{ minHeight: "500px" }}
         >
-            <Container fluid className="py-lg-5 position-relative">
+            <div className="container-fluid py-lg-5 position-relative">
 
                 {/* Header */}
                 <div className="text-center mb-4 mb-md-5 section-header-wrap">
@@ -121,11 +71,11 @@ export default function StatsSection() {
                 </div>
 
                 {/* Grid Cards of Stats */}
-                <Row className="g-3 g-md-4 justify-content-center">
+                <div className="row g-3 g-md-4 justify-content-center">
                     {stats.map((stat, index) => (
-                        <Col key={index} xs={6} sm={6} md={4} lg={2} className="d-flex align-items-stretch">
-                            <Card
-                                className="border-0 shadow-sm p-3 p-md-4 text-center rounded-4 position-relative hover-lift bg-white w-100 d-flex flex-column"
+                        <div key={index} className="col-6 col-sm-6 col-md-4 col-lg-2 d-flex align-items-stretch">
+                            <div
+                                className="card border-0 shadow-sm p-3 p-md-4 text-center rounded-4 position-relative hover-lift bg-white w-100 d-flex flex-column"
                                 style={{
                                     transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
                                     boxShadow: '0 4px 15px rgba(0, 0, 0, 0.04)'
@@ -176,33 +126,12 @@ export default function StatsSection() {
                                 <p className="text-muted small lh-sm lh-md-relaxed mb-0 mt-auto" style={{ fontSize: 'clamp(0.68rem, 1.8vw, 0.8rem)' }}>
                                     {stat.description}
                                 </p>
-                            </Card>
-                        </Col>
+                            </div>
+                        </div>
                     ))}
-                </Row>
+                </div>
 
-            </Container>
-
-            <style jsx>{`
-                .stat-circle {
-                    width: 52px;
-                    height: 52px;
-                    min-height: 52px;
-                }
-                :global(.stat-icon) {
-                    font-size: 20px;
-                }
-                @media (min-width: 768px) {
-                    .stat-circle {
-                        width: 72px;
-                        height: 72px;
-                        min-height: 72px;
-                    }
-                    :global(.stat-icon) {
-                        font-size: 28px;
-                    }
-                }
-            `}</style>
+            </div>
         </section>
     );
 }

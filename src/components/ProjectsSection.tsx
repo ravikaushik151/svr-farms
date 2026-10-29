@@ -331,8 +331,7 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                 {/* Explore All Projects Bottom Button (Homepage only) */}
                 {showExploreButton && (
                     <div className="text-center">
-                        <Link
-                            href="/projects"
+                        <Link prefetch={false} href="/projects"
                             className="btn text-white px-5 py-3 rounded-1 d-inline-flex align-items-center gap-3"
                             style={{
                                 backgroundColor: '#114934',

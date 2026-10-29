@@ -328,4 +328,241 @@ body {
 }
 .breadcrumb-item a:hover {
   color: #c5a059 !important;
-}
+}
+/* ==========================================================================
+   Extracted Component Styles (Eliminates runtime <style> tag injection)
+   ========================================================================== */
+.stats-section-bg {
+    background-color: #fcfbf7;
+}
+@media (min-width: 768px) {
+    .stats-section-bg {
+        background-image: linear-gradient(to bottom, #fcfbf7 60%, rgba(255, 255, 255, 0.4) 100%), url("/Home_page.webp");
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+                .hero-carousel .carousel-control-prev,
+                .hero-carousel .carousel-control-next {
+                    z-index: 10 !important;
+                    pointer-events: auto !important;
+                    width: 60px;
+                    opacity: 0.75;
+                    transition: opacity 0.2s ease, transform 0.2s ease;
+                }
+                .hero-carousel .carousel-control-prev:hover,
+                .hero-carousel .carousel-control-next:hover {
+                    opacity: 1;
+                }
+                .hero-carousel .carousel-control-prev-icon,
+                .hero-carousel .carousel-control-next-icon {
+                    width: 2.2rem;
+                    height: 2.2rem;
+                    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+                }
+                .hero-carousel .carousel-indicators {
+                    z-index: 10 !important;
+                    pointer-events: auto !important;
+                    bottom: 24px;
+                }
+                .hero-carousel .carousel-indicators [data-bs-target] {
+                    width: 32px;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: #ffffff;
+                    opacity: 0.6;
+                    transition: all 0.3s ease;
+                }
+                .hero-carousel .carousel-indicators .active {
+                    opacity: 1;
+                    background-color: #c5a059;
+                    width: 44px;
+                }
+                @media (max-width: 767.98px) {
+                    .hero-carousel .carousel-control-prev,
+                    .hero-carousel .carousel-control-next {
+                        width: 46px;
+                    }
+                    .hero-carousel .carousel-control-prev-icon,
+                    .hero-carousel .carousel-control-next-icon {
+                        width: 1.8rem;
+                        height: 1.8rem;
+                    }
+                }
+            
+
+
+        @keyframes pulse-float {
+            0% {
+                transform: translateY(0px);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            }
+            50% {
+                transform: translateY(-8px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            }
+            100% {
+                transform: translateY(0px);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        @keyframes spin-pulse {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+            50% {
+                transform: rotate(5deg) scale(1.05);
+            }
+            100% {
+                transform: rotate(0deg) scale(1);
+            }
+        }
+
+        @keyframes glow-shine {
+            0%, 100% {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            }
+            50% {
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .floating-btn-call {
+            animation: pulse-float 3s ease-in-out infinite;
+        }
+
+        .floating-btn-whatsapp {
+            animation: pulse-float 3s ease-in-out infinite;
+            animation-delay: 0.3s;
+        }
+
+        .floating-btn-call:hover {
+            animation: spin-pulse 0.6s ease-in-out;
+        }
+
+        .floating-btn-whatsapp:hover {
+            animation: spin-pulse 0.6s ease-in-out;
+        }
+
+        .text-warm-white {
+            color: #fcfbf7 !important;
+        }
+    
+
+/* Content Visibility for Instant Mobile Initial Rendering */
+.cv-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 700px;
+}
+
+/* Component-specific migrated static styles */
+/* AboutOverview */
+.about-scenic-img {
+    min-height: 280px;
+}
+.feature-icon-block {
+    width: 85px;
+    min-width: 85px;
+}
+.feature-icon-ring {
+    width: 48px;
+    height: 48px;
+}
+@media (min-width: 768px) {
+    .feature-icon-block {
+        width: 125px;
+        min-width: 125px;
+    }
+    .feature-icon-ring {
+        width: 64px;
+        height: 64px;
+    }
+}
+@media (min-width: 992px) {
+    .about-scenic-img {
+        min-height: 100%;
+    }
+}
+
+/* StatsSection */
+.stats-section-bg {
+    background-color: #fcfbf7;
+}
+@media (min-width: 768px) {
+    .stats-section-bg {
+        background-image: linear-gradient(to bottom, #fcfbf7 60%, rgba(255, 255, 255, 0.4) 100%), url("/Home_page.webp");
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.btn-book-visit {
+    transition: all 0.3s ease;
+}
+.btn-book-visit:hover {
+    background-color: #c5a059 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+.aerial-frame {
+    min-height: 280px;
+}
+.spec-label-col {
+    width: 135px;
+    min-width: 135px;
+    padding: 7px 10px;
+}
+.spec-value-col {
+    padding: 7px 10px;
+}
+@media (min-width: 768px) {
+    .aerial-frame {
+        min-height: 380px;
+    }
+    .spec-label-col {
+        width: 175px;
+        min-width: 175px;
+        padding: 7px 12px;
+    }
+    .spec-value-col {
+        padding: 7px 12px;
+    }
+}
+@media (min-width: 992px) {
+    .aerial-frame {
+        height: 100%;
+        min-height: 100%;
+    }
+}
+
+/* WhatManagedMeansSection */
+@media (min-width: 768px) {
+    .bar-column {
+        border-right: 1.5px solid rgba(197, 160, 89, 0.25);
+    }
+}
+
+/* TestimonialsSection */
+.testimonial-carousel .carousel-indicators {
+    margin-bottom: 0;
+    bottom: 0px;
+}
+.testimonial-carousel .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #adb5bd;
+    transition: all 0.3s ease;
+    border: none;
+    margin: 0 4px;
+}
+.testimonial-carousel .carousel-indicators .active {
+    width: 24px;
+    border-radius: 10px;
+    background-color: #114934;
+}
