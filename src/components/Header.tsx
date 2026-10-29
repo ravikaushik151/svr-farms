@@ -41,7 +41,7 @@ export default function Header() {
                 >
                     <Image 
                         src="/LE_Web Logo.png" 
-                        alt="Little England Logo" 
+                        alt="SVR Farms - Little England Managed Farmland" 
                         width={240} 
                         height={46} 
                         priority 

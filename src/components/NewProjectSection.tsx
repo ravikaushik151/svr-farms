@@ -71,6 +71,8 @@ export default function NewProjectSection() {
                                 src="/TAMARA-VALLEY.webp"
                                 alt="Tamara Valley sunset aerial layout view"
                                 fill
+                                sizes="(max-width: 991px) 100vw, 50vw"
+                                loading="lazy"
                                 style={{ objectFit: 'cover', objectPosition: 'center' }}
                             />
 

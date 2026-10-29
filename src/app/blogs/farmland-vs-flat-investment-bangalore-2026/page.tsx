@@ -48,8 +48,8 @@ export default function BlogPage() {
   <p>The honest answer is that for a pure investment lens in 2026, managed farmland near Bangalore wins on returns, tax efficiency, and entry price. A flat wins on liquidity and ease of financing.</p>
   <h2>How Little England Farms Makes Farmland the Smarter Choice</h2>
   <p>Little England Farms has been developing managed farmland projects in South Bangalore’s Hosur–Thalli–Denkanikottai corridor since 2009. With 15+ completed projects, 300+ investors, and 2,000+ plots sold, we have delivered documented appreciation and consistent agricultural income across multiple market cycles. Our projects — including Tamara Valley, Tapovan, and Vasudha Kalpatharu — are legally clean, DTCP-approved, and fully managed by resident farm professionals.</p>
-  <p><strong>▶<a href="https://littleengland.cm/contact-us">&nbsp; Book a Free Site Visit</a> — See the Land, Meet the Team, Get the Numbers<br />
-      ▶<a href="https://littleengland.cm/contact-us">&nbsp; </a>Review detailed project information on our<a href="https://littleengland.cm/managed-farms">&nbsp;Projects Page</a>.<br data-start={8188} data-end={8191} />▶<a href="https://littleengland.cm/contact-us">&nbsp; </a>Plan a site visit during your next India trip.<br />
+  <p><strong>▶<a href="/contact">&nbsp; Book a Free Site Visit</a> — See the Land, Meet the Team, Get the Numbers<br />
+      ▶<a href="/contact">&nbsp; </a>Review detailed project information on our<a href="/blogs/managed-farms">&nbsp;Projects Page</a>.<br data-start={8188} data-end={8191} />▶<a href="/contact">&nbsp; </a>Plan a site visit during your next India trip.<br />
     </strong><strong data-start={8557} data-end={8599}>▶ Follow Little England Farms for real stories and updates: [<a href="https://www.instagram.com/littleenglandfarms/" target="_blank" rel="noopener">Click Here</a>]</strong></p>
   <h2>Frequently Asked Questions</h2>
   <p><strong>Q: Is farmland near Bangalore a safe investment?</strong></p>

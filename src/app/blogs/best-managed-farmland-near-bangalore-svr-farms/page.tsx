@@ -34,7 +34,7 @@ export default function BlogPage() {
                                     <div className="card-text text-start mt-3 blog-details">
                                         <div>
                                             <p data-start={199} data-end={450}><strong data-start={199} data-end={280}>Looking for safe, profitable, and lifestyle-friendly managed farmland near Bangalore?</strong> You’re not alone. As city investors look for cleaner air, better ROI, and long-term security, managed farmlands are quickly becoming the hottest alternative asset class.</p>
-                                            <p data-start={452} data-end={548}>But with multiple companies offering <a href="https://littleengland.cm/is-farmland-investment-in-india-is-good-in-2025">managed farmland near Bangalore</a>, how do you choose the <em data-start={536} data-end={547}>right one</em>?</p>
+                                            <p data-start={452} data-end={548}>But with multiple companies offering <a href="/blogs/is-farmland-investment-in-india-is-good-in-2025">managed farmland near Bangalore</a>, how do you choose the <em data-start={536} data-end={547}>right one</em>?</p>
                                             <p data-start={550} data-end={834}>Let us introduce you to <strong data-start={574} data-end={587}>Little England Farms</strong> — the rising star of managed farmland investments around Hosur, Thalli, Denkanikottai and <span style={{ fontSize: 16 }}>Devarabetta</span>. Affordable, legally clear, income-generating, and ready for you to build your dream cottage — Little England Farms is redefining what modern farmland ownership means.</p>
                                             <h2 data-start={841} data-end={890}>The Rise of Managed Farmland Near Bangalore</h2>
                                             <p data-start={892} data-end={1012}>In the last 5 years, managed farmland has transformed from a niche idea to a mainstream investment category. Here’s why:</p>
@@ -44,7 +44,7 @@ export default function BlogPage() {
                                             <p data-start={1204} data-end={1267}><strong data-start={1204} data-end={1228}>Stay-and-earn models</strong> offer both lifestyle and rental income.</p>
                                             <p data-start={1269} data-end={1399}>But most companies either sell expensive plots or restrict what you can do with the land. That’s where <strong data-start={1372} data-end={1398}>Little England Farms is different</strong>.</p>
                                             <h2 data-start={1406} data-end={1462}>Little England Farms: The New Standard for Farmland Ownership</h2>
-                                            <p data-start={1464} data-end={1632}><strong data-start={1464} data-end={1477}>Little England Farms</strong> is one of the most trusted <a href="https://littleengland.cm/">managed farmland developers</a> in the Thalli-Hosur belt. Located just 9omins from Bangalore, their projects are designed for:</p>
+                                            <p data-start={1464} data-end={1632}><strong data-start={1464} data-end={1477}>Little England Farms</strong> is one of the most trusted <a href="https://svr-farms.vercel.app/">managed farmland developers</a> in the Thalli-Hosur belt. Located just 9omins from Bangalore, their projects are designed for:</p>
                                             <p data-start={1635} data-end={1656}><strong data-start={1635} data-end={1656}>Investment growth</strong></p>
                                             <p data-start={1659} data-end={1686}><strong data-start={1659} data-end={1686}>Sustainable agriculture</strong></p>
                                             <p data-start={1689} data-end={1723}><strong data-start={1689} data-end={1723}>Weekend stays and cottage life</strong></p>
@@ -106,8 +106,8 @@ export default function BlogPage() {
                                             <p data-start={5059} data-end={5096}>✅ Explore plantation + stay options</p>
                                             <p data-start={5099} data-end={5122}>✅ Talk to real buyers</p>
                                             <p data-start={5125} data-end={5153}>✅ Get complete legal clarity</p>
-                                            <p data-start={5155} data-end={5287}><strong data-start={5158} data-end={5178}>Call / WhatsApp:</strong> [<a href="https://littleengland.cm/contact-us">Link</a>]<br data-start={5192} data-end={5195} /><strong data-start={5198} data-end={5210}>Website:</strong> [<a href="https://littleengland.cm/">littleengland.cm</a>]</p>
-                                            <p data-start={7844} data-end={7955}>Book a Free site visit at Little England Farms today:&nbsp;<a href="https://littleengland.cm/contact-us">Contact Us</a>&nbsp;and also check their profile:&nbsp;<a href="https://www.instagram.com/littleenglandfarms/" target="_blank" rel="noopener">Click Here</a></p>
+                                            <p data-start={5155} data-end={5287}><strong data-start={5158} data-end={5178}>Call / WhatsApp:</strong> [<a href="/contact">Link</a>]<br data-start={5192} data-end={5195} /><strong data-start={5198} data-end={5210}>Website:</strong> [<a href="https://svr-farms.vercel.app/">SVR Farms</a>]</p>
+                                            <p data-start={7844} data-end={7955}>Book a Free site visit at Little England Farms today:&nbsp;<a href="/contact">Contact Us</a>&nbsp;and also check their profile:&nbsp;<a href="https://www.instagram.com/littleenglandfarms/" target="_blank" rel="noopener">Click Here</a></p>
                                         </div>
 
                                     </div>

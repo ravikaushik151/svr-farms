@@ -14,7 +14,15 @@ export default function ProjectCard({ title, description, image, link }: Project
         <Card className="h-100 shadow-sm border-0 hover-lift" style={{ display: 'flex', flexDirection: 'column' }}>
             <div className="bg-light" style={{ height: '200px' }}>
                 <div className="w-100 h-100 d-flex align-items-center justify-content-center text-muted">
-                    <img src={image || "https://placehold.co/600x400?text=Project+Image+600x400"} alt={title} className="w-100 h-100 object-fit-cover" />
+                    <img
+                        src={image || "https://placehold.co/600x400?text=Project+Image+600x400"}
+                        alt={title}
+                        width={400}
+                        height={200}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-100 h-100 object-fit-cover"
+                    />
                 </div>
             </div>
             <Card.Body style={{ display: 'flex', flexDirection: 'column', flex: 1 }}>

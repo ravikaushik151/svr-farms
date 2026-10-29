@@ -77,7 +77,7 @@ export default function BlogPage() {
   <p>Now that you know why <strong>Agricultural Land in Hosur</strong> is a brilliant investment, what are you waiting for? Whether you’re interested in a <strong>mango farm for sale in Hosur</strong>, <strong>managed farmland Denkanikottai</strong>, or a peaceful farm in Thalli, Little England Farms is your trusted partner in <strong><a href="https://nowheaven.in/managed-farmland-near-bangalore-price-appreciation" target="_blank" rel="noopener">Farmland</a> Investment</strong>.</p>
   <p>If you want your land to be more than just an asset – to be profitable, sustainable, and future-ready – then <strong>Agricultural Land in Hosur</strong> should be your next move.</p>
   <p>Ready to invest in a greener, stress-free future? Explore top&nbsp;<strong>managed farmland near Hosur</strong>&nbsp;projects with trusted developers like Little England Farms. Enjoy passive income, tax benefits, and a serene getaway—all in one package.</p>
-  <p><a href="https://littleengland.cm/contact-us">Contact us now&nbsp;</a>to schedule a site visit or get a free consultation.&nbsp;<a href="https://littleengland.cm/managed-farms">Explore available plots&nbsp;</a>and choose your perfect farm retreat.</p>
+  <p><a href="/contact">Contact us now&nbsp;</a>to schedule a site visit or get a free consultation.&nbsp;<a href="/blogs/managed-farms">Explore available plots&nbsp;</a>and choose your perfect farm retreat.</p>
 </div>
 
                                     </div>

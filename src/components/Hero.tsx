@@ -28,56 +28,37 @@ export default function Hero() {
                     className="w-100 h-100 hero-carousel"
                 >
                     <Carousel.Item className="w-100 h-100">
-                        {/* Desktop Slide 1 */}
-                        <div
-                            className="d-none d-md-block w-100 h-100"
-                            style={{
-                                minHeight: '100svh',
-                                backgroundImage: 'url("/banner-1.webp")',
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                            }}
-                        >
-                            <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25"></div>
-                        </div>
-                        {/* Mobile Slide 1 */}
-                        <div
-                            className="d-block d-md-none w-100 h-100"
-                            style={{
-                                minHeight: '100svh',
-                                backgroundImage: 'url("/Homepage_banner Img1_Mob.webp")',
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                            }}
-                        >
-                            <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25"></div>
+                        <div className="position-relative w-100 h-100" style={{ minHeight: '100svh' }}>
+                            <picture>
+                                <source media="(max-width: 767.98px)" srcSet="/Homepage_banner Img1_Mob.webp" />
+                                <img
+                                    src="/banner-1.webp"
+                                    alt="Managed Organic Farmland Near Bengaluru - SVR Farms Tamara Valley"
+                                    fetchPriority="high"
+                                    loading="eager"
+                                    decoding="async"
+                                    className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+                                    style={{ minHeight: '100svh' }}
+                                />
+                            </picture>
+                            <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25" style={{ zIndex: 1 }}></div>
                         </div>
                     </Carousel.Item>
 
                     <Carousel.Item className="w-100 h-100">
-                        {/* Desktop Slide 2 */}
-                        <div
-                            className="d-none d-md-block w-100 h-100"
-                            style={{
-                                minHeight: '100svh',
-                                backgroundImage: 'url("/Home page_updated_Banner.webp")',
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                            }}
-                        >
-                            <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25"></div>
-                        </div>
-                        {/* Mobile Slide 2 */}
-                        <div
-                            className="d-block d-md-none w-100 h-100"
-                            style={{
-                                minHeight: '100svh',
-                                backgroundImage: 'url("/Homepage_banner Img2_Mob.webp")',
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                            }}
-                        >
-                            <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25"></div>
+                        <div className="position-relative w-100 h-100" style={{ minHeight: '100svh' }}>
+                            <picture>
+                                <source media="(max-width: 767.98px)" srcSet="/Homepage_banner Img2_Mob.webp" />
+                                <img
+                                    src="/Home page_updated_Banner.webp"
+                                    alt="Luxury Farmland Plots in Thalli Near Bangalore - SVR Farms"
+                                    loading="lazy"
+                                    decoding="async"
+                                    className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+                                    style={{ minHeight: '100svh' }}
+                                />
+                            </picture>
+                            <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25" style={{ zIndex: 1 }}></div>
                         </div>
                     </Carousel.Item>
                 </Carousel>

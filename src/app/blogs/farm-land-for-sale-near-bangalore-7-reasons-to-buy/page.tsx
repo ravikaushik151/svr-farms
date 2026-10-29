@@ -62,7 +62,7 @@ export default function BlogPage() {
                                             <p>Choose a property that offers fencing, borewells, internal roads, and electricity.</p>
                                             <h2>Case Study: Little England Farms’ Tamara Valley Project</h2>
                                             <p>Located near Denkanikottai, <strong>Tamara Valley by Little England Farms</strong> is a perfect example of a managed farmland project that combines natural beauty with professional land management. With mango plantations, scenic surroundings, and a strong community focus, Tamara Valley is ideal for both personal and investment purposes.</p>
-                                            <p><a href="https://littleengland.cm/tamara-valley">Explore Tamara Valley</a></p>
+                                            <p><a href="/tamara-valley">Explore Tamara Valley</a></p>
                                             <h2>Who Should Invest in Farm Land?</h2>
                                             <h2>Tips for a Successful Farmland Investment</h2>
                                             <h2>Future of Farmland Investment Near Bangalore</h2>
@@ -70,7 +70,7 @@ export default function BlogPage() {
                                             <p>Investing now means capitalizing on early growth and securing a lifetime of green returns.</p>
                                             <h2>Final Thoughts</h2>
                                             <p>Buying <strong>farm land for sale near Bangalore</strong> is more than a real estate decision — it’s a lifestyle transformation. Whether you’re looking for <strong>affordable managed farmland for sale near Bangalore</strong> or a long-term investment, this opportunity promises both peace and profit.</p>
-                                            <p>✅ Ready to explore a greener future? <a href="https://littleengland.cm/contact-us">Contact Little England Farms</a> today to book a site visit and own your piece of paradise.</p>
+                                            <p>✅ Ready to explore a greener future? <a href="/contact">Contact Little England Farms</a> today to book a site visit and own your piece of paradise.</p>
                                             <p><strong>Own. Grow. Thrive.</strong> With Little England Farms.</p>
                                         </div>
 

@@ -34,7 +34,7 @@ export default function BlogPage() {
                                     <div className="card-text text-start mt-3 blog-details">
 
                                         <div>
-                                            <p data-pm-slice="1 1 []">Looking for the perfect investment opportunity that connects you to nature while offering significant financial growth? Agriculture<a href="https://littleengland.cm/hosur-farm-land-for-sale-prime-agricultural-investment"> land in Hosur</a> provides an excellent choice for both seasoned investors and first-time buyers. With its proximity to Bangalore, fertile soil, and growing popularity for managed farmlands, Hosur is a hub for farmland investment.</p>
+                                            <p data-pm-slice="1 1 []">Looking for the perfect investment opportunity that connects you to nature while offering significant financial growth? Agriculture<a href="/blogs/hosur-farm-land-for-sale-prime-agricultural-investment"> land in Hosur</a> provides an excellent choice for both seasoned investors and first-time buyers. With its proximity to Bangalore, fertile soil, and growing popularity for managed farmlands, Hosur is a hub for farmland investment.</p>
                                             <p>Hosur’s agricultural landscape is enriched with lush greenery, offering a serene environment away from the hustle and bustle of city life. Known for its favorable climate and well-connected roads, it has become a preferred choice for individuals seeking sustainable living options. Additionally, with the increasing demand for organic produce and eco-tourism, owning farmland in Hosur presents an excellent opportunity to tap into emerging markets.</p>
                                             <p>Investing in agricultural land also offers flexibility — whether you want to cultivate your crops, establish a farmhouse, or explore agroforestry, the possibilities are endless. Managed farmlands further simplify this process, providing expert assistance in maintaining and maximizing land productivity. If you’re looking to diversify your investment portfolio while contributing to environmental sustainability, agricultural land in Hosur is an excellent choice.</p>
                                             <h2>Why Invest in Agriculture Land in Hosur?</h2>
@@ -58,10 +58,10 @@ export default function BlogPage() {
                                             <h3>4. Are there financing options available for purchasing farmland?</h3>
                                             <p>While banks generally do not offer loans for agricultural land, private lenders or rural development schemes might provide financial assistance.</p>
                                             <h3>5. What are the benefits of choosing managed farmlands in Hosur?</h3>
-                                            <p><a href="https://littleengland.cm/everything-you-need-to-know-about-managed-farmlands">Managed farmlands</a> provide professional management services, ensuring the land remains productive while offering investors a passive income source.</p>
+                                            <p><a href="/blogs/everything-you-need-to-know-about-managed-farmlands">Managed farmlands</a> provide professional management services, ensuring the land remains productive while offering investors a passive income source.</p>
                                             <h2>Call to Action</h2>
                                             <p>Ready to secure your piece of nature? Explore agriculture land options with <strong>Little England Farms</strong> and invest in a thriving future.</p>
-                                            <p>For personalized consultations and site visits, <strong><a href="https://littleengland.cm/contact-us">contact us</a> today!</strong></p>
+                                            <p>For personalized consultations and site visits, <strong><a href="/contact">contact us</a> today!</strong></p>
                                         </div>
 
                                     </div>

@@ -125,6 +125,8 @@ export default function FaqSection() {
                                 src="/Frequently-Asked-Questions.webp"
                                 alt="Scenic view of organic managed farmland"
                                 fill
+                                sizes="(max-width: 991px) 100vw, 33vw"
+                                loading="lazy"
                                 style={{ objectFit: 'cover', objectPosition: 'center' }}
                             />
 

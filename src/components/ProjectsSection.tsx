@@ -253,6 +253,10 @@ export default function ProjectsSection({ limit, showExploreButton = false }: Pr
                                         <img
                                             src={project.image}
                                             alt={project.title}
+                                            width={400}
+                                            height={210}
+                                            loading="lazy"
+                                            decoding="async"
                                             className="w-100 h-100 object-fit-cover transition-all"
                                             style={{ transition: 'transform 0.5s ease' }}
                                         />

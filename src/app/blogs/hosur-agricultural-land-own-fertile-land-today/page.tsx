@@ -41,7 +41,7 @@ export default function BlogPage() {
                                             <p>The red loamy soil in Hosur is rich in nutrients, making it perfect for crops like mangoes, vegetables, and medicinal plants. The area receives moderate rainfall and experiences a mild climate, ideal for year-round organic farming.</p>
                                             <h2>Types of Farmland Available in Hosur</h2>
                                             <h3>Managed Farmlands</h3>
-                                            <p>Managed farmlands are professionally maintained plots where services like drip irrigation, crop selection, maintenance, and even harvest marketing are handled by experts. Ideal for NRIs and working professionals, <a href="https://littleengland.cm/managed-farmland-near-hosur-investment-benefits"><strong>managed farmlands</strong> </a>near Hosur offer hassle-free ownership.</p>
+                                            <p>Managed farmlands are professionally maintained plots where services like drip irrigation, crop selection, maintenance, and even harvest marketing are handled by experts. Ideal for NRIs and working professionals, <a href="/blogs/managed-farmland-near-hosur-investment-benefits"><strong>managed farmlands</strong> </a>near Hosur offer hassle-free ownership.</p>
                                             <h3>Independent Farm Plots</h3>
                                             <p>For those who prefer full control over their land, independent plots are available. These are best suited for personal weekend homes, organic farming, or agro-tourism ventures.</p>
                                             <h2>Top 7 Reasons to Invest in Hosur Agricultural Land</h2>
@@ -50,7 +50,7 @@ export default function BlogPage() {
                                             <h3>2. Lower Entry Costs Compared to City Real Estate</h3>
                                             <p>Compared to urban property prices, farmland in Hosur remains highly affordable. You can own a sizeable plot of fertile land at a fraction of what a small apartment costs in Bangalore.</p>
                                             <h3>3. Organic Farming Opportunities</h3>
-                                            <p>The region is fast emerging as a hub for chemical-free farming. If you’re looking for the <a href="https://littleengland.cm/farmland-near-hosur-greener-lifestyle-investment-2"><strong>best farmland for organic farming near Hosur</strong></a>, this area is ideal due to its naturally fertile soil and pollution-free environment.</p>
+                                            <p>The region is fast emerging as a hub for chemical-free farming. If you’re looking for the <a href="/blogs/farmland-near-hosur-greener-lifestyle-investment-2"><strong>best farmland for organic farming near Hosur</strong></a>, this area is ideal due to its naturally fertile soil and pollution-free environment.</p>
                                             <h3>4. Eco-Friendly Lifestyle and Weekend Retreats</h3>
                                             <p>Owning farmland not only serves as an investment but also as a serene getaway. Many investors are now building weekend homes or eco-friendly cottages surrounded by greenery.</p>
                                             <h3>5. Tax Benefits and Government Support</h3>
@@ -74,7 +74,7 @@ export default function BlogPage() {
                                             <p>✅ Schedule a Site Visit<br />
                                                 ✅ Get a Free Investment Guide<br />
                                                 ✅ Talk to Our Land Expert</p>
-                                            <p><a href="https://littleengland.cm/contact-us">Call now or book your farm visit</a> — your green investment journey starts here.</p>
+                                            <p><a href="/contact">Call now or book your farm visit</a> — your green investment journey starts here.</p>
                                             <p>Whether you’re buying for returns, peace of mind, or purpose, make sure your land grows value&nbsp;<em>and</em>&nbsp;values.</p>
                                         </div>
 

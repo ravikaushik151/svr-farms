@@ -4,7 +4,7 @@ export const metadata: Metadata = {
     title: 'SRV Farms | Little England',
     description: 'SRV FARMS',
     alternates: {
-        canonical: 'https://littleengland.cm/blogs/1-acre-land-for-sale-in-bangalore',
+        canonical: 'https://svr-farms.vercel.app/blogs/how-to-grow-organic-vegetables-and-fruits-on-your-own-farmland',
     },
 };
 

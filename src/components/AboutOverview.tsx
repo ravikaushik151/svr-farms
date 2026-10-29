@@ -79,6 +79,8 @@ export default function AboutOverview() {
                                 src="/What-Little-England.webp"
                                 alt="White cottage in organic managed farmland belt"
                                 fill
+                                sizes="(max-width: 991px) 100vw, 50vw"
+                                loading="lazy"
                                 style={{ objectFit: 'cover', objectPosition: 'center' }}
                             />
                         </div>

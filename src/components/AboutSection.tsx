@@ -193,7 +193,7 @@ export default function AboutSection() {
                                 A place where nature welcomes you, peace stays with you, and every moment feels like home.
                             </p>
                             <div className="d-none d-lg-block">
-                                <Image src="/icons/leaves.png" alt="" width={45} height={40} className="opacity-25" style={{ objectFit: 'contain' }} onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                                <Image src="/icons/leaves.png" alt="Decorative leaf icon" width={45} height={40} className="opacity-25" style={{ objectFit: 'contain' }} onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                             </div>
                         </Col>
                     </Row>
