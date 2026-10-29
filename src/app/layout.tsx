@@ -16,6 +16,7 @@ const jost = Jost({
     subsets: ['latin'],
     variable: '--font-jost',
     display: 'swap',
+    preload: false,
 });
 
 const playfair = Playfair_Display({
@@ -24,6 +25,7 @@ const playfair = Playfair_Display({
     style: ['normal'],
     variable: '--font-serif',
     display: 'swap',
+    preload: false,
 });
 
 export const viewport: Viewport = {
