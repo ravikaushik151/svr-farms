@@ -3,32 +3,32 @@ import HeroSliderControls from './HeroSliderControls';
 
 export default function Hero() {
     return (
-        <div className="position-relative w-100 overflow-hidden" style={{ minHeight: '100vh', height: '100vh' }}>
-            {/* Background Slides */}
-            <div className="position-absolute top-0 start-0 w-100 h-100" style={{ zIndex: 1 }}>
-                
-                {/* Slide 1 - Base Layer (Zero Transition, Immediate LCP Paint) */}
-                <div className="position-absolute top-0 start-0 w-100 h-100" style={{ zIndex: 1 }}>
-                    <picture className="w-100 h-100 d-block">
-                        <source media="(min-width: 768px)" srcSet="/banner-1.webp" width={1920} height={1080} />
-                        <img
-                            src="/Homepage_banner_Img1_Mob.webp"
-                            alt="Managed Organic Farmland Near Bengaluru - SVR Farms Tamara Valley"
-                            fetchPriority="high"
-                            loading="eager"
-                            decoding="sync"
-                            width={460}
-                            height={824}
-                            className="w-100 h-100 object-fit-cover d-block"
-                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                        />
-                    </picture>
-                    <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25" style={{ zIndex: 1 }} />
-                </div>
+        <div 
+            className="position-relative w-100 overflow-hidden" 
+            style={{ 
+                minHeight: 'calc(100svh - 60px)', 
+                height: 'calc(100svh - 60px)' 
+            }}
+        >
+            {/* Slide 1 - Base Layer (Zero Transition, Direct LCP Paint) */}
+            <picture className="position-absolute top-0 start-0 w-100 h-100 d-block" style={{ zIndex: 1 }}>
+                <source media="(min-width: 768px)" srcSet="/banner-1.webp" width={1920} height={1080} />
+                <img
+                    src="/Homepage_banner_Img1_Mob.webp"
+                    alt="Managed Organic Farmland Near Bengaluru - SVR Farms Tamara Valley"
+                    fetchPriority="high"
+                    loading="eager"
+                    decoding="async"
+                    width={460}
+                    height={824}
+                    className="w-100 h-100 object-fit-cover d-block"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+            </picture>
+            <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25" style={{ zIndex: 2 }} />
 
-                {/* Interactive Slider Overlay & Controls */}
-                <HeroSliderControls />
-            </div>
+            {/* Interactive Slider Overlay & Controls */}
+            <HeroSliderControls />
 
             {/* Static Content Overlay */}
             <div
@@ -36,8 +36,8 @@ export default function Hero() {
                 style={{
                     zIndex: 3,
                     pointerEvents: 'none',
-                    paddingTop: '5rem',
-                    paddingBottom: '3rem',
+                    paddingTop: '2rem',
+                    paddingBottom: '2rem',
                 }}
             >
                 <div
@@ -52,11 +52,10 @@ export default function Hero() {
                                     href="/tamara"
                                     className="d-inline-flex flex-wrap align-items-center justify-content-center gap-1 gap-md-2 text-decoration-none px-3 py-2 rounded-pill shadow-sm border border-warning"
                                     style={{
-                                        backgroundColor: 'rgba(17, 73, 52, 0.88)',
+                                        backgroundColor: 'rgba(17, 73, 52, 0.95)',
                                         color: '#c5a059',
                                         fontSize: 'clamp(0.72rem, 2.2vw, 0.88rem)',
                                         letterSpacing: '0.8px',
-                                        backdropFilter: 'blur(5px)',
                                         maxWidth: '100%'
                                     }}
                                 >

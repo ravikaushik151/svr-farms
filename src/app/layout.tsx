@@ -165,6 +165,7 @@ export default function RootLayout({
                 <link
                     rel="preload"
                     as="image"
+                    type="image/webp"
                     href="/Homepage_banner_Img1_Mob.webp"
                     media="(max-width: 767.98px)"
                     fetchPriority="high"
@@ -172,6 +173,7 @@ export default function RootLayout({
                 <link
                     rel="preload"
                     as="image"
+                    type="image/webp"
                     href="/banner-1.webp"
                     media="(min-width: 768px)"
                     fetchPriority="high"
