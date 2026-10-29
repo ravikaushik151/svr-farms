@@ -1,98 +1,40 @@
-'use client';
-import { useState } from 'react';
 import Link from 'next/link';
+import HeroSliderControls from './HeroSliderControls';
 
 export default function Hero() {
-    const [activeSlide, setActiveSlide] = useState(0);
-
-    const slides = [
-        {
-            mobileImg: '/Homepage_banner_Img1_Mob.webp',
-            desktopImg: '/banner-1.webp',
-            alt: 'Managed Organic Farmland Near Bengaluru - SVR Farms Tamara Valley',
-            eager: true,
-        },
-        {
-            mobileImg: '/Homepage_banner_Img2_Mob.webp',
-            desktopImg: '/Home_page_updated_Banner.webp',
-            alt: 'Luxury Farmland Plots in Thalli Near Bangalore - SVR Farms',
-            eager: false,
-        }
-    ];
-
     return (
-        <div className="position-relative w-100 overflow-hidden" style={{ minHeight: '100svh' }}>
+        <div className="position-relative w-100 overflow-hidden" style={{ minHeight: '100vh', height: '100vh' }}>
             {/* Background Slides */}
             <div className="position-absolute top-0 start-0 w-100 h-100" style={{ zIndex: 1 }}>
-                {slides.map((slide, idx) => (
-                    <div
-                        key={idx}
-                        className="position-absolute top-0 start-0 w-100 h-100"
-                        style={{
-                            opacity: activeSlide === idx ? 1 : 0,
-                            visibility: activeSlide === idx ? 'visible' : 'hidden',
-                            transition: 'opacity 0.6s ease-in-out, visibility 0.6s ease-in-out',
-                            height: '100svh',
-                            minHeight: '100svh'
-                        }}
-                    >
-                        <picture className="w-100 h-100">
-                            <source media="(min-width: 768px)" srcSet={slide.desktopImg} width={1920} height={1080} />
-                            <img
-                                src={slide.mobileImg}
-                                alt={slide.alt}
-                                fetchPriority={slide.eager ? 'high' : 'auto'}
-                                loading={slide.eager ? 'eager' : 'lazy'}
-                                decoding="async"
-                                width={slide.eager ? 640 : 1920}
-                                height={slide.eager ? 1140 : 1080}
-                                className="w-100 h-100 object-fit-cover"
-                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                            />
-                        </picture>
-                        <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25" style={{ zIndex: 1 }} />
-                    </div>
-                ))}
-
-                {/* Slider Controls (Next / Prev) */}
-                <button
-                    type="button"
-                    className="carousel-control-prev"
-                    style={{ zIndex: 5, background: 'none', border: 'none', opacity: 0.8 }}
-                    onClick={() => setActiveSlide(prev => (prev === 0 ? 1 : 0))}
-                    aria-label="Previous Slide"
-                >
-                    <span className="carousel-control-prev-icon" aria-hidden="true" />
-                </button>
-                <button
-                    type="button"
-                    className="carousel-control-next"
-                    style={{ zIndex: 5, background: 'none', border: 'none', opacity: 0.8 }}
-                    onClick={() => setActiveSlide(prev => (prev === 0 ? 1 : 0))}
-                    aria-label="Next Slide"
-                >
-                    <span className="carousel-control-next-icon" aria-hidden="true" />
-                </button>
-
-                {/* Indicators */}
-                <div className="carousel-indicators" style={{ zIndex: 5, marginBottom: '1.5rem' }}>
-                    {slides.map((_, idx) => (
-                        <button
-                            key={idx}
-                            type="button"
-                            className={activeSlide === idx ? 'active' : ''}
-                            aria-label={`Slide ${idx + 1}`}
-                            onClick={() => setActiveSlide(idx)}
+                
+                {/* Slide 1 - Base Layer (Zero Transition, Immediate LCP Paint) */}
+                <div className="position-absolute top-0 start-0 w-100 h-100" style={{ zIndex: 1 }}>
+                    <picture className="w-100 h-100 d-block">
+                        <source media="(min-width: 768px)" srcSet="/banner-1.webp" width={1920} height={1080} />
+                        <img
+                            src="/Homepage_banner_Img1_Mob.webp"
+                            alt="Managed Organic Farmland Near Bengaluru - SVR Farms Tamara Valley"
+                            fetchPriority="high"
+                            loading="eager"
+                            decoding="sync"
+                            width={460}
+                            height={824}
+                            className="w-100 h-100 object-fit-cover d-block"
+                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                         />
-                    ))}
+                    </picture>
+                    <div className="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-25" style={{ zIndex: 1 }} />
                 </div>
+
+                {/* Interactive Slider Overlay & Controls */}
+                <HeroSliderControls />
             </div>
 
             {/* Static Content Overlay */}
             <div
                 className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
                 style={{
-                    zIndex: 2,
+                    zIndex: 3,
                     pointerEvents: 'none',
                     paddingTop: '5rem',
                     paddingBottom: '3rem',

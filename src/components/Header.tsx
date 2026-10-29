@@ -44,7 +44,6 @@ export default function Header() {
                         alt="SVR Farms - Little England Managed Farmland" 
                         width={240} 
                         height={46} 
-                        priority 
                         className="mb-0" 
                         style={{ width: 'auto', height: '40px', maxHeight: '46px' }} 
                     />

@@ -4,7 +4,8 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaEnvelo
 import Link from 'next/link';
 import { useState, MouseEvent } from 'react';
 import Image from 'next/image';
-import ContactForm from '@/components/ContactForm';
+import dynamic from 'next/dynamic';
+const ContactForm = dynamic(() => import('@/components/ContactForm'), { ssr: false });
 export default function Footer() {
 
     
@@ -27,10 +28,10 @@ export default function Footer() {
                                     Premium Farm Land Developers dedicated to creating sustainable and beautiful living spaces. We blend nature with modern amenities to find your perfect managed farmland.
                                 </p>
                                 <div className="d-flex gap-3 mt-4 justify-content-md-start justify-content-center">
-                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit SVR Farms on Facebook" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
                                         <FaFacebookF size={16} />
                                     </a>
-                                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
+                                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit SVR Farms on Twitter" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 448 512"
@@ -42,10 +43,10 @@ export default function Footer() {
                                             <path d="M357.2 48L427.8 48 273.6 224.2 455 464 313 464 201.7 318.6 74.5 464 3.8 464 168.7 275.5-5.2 48 140.4 48 240.9 180.9 357.2 48zM332.4 421.8l39.1 0-252.4-333.8-42 0 255.3 333.8z" />
                                         </svg>
                                     </a>
-                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit SVR Farms on Instagram" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
                                         <FaInstagram size={16} />
                                     </a>
-                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit SVR Farms on LinkedIn" className="social-icon-btn d-flex align-items-center justify-content-center rounded-circle text-white bg-white bg-opacity-10" style={{ width: '40px', height: '40px' }}>
                                         <FaLinkedinIn size={16} />
                                     </a>
                                 </div>
@@ -201,74 +202,7 @@ export default function Footer() {
                     />
                 </div>
 
-                {/* Custom styles for floating action cluster and Enquire Now button */}
-                <style>{`
-                .floating-action-cluster {
-                    position: fixed;
-                    right: 24px;
-                    bottom: 28px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 16px;
-                    z-index: 1000;
-                }
-
-                .floating-action-cluster a {
-                    width: 50px;
-                    height: 50px;
-                    text-decoration: none;
-                    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
-                    transition: all 0.3s ease;
-                    cursor: pointer;
-                }
-
-                .floating-action-cluster .floating-btn-call {
-                    background-color: #114934;
-                }
-
-                .floating-action-cluster .floating-btn-whatsapp {
-                    background-color: #25D366;
-                }
-
-                @media (max-width: 767.98px) {
-                    .floating-action-cluster {
-                        right: 14px;
-                        bottom: 16px;
-                        gap: 10px;
-                    }
-                    .floating-action-cluster a {
-                        width: 44px;
-                        height: 44px;
-                        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.22);
-                    }
-                }
-
-                .enquire-now-btn {
-                    width: 40px !important;
-                    height: 140px !important;
-                    background-color: #114934 !important;
-                    border: none !important;
-                    color: white !important;
-                    font-weight: bold !important;
-                    font-size: 12px !important;
-                    letter-spacing: 1px !important;
-                    border-radius: 4px 0 0 4px !important;
-                    writing-mode: vertical-rl !important;
-                    text-orientation: mixed !important;
-                    padding: 10px 0 !important;
-                    box-shadow: -4px 4px 12px rgba(0, 0, 0, 0.3) !important;
-                    transition: all 0.3s ease !important;
-                    cursor: pointer !important;
-                    display: flex !important;
-                    align-items: center !important;
-                    justify-content: center !important;
-                }
-
-                .enquire-now-btn:hover {
-                    transform: translateX(-5px) !important;
-                    box-shadow: -6px 6px 16px rgba(0, 0, 0, 0.4) !important;
-                }
-            `}</style>
+                
             </footer>
         </>
     );
